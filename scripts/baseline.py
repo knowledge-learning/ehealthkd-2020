@@ -89,9 +89,16 @@ class Run:
         self.run_name = run_name
         self.algorithm = algorithm
 
-        self.testing = testing
-        self.mode = "test" if testing else "dev"
-        self.scenarios = self.SCENARIOS if testing else ["scenario"]
+        if hasattr(testing, "__iter__"):
+            self.gold, self.mode, self.scenarios = testing
+        elif testing:
+            self.gold = "data/testing/{0}/scenario.txt"
+            self.mode = "test"
+            self.scenarios = self.SCENARIOS
+        else:
+            self.gold = "data/development/scenario.txt"
+            self.mode = "dev"
+            self.scenarios = ["scenario"]
 
     def __call__(self, *args, **kargs):
         for scenario in self.scenarios:
@@ -112,10 +119,7 @@ class Run:
             )
 
     def _load_collection(self, scenario):
-        if self.testing:
-            gold = "data/testing/{0}/scenario.txt".format(scenario)
-        else:
-            gold = "data/development/scenario.txt"
+        gold = self.gold.format(scenario)
 
         return Collection().load(
             Path(gold),
@@ -152,14 +156,40 @@ class Run:
             run(*args, **kargs)
 
 
-def main(testing):
+def main(sources):
     baseline = Baseline()
-    baseline.train(Path("data/testing/scenario1-main/scenario.txt"))
-    Run.exec(Run.on("Baseline", baseline, testing=testing))
+    baseline.train(Path("data/training/scenario.txt"))
+    for source in sources:
+        Run.exec(Run.on("Baseline", baseline, testing=source))
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--testing", action="store_true")
+    parser.add_argument("--dev", action="store_const", const=False, default=None)
+    parser.add_argument("--test", action="store_const", const=True, default=None)
+    parser.add_argument(
+        "--custom",
+        action="append",
+        nargs=3,
+        metavar=("GOLD", "MODE", "SCENARIOS"),
+        help="""
+        GOLD: path to gold file (use `{0}` for scenario template).
+        MODE: name of the directory inside the user submit folder.
+        SCENARIOS: name (or ',' separated list of names) for the run escenario(s).
+        """,
+    )
     args = parser.parse_args()
-    main(args.testing)
+
+    sources = []
+
+    if args.dev is not None:
+        sources.append(args.dev)
+
+    if args.test is not None:
+        sources.append(args.test)
+
+    if args.custom is not None:
+        for gold, mode, scenarios in args.custom:
+            sources.append((gold, mode, scenarios.split(",")))
+
+    main(sources)
