@@ -79,7 +79,7 @@ def main(sources):
     baseline = Baseline()
     baseline.train(Path("data/training/scenario.txt"))
     for source in sources:
-        Run.exec(Run.on("Baseline", baseline, testing=source))
+        Run.exec(Run.on("baseline", baseline, testing=source))
 
 
 if __name__ == "__main__":

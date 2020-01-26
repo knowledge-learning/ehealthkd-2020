@@ -11,7 +11,7 @@ from scripts.utils import Collection
 
 
 def evaluate_scenario(submit_path: Path, gold: Collection, scenario: int):
-    submit_file = submit_path / ("scenario%i.txt" % scenario)
+    submit_file = submit_path / ("scenario.txt")
     if not submit_file.exists():
         raise ValueError("Input file not found in '%s'" % submit_path)
 
@@ -93,12 +93,13 @@ def main(
     if final and (not csv or not best):
         raise ValueError("Error: --final implies --csv and --best")
 
-    scenario1_gold = Collection().load(gold / "scenario1-main" / "scenario1.txt")
-    scenario2_gold = Collection().load(gold / "scenario2-taskA" / "scenario2.txt")
-    scenario3_gold = Collection().load(gold / "scenario3-taskB" / "scenario3.txt")
+    scenario1_gold = Collection().load(gold / "scenario1-main" / "scenario.txt")
+    scenario2_gold = Collection().load(gold / "scenario2-taskA" / "scenario.txt")
+    scenario3_gold = Collection().load(gold / "scenario3-taskB" / "scenario.txt")
 
     if single:
         for subfolder in submits.iterdir():
+            userfolder = userfolder / "test"
             users[submits.name].append(
                 evaluate_one(subfolder, scenario1_gold, scenario2_gold, scenario3_gold)
             )
@@ -106,7 +107,7 @@ def main(
         for userfolder in submits.iterdir():
             if not userfolder.is_dir():
                 continue
-            for subfolder in userfolder.iterdir():
+            for subfolder in (userfolder / "test").iterdir():
                 users[userfolder.name].append(
                     evaluate_one(
                         subfolder, scenario1_gold, scenario2_gold, scenario3_gold
