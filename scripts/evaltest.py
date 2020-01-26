@@ -36,10 +36,12 @@ def evaluate_one(
     scenario1_gold: Collection,
     scenario2_gold: Collection,
     scenario3_gold: Collection,
+    scenario4_gold: Collection,
 ):
     scenario1_submit = submit_path / "scenario1-main"
     scenario2_submit = submit_path / "scenario2-taskA"
     scenario3_submit = submit_path / "scenario3-taskB"
+    scenario4_submit = submit_path / "scenario4-transfer"
 
     scenario1 = dict(
         evaluate_scenario(scenario1_submit, scenario1_gold, 1), submit=submit_path.name
@@ -50,12 +52,16 @@ def evaluate_one(
     scenario3 = dict(
         evaluate_scenario(scenario3_submit, scenario3_gold, 3), submit=submit_path.name
     )
+    scenario4 = dict(
+        evaluate_scenario(scenario4_submit, scenario4_gold, 4), submit=submit_path.name
+    )
 
     return dict(
         submit=submit_path.name,
         scenario1=scenario1,
         scenario2=scenario2,
         scenario3=scenario3,
+        scenario4=scenario4,
     )
 
 
@@ -66,12 +72,16 @@ def filter_best(results):
         scenario1 = [entry["scenario1"] for entry in submits]
         scenario2 = [entry["scenario2"] for entry in submits]
         scenario3 = [entry["scenario3"] for entry in submits]
+        scenario4 = [entry["scenario4"] for entry in submits]
 
         best1 = max(scenario1, key=lambda d: d["f1"])
         best2 = max(scenario2, key=lambda d: d["f1"])
         best3 = max(scenario3, key=lambda d: d["f1"])
+        best4 = max(scenario4, key=lambda d: d["f1"])
 
-        best[user] = dict(scenario1=best1, scenario2=best2, scenario3=best3)
+        best[user] = dict(
+            scenario1=best1, scenario2=best2, scenario3=best3, scenario4=best4
+        )
 
     return best
 
@@ -96,12 +106,19 @@ def main(
     scenario1_gold = Collection().load(gold / "scenario1-main" / "scenario.txt")
     scenario2_gold = Collection().load(gold / "scenario2-taskA" / "scenario.txt")
     scenario3_gold = Collection().load(gold / "scenario3-taskB" / "scenario.txt")
+    scenario4_gold = Collection().load(gold / "scenario4-transfer" / "scenario.txt")
 
     if single:
         for subfolder in submits.iterdir():
             userfolder = userfolder / "test"
             users[submits.name].append(
-                evaluate_one(subfolder, scenario1_gold, scenario2_gold, scenario3_gold)
+                evaluate_one(
+                    subfolder,
+                    scenario1_gold,
+                    scenario2_gold,
+                    scenario3_gold,
+                    scenario4_gold,
+                )
             )
     else:
         for userfolder in submits.iterdir():
@@ -110,7 +127,11 @@ def main(
             for subfolder in (userfolder / "test").iterdir():
                 users[userfolder.name].append(
                     evaluate_one(
-                        subfolder, scenario1_gold, scenario2_gold, scenario3_gold
+                        subfolder,
+                        scenario1_gold,
+                        scenario2_gold,
+                        scenario3_gold,
+                        scenario4_gold,
                     )
                 )
 
@@ -151,9 +172,15 @@ def main(
             ]
             df3 = df3.sort_values("scenario3-f1", ascending=False).to_csv()
 
+            df4 = df.transpose()[
+                ["scenario4-f1", "scenario4-precision", "scenario4-recall"]
+            ]
+            df4 = df4.sort_values("scenario4-f1", ascending=False).to_csv()
+
             print(df1)
             print(df2)
             print(df3)
+            print(df4)
 
         elif pretty:
             print(df.to_html())
