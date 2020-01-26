@@ -1,0 +1,16 @@
+ID	START/END		LABEL		TEXT (optional)
+1	3 7			Concept		asma
+2	15 25			Concept		enfermedad
+3	30 36			Action		afecta
+4	41 45;46 59		Concept		vías respiratorias
+5	65 75			Action		exposición
+6	76 86			Concept		prolongada
+7	90 93			Concept		sol
+8	97 103			Concept		verano
+9	120 125			Action		daños
+10	132 136			Concept		piel
+11	139 143			Reference	Esta
+12	144 150			Action		afecta
+13	172 180			Concept		personas
+14	181 188			Predicate	mayores
+15	192 194;195 199		Concept		60 años
