@@ -307,6 +307,7 @@ class Collection:
         return self.filter(relation=lambda r: r.label in labels)
 
     def _dump_input(self, text_file: Path, skip_empty_sentences=True):
+        text_file.parent.mkdir(parents=True, exist_ok=True)
         text_file.write_text(
             "\n".join(
                 sentence.text
