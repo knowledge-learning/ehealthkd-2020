@@ -1,0 +1,27 @@
+T1	Concept 3 7	asma
+T2	Concept 15 25	enfermedad
+T4	Action 30 36	afecta
+T3	Concept 41 45;46 59	vías respiratorias
+T5	Action 64 74	exposición
+T6	Concept 75 85	prolongada
+T7	Concept 89 92	sol
+T8	Concept 96 102	verano
+T9	Action 111 116	daños
+T10	Concept 123 127	piel
+T11	Reference 129 133	Esta
+T12	Action 134 140	afecta
+T13	Concept 162 170	personas
+T14	Predicate 171 178	mayores
+T15	Concept 182 184;185 189	60 años
+R1	is-a Arg1:T1 Arg2:T2	
+R2	subject Arg1:T4 Arg2:T1	
+R3	target Arg1:T4 Arg2:T3	
+R4	in-context Arg1:T5 Arg2:T6	
+R5	target Arg1:T5 Arg2:T7	
+R6	in-time Arg1:T5 Arg2:T8	
+R7	causes Arg1:T5 Arg2:T9	
+R8	target Arg1:T9 Arg2:T10	
+R9	subject Arg1:T12 Arg2:T11	
+R10	target Arg1:T12 Arg2:T14	
+R11	domain Arg1:T14 Arg2:T13	
+R12	arg Arg1:T14 Arg2:T15	
