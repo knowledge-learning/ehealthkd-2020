@@ -152,4 +152,4 @@ The eHealth-KD 2020 corpus considers negated actions, which are manually annotat
 
 This means that, in the corpus, you will find sentences with negated concepts, such as: _"No existe un tratamiento que restablezca la función ovárica normal."_. In this and similar sentences, we **still expect** that your system recognizes _existe_ as **Action** and _tratamiento_ as **Target**, as though if the negation did not exist.
 
-In in doubt please contact the organizers at [ehealth-kd@googlegroups.com](mailto:ehealth-kd@googlegroups.com).
+If in doubt please contact the organizers at [ehealth-kd@googlegroups.com](mailto:ehealth-kd@googlegroups.com).

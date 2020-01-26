@@ -30,11 +30,11 @@ All data is available in the [Github repository](https://github.com/knowledge-le
 The eHealth-KD Corpus is distributed free of charge under a Creative Commons Non-Commercial Share-Alike 4.0 License.
 
 To accept the distribution terms, please fill in the following form:
-> [https://forms.gle/3KHAvo7e5MfxtnME9](https://forms.gle/3KHAvo7e5MfxtnME9)
+> [https://forms.gle/pUJutSDq2FYLwNWQA](https://forms.gle/pUJutSDq2FYLwNWQA)
 
-The training set contains a total of 600 sentences manually annotated in [Brat](http://brat.nlplab.org/) and post-processed to match the input format.
+The **training** set contains a total of 800 sentences manually annotated in [BRAT](http://brat.nlplab.org/).
 These sentences are expected to be used for training machine learning systems.
-An additional 100 sentences are available in the development set.
+An additional 200 **sentences** are available in the development set.
 These additional sentences are expected to be used for evaluating machine learning systems and tune their hyperparameters.
 
 ## Evaluation scripts
@@ -43,7 +43,7 @@ Evaluation scripts will be provided so that participants can test offline their 
 
 ### **Download links**:
 
-The evaluation is available in the [Github repository](https://github.com/knowledge-learning/ehealthkd-2019) of the project, in the file `script/score.py`.
+The evaluation is available in the [Github repository](https://github.com/knowledge-learning/ehealthkd-2020) of the project, in the file `script/evaltest.py`.
 A detailed explanation is available in the [Submission section](/submission).
 
 ## Baselines
@@ -52,7 +52,7 @@ A simple baseline will be released along with the corpus. The baseline source co
 
 ### **Download links**:
 
-The evaluation is available in the [Github repository](https://github.com/knowledge-learning/ehealthkd-2019) of the project, in the file `script/baseline.py`.
+The evaluation is available in the [Github repository](https://github.com/knowledge-learning/ehealthkd-2020) of the project, in the file `script/baseline.py`.
 A detailed explanation is available in the [Submission section](/submission).
 
 # Additional resources

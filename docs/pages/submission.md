@@ -6,9 +6,9 @@ nav_order: 4
 
 # Submission details
 
-The challenge will be graded on [Codalab](https://competitions.codalab.org/competitions/21781).
+The challenge will be graded on [Codalab]().
 
-A fully working [evaluation script](https://github.com/knowledge-learning/ehealthkd-2019/blob/master/scripts/score.py) is provided to participants, that exactly matches the evaluation formulas used in Codalab.
+A fully working [evaluation script](https://github.com/knowledge-learning/ehealthkd-2020/blob/master/scripts/evaltest.py) is provided to participants, that exactly matches the evaluation formulas used in Codalab.
 This way participants will have the possibility to evaluate their systems offline and perform hyper-parameter tuning with respect to the same evaluation metrics as used in the competition.
 
 ## Baseline implementation
@@ -23,10 +23,10 @@ We recommend all participants to first run the baseline implementation (with the
 
 The first step consists in downloading the project and running the baseline implementation.
 
-Clone the `ehealthkd-2019` project from Github:
+Clone the `ehealthkd-2020` project from Github:
 
 ```bash
-$ git clone https://github.com/knowledge-learning/ehealthkd-2019.git
+$ git clone https://github.com/knowledge-learning/ehealthkd-2020.git
 ```
 
 Run the baseline implementation for the main scenario. The baseline implementation is in the `scripts/baseline.py` file. The arguments are:
@@ -189,7 +189,7 @@ total 36
 -rw-rw-r-- 1 user user  8756 abr 18 16:51 output_scenario3.txt
 ```
 
-## Runing the baseline on the test set
+## Running the baseline on the test set
 
 Once the test set input files are released, you will be able to test the baseline implementation on the test set as well. [Please read the details about the test set structure](resources#test-data).
 
