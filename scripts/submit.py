@@ -13,7 +13,12 @@ class Algorithm:
 
 
 class Run:
-    SCENARIOS = ["scenario1-main", "scenario2-taskA", "scenario3-taskB"]
+    SCENARIOS = [
+        "scenario1-main",
+        "scenario2-taskA",
+        "scenario3-taskB",
+        "scenario4-transfer",
+    ]
 
     def __init__(self, user: str, run_name: str, algorithm: Algorithm, *, testing=True):
         self.user = user
@@ -27,9 +32,9 @@ class Run:
             self.mode = "test"
             self.scenarios = self.SCENARIOS
         else:
-            self.gold = "data/development/scenario.txt"
+            self.gold = "data/development/{0}/scenario.txt"
             self.mode = "dev"
-            self.scenarios = ["scenario"]
+            self.scenarios = ["main", "transfer"]
 
     def __call__(self, *args, **kargs):
         for scenario in self.scenarios:
