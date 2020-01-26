@@ -375,8 +375,24 @@ class Collection:
             spans.sort(key=lambda t: t[0])
         return i, spans
 
-    def load(self, finput: Path, legacy=True) -> "Collection":
+    def load(
+        self,
+        finput: Path,
+        *,
+        legacy=True,
+        keyphrases=True,
+        relations=True,
+        attributes=True
+    ) -> "Collection":
+
+        # add sentences from input .txt to Collection
         sentences = self._load_input(finput)
+
+        # if keyphrases won't be loaded finish right there
+        if not keyphrases:
+            return self
+
+        # else, parse .ann file to start the annotation of sentences
         ann_file = self._load_ann(finput)
 
         def add_relation(source_id, destination_id, ann_type, id_to_keyphrase):
@@ -405,10 +421,12 @@ class Collection:
                     label = "".join(i for i in label if not i.isdigit()).lower()
                     add_relation(ann.ref, destination, label, id_to_keyphrase)
 
+        # compute sentences' boundaries
         sentences_length = [len(s) for s in sentences]
         for i in range(1, len(sentences_length)):
             sentences_length[i] += sentences_length[i - 1] + 1
 
+        # load keyphrases from Entity Annotations
         id_to_keyphrase = {}
         for ann in ann_file.annotations:
             if isinstance(ann, EntityAnnotation):
@@ -422,24 +440,30 @@ class Collection:
                     keyphrase.split()
                 id_to_keyphrase[ann.id] = keyphrase
 
-        if legacy:
+        # load relations from Event Annotations (legacy support)
+        if legacy and relations:
             legacy_load(ann_file, sentences, id_to_keyphrase)
 
+        # load standard relations and attributes
         for ann in ann_file.annotations:
-            if isinstance(ann, RelationAnnotation):
+            if isinstance(ann, RelationAnnotation) and relations:
                 add_relation(ann.arg1, ann.arg2, ann.type, id_to_keyphrase)
 
-            elif isinstance(ann, SameAsAnnotation):
+            elif isinstance(ann, SameAsAnnotation) and relations:
                 source = ann.args[0]
                 for destination in ann.args[1:]:
                     add_relation(source, destination, ann.type, id_to_keyphrase)
 
-            elif isinstance(ann, AttributeAnnotation):
+            elif isinstance(ann, AttributeAnnotation) and attributes:
                 keyphrase = id_to_keyphrase[ann.ref]
                 attribute = Attribute(keyphrase, ann.type)
                 keyphrase.attributes.append(attribute)
 
-            elif not legacy and not isinstance(ann, EntityAnnotation):
+            elif not (
+                isinstance(ann, EntityAnnotation)
+                or legacy
+                and isinstance(ann, EventAnnotation)
+            ):
                 warnings.warn(
                     "In file '%s' annotation '%s' has been ignored." % (finput, ann)
                 )
