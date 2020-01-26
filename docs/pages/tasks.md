@@ -6,12 +6,12 @@ nav_order: 2
 
 ## Subtask A: Entity recognition
 
-Given a list of eHealth documents written in Spanish, the goal of this subtask is to identify all the entities per document and their classes. These entities are all the relevant terms (single word or multiple words) that represent semantically important elements in a sentence. The following figure shows the relevant entities that appear in the example sentences shown in the previous section.
+Given a list of eHealth documents written in Spanish, the goal of this subtask is to identify all the entities per document and their types. These entities are all the relevant terms (single word or multiple words) that represent semantically important elements in a sentence. The following figure shows the relevant entities that appear in a set of example sentences.
 
 ![](img/task_a.png)
 
 Note that some entities ("*vías respiratorias*" and "*60 años*") span more than one word. Entities will always consist of one or more complete words (i.e., not a prefix or a suffix of a word), and will never include any surrounding punctuation symbols, parenthesis, etc.
-There are four categories or classes for entities:
+There are four types for entities:
 
 * **Concept:** indentifies a relevant term, concept, idea, in the knowledge domain of the sentence.
 * **Action:** indentifies a process or modification of other entities. It can be indicated by a verb or verbal construction, such as "*afecta*" (*affects*), but also by nouns, such as "*exposición*" (*exposition*), where it denotes the act of being exposed to the Sun, and "*daños*" (*damages*), where it denotes the act of damaging the skin. It can also be used to indicate non-verbal functional relations, such as "*padre*" (*parent*), etc.
@@ -66,11 +66,13 @@ An example output file for the annotation represented in the previous images is 
 
 The order in which the entities and relations appear in the output file is irrelevant. It is only important to be consistent with respect to identifiers. Each entity has a unique identifier that is used in relation annotations to reference it. Your output file **can have** different identifiers than the gold output, and the evaluation scripts **will be** able to correctly find matching annotations.
 
+For example, if in your output the entity "*asma*" has ID **T3** instead of **T1** as in the previous example, and there appears a relation annotation `R1 is-a Arg1:T3 Arg2:T2`, this will be correctly matched with the corresponding gold annotation. Relation IDs are necesary for the BRAT format to be correctly parsed, but are irrelevant with respect to the evaluation of the task. Feel free to simply use autoincremental identifiers, or use the provided [Python scripts](https://knowlede-learning.github.io/ehealthkd-2020/resources/), which already take care of all these details.
+
 ## Challenge Scenarios
 
 The eHealth-KD 2020 Challenge proposes 4 evaluation scenarios:
 
-### Scenario 1 (Main Evaluation)
+### Main Evaluation (Scenario 1)
 
 This scenario evaluates all of the subtasks together as a pipeline. The input consists only of a plain text, and the expected output is a BRAT `.ann` file with all the corresponding entities and relations found.
 
@@ -86,8 +88,61 @@ $$F_{1AB} = 2 \cdot \frac{Prec_{AB} \cdot Rec_{AB}}{Prec_{AB} + Rec_{AB}} $$
 
 The exact definition of Correct, Missing, Spurious, Partial and Incorrect is presented in the following sections for each subtask.
 
+## Optional Subtask A (Scenario 2)
 
+This scenario only evaluates Subtask A. The input is a plain text with several sentences and the output is a BRAT `.ann`  file with **only** entity annotations in it (relation annotations are ignored if present).
 
+To compute the scores we define correct, partial, missing, incorrect and spurious matches. The expected and actual output files do not need to agree on the ID for each entity, nor on their order. The evaluator matches are based on the start and end of text spans and the corresponding type. A brief description about the metrics follows:
+
+* **Correct matches** are reported when a text in the dev file matches exactly with a corresponding text span in the gold file in START and END values, and also the entity type. Only one correct match per entry in the gold file can be matched. Hence, duplicated entries will count as Spurious.
+* **Incorrect matches** are reported when START and END values match, but not the type.
+* **Partial matches** are reported when two intervals [START, END] have a non-empty intersection, such as the case of “vías respiratorias” and “respiratorias” in the previous example (and matching LABEL). Notice that a partial phrase will only be matched against a single correct phrase. For example, “tipo de cáncer” could be a partial match for both “tipo” and “cáncer”, but it is only counted once as a partial match with the word “tipo”. The word “cancer” is counted then as Missing. This aims to discourage a few large text spans that cover most of the document from getting a very high score.
+* **Missing matches** are those that appear in the gold file but not in the dev file.
+* **Spurious matches** are those that appear in the dev file but not in the gold file.
+
+From these definitions, we compute precision, recall, and a standard F1 measure as follows:
+
+$$Rec_{A} = \frac{C_A + \frac{1}{2} P_A}{C_A + I_A + P_A + M_A} $$
+
+$$Prec_{A} = \frac{C_A + \frac{1}{2} P_A}{C_A + I_A + P_A + S_A} $$
+
+$$F_{1A} = 2 \cdot \frac{Prec_{A} \cdot Rec_{A}}{Prec_{A} + Rec_{A}} $$
+
+> A higher precision means that the number of spurious identifications is smaller compared to the number of missing identifications, and a higher recall means the opposite. Partial matches are given half the score of correct matches, while missing and spurious identifications are given no score.
+
+> F1 will determine the ranking of Scenario 2.
+
+## Optional Subtask B (Scenario 3)
+
+This scenario only evaluates Subtask B. The input is plain text and a corresponding `.ann` file with the correct entities annotated.
+The expected output is a `.ann` file with both the entities and relations. Feel free to simply copy the entity annotations from the provided `.ann` file and append the relation annotations.
+
+To compute the scores we define correct, missing, and spurious matches. The expected and actual output files do not need to agree on the ID for each relation (which is ignored) nor on their order. The evaluator matches are based on the start and end of text spans and the corresponding type. A brief description about the metrics follows:
+
+* **Correct:** relationships that matched exactly to the gold file, including the type and the corresponding IDs for each of the participants.
+* **Missing:** relationships that are in the gold file but not in the dev file, either because the type is wrong, or because one of the IDs didn’t match.
+* **Spurious:** relationships that are in the dev file but not in the gold file, either because the type is wrong, or because one of the IDs didn’t match.
+
+We define standard precision, recall and F1 metrics as follows:
+
+$$Rec_{B} = \frac{C_B}{C_B + M_B} $$
+
+$$Prec_{B} = \frac{C_B}{C_B + S_B} $$
+
+$$F_{1B} = 2 \cdot \frac{Prec_{B} \cdot Rec_{B}}{Prec_{B} + Rec_{B}} $$
+
+> F1 will determine the ranking of Scenario 3.
+
+> **NOTE**: The Scenario 1 is more complex than solving each optional scenario separately, since errors in subtask A will necessary translate to errors in subtask B. For this reason it is considered the main evaluation metric. Additionally, this scenario also provides the possibility for integrated end-to-end solutions that solve both subtask simultaneously.
+
+### Optional Alternative Domain Evaluation (Scenario 4)
+
+This scenario evaluates a set of 100 sentences from an **alternative domain** (not health related), to experience with transfer learning techniques.
+A small development dataset with 100 sentences and their corresponding annotations will be provided when the general test set is released. Participants will need to train their systems in the full eHealth-KD 2020 corpus, and then apply some fine-tunning techniques in the additional 100 sentences from the **alternative domain** in order to successfully approach this scenario.
+
+Thus, overall 200 sentences will be provided, 100 with the corresponding gold annotations and 100 with only input text, which must be submitted for evaluation. The input and output format, and evaluation metrics are the same as for Scenario 1. More details will be provided closer to the evaluation period.
+
+The purpose of this scenario, which we consider a complex challenge, is to stimulate the development of systems that can generalize to new knowledge domains without too much additional training examples. Hence, we encourage participants to focus not only on ehealth-specific features and techniques, but also consider more generalizable approaches. The nature and details of the alternative domain will not be revealed until the evaluation period starts.
 
 ### Important: Note about negated concepts
 
