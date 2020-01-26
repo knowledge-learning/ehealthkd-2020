@@ -306,13 +306,23 @@ class Collection:
     def filter_relation(self, labels) -> "Collection":
         return self.filter(relation=lambda r: r.label in labels)
 
-    def dump(self, finput, skip_empty_sentences=True):
+    def _dump_input(self, text_file: Path, skip_empty_sentences=True):
+        text_file.write_text(
+            "\n".join(
+                sentence.text
+                for sentence in self.sentences
+                if not skip_empty_sentences or sentence.keyphrases or sentence.relations
+            ),
+            encoding="utf8",
+        )
+
+    def _dump_ann(self, ann_path: Path, skip_empty_sentences=True):
         self.fix_ids()
 
         aid = 0
         rid = 0
         shift = 0
-        with finput.open("w", encoding="utf8") as ann_file:
+        with ann_path.open("w", encoding="utf8") as ann_file:
             for sentence in self.sentences:
                 if (
                     skip_empty_sentences
@@ -334,6 +344,11 @@ class Collection:
                         rid += 1
 
                 shift += len(sentence) + 1
+
+    def dump(self, text_file, skip_empty_sentences=True):
+        ann_path: Path = text_file.parent / (text_file.stem + ".ann")
+        self._dump_input(text_file, skip_empty_sentences)
+        self._dump_ann(ann_path, skip_empty_sentences)
 
     def _load_input(self, finput: Path) -> List[Sentence]:
         sentences = Sentence.load(finput)
