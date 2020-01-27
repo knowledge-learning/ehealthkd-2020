@@ -123,9 +123,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "test",
-        default="./data/test",
+        default="./data/testing",
         nargs="?",
-        help="output test collection to this directory ('./data/test')",
+        help="output test collection to this directory ('./data/testing')",
     )
     args = parser.parse_args()
     main(
