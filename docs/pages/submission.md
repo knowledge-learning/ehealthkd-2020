@@ -31,14 +31,14 @@ $ git clone https://github.com/knowledge-learning/ehealthkd-2020.git
 
 Run the baseline implementation for the main scenario. The baseline implementation is in the `scripts/baseline.py` file. The arguments are:
 
+* `--train` to run the baseline on the training collection.
 * `--dev` to run the baseline on the development collection.
 * `--test` to run the baseline on the test collection.
 * `--custom GOLD MODE SCENARIOS` to run the baseline on the `GOLD` collection, across a list of comma-separated `SCENARIOS`, and labeling the output in the submit directory as `MODE`.
-    - For example, use `--custom data/training/scenario.txt train scenario` to run the baseline on the training set.
-    - The configuration `--test` is equivalent to:
+    - The configuration `--train` is equivalent to:
         ```
-        --custom data/testing/{0}/scenario.txt test \
-            scenario1-main,scenario2-taskA,scenario3-taskB,scenario4-transfer
+        --custom data/training/scenario.txt train \
+            scenario1-main,scenario2-taskA,scenario3-taskB
         ```
     - The configuration `--dev`  is equivalent to:
         ```
@@ -47,6 +47,11 @@ Run the baseline implementation for the main scenario. The baseline implementati
         --custom data/development/transfer/scenario.txt dev  \
             scenario4-transfer
         ``` 
+    - The configuration `--test` is equivalent to:
+        ```
+        --custom data/testing/{0}/scenario.txt test \
+            scenario1-main,scenario2-taskA,scenario3-taskB,scenario4-transfer
+        ```
     - Subtask A and Subtask B will not be run at scenarios labeled as `scenario3-taskB` and `scenario2-taskA` respectively (nor any other scenario that ends with `-taskB` and `-taskA` respectively).
 
 > The module `scripts.submit` contains the utilities used by the baseline to handle the submission format.
