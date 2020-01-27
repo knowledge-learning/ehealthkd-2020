@@ -41,8 +41,8 @@ class Run:
             collection = self._load_collection(scenario)
             output = self.algorithm.run(
                 collection,
-                taskA=(scenario != self.SCENARIOS[2]),
-                taskB=(scenario != self.SCENARIOS[1]),
+                taskA=(not scenario.endswith("-taskB")),
+                taskB=(not scenario.endswith("-taskA")),
                 *args,
                 **kargs
             )
@@ -60,7 +60,7 @@ class Run:
         return Collection().load(
             Path(gold),
             legacy=False,
-            keyphrases=(scenario == self.SCENARIOS[2]),
+            keyphrases=scenario.endswith("-taskB"),
             relations=False,
             attributes=False,
         )
