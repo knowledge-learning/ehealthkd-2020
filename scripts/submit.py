@@ -109,16 +109,16 @@ def handle_args():
     )
     args = parser.parse_args()
 
-    sources = []
+    tasks = []
 
     if args.dev is not None:
-        sources.append(args.dev)
+        tasks.append(args.dev)
 
     if args.test is not None:
-        sources.append(args.test)
+        tasks.append(args.test)
 
     if args.custom is not None:
         for gold, mode, scenarios in args.custom:
-            sources.append((gold, mode, scenarios.split(",")))
+            tasks.append((gold, mode, scenarios.split(",")))
 
-    return sources
+    return tasks

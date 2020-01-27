@@ -75,13 +75,17 @@ class Baseline(Algorithm):
         return collection
 
 
-def main(sources):
+def main(tasks):
+    if not tasks:
+        warnings.warn("The run will have no effect since no tasks were given.")
+        return
+
     baseline = Baseline()
     baseline.train(Path("data/training/scenario.txt"))
-    for source in sources:
-        Run.exec(Run.on("baseline", baseline, testing=source))
+    for task in tasks:
+        Run.exec(Run.on("baseline", baseline, testing=task))
 
 
 if __name__ == "__main__":
-    sources = handle_args()
-    main(sources)
+    tasks = handle_args()
+    main(tasks)
