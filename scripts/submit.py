@@ -34,7 +34,7 @@ class Run:
         else:
             self.gold = "data/development/{0}/scenario.txt"
             self.mode = "dev"
-            self.scenarios = ["main", "transfer"]
+            self.scenarios = self.SCENARIOS
 
     def __call__(self, *args, **kargs):
         for scenario in self.scenarios:
