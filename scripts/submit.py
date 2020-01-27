@@ -1,6 +1,7 @@
 import argparse
 import warnings
 from pathlib import Path
+from typing import List
 
 from scripts.utils import Collection
 
@@ -13,28 +14,23 @@ class Algorithm:
 
 
 class Run:
-    SCENARIOS = [
-        "scenario1-main",
-        "scenario2-taskA",
-        "scenario3-taskB",
-        "scenario4-transfer",
-    ]
-
-    def __init__(self, user: str, run_name: str, algorithm: Algorithm, *, testing=True):
+    def __init__(
+        self,
+        user: str,
+        run_name: str,
+        algorithm: Algorithm,
+        *,
+        gold: Path,
+        mode: str,
+        scenarios: List[str]
+    ):
         self.user = user
         self.run_name = run_name
         self.algorithm = algorithm
 
-        if hasattr(testing, "__iter__"):
-            self.gold, self.mode, self.scenarios = testing
-        elif testing:
-            self.gold = "data/testing/{0}/scenario.txt"
-            self.mode = "test"
-            self.scenarios = self.SCENARIOS
-        else:
-            self.gold = "data/development/{0}/scenario.txt"
-            self.mode = "dev"
-            self.scenarios = self.SCENARIOS
+        self.gold = gold
+        self.mode = mode
+        self.scenarios = scenarios
 
     def __call__(self, *args, **kargs):
         for scenario in self.scenarios:
@@ -66,7 +62,7 @@ class Run:
         )
 
     @staticmethod
-    def on(user: str, *algorithms, testing=True):
+    def on(user: str, *algorithms, config):
         if len(algorithms) > 3:
             warnings.warn(
                 "Too many runs. Expected (3) and ({0}) were given.".format(
@@ -82,7 +78,7 @@ class Run:
         runs = []
         for i, algorithm in enumerate(algorithms, 1):
             run_name = "run{0}".format(i)
-            run = Run(user, run_name, algorithm, testing=testing)
+            run = Run(user, run_name, algorithm, **config)
             runs.append(run)
         return runs
 
@@ -91,11 +87,37 @@ class Run:
         for run in runs:
             run(*args, **kargs)
 
+    @staticmethod
+    def testing():
+        yield dict(
+            gold="data/testing/{0}/scenario.txt",
+            mode="test",
+            scenarios=[
+                "scenario1-main",
+                "scenario2-taskA",
+                "scenario3-taskB",
+                "scenario4-transfer",
+            ],
+        )
+
+    @staticmethod
+    def development():
+        yield dict(
+            gold="data/development/main/scenario.txt",
+            mode="dev",
+            scenarios=["scenario1-main", "scenario2-taskA", "scenario3-taskB"],
+        )
+        yield dict(
+            gold="data/development/transfer/scenario.txt",
+            mode="dev",
+            scenarios=["scenario4-transfer"],
+        )
+
 
 def handle_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dev", action="store_const", const=False, default=None)
-    parser.add_argument("--test", action="store_const", const=True, default=None)
+    parser.add_argument("--dev", action="store_true")
+    parser.add_argument("--test", action="store_true")
     parser.add_argument(
         "--custom",
         action="append",
@@ -111,14 +133,16 @@ def handle_args():
 
     tasks = []
 
-    if args.dev is not None:
-        tasks.append(args.dev)
+    if args.dev:
+        tasks.extend(Run.development())
 
-    if args.test is not None:
-        tasks.append(args.test)
+    if args.test:
+        tasks.extend(Run.testing())
 
     if args.custom is not None:
-        for gold, mode, scenarios in args.custom:
-            tasks.append((gold, mode, scenarios.split(",")))
+        tasks.extend(
+            dict(gold=gold, mode=mode, scenarios=scenarios.split(","))
+            for gold, mode, scenarios in args.custom
+        )
 
     return tasks
