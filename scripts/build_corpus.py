@@ -12,7 +12,7 @@ def get_clean_collection(anns_path: Path, select: str):
 
     for file in sorted((anns_path / select).iterdir()):
         if file.suffix == ".txt":
-            collection.load(file)
+            collection.load(file, attributes=False)
 
     for s in collection.sentences:
         overlaps = s.overlapping_keyphrases()
