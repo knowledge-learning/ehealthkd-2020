@@ -72,7 +72,7 @@ def get_extra(anns_path: Path, *collections):
 
 
 def main(anns_path: Path, training_path, develop_path, test_path):
-    random.seed(42) # default seed, but each generator should use his own
+    random.seed(42)  # default seed, but each generator should use his own
 
     # dump training and development collections ----------------------------------
     train_develop_sentences = get_training_and_development(anns_path)
@@ -83,7 +83,7 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
     #### development
     develop = Collection(train_develop_sentences[800:])
-    develop.dump(develop_path / "scenario.txt")
+    develop.dump(develop_path / "main" / "scenario.txt")
 
     # dump test collection (per scenario) ----------------------------------------
     test_sentences = get_test(anns_path)
