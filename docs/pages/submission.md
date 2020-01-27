@@ -13,7 +13,7 @@ This way participants will have the possibility to evaluate their systems offlin
 
 ## Baseline implementation
 
-A [baseline system](https://github.com/knowledge-learning/ehealthkd-2019/blob/master/scripts/baseline.py) is provided for participants to compare their results. If necessary, feel free to use the baseline as a starting point for developing your own solution, since the baseline already covers parsing the input and generating output in the correct format.
+A [baseline system](https://github.com/knowledge-learning/ehealthkd-2020/blob/master/scripts/baseline.py) is provided for participants to compare their results. If necessary, feel free to use the baseline as a starting point for developing your own solution, since the baseline already covers parsing the input and generating output in the correct format.
 
 The baseline implementation is an extremely basic strategy that simply stores all the training, and at test time outputs keyphrases and relations if they exactly match something found in the training.
 
