@@ -40,12 +40,14 @@ def get_clean_collection(anns_path: Path, select: str):
 
 def get_training_and_development(anns_path: Path):
     sentences = get_clean_collection(anns_path, "traindev").sentences
+    random.seed(37)
     random.shuffle(sentences)
     return sentences
 
 
 def get_test(anns_path: Path):
     sentences = get_clean_collection(anns_path, "test").sentences
+    random.seed(137)
     random.shuffle(sentences)
     return sentences
 
@@ -63,13 +65,14 @@ def get_extra(anns_path: Path, *collections):
                     if s not in all_sentences:
                         extra_sentences.append(s)
 
+    random.seed(1371)
     random.shuffle(extra_sentences)
     extra_sentences = [Sentence(s) for s in extra_sentences[:8700]]
     return extra_sentences
 
 
 def main(anns_path: Path, training_path, develop_path, test_path):
-    random.seed(42)
+    random.seed(42) # default seed, but each generator should use his own
 
     # dump training and development collections ----------------------------------
     train_develop_sentences = get_training_and_development(anns_path)
