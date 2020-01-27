@@ -1,7 +1,7 @@
 # coding: utf8
 
+import argparse
 import random
-import sys
 from pathlib import Path
 
 from scripts.utils import Collection, Sentence
@@ -102,4 +102,32 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
 
 if __name__ == "__main__":
-    main(Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3]), Path(sys.argv[4]))
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "corpus",
+        default="./corpus",
+        nargs="?",
+        help="path to the ann directory ('./corpus')",
+    )
+    parser.add_argument(
+        "training",
+        default="./data/training",
+        nargs="?",
+        help="output training collection to this directory ('./data/training')",
+    )
+    parser.add_argument(
+        "development",
+        default="./data/development",
+        nargs="?",
+        help="output development collection to this directory ('./data/development')",
+    )
+    parser.add_argument(
+        "test",
+        default="./data/test",
+        nargs="?",
+        help="output test collection to this directory ('./data/test')",
+    )
+    args = parser.parse_args()
+    main(
+        Path(args.corpus), Path(args.training), Path(args.development), Path(args.test),
+    )
