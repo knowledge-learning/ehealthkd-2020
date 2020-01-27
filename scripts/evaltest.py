@@ -1,9 +1,9 @@
 # coding: utf8
-
 import argparse
 import collections
 import json
 import pprint
+import warnings
 from pathlib import Path
 
 from scripts.score import compute_metrics, subtaskA, subtaskB
@@ -86,6 +86,22 @@ def filter_best(results):
     return best
 
 
+def ensure_number_of_runs(run_folder):
+    n = len([x for x in run_folder.iterdir() if x.is_dir()])
+    if n > 3:
+        raise Exception(
+            "Too many runs at {0}. Expected (3) and ({1}) were given.".format(
+                run_folder, n
+            )
+        )
+    elif n < 3:
+        warnings.warn(
+            "Too few runs at {0}. Expected (3) and ({1}) were given.".format(
+                run_folder, n
+            )
+        )
+
+
 def main(
     submits: Path,
     gold: Path,
@@ -109,8 +125,9 @@ def main(
     scenario4_gold = Collection().load(gold / "scenario4-transfer" / "scenario.txt")
 
     if single:
-        for subfolder in submits.iterdir():
-            userfolder = userfolder / "test"
+        runs = submits / "test"
+        ensure_number_of_runs(runs)
+        for subfolder in runs.iterdir():
             users[submits.name].append(
                 evaluate_one(
                     subfolder,
@@ -124,7 +141,9 @@ def main(
         for userfolder in submits.iterdir():
             if not userfolder.is_dir():
                 continue
-            for subfolder in (userfolder / "test").iterdir():
+            runs = userfolder / "test"
+            ensure_number_of_runs(runs)
+            for subfolder in runs.iterdir():
                 users[userfolder.name].append(
                     evaluate_one(
                         subfolder,
