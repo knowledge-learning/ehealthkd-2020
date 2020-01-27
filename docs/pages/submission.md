@@ -31,30 +31,57 @@ $ git clone https://github.com/knowledge-learning/ehealthkd-2020.git
 
 Run the baseline implementation for the main scenario. The baseline implementation is in the `scripts/baseline.py` file. The arguments are:
 
-* The path to the `input_training.txt`
-* The path to the test file (in this case is the development file `input_develop.txt`)
-* The path to the desired output file (`submit/scenario1-main/output_scenario1.txt`)
+* `--dev` to run the baseline on the development collection.
+* `--test` to run the baseline on the test collection.
+* `--custom GOLD MODE SCENARIOS` to run the baseline on the `GOLD` collection, across a list of comma-separated `SCENARIOS`, and labeling the output in the submit directory as `MODE`.
+    - For example, use `--custom data/training/scenario.txt train scenario` to run the baseline on the training set.
+    - The configuration `--test` is equivalent to:
+        ```
+        --custom data/testing/{0}/scenario.txt test \
+            scenario1-main,scenario2-taskA,scenario3-taskB,scenario4-transfer
+        ```
+    - The configuration `--dev`  is equivalent to:
+        ```
+        --custom data/development/main/scenario.txt dev    \
+            scenario1-main,scenario2-taskA,scenario3-taskB  \
+        --custom data/development/transfer/scenario.txt dev  \
+            scenario4-transfer
+        ``` 
+    - Subtask A and Subtask B will not be run at scenarios labeled as `scenario3-taskB` and `scenario2-taskA` respectively (nor any other scenario that ends with `-taskB` and `-taskA` respectively).
 
-In this case we will train with the `training` set (600 sentences) and evaluate on the `development` set (100 sentences) using the same sentences for the 3 evaluation scenarios. However, in the final TEST phase you will train with both training and development and evaluate on the corresponding test sets (different for each scenario).
+> The module `scripts.submit` contains the utilities used by the baseline to handle the submission format.
+
+In this case we will train with the `training` set (800 sentences) and evaluate on the `development` set (200 sentences) using the same sentences for the 3 evaluation scenarios. However, in the final TEST phase you will train with both training and development and evaluate on the corresponding test sets (different for each scenario).
 
 Here is a baseline execution example:
 ```bash
-$ cd ehealthkd-2019
-# Inside the root folder ehealthkd-2019
-$ python3 -m scripts.baseline data/training/input_training.txt data/development/input_develop.txt data/submit/scenario1-main/output_scenario1.txt
+$ cd ehealthkd-2020
+# Inside the root folder ehealthkd-2020
+$ python3 -m scripts.baseline --dev
 ```
 
-Then, you can go to `data/submit/scenario1-main` and check the corresponding files were generated:
+Then, you can go to `data/submissions/baseline/dev/` and check the corresponding files were generated:
 ```bash
-$ ls -l data/submit/scenario1-main
--rw-r--r-- 1 user user 21604 abr 17 19:01 output_a_scenario1.txt
--rw-r--r-- 1 user user  1488 abr 17 19:01 output_b_scenario1.txt
--rw-r--r-- 1 user user  8756 abr 17 19:01 output_scenario1.txt
+$ ls -l data/submissions/baseline/dev/scenario1-main
+-rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
+-rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
+
+$ ls -l data/submissions/baseline/dev/scenario2-taskA
+-rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
+-rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
+
+$ ls -l data/submissions/baseline/dev/scenario3-taskB
+-rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
+-rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
+
+$ ls -l data/submissions/baseline/dev/scenario4-transfer
+-rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
+-rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
 ```
 
 > **(!!!)** Make sure that your files are named _exactly_ as the files above, since the evaluation script in Codalab will expect these filenames.
 
-> **(!!!)** Also make sure that you have the file `output_scenario1.txt` with the input sentences in your submission folder. This is the _exact_ same file you processed as input, so you can just copy and paste it, but remember to _rename it_. The baseline script already handles this. This is necessary for the evaluation script to guarantee that you have the right sentences.
+> **(!!!)** Also make sure that you have the file `scenario.txt` with the input sentences in your submission folder. This is the _exact_ same file you processed as input, so you can just copy and paste it. The baseline script already handles this. This is necessary for the evaluation script to guarantee that you have the right sentences.
 
 ### Evaluating the main scenario
 
