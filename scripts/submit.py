@@ -104,7 +104,7 @@ def handle_args():
         help="""
         GOLD: path to gold file (use `{0}` for scenario template).
         MODE: name of the directory inside the user submit folder.
-        SCENARIOS: name (or ',' separated list of names) for the run escenario(s).
+        SCENARIOS: name (or ',' separated list of names) for the run scenario(s).
         """,
     )
     args = parser.parse_args()
