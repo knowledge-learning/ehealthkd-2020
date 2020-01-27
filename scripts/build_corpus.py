@@ -11,7 +11,7 @@ def get_clean_collection(anns_path: Path, select: str):
     collection = Collection()
 
     for file in sorted((anns_path / select).iterdir()):
-        if file.name.endswith(".txt"):
+        if file.suffix == ".txt":
             collection.load(file)
 
     for s in collection.sentences:
@@ -55,7 +55,7 @@ def get_extra(anns_path: Path, *collections):
     all_sentences = {s.text for collection in collections for s in collection}
 
     for file in sorted((anns_path / "plain").iterdir()):
-        if file.name.endswith(".txt"):
+        if file.suffix == ".txt":
             with file.open() as fp:
                 file_sentences = [s.strip() for s in fp.read().split("\n") if s.strip()]
 
