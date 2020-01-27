@@ -113,9 +113,18 @@ class Run:
             scenarios=["scenario4-transfer"],
         )
 
+    @staticmethod
+    def training():
+        yield dict(
+            gold="data/training/scenario.txt",
+            mode="train",
+            scenarios=["scenario1-main", "scenario2-taskA", "scenario3-taskB"],
+        )
+
 
 def handle_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--train", action="store_true")
     parser.add_argument("--dev", action="store_true")
     parser.add_argument("--test", action="store_true")
     parser.add_argument(
@@ -132,6 +141,9 @@ def handle_args():
     args = parser.parse_args()
 
     tasks = []
+
+    if args.train:
+        tasks.extend(Run.training())
 
     if args.dev:
         tasks.extend(Run.development())
