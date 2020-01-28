@@ -104,7 +104,6 @@ def ensure_number_of_runs(run_folder):
 
 def main(
     submits: Path,
-    gold: Path,
     mode="test",
     best=False,
     single=False,
@@ -120,39 +119,45 @@ def main(
     if final and (not csv or not best):
         raise ValueError("Error: --final implies --csv and --best")
 
-    scenario1_gold = Collection().load(gold / "scenario1-main" / "scenario.txt")
-    scenario2_gold = Collection().load(gold / "scenario2-taskA" / "scenario.txt")
-    scenario3_gold = Collection().load(gold / "scenario3-taskB" / "scenario.txt")
-    scenario4_gold = Collection().load(gold / "scenario4-transfer" / "scenario.txt")
+    if mode == "test":
+        scn1_gold = Collection().load(Path("data/testing/scenario1-main/scenario.txt"))
+        scn2_gold = Collection().load(Path("data/testing/scenario2-taskA/scenario.txt"))
+        scn3_gold = Collection().load(Path("data/testing/scenario3-taskB/scenario.txt"))
+        scn4_gold = Collection().load(
+            Path("data/testing/scenario4-transfer/scenario.txt")
+        )
+    elif mode == "dev":
+        scn1_gold = Collection().load(Path("data/development/main/scenario.txt"))
+        scn2_gold = Collection().load(Path("data/development/main/scenario.txt"))
+        scn3_gold = Collection().load(Path("data/development/main/scenario.txt"))
+        scn4_gold = Collection().load(Path("data/development/transfer/scenario.txt"))
+    else:
+        raise ValueError("Unexpected mode: {0}".format(mode))
 
     if single:
         runs = submits / mode
+        if not runs.exists():
+            raise ValueError(
+                "Directory {0} not found. Check --mode and --single options."
+            )
         ensure_number_of_runs(runs)
         for subfolder in runs.iterdir():
             users[submits.name].append(
-                evaluate_one(
-                    subfolder,
-                    scenario1_gold,
-                    scenario2_gold,
-                    scenario3_gold,
-                    scenario4_gold,
-                )
+                evaluate_one(subfolder, scn1_gold, scn2_gold, scn3_gold, scn4_gold,)
             )
     else:
         for userfolder in submits.iterdir():
             if not userfolder.is_dir():
                 continue
             runs = userfolder / mode
+            if not runs.exists():
+                raise ValueError(
+                    "Directory {0} not found. Did you mean to use --single? Check --mode option."
+                )
             ensure_number_of_runs(runs)
             for subfolder in runs.iterdir():
                 users[userfolder.name].append(
-                    evaluate_one(
-                        subfolder,
-                        scenario1_gold,
-                        scenario2_gold,
-                        scenario3_gold,
-                        scenario4_gold,
-                    )
+                    evaluate_one(subfolder, scn1_gold, scn2_gold, scn3_gold, scn4_gold,)
                 )
 
     results = dict(users)
@@ -217,11 +222,11 @@ if __name__ == "__main__":
         "submits",
         help="path to the submissions folder. This is the folder of all participants, or, if --single is passed, directly the folder of one participant. Each participant's folder contains subfolders with submissions.",
     )
-    parser.add_argument("gold", help="path to the gold folder, e.g. './data/testing.'")
     parser.add_argument(
         "--mode",
         choices=["test", "dev"],
         default="test",
+        required=True,
         help="set the evaluation mode",
     )
     parser.add_argument(
@@ -252,7 +257,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(
         Path(args.submits),
-        Path(args.gold),
         args.mode,
         args.best,
         args.single,

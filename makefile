@@ -7,7 +7,11 @@ submit-all:
 
 .PHONY: evaltest
 evaltest:
-	python -m scripts.evaltest --pretty data/submissions/ data/testing
+	python -m scripts.evaltest data/submissions/ --pretty --mode test
+
+.PHONY: evaldev
+evaldev:
+	python -m scripts.evaltest data/submissions/ --pretty --mode dev
 
 .PHONY: build_corpus
 build_corpus:
