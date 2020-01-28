@@ -3,7 +3,7 @@ submit-all:
 	python -m scripts.baseline \
 		--test \
 		--dev \
-		--custom data/training/scenario.txt train scenario
+		--train
 
 .PHONY: evaltest
 evaltest:
