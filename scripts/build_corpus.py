@@ -3,11 +3,12 @@
 import argparse
 import random
 from pathlib import Path
+from typing import List
 
 from scripts.utils import Collection, Sentence
 
 
-def get_clean_collection(anns_path: Path, select: str):
+def get_clean_collection(anns_path: Path, select: str) -> Collection:
     collection = Collection()
 
     for file in sorted((anns_path / select).iterdir()):
@@ -38,16 +39,23 @@ def get_clean_collection(anns_path: Path, select: str):
     return collection
 
 
-def get_training_and_development(anns_path: Path):
+def get_training_and_development(anns_path: Path) -> List[Sentence]:
     sentences = get_clean_collection(anns_path, "traindev").sentences
     random.seed(37)
     random.shuffle(sentences)
     return sentences
 
 
-def get_test(anns_path: Path):
+def get_test(anns_path: Path) -> List[Sentence]:
     sentences = get_clean_collection(anns_path, "test").sentences
     random.seed(137)
+    random.shuffle(sentences)
+    return sentences
+
+
+def get_transfer(anns_path: Path) -> List[Sentence]:
+    sentences = get_clean_collection(anns_path, "transfer").sentences
+    random.seed(3737)
     random.shuffle(sentences)
     return sentences
 
@@ -81,7 +89,7 @@ def main(anns_path: Path, training_path, develop_path, test_path):
     training = Collection(train_develop_sentences[:800])
     training.dump(training_path / "scenario.txt")
 
-    #### development
+    #### development/main
     develop = Collection(train_develop_sentences[800:])
     develop.dump(develop_path / "main" / "scenario.txt")
 
@@ -102,6 +110,17 @@ def main(anns_path: Path, training_path, develop_path, test_path):
         extra_sentences[:4567] + test_sentences[:100] + extra_sentences[4567:]
     )
     scn1.dump(test_path / "scenario1-main" / "scenario.txt", False)
+
+    # dump transfer learning collections ----------------------------------------
+    transfer_sentences = get_transfer(anns_path)
+
+    #### development/transfer
+    develop_transfer = Collection(transfer_sentences[:100])
+    develop_transfer.dump(develop_path / "transfer" / "scenario.txt")
+
+    #### test/scenario4
+    scn4 = Collection(transfer_sentences[100:])
+    scn4.dump(test_path / "scenario4-transfer" / "scenario.txt")
 
 
 if __name__ == "__main__":
