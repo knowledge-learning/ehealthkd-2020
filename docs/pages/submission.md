@@ -70,34 +70,34 @@ Then, you can go to `data/submissions/baseline/dev/` and check the corresponding
 ls -lR data/submissions/baseline/dev/
 data/submissions/baseline/dev/:
 total 4
-drwxr-xr-x 6 user user 4096 Jan 28 17:25 run1
+drwxr-xr-x 6 user user 4096 Jan 29 15:42 run1
 
 data/submissions/baseline/dev/run1:
 total 16
-drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario1-main
-drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario2-taskA
-drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario3-taskB
-drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario4-transfer
+drwxr-xr-x 2 user user 4096 Jan 29 15:42 scenario1-main
+drwxr-xr-x 2 user user 4096 Jan 29 15:42 scenario2-taskA
+drwxr-xr-x 2 user user 4096 Jan 29 15:42 scenario3-taskB
+drwxr-xr-x 2 user user 4096 Jan 29 15:42 scenario4-transfer
 
 data/submissions/baseline/dev/run1/scenario1-main:
-total 0
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
+total 84
+-rw-r--r-- 1 user user 64650 Jan 29 15:42 scenario.ann
+-rw-r--r-- 1 user user 19060 Jan 29 15:42 scenario.txt
 
 data/submissions/baseline/dev/run1/scenario2-taskA:
-total 0
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
+total 72
+-rw-r--r-- 1 user user 53050 Jan 29 15:42 scenario.ann
+-rw-r--r-- 1 user user 19060 Jan 29 15:42 scenario.txt
 
 data/submissions/baseline/dev/run1/scenario3-taskB:
-total 0
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
+total 72
+-rw-r--r-- 1 user user 52414 Jan 29 15:42 scenario.ann
+-rw-r--r-- 1 user user 19060 Jan 29 15:42 scenario.txt
 
 data/submissions/baseline/dev/run1/scenario4-transfer:
 total 0
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
--rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
+-rw-r--r-- 1 user user 0 Jan 29 15:42 scenario.ann
+-rw-r--r-- 1 user user 0 Jan 29 15:42 scenario.txt
 ```
 
 > **(!!!)** Make sure that your files are named _exactly_ as the files above, since the evaluation script in Codalab will expect these filenames.
@@ -118,18 +118,18 @@ $ python3 -m scripts.score \
     data/development/main/scenario.txt \
     data/submissions/baseline/dev/run1/scenario1-main/scenario.txt
 
-correct_A: 368
-incorrect_A: 42
-partial_A: 32
-spurious_A: 267
-missing_A: 162
-correct_B: 44
-spurious_B: 95
-missing_B: 493
+correct_A: 813
+incorrect_A: 75
+partial_A: 65
+spurious_A: 674
+missing_A: 352
+correct_B: 102
+spurious_B: 256
+missing_B: 1102
 --------------------
-recall: 0.3751
-precision: 0.5047
-f1: 0.4304
+recall: 0.3776
+precision: 0.4773
+f1: 0.4217
 ```
 
 > **NOTE:** The exact numbers you see with the baseline may vary, as the evaluation script and/or the baseline implementation can suffer changes as we discover bugs or mistakes. These numbers are for illustrative purposes only. The actual scores are the ones published in Codalab.
@@ -143,15 +143,15 @@ $ python3 -m scripts.score --skip-B \
     data/development/main/scenario.txt \
     data/submissions/baseline/dev/run1/scenario2-taskA/scenario.txt
 
-correct_A: 368
-incorrect_A: 42
-partial_A: 32
-spurious_A: 267
-missing_A: 162
+correct_A: 813
+incorrect_A: 75
+partial_A: 65
+spurious_A: 674
+missing_A: 352
 --------------------
-recall: 0.6358
-precision: 0.5416
-f1: 0.5849
+recall: 0.6479
+precision: 0.5197
+f1: 0.5767
 ```
 
 You can evaluate just scenario 3 with the evaluation script by passing `--skip-A`:
@@ -161,13 +161,13 @@ $ python3 -m scripts.score --skip-A \
     data/development/main/scenario.txt \
     data/submissions/baseline/dev/run1/scenario3-taskB/scenario.txt
 
-correct_B: 50
-spurious_B: 32
-missing_B: 487
+correct_B: 107
+spurious_B: 91
+missing_B: 1097
 --------------------
-recall: 0.09311
-precision: 0.6098
-f1: 0.1616
+recall: 0.08887
+precision: 0.5404
+f1: 0.1526
 ```
 
 Additionally, you can pass `--verbose` if you want to see detailed information about which keyphrases and relations were correct, missing, etc.
@@ -197,63 +197,61 @@ Relation(from='trastorno', to='genético', label='in-context')
 Relation(from='producen', to='trastorno', label='causes')
 Relation(from='producen', to='trastorno', label='causes')
 --------------------
-recall: 0.3751
-precision: 0.5047
-f1: 0.4304
+recall: 0.3776
+precision: 0.4773
+f1: 0.4217
 ```
 
 ### Evaluating all scenarios
 
 You can also evaluate all runs in every scenario. The evaluation script is in the file `scripts/evaltest.py` and the mandatory arguments are:
 
-* The path to the submissions folder. This is the folder of all participants, or, if `--single` is passed, directly the folder of one participant. Each participant's folder contains subfolders with runs. (in this case, `data/submissions`, or `data/submissions/baseline` if using the `--single` option).
 * The evaluation mode (`dev` or `test` for development and test evaluation respectively).
+* The path to the submissions folder is set by default to `data/submissions`. This is the folder of all participants, or, if `--single NAME` is passed, directly the folder of the participant identified by `NAME` inside `data/submissions`. Each participant's folder contains subfolders with runs.
 
 ```bash
-python3 -m scripts.evaltest --single data/submissions/baseline --mode dev --plain
-
-TODO:update
+$ python3 -m scripts.evaltest --single baseline --mode dev --plain
 
 ==================================================
 :::::::::::::::::::: BASELINE ::::::::::::::::::::
 ==================================================
 ---------------------[ run1 ]---------------------
 > scenario1 
-     correct_A       = 0
-     incorrect_A     = 0
-     partial_A       = 0
-     spurious_A      = 0
-     missing_A       = 0
-     correct_B       = 0
-     spurious_B      = 0
-     missing_B       = 0
-     recall          ~ 0.0
-     precision       ~ 0.0
-     f1              ~ 0.0
+     correct_A       = 813
+     incorrect_A     = 75
+     partial_A       = 65
+     spurious_A      = 674
+     missing_A       = 352
+     correct_B       = 102
+     spurious_B      = 256
+     missing_B       = 1102
+     recall          ~ 0.3776
+     precision       ~ 0.4773
+     f1              ~ 0.4217
 > scenario2 
-     correct_A       = 0
-     incorrect_A     = 0
-     partial_A       = 0
-     spurious_A      = 0
-     missing_A       = 0
+     correct_A       = 813
+     incorrect_A     = 75
+     partial_A       = 65
+     spurious_A      = 674
+     missing_A       = 352
      correct_B       = 0
      spurious_B      = 0
-     missing_B       = 0
-     recall          ~ 0.0
-     precision       ~ 0.0
-     f1              ~ 0.0
+     missing_B       = 1204
+     recall          ~ 0.6479
+     precision       ~ 0.5197
+     f1              ~ 0.5767
 > scenario3 
-     correct_A       = 0
+     correct_A       = 1305
      incorrect_A     = 0
      partial_A       = 0
      spurious_A      = 0
      missing_A       = 0
-     correct_B       = 0
-     spurious_B      = 0
-     missing_B       = 0
-     recall          ~ 0.0
-     precision       ~ 0.0
-     f1              ~ 0.0
+     correct_B       = 107
+     spurious_B      = 91
+     missing_B       = 1097
+     recall          ~ 0.08887
+     precision       ~ 0.5404
+     f1              ~ 0.1526
 > scenario4 
      correct_A       = 0
      incorrect_A     = 0
