@@ -13,7 +13,8 @@ from scripts.utils import Collection
 def evaluate_scenario(submit_path: Path, gold: Collection, scenario: int):
     submit_file = submit_path / ("scenario.txt")
     if not submit_file.exists():
-        raise ValueError("Input file not found in '%s'" % submit_path)
+        warnings.warn("Input file not found in '%s'" % submit_path)
+        return {}
 
     submit = Collection().load(submit_file)
     resultA = subtaskA(gold, submit)
