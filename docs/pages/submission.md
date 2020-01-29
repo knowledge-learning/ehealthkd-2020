@@ -300,7 +300,7 @@ $ zip -r <team>.zip *
 
 Where `<team>` is the name of the folder where your submission is stored.
 
-> **⚠️** Make sure you zip **the content** of the `submit` folder, and not the `submit` _itself_. When in doubt, `cd` into `data/submit` and run `zip` there. The idea is that the root of your `submit.zip` file should directly contain the three folders `scenario1-main`, etc., and **not** a `submit` folder.
+> **⚠️** Make sure you zip **the content** of the `submission/<team>` folder, and not the `submission` folder _itself_. When in doubt, `cd` into `data/submission/<team>` and run `zip` there. The idea is that the root of your `submission.zip` file should directly contain the two folders `dev` and `test` and **not** a `submission` folder or a folder with your team's name.
 
 ### Structure of the submit folder
 
