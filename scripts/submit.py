@@ -2,6 +2,7 @@ import argparse
 import warnings
 from pathlib import Path
 from typing import List
+from shutil import make_archive
 
 from scripts.utils import Collection
 
@@ -86,6 +87,20 @@ class Run:
     def exec(runs: "List[Run]", *args, **kargs):
         for run in runs:
             run(*args, **kargs)
+
+    @staticmethod
+    def zip(user: str):
+        make_archive(
+            "data/submissions/{0}".format(user),
+            "zip",
+            "data/submissions/{0}".format(user),
+        )
+
+    @staticmethod
+    def submit(usr: str, configurations, *algorithms):
+        for config in configurations:
+            Run.exec(Run.on(usr, *algorithms, config=config))
+        Run.zip('baseline')
 
     @staticmethod
     def testing():

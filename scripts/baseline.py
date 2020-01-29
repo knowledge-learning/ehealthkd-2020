@@ -82,8 +82,8 @@ def main(tasks):
 
     baseline = Baseline()
     baseline.train(Path("data/training/scenario.txt"))
-    for config in tasks:
-        Run.exec(Run.on("baseline", baseline, config=config))
+
+    Run.submit("baseline", tasks, baseline)
 
 
 if __name__ == "__main__":

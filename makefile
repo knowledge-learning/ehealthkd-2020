@@ -1,5 +1,5 @@
-.PHONY: submit-all
-submit-all:
+.PHONY: baseline
+baseline:
 	python -m scripts.baseline \
 		--test \
 		--dev \
