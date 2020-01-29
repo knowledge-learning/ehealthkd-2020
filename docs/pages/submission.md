@@ -46,7 +46,7 @@ Run the baseline implementation for the main scenario. The baseline implementati
             scenario1-main,scenario2-taskA,scenario3-taskB  \
         --custom data/development/transfer/scenario.txt dev  \
             scenario4-transfer
-        ``` 
+        ```
     - The configuration `--test` is equivalent to:
         ```
         --custom data/testing/{0}/scenario.txt test \
@@ -100,9 +100,9 @@ total 0
 -rw-r--r-- 1 user user 0 Jan 29 15:42 scenario.txt
 ```
 
-> **(!!!)** Make sure that your files are named _exactly_ as the files above, since the evaluation script in Codalab will expect these filenames.
+> **⚠️** Make sure that your files are named _exactly_ as the files above, since the evaluation script in Codalab will expect these filenames.
 
-> **(!!!)** Also make sure that you have the file `scenario.txt` with the input sentences in your submission folder. This is the _exact_ same file you processed as input, so you can just copy and paste it. The baseline script already handles this. This is necessary for the evaluation script to guarantee that you have the right sentences.
+> **⚠️** Also make sure that you have the file `scenario.txt` with the input sentences in your submission folder. This is the _exact_ same file you processed as input, so you can just copy and paste it. The baseline script already handles this. This is necessary for the evaluation script to guarantee that you have the right sentences.
 
 ### Evaluating a single scenario
 
@@ -216,7 +216,7 @@ $ python3 -m scripts.evaltest --single baseline --mode dev --plain
 :::::::::::::::::::: BASELINE ::::::::::::::::::::
 ==================================================
 ---------------------[ run1 ]---------------------
-> scenario1 
+> scenario1
      correct_A       = 813
      incorrect_A     = 75
      partial_A       = 65
@@ -228,7 +228,7 @@ $ python3 -m scripts.evaltest --single baseline --mode dev --plain
      recall          ~ 0.3776
      precision       ~ 0.4773
      f1              ~ 0.4217
-> scenario2 
+> scenario2
      correct_A       = 813
      incorrect_A     = 75
      partial_A       = 65
@@ -240,7 +240,7 @@ $ python3 -m scripts.evaltest --single baseline --mode dev --plain
      recall          ~ 0.6479
      precision       ~ 0.5197
      f1              ~ 0.5767
-> scenario3 
+> scenario3
      correct_A       = 1305
      incorrect_A     = 0
      partial_A       = 0
@@ -252,7 +252,7 @@ $ python3 -m scripts.evaltest --single baseline --mode dev --plain
      recall          ~ 0.08887
      precision       ~ 0.5404
      f1              ~ 0.1526
-> scenario4 
+> scenario4
      correct_A       = 0
      incorrect_A     = 0
      partial_A       = 0
@@ -278,9 +278,9 @@ Run the baseline on all test scenarios (scenario1 may take a couple minutes):
 $ python3 -m scripts.baseline --test
 ```
 
-> **(!!!)** Remember that for scenario 3 the file `scenario.ann` must contain **a copy** of the gold annotations provided in the file `data/testing/scenario3-taskB/scenario.ann`, plus your own relation annotations. The baseline already does this, but ensure your own implementation takes it into consideration.
+> **⚠️** Remember that for scenario 3 the file `scenario.ann` must contain **a copy** of the gold annotations provided in the file `data/testing/scenario3-taskB/scenario.ann`, plus your own relation annotations. The baseline already does this, but ensure your own implementation takes it into consideration.
 
-> **(!!!)** When submitting to subtask B, make sure to **reuse the keyphrase ID** provided in the `scenario.ann` from the gold annotations. The baseline implementation already takes care of this detail.
+> **⚠️** When submitting to subtask B, make sure to **reuse the keyphrase ID** provided in the `scenario.ann` from the gold annotations. The baseline implementation already takes care of this detail.
 
 Once finished, you can submit your results to Codalab.
 
@@ -291,50 +291,78 @@ However, you will receive error notifications if your upload is invalid. You hav
 
 ## Submitting your results to Codalab
 
-> The file [submit_baseline_dev.zip](https://github.com/knowledge-learning/ehealthkd-2019/blob/master/data/submit/submit_baseline_dev.zip) contains an example submission for the TRAINING phase.
-
-> The file [submit_baseline_test.zip](https://github.com/knowledge-learning/ehealthkd-2019/blob/master/data/submit/submit_baseline_test.zip) contains an example submission for the TEST phase.
-
 Once you have all the corresponding outputs, please bundle the content of the submit folder in a `.zip` file:
 
 ```bash
-$ cd data/submit
-$ zip -r submit.zip *
+$ cd data/submissions/<team>
+$ zip -r <team>.zip *
 ```
 
-> **(!!!)** Make sure you zip **the content** of the `submit` folder, and not the `submit` _itself_. When in doubt, `cd` into `data/submit` and run `zip` there. The idea is that the root of your `submit.zip` file should directly contain the three folders `scenario1-main`, etc., and **not** a `submit` folder.
+Where `<team>` is the name of the folder where your submission is stored.
+
+> **⚠️** Make sure you zip **the content** of the `submit` folder, and not the `submit` _itself_. When in doubt, `cd` into `data/submit` and run `zip` there. The idea is that the root of your `submit.zip` file should directly contain the three folders `scenario1-main`, etc., and **not** a `submit` folder.
 
 ### Structure of the submit folder
 
-For recap here is the expected structure of the `submit.zip` file:
+For recap here is the expected structure of the `submission.zip` file:
 
-* **Folder `scenario1-main`**:
-    * **File `scenario.ann`**: Your output for subtask A and B.
-    * **File `scenario.txt`**: Sentences, copied verbatim from input.
+* **Folder `dev`**:
+    * **Folder `run1`**:
+        * **Folder `scenario1-main`**:
+            * **File `scenario.ann`**: Your output for subtask A and B.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
 
-* **Folder `scenario2-taskA`**:
-    * **File `scenario.ann`**: Your output for subtask A.
-    * **File `scenario.txt`**: Sentences, copied verbatim from input.
+        * **Folder `scenario2-taskA`**:
+            * **File `scenario.ann`**: Your output for subtask A.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
 
-* **Folder `scenario3-taskB`**:
-    * **File `scenario.ann`**: Output for subtask A, copied verbatim from input, and your output for subtask B.
-    * **File `scenario.txt`**: Sentences, copied verbatim from input.
+        * **Folder `scenario3-taskB`**:
+            * **File `scenario.ann`**: Output for subtask A, copied verbatim from input, and your output for subtask B.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
 
-* **Folder `scenario4-transfer`**:
-    * **File `scenario.ann`**: Your output for subtask A and B.
-    * **File `scenario.txt`**: Sentences, copied verbatim from input.
+        * **Folder `scenario4-transfer`**:
+            * **File `scenario.ann`**: Your output for subtask A and B.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
+    * **Folder `run2`**: Optional additional run with the same format
+    * **Folder `run3`**: Optional additional run with the same format
+
+* **Folder `test`**:
+    * **Folder `run1`**:
+        * **Folder `scenario1-main`**:
+            * **File `scenario.ann`**: Your output for subtask A and B.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
+
+        * **Folder `scenario2-taskA`**:
+            * **File `scenario.ann`**: Your output for subtask A.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
+
+        * **Folder `scenario3-taskB`**:
+            * **File `scenario.ann`**: Output for subtask A, copied verbatim from input, and your output for subtask B.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
+
+        * **Folder `scenario4-transfer`**:
+            * **File `scenario.ann`**: Your output for subtask A and B.
+            * **File `scenario.txt`**: Sentences, copied verbatim from input.
+    * **Folder `run2`**: Optional additional run with the same format
+    * **Folder `run3`**: Optional additional run with the same format
 
 
-> **NOTE:** For reference purposes, inside the `data/submit` folder you will find a `submit_baseline_dev.zip` file that corresponds to running the baseline following these instructions. Follow the structure of that file if in doubt.
+The `dev` folder is optional and will only be checked if present. During the **training** phase in Codalab (i.e., before the test set is released) you can skip the `test` folder. During the **test** phase in Codalab, both `dev` and `test` will be checked if present. The results for the `dev` folder will always be published in Codalab (during the **training** and **test** phases) but the results for the `test` folder will be kept hidden until the competition ends.
 
-> **(!!!)** Please double-check the files for all four scenarios, including the `scenario.txt` files. If you do not plan to participate in any given scenario, kindly reuse the baseline output then, to avoid the evaluation script from raising errors about missing files.
+> **⚠️ You can submit up to 100 times, but only the last submission sent will count towards the competition evaluation.**
+
+You can submit up to **three (3) runs** inside each of the `dev` and `test` folders. More runs will be considered and error, and less runs will only show a warning. You can use these three runs to try different approaches. Do not use them for fine-tunning hyperparameters.
+
+> **⚠️** Please double-check the files for all four scenarios, including the `scenario.txt` files. If you do not plan to participate in any given scenario, kindly reuse the baseline output then, to avoid the evaluation script from raising errors about missing files.
 
 ### Uploading your results to the competition server
 
-Please also make sure to fill-in this [Google Form](https://forms.gle/3KHAvo7e5MfxtnME9) to accept the license terms for the corpus.
+> **NOTE**: The Codalab competition is still **not available**. The instructions below are subject to possible changes once the competition opens.
 
-Go to the [Codalab competition page](https://competitions.codalab.org/competitions/21781) and register if you have not done so already.
-In Codalab, go to the [Participate](https://competitions.codalab.org/competitions/21781#participate-submit_results) section and enter the details of your submission:
+Please also make sure to fill-in this [Google Form](https://forms.gle/pUJutSDq2FYLwNWQA) to accept the license terms for the corpus.
+
+Go to the [Codalab competition page]() and register if you have not done so already.
+In Codalab, go to the [Participate]() section and enter the details of your submission:
 
 * **Team name.**
 * **Method name:** a short, memorable name for the technique you are presenting.
@@ -353,6 +381,6 @@ Finally hit the submit button and attach you zip file. If everything is ok, afte
 
 ## Final words
 
-> **DISCLAIMER:** The scoring you achieve during the training phase is only for your own reference, and should not be taken as an indication that you will achieve a similar score in the test phase. Particularly, participants that achieve the highest scores in the training phase are **not guaranteed** to win in the TEST phase, since participating in the training phase is completely optional. Likewise, at any point we may decide to change the evaluation script, including during the blind TEST phase, if we discover any kind of bug or error. We will inform you if that's the case and provide an updated evaluation script.
+> **DISCLAIMER:** The scoring you achieve during the training phase is only for your own reference, and should not be taken as an indication that you will achieve a similar score in the test phase. Particularly, participants that achieve the highest scores in the training phase are **not guaranteed** to win in the test phase, since participating in the training phase is completely optional. Likewise, at any point we may decide to change the evaluation script, including during the blind test phase, if we discover any kind of bug or error. We will inform you if that's the case and provide an updated evaluation script.
 
-Finally, if you discover a mistake in the evaluation script, please let us know at [ehealth-kd@googlegroups.com](mailto:ehealth-kd@googlegroups.com) or post an issue on our [Issues Page](https://github.com/knowledge-learning/ehealthkd-v2/issues) in Github.
+Finally, if you discover a mistake in the evaluation script, please let us know at [ehealth-kd@googlegroups.com](mailto:ehealth-kd@googlegroups.com) or post an issue on our [Issues Page](https://github.com/knowledge-learning/ehealthkd-2020/issues) in Github.
