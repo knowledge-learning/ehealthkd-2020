@@ -67,38 +67,54 @@ $ python3 -m scripts.baseline --dev
 
 Then, you can go to `data/submissions/baseline/dev/` and check the corresponding files were generated:
 ```bash
-$ ls -l data/submissions/baseline/dev/scenario1-main
--rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
--rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
+ls -lR data/submissions/baseline/dev/
+data/submissions/baseline/dev/:
+total 4
+drwxr-xr-x 6 user user 4096 Jan 28 17:25 run1
 
-$ ls -l data/submissions/baseline/dev/scenario2-taskA
--rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
--rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
+data/submissions/baseline/dev/run1:
+total 16
+drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario1-main
+drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario2-taskA
+drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario3-taskB
+drwxr-xr-x 2 user user 4096 Jan 28 17:25 scenario4-transfer
 
-$ ls -l data/submissions/baseline/dev/scenario3-taskB
--rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
--rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
+data/submissions/baseline/dev/run1/scenario1-main:
+total 0
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
 
-$ ls -l data/submissions/baseline/dev/scenario4-transfer
--rw-r--r-- 1 user user  1488 Jan 27 19:01 scenario.ann
--rw-r--r-- 1 user user  8756 Jan 27 19:01 scenario.txt
+data/submissions/baseline/dev/run1/scenario2-taskA:
+total 0
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
+
+data/submissions/baseline/dev/run1/scenario3-taskB:
+total 0
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
+
+data/submissions/baseline/dev/run1/scenario4-transfer:
+total 0
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.ann
+-rw-r--r-- 1 user user 0 Jan 28 17:25 scenario.txt
 ```
 
 > **(!!!)** Make sure that your files are named _exactly_ as the files above, since the evaluation script in Codalab will expect these filenames.
 
 > **(!!!)** Also make sure that you have the file `scenario.txt` with the input sentences in your submission folder. This is the _exact_ same file you processed as input, so you can just copy and paste it. The baseline script already handles this. This is necessary for the evaluation script to guarantee that you have the right sentences.
 
-### Evaluating the main scenario
+### Evaluating a single scenario
 
 Now you can run the evaluation script offline just to check your results. The evaluation script is in the file `scripts/score.py` and the arguments are:
 
-* The gold annotations (in this case, `data/development/input_develop.txt`).
-* Your system's annotations (`data/submit/scenario1-main/output_scenario1.txt`)
+* The gold annotations (in this case, `data/development/main/scenario.txt`).
+* Your system's annotations (`data/submissions/baseline/dev/run1/scenario1-main/scenario.txt`)
 
 The evaluation script outputs the total number of correct, incorrect, partial, missing and spurious matches for each subtask, and the final score as defined in the [Evaluation section](/evaluation).
 
 ```bash
-$ python3 -m scripts.score data/development/input_develop.txt data/submit/scenario1-main/output_scenario1.txt
+$ python3 -m scripts.score data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario1-main/scenario.txt
 
 correct_A: 368
 incorrect_A: 42
@@ -116,10 +132,42 @@ f1: 0.4304
 
 > **NOTE:** The exact numbers you see with the baseline may vary, as the evaluation script and/or the baseline implementation can suffer changes as we discover bugs or mistakes. These numbers are for illustrative purposes only. The actual scores are the ones published in Codalab.
 
+The options `--skip-A` and `--skip-B` instruct the script to ignore the performance of the submission on subtask A and subtask B respectively (i.e. they will not directly impact the final score reported).
+
+You can evaluate just scenario 2 with the evaluation script by passing `--skip-B`:
+
+```bash
+$ python3 -m scripts.score --skip-B data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario2-taskA/scenario.txt
+
+correct_A: 368
+incorrect_A: 42
+partial_A: 32
+spurious_A: 267
+missing_A: 162
+--------------------
+recall: 0.6358
+precision: 0.5416
+f1: 0.5849
+```
+
+You can evaluate just scenario 3 with the evaluation script by passing `--skip-A`:
+
+```bash
+$ python3 -m scripts.score --skip-A data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario3-taskB/scenario.txt
+
+correct_B: 50
+spurious_B: 32
+missing_B: 487
+--------------------
+recall: 0.09311
+precision: 0.6098
+f1: 0.1616
+```
+
 Additionally, you can pass `--verbose` if you want to see detailed information about which keyphrases and relations were correct, missing, etc.
 
 ```bash
-$ python3 -m scripts.score --verbose data/development/input_develop.txt data/submit/scenario1-main/output_scenario1.txt
+$ python3 -m scripts.score --verbose data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario1-main/scenario.txt
 
 ===================  MISSING_A   ===================
 
@@ -146,79 +194,70 @@ precision: 0.5047
 f1: 0.4304
 ```
 
-### Evaluating the optional scenarios
+### Evaluating all scenarios
 
-You can also (optionally) perform just subtask A or subtask B, writing the results to the corresponding folders.
+You can also evaluate all runs in every scenario. The evaluation script is in the file `scripts/evaltest.py` and the mandatory arguments are:
 
-For subtask A, the output folder is `submit/scenario2-taskA` and the dev file is `output_scenario2.txt`. Pass `--skip-B` to the baseline script to skip the output for subtask B. Again, we will be reusing the `development` set in this case, but in the TEST phase there will be an additional 100 sentences just for this scenario.
-
-```bash
-$ python3 -m scripts.baseline --skip-B data/training/input_training.txt data/development/input_develop.txt data/submit/scenario2-taskA/output_scenario2.txt
-```
-
-> **(!!!)** When submitting to subtask A, please make sure to write an **empty `output_b_scenario2.txt`** file. This file will not be taken into consideration when evaluating this scenario but is necessary for the evluation script when it parses the results. The baseline implementation already takes care of this detail.
-
-You can evaluate just scenario 2 with the evaluation script by passing `--skip-B`:
+* The path to the submissions folder. This is the folder of all participants, or, if --single is passed, directly the folder of one participant. Each participant's folder contains subfolders with runs. (in this case, `data/submissions`, or `data/submissions/baseline` if using the --single option).
+* The evaluation mode (`dev` or `test` for development and test evaluation respectively).
 
 ```bash
-$ python3 -m scripts.score --skip-B data/development/input_develop.txt data/submit/scenario2-taskA/output_scenario2.txt
+python3 -m scripts.evaltest --single data/submissions/baseline --mode dev --plain
 
-correct_A: 368
-incorrect_A: 42
-partial_A: 32
-spurious_A: 267
-missing_A: 162
---------------------
-recall: 0.6358
-precision: 0.5416
-f1: 0.5849
-```
+TODO:update
 
-For subtask B, the output folder is `submit/scenario3-taskB` and the dev file is `output_scenario3.txt`. Pass `--skip-A` to the baseline script to skip the output for subtask B. Again, we will be reusing the `development` set in this case, but in the TEST phase there will be an additional 100 sentences just for this scenario.
-
-```bash
-$ python3 -m scripts.baseline --skip-A data/training/input_training.txt data/development/input_develop.txt data/submit/scenario3-taskB/output_scenario3.txt
-```
-
-> **(!!!)** When submitting to subtask B, please make sure to **copy the `output_a_scenario3.txt`** file _from the gold annotations_. This is the same as the `output_a_develop.txt` file in this case. This file will not be taken into consideration when evaluating this scenario but is necessary for the evaluation script when it parses the results. The baseline implementation already takes care of this detail.
-
-> **(!!!)** When submitting to subtask B, make sure to **reuse the keyphrase ID** provided in the `output_a_develop.txt` (or corresponding TEST file) from the gold annotations. The baseline implementation already takes care of this detail.
-
-You can evaluate just scenario 2 with the evaluation script by passing `--skip-A`:
-
-```bash
-$ python3 -m scripts.score --skip-A data/development/input_develop.txt data/submit/scenario3-taskB/output_scenario3.txt
-
-correct_B: 50
-spurious_B: 32
-missing_B: 487
---------------------
-recall: 0.09311
-precision: 0.6098
-f1: 0.1616
-```
-
-If you have succesfully generated the output files for all the scenarios, you should have the following structure in the `data/submit` folder:
-
-```bash
-$ ls -lR data/submit/*/
-data/submit/scenario1-main/:
-total 40
--rw-rw-r-- 1 user user 21604 abr 18 16:50 output_a_scenario1.txt
--rw-rw-r-- 1 user user  1488 abr 18 16:50 output_b_scenario1.txt
--rw-rw-r-- 1 user user  8756 abr 18 16:50 output_scenario1.txt
-
-data/submit/scenario2-taskA/:
-total 36
--rw-rw-r-- 1 user user 21604 abr 18 16:51 output_a_scenario2.txt
--rw-rw-r-- 1 user user     0 abr 18 16:51 output_b_scenario2.txt
--rw-rw-r-- 1 user user  8756 abr 18 16:51 output_scenario2.txt
-
-data/submit/scenario3-taskB/:
-total 36
--rw-rw-r-- 1 user user 19744 abr 18 16:51 output_a_scenario3.txt
--rw-rw-r-- 1 user user   764 abr 18 16:51 output_b_scenario3.txt
--rw-rw-r-- 1 user user  8756 abr 18 16:51 output_scenario3.txt
+==================================================
+:::::::::::::::::::: BASELINE ::::::::::::::::::::
+==================================================
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 0
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 0
+     recall          ~ 0.0
+     precision       ~ 0.0
+     f1              ~ 0.0
+> scenario2 
+     correct_A       = 0
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 0
+     recall          ~ 0.0
+     precision       ~ 0.0
+     f1              ~ 0.0
+> scenario3 
+     correct_A       = 0
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 0
+     recall          ~ 0.0
+     precision       ~ 0.0
+     f1              ~ 0.0
+> scenario4 
+     correct_A       = 0
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 0
+     recall          ~ 0.0
+     precision       ~ 0.0
+     f1              ~ 0.0
 ```
 
 ## Running the baseline on the test set
@@ -227,33 +266,27 @@ Once the test set input files are released, you will be able to test the baselin
 
 These are the necessary steps:
 
-Run the baseline on the test scenario 1 (this may take a couple minutes):
+Run the baseline on all test scenarios (scenario1 may take a couple minutes):
 
 ```bash
-$ python3 -m scripts.baseline data/training/input_training.txt data/testing/scenario1-main/input_scenario1.txt data/submit/scenario1-main/output_scenario1.txt
+$ python3 -m scripts.baseline --test
 ```
 
-Run the baseline on the test scenario 2, skipping subtask B:
+> **(!!!)** Remember that for scenario 3 the file `scenario.txt` must contain **a copy** of the gold annotations provided in the file `data/testing/scenario3-taskB/scenario.txt`, plus your own relation annotations. The baseline already does this, but ensure your own implementation takes it into consideration.
 
-```bash
-$ python3 -m scripts.baseline --skip-B data/training/input_training.txt data/testing/scenario2-taskA/input_scenario2.txt data/submit/scenario2-taskA/output_scenario2.txt
-```
-
-> **(!!!)** Remember that for scenario 2 the file `output_b_scenario2.txt` **must exist** and **be empty**. The baseline already does this, but ensure your own implementation takes it into consideration.
-
-Run the baseline on the test scenario 3, skipping subtask A:
-
-```bash
-$ python3 -m scripts.baseline --skip-A data/training/input_training.txt data/testing/scenario3-taskB/input_scenario3.txt data/submit/scenario3-taskB/output_scenario3.txt
-```
-
-> **(!!!)** Remember that for scenario 3 the file `output_a_scenario3.txt` **must exist** and **be an exact copy** of the provided file `data/testing/scenario3-taskB/output_a_scenario3.txt`. The baseline already does this, but ensure your own implementation takes it into consideration.
+> **(!!!)** When submitting to subtask B, make sure to **reuse the keyphrase ID** provided in the `scenario.ann` from the gold annotations. The baseline implementation already takes care of this detail.
 
 Once finished, you can submit your results to Codalab.
 
 Remember that for the duration of the challenge the results for the test set will be hidden and only shown after the competition ends.
 
 However, you will receive error notifications if your upload is invalid. You have up to **100** different submissions.
+
+----
+
+:down: **Pending** :down:
+
+----
 
 ## Submitting your results to Codalab
 
