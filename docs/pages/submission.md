@@ -288,11 +288,6 @@ Remember that for the duration of the challenge the results for the test set wil
 
 However, you will receive error notifications if your upload is invalid. You have up to **100** different submissions.
 
-----
-
-:down: **Pending** :down:
-
-----
 
 ## Submitting your results to Codalab
 
@@ -314,23 +309,25 @@ $ zip -r submit.zip *
 For recap here is the expected structure of the `submit.zip` file:
 
 * **Folder `scenario1-main`**:
-    * **File `output_a_scenario1.txt`**: Your output for subtask A.
-    * **File `output_b_scenario1.txt`**: Your output for subtask B.
-    * **File `output_scenario1.txt`**: Sentences, copied verbatim from input.
+    * **File `scenario.ann`**: Your output for subtask A and B.
+    * **File `scenario.txt`**: Sentences, copied verbatim from input.
 
 * **Folder `scenario2-taskA`**:
-    * **File `output_a_scenario2.txt`**: Your output for subtask A.
-    * **File `output_b_scenario2.txt`**: Empty file, but must exist.
-    * **File `output_scenario2.txt`**: Sentences, copied verbatim from input.
+    * **File `scenario.ann`**: Your output for subtask A.
+    * **File `scenario.txt`**: Sentences, copied verbatim from input.
 
 * **Folder `scenario3-taskB`**:
-    * **File `output_a_scenario3.txt`**: Output for subtask A, copied verbatim from input.
-    * **File `output_b_scenario3.txt`**: Your output for subtask B.
-    * **File `output_scenario3.txt`**: Sentences, copied verbatim from input.
+    * **File `scenario.ann`**: Output for subtask A, copied verbatim from input, and your output for subtask B.
+    * **File `scenario.txt`**: Sentences, copied verbatim from input.
+
+* **Folder `scenario4-transfer`**:
+    * **File `scenario.ann`**: Your output for subtask A and B.
+    * **File `scenario.txt`**: Sentences, copied verbatim from input.
+
 
 > **NOTE:** For reference purposes, inside the `data/submit` folder you will find a `submit_baseline_dev.zip` file that corresponds to running the baseline following these instructions. Follow the structure of that file if in doubt.
 
-> **(!!!)** Please double-check the files for all three scenarios, including the `output_scenario*.txt` files, the empty `output_b_scenario2.txt` and the copied `output_a_scenario3.txt`. If you do not plan to participate in any given scenario, kindly reuse the baseline output then, to avoid the evaluation script from raising errors about missing files.
+> **(!!!)** Please double-check the files for all four scenarios, including the `scenario.txt` files. If you do not plan to participate in any given scenario, kindly reuse the baseline output then, to avoid the evaluation script from raising errors about missing files.
 
 ### Uploading your results to the competition server
 
