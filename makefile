@@ -7,11 +7,11 @@ baseline:
 
 .PHONY: evaltest
 evaltest:
-	python -m scripts.evaltest data/submissions/ --plain --mode test
+	python -m scripts.evaltest --plain --mode test
 
 .PHONY: evaldev
 evaldev:
-	python -m scripts.evaltest data/submissions/ --pretty --mode dev
+	python -m scripts.evaltest --plain --mode dev
 
 .PHONY: build_corpus
 build_corpus:

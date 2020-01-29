@@ -104,7 +104,6 @@ def ensure_number_of_runs(run_folder):
 
 
 def main(
-    submits: Path,
     mode="test",
     best=False,
     single=False,
@@ -136,7 +135,9 @@ def main(
     else:
         raise ValueError("Unexpected mode: {0}".format(mode))
 
+    submits = Path("data/submissions/")
     if single:
+        submits = submits / single
         runs = submits / mode
         if not runs.exists():
             raise ValueError(
@@ -240,10 +241,6 @@ def main(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("evaltest")
     parser.add_argument(
-        "submits",
-        help="path to the submissions folder. This is the folder of all participants, or, if --single is passed, directly the folder of one participant. Each participant's folder contains subfolders with submissions.",
-    )
-    parser.add_argument(
         "--mode",
         choices=["test", "dev"],
         default="test",
@@ -251,14 +248,14 @@ if __name__ == "__main__":
         help="set the evaluation mode",
     )
     parser.add_argument(
+        "--single",
+        metavar="SUBMITS",
+        help="if passed, then SUBMITS points to a single participant's name with submission folders inside, otherwise SUBMITS points to a folder (./data/submissions/) with many participants, each with submission folders inside.",
+    )
+    parser.add_argument(
         "--best",
         action="store_true",
         help="report only the best submission per scenario, otherwise all submissions are reported.",
-    )
-    parser.add_argument(
-        "--single",
-        action="store_true",
-        help="if passed, then submits points to a single participant folder with submission folders inside, otherwise submits points to a folder with many participants, each with submission folders inside.",
     )
     parser.add_argument(
         "--csv",
@@ -282,7 +279,6 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     main(
-        Path(args.submits),
         args.mode,
         args.best,
         args.single,
