@@ -7,7 +7,7 @@ submit-all:
 
 .PHONY: evaltest
 evaltest:
-	python -m scripts.evaltest data/submissions/ --pretty --mode test
+	python -m scripts.evaltest data/submissions/ --plain --mode test
 
 .PHONY: evaldev
 evaldev:

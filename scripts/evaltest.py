@@ -110,6 +110,7 @@ def main(
     csv=False,
     pretty=False,
     final=False,
+    plain=False,
 ):
     users = collections.defaultdict(list)
 
@@ -212,6 +213,25 @@ def main(
         else:
             print(df.to_csv())
 
+    elif plain:
+        for user, info in results.items():
+            print(50 * "=")
+            print(" {0} ".format(user).center(50, ":").upper())
+            print(50 * "=")
+            for run in info:
+                print("[ {0} ]".format(run["submit"]).center(50, "-"))
+                for scenario, data in run.items():
+                    if scenario == "submit":
+                        continue
+                    print("> {0} ".format(scenario))
+                    for metric, value in data.items():
+                        if metric == "submit":
+                            continue
+                        metric = "{0}".format(metric).ljust(15)
+                        if isinstance(value, float):
+                            print("     {0} ~ {1:0.4}".format(metric, value))
+                        else:
+                            print("     {0} = {1}".format(metric, value))
     else:
         print(json.dumps(results, sort_keys=True, indent=2 if pretty else None))
 
@@ -250,6 +270,11 @@ if __name__ == "__main__":
         help="if passed results are pretty printed: indented in JSON or in HTML when using --csv.",
     )
     parser.add_argument(
+        "--plain",
+        action="store_true",
+        help="if passed results are pretty printed in a plain manner.",
+    )
+    parser.add_argument(
         "--final",
         action="store_true",
         help="if passed, results are formatted for final publication. Can only be passed with --csv and --best.",
@@ -263,4 +288,5 @@ if __name__ == "__main__":
         args.csv,
         args.pretty,
         args.final,
+        args.plain,
     )
