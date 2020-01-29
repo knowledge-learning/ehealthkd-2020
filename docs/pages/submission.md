@@ -114,7 +114,9 @@ Now you can run the evaluation script offline just to check your results. The ev
 The evaluation script outputs the total number of correct, incorrect, partial, missing and spurious matches for each subtask, and the final score as defined in the [Evaluation section](/evaluation).
 
 ```bash
-$ python3 -m scripts.score data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario1-main/scenario.txt
+$ python3 -m scripts.score \
+    data/development/main/scenario.txt \
+    data/submissions/baseline/dev/run1/scenario1-main/scenario.txt
 
 correct_A: 368
 incorrect_A: 42
@@ -137,7 +139,9 @@ The options `--skip-A` and `--skip-B` instruct the script to ignore the performa
 You can evaluate just scenario 2 with the evaluation script by passing `--skip-B`:
 
 ```bash
-$ python3 -m scripts.score --skip-B data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario2-taskA/scenario.txt
+$ python3 -m scripts.score --skip-B \
+    data/development/main/scenario.txt \
+    data/submissions/baseline/dev/run1/scenario2-taskA/scenario.txt
 
 correct_A: 368
 incorrect_A: 42
@@ -153,7 +157,9 @@ f1: 0.5849
 You can evaluate just scenario 3 with the evaluation script by passing `--skip-A`:
 
 ```bash
-$ python3 -m scripts.score --skip-A data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario3-taskB/scenario.txt
+$ python3 -m scripts.score --skip-A \
+    data/development/main/scenario.txt \
+    data/submissions/baseline/dev/run1/scenario3-taskB/scenario.txt
 
 correct_B: 50
 spurious_B: 32
@@ -167,7 +173,9 @@ f1: 0.1616
 Additionally, you can pass `--verbose` if you want to see detailed information about which keyphrases and relations were correct, missing, etc.
 
 ```bash
-$ python3 -m scripts.score --verbose data/development/main/scenario.txt data/submissions/baseline/dev/run1/scenario1-main/scenario.txt
+$ python3 -m scripts.score --verbose \
+    data/development/main/scenario.txt \
+    data/submissions/baseline/dev/run1/scenario1-main/scenario.txt
 
 ===================  MISSING_A   ===================
 
@@ -198,7 +206,7 @@ f1: 0.4304
 
 You can also evaluate all runs in every scenario. The evaluation script is in the file `scripts/evaltest.py` and the mandatory arguments are:
 
-* The path to the submissions folder. This is the folder of all participants, or, if --single is passed, directly the folder of one participant. Each participant's folder contains subfolders with runs. (in this case, `data/submissions`, or `data/submissions/baseline` if using the --single option).
+* The path to the submissions folder. This is the folder of all participants, or, if `--single` is passed, directly the folder of one participant. Each participant's folder contains subfolders with runs. (in this case, `data/submissions`, or `data/submissions/baseline` if using the `--single` option).
 * The evaluation mode (`dev` or `test` for development and test evaluation respectively).
 
 ```bash
@@ -272,7 +280,7 @@ Run the baseline on all test scenarios (scenario1 may take a couple minutes):
 $ python3 -m scripts.baseline --test
 ```
 
-> **(!!!)** Remember that for scenario 3 the file `scenario.txt` must contain **a copy** of the gold annotations provided in the file `data/testing/scenario3-taskB/scenario.txt`, plus your own relation annotations. The baseline already does this, but ensure your own implementation takes it into consideration.
+> **(!!!)** Remember that for scenario 3 the file `scenario.ann` must contain **a copy** of the gold annotations provided in the file `data/testing/scenario3-taskB/scenario.ann`, plus your own relation annotations. The baseline already does this, but ensure your own implementation takes it into consideration.
 
 > **(!!!)** When submitting to subtask B, make sure to **reuse the keyphrase ID** provided in the `scenario.ann` from the gold annotations. The baseline implementation already takes care of this detail.
 
