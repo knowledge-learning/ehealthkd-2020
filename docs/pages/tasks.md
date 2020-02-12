@@ -55,7 +55,7 @@ Actions can have several subjects and targets, in which case the semantic interp
 * **domain:** indicates the main entity on which the predicate applies.
 * **arg:** indicates an additional entity that specifies a value for the predicate to make sense. The exact semantic of this argument depends on the semantic of the predicate label, such as in "*mayores [de] 60 años*", where the predicate label "*mayores*" indicates that "*60 años*" is a quantity, that restricts the minimum age for the predicate to be true.
 
-## Input and output format
+### Input and output format
 
 Input files in the eHealth-KD 2020 are plain text files in UTF-8 format with one sentence per line.
 Sentences have not been preprocesed in any sense.
@@ -90,7 +90,7 @@ $$F_{1AB} = 2 \cdot \frac{Prec_{AB} \cdot Rec_{AB}}{Prec_{AB} + Rec_{AB}} $$
 
 The exact definition of Correct, Missing, Spurious, Partial and Incorrect is presented in the following sections for each subtask.
 
-## Optional Subtask A (Scenario 2)
+### Optional Subtask A (Scenario 2)
 
 This scenario only evaluates Subtask A. The input is a plain text with several sentences and the output is a BRAT `.ann`  file with **only** entity annotations in it (relation annotations are ignored if present).
 
@@ -114,7 +114,7 @@ $$F_{1A} = 2 \cdot \frac{Prec_{A} \cdot Rec_{A}}{Prec_{A} + Rec_{A}} $$
 
 > F1 will determine the ranking of Scenario 2.
 
-## Optional Subtask B (Scenario 3)
+### Optional Subtask B (Scenario 3)
 
 This scenario only evaluates Subtask B. The input is plain text and a corresponding `.ann` file with the correct entities annotated.
 The expected output is a `.ann` file with both the entities and relations. Feel free to simply copy the entity annotations from the provided `.ann` file and append the relation annotations.
@@ -146,7 +146,7 @@ Thus, overall 200 sentences will be provided, 100 with the corresponding gold an
 
 The purpose of this scenario, which we consider a complex challenge, is to stimulate the development of systems that can generalize to new knowledge domains without too much additional training examples. Hence, we encourage participants to focus not only on ehealth-specific features and techniques, but also consider more generalizable approaches. The nature and details of the alternative domain will not be revealed until the evaluation period starts.
 
-### Important: Note about negated concepts
+## Important: Note about negated concepts
 
 The eHealth-KD 2020 corpus considers negated actions, which are manually annotated in the corresponding Brat files (which will be released after the challenge is completed). However, for competition purposes, we are **not considering** the annotation of negation as part of the challenge.
 
