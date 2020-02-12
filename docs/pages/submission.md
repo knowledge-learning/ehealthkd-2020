@@ -111,7 +111,7 @@ Now you can run the evaluation script offline just to check your results. The ev
 * The gold annotations (in this case, `data/development/main/scenario.txt`).
 * Your system's annotations (`data/submissions/baseline/dev/run1/scenario1-main/scenario.txt`)
 
-The evaluation script outputs the total number of correct, incorrect, partial, missing and spurious matches for each subtask, and the final score as defined in the [Evaluation section](/evaluation).
+The evaluation script outputs the total number of correct, incorrect, partial, missing and spurious matches for each subtask, and the final score as defined in the [Task section](/tasks).
 
 ```bash
 $ python3 -m scripts.score \
