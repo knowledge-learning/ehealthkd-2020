@@ -27,11 +27,12 @@ To simplify the evaluation process, two subtasks are presented:
 
 ## Submissions and evaluation
 
-There are three evaluation scenarios:
-1. [A main scenario covering both tasks](evaluation#main-evaluation-scenario-1)
-2. [An optional scenario evaluating subtask A](evaluation#optional-subtask-a-scenario-2)
-3. [An optional scenario evaluating subtask B](evaluation#optional-subtask-b-scenario-3)
-4. [An optional scenario in a completely different domain](evaluation#optional-alternative-domain-evaluation-scenario-4)
+There are four evaluation scenarios:
+
+1. [A main scenario covering both tasks](tasks#main-evaluation-scenario-1)
+2. [An optional scenario evaluating subtask A](tasks#optional-subtask-a-scenario-2)
+3. [An optional scenario evaluating subtask B](tasks#optional-subtask-b-scenario-3)
+4. [An optional scenario in a completely different domain](tasks#optional-alternative-domain-evaluation-scenario-4)
 
 The challenge will be graded in Codalab.
 
