@@ -268,6 +268,10 @@ class Sentence:
             if s
         ]
 
+    @property
+    def annotated(self):
+        return self.keyphrases or self.relations
+
 
 class Collection:
     def __init__(self, sentences=None):
