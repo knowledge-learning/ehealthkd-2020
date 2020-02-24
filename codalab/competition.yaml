@@ -12,21 +12,21 @@ html:
 phases:
   0:
     color: green
-    label: Training
+    label: Development
     max_submissions: 100
     max_submissions_per_day: 100
     phasenumber: 1
-    reference_data: training.zip
-    scoring_program: score.zip
+    reference_data: gold.zip
+    scoring_program: score_dev.zip
     start_date: 2020-02-24
   1:
     color: orange
-    label: Test
+    label: Testing
     max_submissions: 100
     max_submissions_per_day: 100
     phasenumber: 2
-    reference_data: testing.zip
-    scoring_program: score.zip
+    reference_data: gold.zip
+    scoring_program: score_test.zip
     start_date: 2020-04-06
 
 leaderboard:
@@ -45,76 +45,76 @@ leaderboard:
       rank: 4
 
   columns:
-    scenario1_f1:
+    scenario1-f1:
       leaderboard: *scn1
       label: F1
       rank: 1
       numeric_format: 3
       sort: desc
-    scenario1_prec:
+    scenario1-precision:
       leaderboard: *scn1
       label: Precision
       rank: 2
       numeric_format: 3
       sort: desc
-    scenario1_rec:
+    scenario1-recall:
       leaderboard: *scn1
       label: Recall
       rank: 3
       numeric_format: 3
       sort: desc
 
-    scenario2_f1:
+    scenario2-f1:
       leaderboard: *scn2
       label: F1
       rank: 1
       numeric_format: 3
       sort: desc
-    scenario2_prec:
+    scenario2-precision:
       leaderboard: *scn2
       label: Precision
       rank: 2
       numeric_format: 3
       sort: desc
-    scenario2_rec:
+    scenario2-recall:
       leaderboard: *scn2
       label: Recall
       rank: 3
       numeric_format: 3
       sort: desc
 
-    scenario3_f1:
+    scenario3-f1:
       leaderboard: *scn3
       label: F1
       rank: 1
       numeric_format: 3
       sort: desc
-    scenario3_prec:
+    scenario3-precision:
       leaderboard: *scn3
       label: Precision
       rank: 2
       numeric_format: 3
       sort: desc
-    scenario3_rec:
+    scenario3-recall:
       leaderboard: *scn3
       label: Recall
       rank: 3
       numeric_format: 3
       sort: desc
 
-    scenario4_f1:
+    scenario4-f1:
       leaderboard: *scn4
       label: F1
       rank: 1
       numeric_format: 3
       sort: desc
-    scenario4_prec:
+    scenario4-precision:
       leaderboard: *scn4
       label: Precision
       rank: 2
       numeric_format: 3
       sort: desc
-    scenario4_rec:
+    scenario4-recall:
       leaderboard: *scn4
       label: Recall
       rank: 3

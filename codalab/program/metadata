@@ -1,2 +1,0 @@
-program: python3 -m scripts.codalab --dev --input $input --output $output
-description: Evaluation for the training phase

@@ -111,8 +111,9 @@ def main(
     pretty=False,
     final=False,
     plain=False,
-    gold=None,
-    submit=None,
+    compact=False,
+    gold="data",
+    submit="data/submissions",
 ):
     users = collections.defaultdict(list)
 
@@ -123,13 +124,13 @@ def main(
         raise ValueError("Error: --final implies --csv and --best")
 
     if mode == "test":
-        test_gold = Path(gold) or Path("data")
+        test_gold = Path(gold)
         scn1_gold = Collection().load(test_gold / "testing/scenario1-main/scenario.txt")
         scn2_gold = Collection().load(test_gold / "testing/scenario2-taskA/scenario.txt")
         scn3_gold = Collection().load(test_gold / "testing/scenario3-taskB/scenario.txt")
         scn4_gold = Collection().load(test_gold / "testing/scenario4-transfer/scenario.txt")
     elif mode == "dev":
-        dev_gold = Path(gold) or Path("data")
+        dev_gold = Path(gold)
         scn1_gold = Collection().load(dev_gold / "development/main/scenario.txt")
         scn2_gold = Collection().load(dev_gold / "development/main/scenario.txt")
         scn3_gold = Collection().load(dev_gold / "development/main/scenario.txt")
@@ -137,7 +138,7 @@ def main(
     else:
         raise ValueError("Unexpected mode: {0}".format(mode))
 
-    submits = Path("data/submissions/")
+    submits = Path(submit)
     if single:
         submits = submits / single
         runs = submits / mode
@@ -236,6 +237,18 @@ def main(
                             print("     {0} ~ {1:0.4}".format(metric, value))
                         else:
                             print("     {0} = {1}".format(metric, value))
+
+    elif compact:
+        if not single:
+            raise ValueError("--compact requires --single")
+        if not best:
+            raise ValueError("--compact requires --best")
+
+        results = results[single]
+
+        for scn, metrics in results.items():
+            for m in ['f1', 'precision', 'recall']:
+                print(f"{scn}-{m}: {metrics[m]:0.5}")
     else:
         print(json.dumps(results, sort_keys=True, indent=2 if pretty else None))
 
@@ -270,6 +283,11 @@ if __name__ == "__main__":
         help="if passed results are pretty printed: indented in JSON or in HTML when using --csv.",
     )
     parser.add_argument(
+        "--compact",
+        action="store_true",
+        help="if passed results are printed in compacted form suitable for Codalab.",
+    )
+    parser.add_argument(
         "--plain",
         action="store_true",
         help="if passed results are pretty printed in a plain manner.",
@@ -281,9 +299,11 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--gold", help="if passed, overrides the path of the gold collection.",
+        default="data",
     )
     parser.add_argument(
         "--submit", help="if passed, overrides the path of the submit folder.",
+        default="data/submissions",
     )
     args = parser.parse_args()
     main(
@@ -294,6 +314,7 @@ if __name__ == "__main__":
         args.pretty,
         args.final,
         args.plain,
+        args.compact,
         args.gold,
         args.submit,
     )

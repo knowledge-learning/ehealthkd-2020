@@ -1,0 +1,2 @@
+program: python3 -m scripts.evaltest --mode test --gold $input/ref/ --submit $input/ --single res --best --compact
+description: Evaluation for the testing phase
