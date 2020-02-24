@@ -1,0 +1,122 @@
+title: eHealth KD @ IberLEF 2020
+description: Automated knowledge extraction from electronic health documents.
+has_registration: True
+image: logo.png
+
+html:
+  overview: overview.html
+  evaluation: evaluation.html
+  terms: terms.html
+  data: data.html
+
+phases:
+  0:
+    color: green
+    label: Training
+    max_submissions: 100
+    max_submissions_per_day: 100
+    phasenumber: 1
+    reference_data: training.zip
+    scoring_program: score.zip
+    start_date: 2020-02-24
+  1:
+    color: orange
+    label: Test
+    max_submissions: 100
+    max_submissions_per_day: 100
+    phasenumber: 2
+    reference_data: testing.zip
+    scoring_program: score.zip
+    start_date: 2020-04-06
+
+leaderboard:
+  leaderboards:
+    Scenario 1: &scn1
+      label: Main Evaluation
+      rank: 1
+    Scenario 2: &scn2
+      label: Subtask A
+      rank: 2
+    Scenario 3: &scn3
+      label: Subtask B
+      rank: 3
+    Scenario 4: &scn4
+      label: Alt domain
+      rank: 4
+
+  columns:
+    scenario1_f1:
+      leaderboard: *scn1
+      label: F1
+      rank: 1
+      numeric_format: 3
+      sort: desc
+    scenario1_prec:
+      leaderboard: *scn1
+      label: Precision
+      rank: 2
+      numeric_format: 3
+      sort: desc
+    scenario1_rec:
+      leaderboard: *scn1
+      label: Recall
+      rank: 3
+      numeric_format: 3
+      sort: desc
+
+    scenario2_f1:
+      leaderboard: *scn2
+      label: F1
+      rank: 1
+      numeric_format: 3
+      sort: desc
+    scenario2_prec:
+      leaderboard: *scn2
+      label: Precision
+      rank: 2
+      numeric_format: 3
+      sort: desc
+    scenario2_rec:
+      leaderboard: *scn2
+      label: Recall
+      rank: 3
+      numeric_format: 3
+      sort: desc
+
+    scenario3_f1:
+      leaderboard: *scn3
+      label: F1
+      rank: 1
+      numeric_format: 3
+      sort: desc
+    scenario3_prec:
+      leaderboard: *scn3
+      label: Precision
+      rank: 2
+      numeric_format: 3
+      sort: desc
+    scenario3_rec:
+      leaderboard: *scn3
+      label: Recall
+      rank: 3
+      numeric_format: 3
+      sort: desc
+
+    scenario4_f1:
+      leaderboard: *scn4
+      label: F1
+      rank: 1
+      numeric_format: 3
+      sort: desc
+    scenario4_prec:
+      leaderboard: *scn4
+      label: Precision
+      rank: 2
+      numeric_format: 3
+      sort: desc
+    scenario4_rec:
+      leaderboard: *scn4
+      label: Recall
+      rank: 3
+      numeric_format: 3
+      sort: desc

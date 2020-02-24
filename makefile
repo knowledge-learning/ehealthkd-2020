@@ -20,3 +20,9 @@ build_corpus:
 .PHONY: clean
 clean:
 	git clean -fxd
+
+.PHONY: codalab
+codalab:
+	zip -j testing.zip testing/*
+	zip -j training.zip training/*
+	zip score.zip score.py
