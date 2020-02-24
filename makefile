@@ -23,14 +23,19 @@ clean:
 
 .PHONY: codalab
 codalab:
-	zip -j gold.zip data/*
-	cp codalab/program/metadata_dev codalab/program/metadata
-	zip -j -r score_dev.zip codalab/program/metadata scripts
-	cp codalab/program/metadata_test codalab/program/metadata
-	zip -j -r score_test.zip codalab/program/metadata scripts
+	(cd data && zip -r ../codalab/gold.zip testing development)
+
+	cp -r scripts codalab/program/
+	cp codalab/program/metadata-dev codalab/program/metadata
+	(cd codalab/program && zip -r ../score_dev.zip metadata scripts)
+
+	cp codalab/program/metadata-test codalab/program/metadata
+	(cd codalab/program && zip -r ../score_test.zip metadata scripts)
+
+	(cd codalab && zip codalab.zip *)
 
 .PHONY: test-codalab
-test-codalab-dev:
+test-codalab:
 	cp -r data/development codalab/ref/development
 	cp -r data/testing codalab/ref/testing
 	cp -r data/submissions/baseline/* codalab/res

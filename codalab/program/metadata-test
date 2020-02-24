@@ -1,2 +1,2 @@
-program: python3 -m scripts.evaltest --mode test --gold $input/ref/ --submit $input/ --single res --best --compact
+command: bash $program/eval.sh test $input $output
 description: Evaluation for the testing phase
