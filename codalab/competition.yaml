@@ -2,6 +2,7 @@ title: eHealth KD @ IberLEF 2020
 description: Automated knowledge extraction from electronic health documents.
 has_registration: True
 image: logo.png
+end_date: 2020-04-20
 
 html:
   overview: overview.html
