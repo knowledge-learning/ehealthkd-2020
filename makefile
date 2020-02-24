@@ -27,10 +27,10 @@ codalab:
 
 	cp -r scripts codalab/program/
 	cp codalab/program/metadata-dev codalab/program/metadata
-	(cd codalab/program && zip -r ../score_dev.zip metadata scripts)
+	(cd codalab/program && zip -r ../score_dev.zip metadata scripts eval.sh)
 
 	cp codalab/program/metadata-test codalab/program/metadata
-	(cd codalab/program && zip -r ../score_test.zip metadata scripts)
+	(cd codalab/program && zip -r ../score_test.zip metadata scripts eval.sh)
 
 	(cd codalab && zip codalab.zip *)
 
