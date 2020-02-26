@@ -379,6 +379,28 @@ class Collection:
             spans.sort(key=lambda t: t[0])
         return i, spans
 
+    def load_dir(
+        self,
+        finput: Path,
+        *,
+        legacy=True,
+        keyphrases=True,
+        relations=True,
+        attributes=True
+    ) -> "Collection":
+
+        for item in finput.iterdir():
+            if item.suffix == ".txt":
+                self.load(
+                    item,
+                    legacy=legacy,
+                    keyphrases=keyphrases,
+                    relations=relations,
+                    attributes=attributes,
+                )
+
+        return self
+
     def load(
         self,
         finput: Path,
