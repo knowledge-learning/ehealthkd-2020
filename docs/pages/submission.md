@@ -6,7 +6,7 @@ nav_order: 4
 
 # Submission details
 
-The challenge will be graded on [Codalab]() <span style="color: red"> [TO BE ANNOUNCED] </span>.
+The challenge will be graded on [Codalab](https://competitions.codalab.org/competitions/23454) <span style="color: green"> [READY] </span>.
 
 A fully working [evaluation script](https://github.com/knowledge-learning/ehealthkd-2020/blob/master/scripts/evaltest.py) is provided to participants, that exactly matches the evaluation formulas used in Codalab.
 This way participants will have the possibility to evaluate their systems offline and perform hyper-parameter tuning with respect to the same evaluation metrics as used in the competition.
@@ -291,7 +291,7 @@ However, you will receive error notifications if your upload is invalid. You hav
 
 ## Submitting your results to Codalab
 
-Once you have all the corresponding outputs, please bundle the content of the submit folder in a `.zip` file:
+The eHealth-KD evaluation environment can be accessed at this [link](https://competitions.codalab.org/competitions/23454). Once you have all the corresponding outputs, please bundle the content of the submit folder in a `.zip` file:
 
 ```bash
 $ cd data/submissions/<team>
@@ -361,8 +361,8 @@ You can submit up to **three (3) runs** inside each of the `dev` and `test` fold
 
 Please also make sure to fill-in this [Google Form](https://forms.gle/pUJutSDq2FYLwNWQA) to accept the license terms for the corpus.
 
-Go to the [Codalab competition page]() and register if you have not done so already.
-In Codalab, go to the [Participate]() section and enter the details of your submission:
+Go to the [Codalab competition page](https://competitions.codalab.org/competitions/23454) and register if you have not done so already.
+In Codalab, go to the [Participate](https://competitions.codalab.org/competitions/23454#participate) section and enter the details of your submission:
 
 * **Team name.**
 * **Method name:** a short, memorable name for the technique you are presenting.
