@@ -61,7 +61,7 @@ All the data will be made available to participants in due time. This includes t
 
 ## Instructions for participation
 
-The competition is managed and run in the [Codalab Competitions platform](). For participation, please register on the platform and follow the instructions detailed there. The following pages provide a detailed description of the problem to be solved and the evaluation. In Codalab you will find details about how to submit a solution, as well as all relevant links.
+The competition is managed and run in the [Codalab Competitions platform](https://competitions.codalab.org/competitions/23454). For participation, please register on the platform and follow the instructions detailed there. The following pages provide a detailed description of the problem to be solved and the evaluation. In Codalab you will find details about how to submit a solution, as well as all relevant links.
 
 <!-- [Click here to enter the competition](https://competitions.codalab.org/competitions/21781). -->
 
