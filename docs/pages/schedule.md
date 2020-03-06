@@ -15,7 +15,7 @@ The following schedule will be updated accordingly.
 | 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         |  |
 | 06&nbsp;Apr&nbsp;2020 | **Evaluation start** <br> Test data released                        |  |
 | 19&nbsp;Apr&nbsp;2020 | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
-| 19&nbsp;Apr&nbsp;2020 | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
+| 19&nbsp;Apr&nbsp;2020 | **Registration deadline** <br> (due by 23:59 UTC)                   | [Registration](https://competitions.codalab.org/competitions/23454#participate)  |
 | 24&nbsp;Abr&nbsp;2020 | Results posted                                                      |  |
 | 08&nbsp;May&nbsp;2020 | System description paper submissions <br> (due by 23:59 UTC)        |  |
 | 22&nbsp;May&nbsp;2020 | Paper reviews                                                       |  |
