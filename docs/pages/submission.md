@@ -6,7 +6,7 @@ nav_order: 4
 
 # Submission details
 
-The challenge will be graded on [Codalab](https://competitions.codalab.org/competitions/23454) <span style="color: green"> [READY] </span>.
+The challenge will be graded on [Codalab](https://competitions.codalab.org/competitions/23454) <span style="color: red"> [READY] </span>.
 
 A fully working [evaluation script](https://github.com/knowledge-learning/ehealthkd-2020/blob/master/scripts/evaltest.py) is provided to participants, that exactly matches the evaluation formulas used in Codalab.
 This way participants will have the possibility to evaluate their systems offline and perform hyper-parameter tuning with respect to the same evaluation metrics as used in the competition.
