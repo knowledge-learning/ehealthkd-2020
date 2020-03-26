@@ -18,8 +18,7 @@ Even though this challenge is oriented to the health domain, the structure of th
 
 This challenge can be of interest for experts in the field of natural language processing, specifically for those working on automatic knowledge extraction and discovery. It is not a requirement to have expertise in health texts processing for dealing with the eHealth-KD task, due to the general purpose of the semantic schema defined. Nevertheless, eHealth researchers could find interesting this challenge to evaluate their technologies that rely on health domain knowledge.
 
-**Novelties**
-This edition will involve an additional scenario in which an alternative domain (not health related) will be evaluated, to experience with transfer learning techniques. In addition, [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) related documents, i.e. news and documentation, will be played.
+**Novelties**. This edition will involve an additional scenario in which an alternative domain (not health related) will be evaluated, to experience with transfer learning techniques. In addition, [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) related documents, i.e. news and documentation, will be played.
 
 
 
