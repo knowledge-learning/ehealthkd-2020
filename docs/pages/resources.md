@@ -37,6 +37,16 @@ These sentences are expected to be used for training machine learning systems.
 An additional 200 **sentences** are available in the development set.
 These additional sentences are expected to be used for evaluating machine learning systems and tune their hyperparameters.
 
+### Transfer learning corpora
+
+An additional 100 sentences extracted from the Spanish version of Wikinews are available for cross-validation purposes, to evaluate transfer learning approaches (folder `data/development/transfer`). Your system is **not supposed** to be trained on these sentences, but rather, trained **only** on the 800 training sentences from Medline. You should use these sentences only for evaluation and cross-validation (i.e., hyperparameter tunning). Hence, your system should be able to learn from one domain (Medline) and generalize to new unseen domains (Wikinews) without further training. This is to encourage participants to design systems that can be broadly applied to new domains.
+
+### Automatic corpora
+
+Using the submissions from the past edition, we built an ensemble of all participant systems and automatically annotated 3000 additional sentences (folder `data/ensembled`). These sentences **have not** been manually revised, so they should not be considered gold standard. We invite you to evaluate if using these sentences for training improves your validation score. 
+
+A file (`data/ensembled/ensemble.scr`) is provided with a numerical score for each sentence (in the same order they appear in the plain text file). This score is based on the agreement of the ensembled systems, i.e., a score of 0.5 means that on average 50% of the systems agree on each annotation. The score is **not** an indication of quality of the annotation, since no human review has been performed, but a smaller score should be correlated with a less accurate annotation. Use at your own risk.
+
 ## Evaluation scripts
 
 Evaluation scripts will be provided so that participants can test offline their systems with respect to the same metrics used in the challenge. Since participants will not have access to the test gold annotations, their offline performance will need to be evaluated in the development set. This metric will not be exactly the same as the one obtained in the test set, but it should serve for participants to compare different strategies and perform hyper-parameter tunning.

@@ -20,8 +20,6 @@ This challenge can be of interest for experts in the field of natural language p
 
 **Novelties**. This edition will involve an additional scenario in which an alternative domain (not health related) will be evaluated, to experience with transfer learning techniques. In addition, [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) related documents, i.e. news and documentation, will be played.
 
-
-
 ## Description of the Subtasks
 
 To simplify the evaluation process, two subtasks are presented:
@@ -48,10 +46,15 @@ All the data will be made available to participants in due time. This includes t
 
 ## Schedule
 
+### News 
+
+* An additional 100 sentences extracted from the Spanish version of Wikinews are available for cross-validation purposes, to evaluate transfer learning approaches (folder `data/development/transfer`) [read more](resources#transfer-learning-corpora)
+* An additional 3000 automatically annotated sentences from Medline are available for further training. Note that these sentences have been manually revised and hence are not considered gold standard [read more]((resources#automatic-corpora)).
+
 |Date|Event|Link|
 |---|---|---|
 | 03&nbsp;Feb&nbsp;2020 | Training and development data ready                                 | [📝 Sign Corpus License](https://forms.gle/pUJutSDq2FYLwNWQA)<br>[🏃‍ Training and dev data](https://github.com/knowledge-learning/ehealthkd-2020/data) |
-| 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         |  |
+| 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         | [🏃‍ Alt dev data](https://github.com/knowledge-learning/ehealthkd-2020/data/development/transfer)  |
 | 06&nbsp;Apr&nbsp;2020 | **Evaluation start** <br> Test data released                        |  |
 | 19&nbsp;Apr&nbsp;2020 | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
 | 19&nbsp;Apr&nbsp;2020 | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
