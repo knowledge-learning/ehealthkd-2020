@@ -53,9 +53,12 @@ class Run:
 
     def _load_collection(self, scenario):
         gold = self.gold.format(scenario)
+        gold = Path(gold)
 
-        return Collection().load(
-            Path(gold),
+        loader = Collection().load_dir if gold.is_dir() else Collection().load
+
+        return loader(
+            gold,
             legacy=False,
             keyphrases=scenario.endswith("-taskB"),
             relations=False,
@@ -100,12 +103,12 @@ class Run:
     def submit(usr: str, configurations, *algorithms):
         for config in configurations:
             Run.exec(Run.on(usr, *algorithms, config=config))
-        Run.zip('baseline')
+        Run.zip("baseline")
 
     @staticmethod
-    def testing():
+    def testing(file=True):
         yield dict(
-            gold="data/testing/{0}/scenario.txt",
+            gold="data/testing/{0}/" + ("scenario.txt" if file else ""),
             mode="test",
             scenarios=[
                 "scenario1-main",
@@ -116,9 +119,9 @@ class Run:
         )
 
     @staticmethod
-    def development():
+    def development(file=True):
         yield dict(
-            gold="data/development/main/scenario.txt",
+            gold="data/development/main/" + ("scenario.txt" if file else ""),
             mode="dev",
             scenarios=["scenario1-main", "scenario2-taskA", "scenario3-taskB"],
         )
@@ -129,9 +132,9 @@ class Run:
         )
 
     @staticmethod
-    def training():
+    def training(file=True):
         yield dict(
-            gold="data/training/scenario.txt",
+            gold="data/training/" + ("scenario.txt" if file else ""),
             mode="train",
             scenarios=["scenario1-main", "scenario2-taskA", "scenario3-taskB"],
         )
@@ -142,6 +145,7 @@ def handle_args():
     parser.add_argument("--train", action="store_true")
     parser.add_argument("--dev", action="store_true")
     parser.add_argument("--test", action="store_true")
+    parser.add_argument("--dir", action="store_false")
     parser.add_argument(
         "--custom",
         action="append",
@@ -158,13 +162,13 @@ def handle_args():
     tasks = []
 
     if args.train:
-        tasks.extend(Run.training())
+        tasks.extend(Run.training(file=not args.dir))
 
     if args.dev:
-        tasks.extend(Run.development())
+        tasks.extend(Run.development(file=not args.dir))
 
     if args.test:
-        tasks.extend(Run.testing())
+        tasks.extend(Run.testing(file=not args.dir))
 
     if args.custom is not None:
         tasks.extend(
