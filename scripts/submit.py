@@ -145,7 +145,7 @@ def handle_args():
     parser.add_argument("--train", action="store_true")
     parser.add_argument("--dev", action="store_true")
     parser.add_argument("--test", action="store_true")
-    parser.add_argument("--dir", action="store_false")
+    parser.add_argument("--dir", action="store_true")
     parser.add_argument(
         "--custom",
         action="append",
