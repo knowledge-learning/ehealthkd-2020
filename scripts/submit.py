@@ -126,7 +126,7 @@ class Run:
             scenarios=["scenario1-main", "scenario2-taskA", "scenario3-taskB"],
         )
         yield dict(
-            gold="data/development/transfer/scenario.txt",
+            gold="data/development/transfer/" + ("scenario.txt" if file else ""),
             mode="dev",
             scenarios=["scenario4-transfer"],
         )
