@@ -383,8 +383,23 @@ class Collection:
     def find_matches(self, text) -> List[Sentence]:
         return [s for s in self.sentences if s.text == text]
 
-    def load(self, finput: Path) -> "Collection":
-        return CollectionV2Handler.load(self, finput)
+    def load(
+        self,
+        finput: Path,
+        *,
+        legacy=True,
+        keyphrases=True,
+        relations=True,
+        attributes=True
+    ) -> "Collection":
+        return CollectionV2Handler.load(
+            self,
+            finput,
+            legacy=legacy,
+            keyphrases=keyphrases,
+            relations=relations,
+            attributes=attributes,
+        )
 
     def dump(self, text_file: Path, skip_empty_sentences=True):
         return CollectionV2Handler.dump(self, text_file, skip_empty_sentences)
