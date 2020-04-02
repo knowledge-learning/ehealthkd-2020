@@ -4,6 +4,11 @@ from pathlib import Path
 
 from scripts.utils import Collection, Keyphrase, Relation, Sentence
 
+warnings.warn(
+    """The `script.legacy` module is deprecated!
+    Consider using `CollectionV1Handler` from `scripts.utils` instead."""
+)
+
 
 class eHealth2019:
     @classmethod
