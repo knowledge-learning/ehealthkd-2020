@@ -101,9 +101,12 @@ class Run:
 
     @staticmethod
     def submit(usr: str, configurations, *algorithms):
-        for config in configurations:
-            Run.exec(Run.on(usr, *algorithms, config=config))
-        Run.zip("baseline")
+        if not configurations:
+            warnings.warn("The run will have no effect since no tasks were given.")
+        else:
+            for config in configurations:
+                Run.exec(Run.on(usr, *algorithms, config=config))
+            Run.zip(usr)
 
     @staticmethod
     def testing(file=True):
