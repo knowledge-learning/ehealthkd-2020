@@ -17,6 +17,24 @@ from scripts.tools import (
     SameAsAnnotation,
 )
 
+ENTITIES = ["Concept", "Action", "Predicate", "Reference"]
+
+RELATIONS = [
+    "is-a",
+    "same-as",
+    "part-of",
+    "has-property",
+    "causes",
+    "entails",
+    "in-context",
+    "in-place",
+    "in-time",
+    "subject",
+    "target",
+    "domain",
+    "arg",
+]
+
 
 class Keyphrase:
     def __init__(self, sentence, label, id, spans):
@@ -69,6 +87,17 @@ class Keyphrase:
             self.text,
         )
 
+    def matches(self, other: "Keyphrase", label=None):
+        return (
+            isinstance(other, Keyphrase)
+            and self.sentence.text == other.sentence.text
+            and self.spans == other.spans
+            and (
+                (label is None and self.label == other.label)
+                or (label is not None and self.label == label)
+            )
+        )
+
 
 class Relation:
     def __init__(self, sentence, origin, destination, label):
@@ -107,6 +136,18 @@ class Relation:
             return "R{0}\t{1} Arg1:T{2} Arg2:T{3}\n".format(
                 shift, self.label, self.origin, self.destination
             )
+
+    def matches(self, other: "Relation", label=None):
+        return (
+            isinstance(other, Relation)
+            and self.sentence.text == other.sentence.text
+            and self.from_phrase.matches(other.from_phrase)
+            and self.to_phrase.matches(other.to_phrase)
+            and (
+                (label is None and self.label == other.label)
+                or (label is not None and self.label == label)
+            )
+        )
 
 
 class Attribute:
@@ -208,6 +249,18 @@ class Sentence:
 
         self.relations = list(new_relations.values())
 
+    def find_first_match(self, annotation, label=None):
+        matches = self.find_matches(annotation, label)
+        return None if not matches else matches[0]
+
+    def find_matches(self, annotation, label=None):
+        if isinstance(annotation, Keyphrase):
+            return [k for k in self.keyphrases if k.matches(annotation, label)]
+        elif isinstance(annotation, Relation):
+            return [r for r in self.relations if r.matches(annotation, label)]
+        else:
+            raise TypeError("Invalid annotation")
+
     def find_keyphrase(self, id=None, start=None, end=None, spans=None) -> Keyphrase:
         if id is not None:
             return self._find_keyphrase_by_id(id)
@@ -275,10 +328,23 @@ class Sentence:
 
 class Collection:
     def __init__(self, sentences=None):
-        self.sentences: "List[Sentence]" = sentences or []
+        self.sentences: List[Sentence] = sentences or []
 
-    def clone(self) -> "Collection":
-        return Collection([s.clone() for s in self.sentences])
+    def clone(self, skip_empty=False) -> "Collection":
+        return Collection(
+            [s.clone() for s in self.sentences if not skip_empty or s.annotated]
+        )
+
+    def merge(self, *collections: "Collection", skip_empty=False):
+        clone = self.clone(skip_empty)
+        sentences = [
+            s.clone()
+            for c in collections
+            for s in c.sentences
+            if not skip_empty or s.annotated
+        ]
+        clone.sentences.extend(sentences)
+        return clone
 
     def __len__(self):
         return len(self.sentences)
@@ -310,74 +376,18 @@ class Collection:
     def filter_relation(self, labels) -> "Collection":
         return self.filter(relation=lambda r: r.label in labels)
 
-    def _dump_input(self, text_file: Path, skip_empty_sentences=True):
-        text_file.parent.mkdir(parents=True, exist_ok=True)
-        text_file.write_text(
-            "\n".join(
-                sentence.text
-                for sentence in self.sentences
-                if not skip_empty_sentences or sentence.keyphrases or sentence.relations
-            ),
-            encoding="utf8",
-        )
+    def find_first_match(self, text) -> Sentence:
+        matches = self.find_matches(text)
+        return None if not matches else matches[0]
 
-    def _dump_ann(self, ann_path: Path, skip_empty_sentences=True):
-        self.fix_ids()
+    def find_matches(self, text) -> List[Sentence]:
+        return [s for s in self.sentences if s.text == text]
 
-        aid = 0
-        rid = 0
-        shift = 0
-        with ann_path.open("w", encoding="utf8") as ann_file:
-            for sentence in self.sentences:
-                if (
-                    skip_empty_sentences
-                    and not sentence.keyphrases
-                    and not sentence.relations
-                ):
-                    continue
+    def load(self, finput: Path) -> "Collection":
+        return CollectionV2Handler.load(self, finput)
 
-                for keyphrase in sentence.keyphrases:
-                    ann_file.write(keyphrase.as_ann(shift))
-
-                    for attribute in keyphrase.attributes:
-                        ann_file.write(attribute.as_ann(aid))
-                        aid += 1
-
-                for relation in sentence.relations:
-                    ann_file.write(relation.as_ann(rid))
-                    if relation.label != "same-as":
-                        rid += 1
-
-                shift += len(sentence) + 1
-
-    def dump(self, text_file, skip_empty_sentences=True):
-        ann_path: Path = text_file.parent / (text_file.stem + ".ann")
-        self._dump_input(text_file, skip_empty_sentences)
-        self._dump_ann(ann_path, skip_empty_sentences)
-
-    def _load_input(self, finput: Path) -> List[Sentence]:
-        sentences = Sentence.load(finput)
-        self.sentences.extend(sentences)
-        return sentences
-
-    def _load_ann(self, finput: Path) -> AnnFile:
-        ann_path: Path = finput.parent / (finput.stem + ".ann")
-        return AnnFile().load(ann_path)
-
-    def _get_relative_ann(self, spans, sentences_length: List[int]) -> int:
-        # find the sentence where this annotation is
-        i = bisect.bisect(sentences_length, spans[0][0])
-        # correct the annotation spans
-        if i > 0:
-            spans = [
-                (
-                    start - sentences_length[i - 1] - 1,
-                    end - sentences_length[i - 1] - 1,
-                )
-                for start, end in spans
-            ]
-            spans.sort(key=lambda t: t[0])
-        return i, spans
+    def dump(self, text_file: Path, skip_empty_sentences=True):
+        return CollectionV2Handler.dump(self, text_file, skip_empty_sentences)
 
     def load_dir(
         self,
@@ -388,10 +398,177 @@ class Collection:
         relations=True,
         attributes=True
     ) -> "Collection":
+        return CollectionV2Handler.load_dir(
+            self,
+            finput,
+            legacy=legacy,
+            keyphrases=keyphrases,
+            relations=relations,
+            attributes=attributes,
+        )
 
+
+class CollectionHandler:
+    @classmethod
+    def load_dir(cls, collection: Collection, finput: Path, **kargs) -> Collection:
+        pass
+
+    @classmethod
+    def load(cls, collection: Collection, finput: Path, **kargs) -> Collection:
+        pass
+
+    @classmethod
+    def dump(cls, collection: Collection, text_file: Path, skip_empty_sentences=True):
+        pass
+
+
+class CollectionV1Handler(CollectionHandler):
+    @classmethod
+    def load_dir(cls, collection: Collection, finput: Path) -> Collection:
+        for item in finput.iterdir():
+            if re.fullmatch(r".*put_scenario.*\.txt", item.name):
+                cls.load(collection, item)
+        return collection
+
+    @classmethod
+    def load(cls, collection: Collection, finput: Path) -> Collection:
+        input_b_file = finput.parent / ("output_b_" + finput.name.split("_")[1])
+
+        sentence_by_id = cls._load_keyphrases(collection, finput)
+
+        for line in input_b_file.open(encoding="utf8").readlines():
+            label, src, dst = line.strip().split("\t")
+            src, dst = int(src), int(dst)
+
+            the_sentence = sentence_by_id[src]
+
+            if the_sentence != sentence_by_id[dst]:
+                warnings.warn(
+                    "In file '%s' relation '%s' between %i and %i crosses sentence boundaries and has been ignored."
+                    % (finput, label, src, dst)
+                )
+                continue
+
+            assert sentence_by_id[dst] == the_sentence
+
+            the_sentence.relations.append(
+                Relation(the_sentence, src, dst, label.lower())
+            )
+
+        return collection
+
+    @classmethod
+    def _load_keyphrases(cls, collection: Collection, finput: Path):
+        cls._load_input(collection, finput)
+
+        input_a_file = finput.parent / ("output_a_" + finput.name.split("_")[1])
+
+        sentences_length = [len(s.text) for s in collection.sentences]
+        for i in range(1, len(sentences_length)):
+            sentences_length[i] += sentences_length[i - 1] + 1
+
+        sentence_by_id = {}
+
+        for line in input_a_file.open(encoding="utf8").readlines():
+            lid, spans, label, _ = line.strip().split("\t")
+            lid = int(lid)
+
+            spans = [s.split() for s in spans.split(";")]
+            spans = [(int(start), int(end)) for start, end in spans]
+
+            # find the sentence where this annotation is
+            i = bisect.bisect(sentences_length, spans[0][0])
+            # correct the annotation spans
+            if i > 0:
+                spans = [
+                    (
+                        start - sentences_length[i - 1] - 1,
+                        end - sentences_length[i - 1] - 1,
+                    )
+                    for start, end in spans
+                ]
+                spans.sort(key=lambda t: t[0])
+            # store the annotation in the corresponding sentence
+            the_sentence = collection.sentences[i]
+            keyphrase = Keyphrase(the_sentence, label, lid, spans)
+            the_sentence.keyphrases.append(keyphrase)
+
+            if len(keyphrase.spans) == 1:
+                keyphrase.split()
+
+            sentence_by_id[lid] = the_sentence
+
+        return sentence_by_id
+
+    @classmethod
+    def _load_input(cls, collection: Collection, finput: Path):
+        sentences = [s.strip() for s in finput.open(encoding="utf8").readlines() if s]
+        sentences_obj = [Sentence(text) for text in sentences]
+        collection.sentences.extend(sentences_obj)
+
+    @classmethod
+    def dump(cls, collection: Collection, text_file: Path, skip_empty_sentences=True):
+        collection.fix_ids()
+
+        input_file = text_file.open("w", encoding="utf8")
+        output_a_file = (
+            text_file.parent / ("output_a_" + text_file.name.split("_")[1])
+        ).open("w", encoding="utf8")
+        output_b_file = (
+            text_file.parent / ("output_b_" + text_file.name.split("_")[1])
+        ).open("w", encoding="utf8")
+
+        shift = 0
+
+        for sentence in collection.sentences:
+            if (
+                not sentence.keyphrases
+                and not sentence.relations
+                and skip_empty_sentences
+            ):
+                continue
+
+            input_file.write("{}\n".format(sentence.text))
+
+            for keyphrase in sentence.keyphrases:
+                output_a_file.write(
+                    "{0}\t{1}\t{2}\t{3}\n".format(
+                        keyphrase.id,
+                        ";".join(
+                            "{} {}".format(start + shift, end + shift)
+                            for start, end in keyphrase.spans
+                        ),
+                        keyphrase.label,
+                        keyphrase.text,
+                    )
+                )
+
+            for relation in sentence.relations:
+                output_b_file.write(
+                    "{0}\t{1}\t{2}\n".format(
+                        relation.label, relation.origin, relation.destination
+                    )
+                )
+
+            shift += len(sentence) + 1
+
+
+class CollectionV2Handler(CollectionHandler):
+    @classmethod
+    def load_dir(
+        cls,
+        collection: Collection,
+        finput: Path,
+        *,
+        legacy=True,
+        keyphrases=True,
+        relations=True,
+        attributes=True
+    ) -> Collection:
         for item in finput.iterdir():
             if item.suffix == ".txt":
-                self.load(
+                cls.load(
+                    collection,
                     item,
                     legacy=legacy,
                     keyphrases=keyphrases,
@@ -399,10 +576,12 @@ class Collection:
                     attributes=attributes,
                 )
 
-        return self
+        return collection
 
+    @classmethod
     def load(
-        self,
+        cls,
+        collection: Collection,
         finput: Path,
         *,
         legacy=True,
@@ -412,14 +591,14 @@ class Collection:
     ) -> "Collection":
 
         # add sentences from input .txt to Collection
-        sentences = self._load_input(finput)
+        sentences = cls._load_input(collection, finput)
 
         # if keyphrases won't be loaded finish right there
         if not keyphrases:
-            return self
+            return collection
 
         # else, parse .ann file to start the annotation of sentences
-        ann_file = self._load_ann(finput)
+        ann_file = cls._load_ann(finput)
 
         def add_relation(source_id, destination_id, ann_type, id_to_keyphrase):
             source = id_to_keyphrase[source_id]
@@ -458,7 +637,7 @@ class Collection:
             if isinstance(ann, EntityAnnotation):
                 tid = int(ann.id[1:])
                 spans = [(int(start), int(end)) for start, end in ann.spans]
-                sid, spans = self._get_relative_ann(spans, sentences_length)
+                sid, spans = cls._get_relative_ann(spans, sentences_length)
                 sentence = sentences[sid]
                 keyphrase = Keyphrase(sentence, ann.type, tid, spans)
                 sentence.keyphrases.append(keyphrase)
@@ -496,7 +675,86 @@ class Collection:
 
         for s in sentences:
             s.sort()
-        return self
+        return collection
+
+    @classmethod
+    def _load_input(cls, collection: Collection, finput: Path) -> List[Sentence]:
+        sentences = Sentence.load(finput)
+        collection.sentences.extend(sentences)
+        return sentences
+
+    @classmethod
+    def _load_ann(cls, finput: Path) -> AnnFile:
+        ann_path: Path = finput.parent / (finput.stem + ".ann")
+        return AnnFile().load(ann_path)
+
+    @classmethod
+    def _get_relative_ann(cls, spans, sentences_length: List[int]) -> int:
+        # find the sentence where this annotation is
+        i = bisect.bisect(sentences_length, spans[0][0])
+        # correct the annotation spans
+        if i > 0:
+            spans = [
+                (
+                    start - sentences_length[i - 1] - 1,
+                    end - sentences_length[i - 1] - 1,
+                )
+                for start, end in spans
+            ]
+            spans.sort(key=lambda t: t[0])
+        return i, spans
+
+    @classmethod
+    def dump(cls, collection: Collection, text_file, skip_empty_sentences=True):
+        ann_path: Path = text_file.parent / (text_file.stem + ".ann")
+        cls._dump_input(collection, text_file, skip_empty_sentences)
+        cls._dump_ann(collection, ann_path, skip_empty_sentences)
+
+    @classmethod
+    def _dump_input(
+        cls, collection: Collection, text_file: Path, skip_empty_sentences=True
+    ):
+        text_file.parent.mkdir(parents=True, exist_ok=True)
+        text_file.write_text(
+            "\n".join(
+                sentence.text
+                for sentence in collection.sentences
+                if not skip_empty_sentences or sentence.keyphrases or sentence.relations
+            ),
+            encoding="utf8",
+        )
+
+    @classmethod
+    def _dump_ann(
+        cls, collection: Collection, ann_path: Path, skip_empty_sentences=True
+    ):
+        collection.fix_ids()
+
+        aid = 0
+        rid = 0
+        shift = 0
+        with ann_path.open("w", encoding="utf8") as ann_file:
+            for sentence in collection.sentences:
+                if (
+                    skip_empty_sentences
+                    and not sentence.keyphrases
+                    and not sentence.relations
+                ):
+                    continue
+
+                for keyphrase in sentence.keyphrases:
+                    ann_file.write(keyphrase.as_ann(shift))
+
+                    for attribute in keyphrase.attributes:
+                        ann_file.write(attribute.as_ann(aid))
+                        aid += 1
+
+                for relation in sentence.relations:
+                    ann_file.write(relation.as_ann(rid))
+                    if relation.label != "same-as":
+                        rid += 1
+
+                shift += len(sentence) + 1
 
 
 class DisjointSet:
