@@ -12,13 +12,13 @@ The following schedule will be updated accordingly.
 |Date|Event|Link|
 |---|---|---|
 | 03&nbsp;Feb&nbsp;2020 | Training and development data ready                                 | [📝 Sign Corpus License](https://forms.gle/pUJutSDq2FYLwNWQA)<br>[🏃‍ Training and dev data](https://github.com/knowledge-learning/ehealthkd-2020/data) |
-| 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         |  |
-| 06&nbsp;Apr&nbsp;2020 | **Evaluation start** <br> Test data released                        |  |
-| 19&nbsp;Apr&nbsp;2020 | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
-| 19&nbsp;Apr&nbsp;2020 | **Registration deadline** <br> (due by 23:59 UTC)                   | [📝 Registration](https://competitions.codalab.org/competitions/23454#participate)  |
-| 24&nbsp;Abr&nbsp;2020 | Results posted                                                      |  |
-| 08&nbsp;May&nbsp;2020 | System description paper submissions <br> (due by 23:59 UTC)        |  |
-| 22&nbsp;May&nbsp;2020 | Paper reviews                                                       |  |
-| 29&nbsp;May&nbsp;2020 | Author notifications                                                |  |
-| 12&nbsp;Jun&nbsp;2020 | Camera ready submissions                                            |  |
+| 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         | [🏃‍ Alt dev data](https://github.com/knowledge-learning/ehealthkd-2020/data/development/transfer)  |
+| 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        |  |
+| 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
+| 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
+| 08&nbsp;May&nbsp;2020<br>~~24&nbsp;Abr&nbsp;2020~~ | Results posted                                                      |  |
+| 22&nbsp;May&nbsp;2020<br>~~08&nbsp;May&nbsp;2020~~ | System description paper submissions <br> (due by 23:59 UTC)        |  |
+| 05&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
+| 12&nbsp;Jun&nbsp;2020<br>~~29&nbsp;May&nbsp;2020~~ | Author notifications                                                |  |
+| 26&nbsp;Jun&nbsp;2020<br>~~12&nbsp;Jun&nbsp;2020~~ | Camera ready submissions                                            |  |
 | Sep&nbsp;2020         | IberLEF Workshop                                                       |  |

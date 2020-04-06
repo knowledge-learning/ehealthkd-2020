@@ -48,6 +48,8 @@ All the data will be made available to participants in due time. This includes t
 
 ### News 
 
+* Due to the potential difficulties caused by COVID-19 to participants,
+  we are **delaying all dates** starting with the test set release **2 weeks** into the future.
 * An additional 100 sentences extracted from the Spanish version of Wikinews are available for cross-validation purposes, to evaluate transfer learning approaches (folder `data/development/transfer`) [(read more)](resources#transfer-learning-corpora).
 * An additional 3000 automatically annotated sentences from Medline are available for further training. Note that these sentences have been manually revised and hence are not considered gold standard [(read more)](resources#automatic-corpora).
 
@@ -55,14 +57,14 @@ All the data will be made available to participants in due time. This includes t
 |---|---|---|
 | 03&nbsp;Feb&nbsp;2020 | Training and development data ready                                 | [📝 Sign Corpus License](https://forms.gle/pUJutSDq2FYLwNWQA)<br>[🏃‍ Training and dev data](https://github.com/knowledge-learning/ehealthkd-2020/data) |
 | 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         | [🏃‍ Alt dev data](https://github.com/knowledge-learning/ehealthkd-2020/data/development/transfer)  |
-| 06&nbsp;Apr&nbsp;2020 | **Evaluation start** <br> Test data released                        |  |
-| 19&nbsp;Apr&nbsp;2020 | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
-| 19&nbsp;Apr&nbsp;2020 | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
-| 24&nbsp;Abr&nbsp;2020 | Results posted                                                      |  |
-| 08&nbsp;May&nbsp;2020 | System description paper submissions <br> (due by 23:59 UTC)        |  |
-| 22&nbsp;May&nbsp;2020 | Paper reviews                                                       |  |
-| 29&nbsp;May&nbsp;2020 | Author notifications                                                |  |
-| 12&nbsp;Jun&nbsp;2020 | Camera ready submissions                                            |  |
+| 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        |  |
+| 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
+| 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
+| 08&nbsp;May&nbsp;2020<br>~~24&nbsp;Abr&nbsp;2020~~ | Results posted                                                      |  |
+| 22&nbsp;May&nbsp;2020<br>~~08&nbsp;May&nbsp;2020~~ | System description paper submissions <br> (due by 23:59 UTC)        |  |
+| 05&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
+| 12&nbsp;Jun&nbsp;2020<br>~~29&nbsp;May&nbsp;2020~~ | Author notifications                                                |  |
+| 26&nbsp;Jun&nbsp;2020<br>~~12&nbsp;Jun&nbsp;2020~~ | Camera ready submissions                                            |  |
 | Sep&nbsp;2020         | IberLEF Workshop                                                       |  |
 
 
