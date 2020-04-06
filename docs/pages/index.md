@@ -83,7 +83,7 @@ To download the relevant data, [please visit here](https://forms.gle/3KHAvo7e5Mf
 
 The following instructions are subject to change to adapt to the official IberLEF 2020 requirements.
 
-Send your paper to our Program Comitee at [chairs_eHealth-KD@googlegroups.com](mailto:chairs_eHealth-KD@googlegroups.com) before **(May 8th, 2020)**.
+Send your paper to our Program Comitee at [chairs_eHealth-KD@googlegroups.com](mailto:chairs_eHealth-KD@googlegroups.com) before **(May 22th, 2020)**.
 
 The Organization Committee of eHealth-KD encourages participants to submit a description paper of their systems. Submitted papers will be reviewed by a scientific committee, and only accepted papers will be published at CEUR. The proceedings of eHealth-KD will be jointly published with the proceedings of all tasks of IberLEF 2020. The submitted papers will be peer-reviewed by a Program Commitee which is composed by all the participants and the Organization Commitee.
 
