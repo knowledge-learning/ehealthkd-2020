@@ -19,6 +19,7 @@ Even though this challenge is oriented to the health domain, the structure of th
 This challenge can be of interest for experts in the field of natural language processing, specifically for those working on automatic knowledge extraction and discovery. It is not a requirement to have expertise in health texts processing for dealing with the eHealth-KD task, due to the general purpose of the semantic schema defined. Nevertheless, eHealth researchers could find interesting this challenge to evaluate their technologies that rely on health domain knowledge.
 
 **Novelties**. This edition will involve an additional scenario in which an alternative domain (not health related) will be evaluated, to experience with transfer learning techniques. In addition, [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) related documents, i.e. news and documentation, will be played.
+![](img/COVID-19.png)
 
 ## Description of the Subtasks
 
@@ -50,6 +51,7 @@ All the data will be made available to participants in due time. This includes t
 
 * Due to the potential difficulties caused by COVID-19 to participants,
   we are **delaying all dates** starting with the test set release **2 weeks** into the future.
+* COVID19 related documents, i.e. news and documentation, will be played.
 * An additional 100 sentences extracted from the Spanish version of Wikinews are available for cross-validation purposes, to evaluate transfer learning approaches (folder `data/development/transfer`) [(read more)](resources#transfer-learning-corpora).
 * An additional 3000 automatically annotated sentences from Medline are available for further training. Note that these sentences have been manually revised and hence are not considered gold standard [(read more)](resources#automatic-corpora).
 
@@ -57,6 +59,7 @@ All the data will be made available to participants in due time. This includes t
 |---|---|---|
 | 03&nbsp;Feb&nbsp;2020 | Training and development data ready                                 | [📝 Sign Corpus License](https://forms.gle/pUJutSDq2FYLwNWQA)<br>[🏃‍ Training and dev data](https://github.com/knowledge-learning/ehealthkd-2020/data) |
 | 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         | [🏃‍ Alt dev data](https://github.com/knowledge-learning/ehealthkd-2020/data/development/transfer)  |
+| 30&nbsp;Mar&nbsp;2020 | Ensemble dataset for augmenting training stage, ready                         | [🏃‍ Ensemble](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/ensemble)  |
 | 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        |  |
 | 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
 | 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |

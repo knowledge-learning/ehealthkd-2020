@@ -13,6 +13,7 @@ The following schedule will be updated accordingly.
 |---|---|---|
 | 03&nbsp;Feb&nbsp;2020 | Training and development data ready                                 | [📝 Sign Corpus License](https://forms.gle/pUJutSDq2FYLwNWQA)<br>[🏃‍ Training and dev data](https://github.com/knowledge-learning/ehealthkd-2020/data) |
 | 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                         | [🏃‍ Alt dev data](https://github.com/knowledge-learning/ehealthkd-2020/data/development/transfer)  |
+| 30&nbsp;Mar&nbsp;2020 | Ensemble dataset for augmenting training stage, ready                         | [🏃‍ Ensemble](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/ensemble)  |
 | 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        |  |
 | 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
 | 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |

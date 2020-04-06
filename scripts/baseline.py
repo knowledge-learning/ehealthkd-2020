@@ -16,7 +16,11 @@ class Baseline(Algorithm):
         self.model = None
 
     def train(self, finput: Path):
-        collection = Collection().load(finput)
+        collection = (
+            Collection().load_dir(finput)
+            if finput.is_dir()
+            else Collection().load(finput)
+        )
 
         self.model = keyphrases, relations = {}, {}
 
@@ -81,7 +85,7 @@ def main(tasks):
         return
 
     baseline = Baseline()
-    baseline.train(Path("data/training/scenario.txt"))
+    baseline.train(Path("data/training/"))
 
     Run.submit("baseline", tasks, baseline)
 
