@@ -60,19 +60,12 @@ def filter_best(results):
     best = {}
 
     for user, submits in results.items():
-        scenario1 = [entry["scenario1"] for entry in submits]
-        scenario2 = [entry["scenario2"] for entry in submits]
-        scenario3 = [entry["scenario3"] for entry in submits]
-        scenario4 = [entry["scenario4"] for entry in submits]
-
-        best1 = max(scenario1, key=lambda d: d["f1"])
-        best2 = max(scenario2, key=lambda d: d["f1"])
-        best3 = max(scenario3, key=lambda d: d["f1"])
-        best4 = max(scenario4, key=lambda d: d["f1"])
-
-        best[user] = dict(
-            scenario1=best1, scenario2=best2, scenario3=best3, scenario4=best4
-        )
+        user_dict = {}
+        for name in ["scenario1", "scenario2", "scenario3", "scenario4"]:
+            scenario = [entry[name] for entry in submits]
+            best = max(scenario, key=lambda d: d["f1"])
+            user_dict[name] = best
+        best[user] = user_dict
 
     return best
 
