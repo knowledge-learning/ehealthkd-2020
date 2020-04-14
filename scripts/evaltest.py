@@ -62,9 +62,13 @@ def filter_best(results):
     for user, submits in results.items():
         user_dict = {}
         for name in ["scenario1", "scenario2", "scenario3", "scenario4"]:
-            scenario = [entry[name] for entry in submits]
-            best = max(scenario, key=lambda d: d["f1"])
-            user_dict[name] = best
+            try:
+                scenario = [entry[name] for entry in submits]
+                best = max(scenario, key=lambda d: d["f1"])
+                user_dict[name] = best
+            except KeyError:
+                warnings.warn("Scenario {0} not found!".format(name))
+                user_dict[name] = collections.defaultdict(float)
         best[user] = user_dict
 
     return best
@@ -108,22 +112,27 @@ def main(
 
     if mode == "test":
         test_gold = Path(gold)
-        scn1_gold = Collection().load(test_gold / "testing/scenario1-main/scenario.txt")
-        scn2_gold = Collection().load(
-            test_gold / "testing/scenario2-taskA/scenario.txt"
-        )
-        scn3_gold = Collection().load(
-            test_gold / "testing/scenario3-taskB/scenario.txt"
-        )
-        scn4_gold = Collection().load(
-            test_gold / "testing/scenario4-transfer/scenario.txt"
-        )
+        gold_scenarios = [
+            Collection().load(test_gold / "testing/scenario1-main/scenario.txt"),
+            Collection().load(test_gold / "testing/scenario2-taskA/scenario.txt"),
+            Collection().load(test_gold / "testing/scenario3-taskB/scenario.txt"),
+            Collection().load(test_gold / "testing/scenario4-transfer/scenario.txt"),
+        ]
     elif mode == "dev":
         dev_gold = Path(gold)
-        scn1_gold = Collection().load(dev_gold / "development/main/scenario.txt")
-        scn2_gold = Collection().load(dev_gold / "development/main/scenario.txt")
-        scn3_gold = Collection().load(dev_gold / "development/main/scenario.txt")
-        scn4_gold = Collection().load(dev_gold / "development/transfer/scenario.txt")
+        gold_scenarios = [
+            Collection().load(dev_gold / "development/main/scenario.txt"),
+            Collection().load(dev_gold / "development/main/scenario.txt"),
+            Collection().load(dev_gold / "development/main/scenario.txt"),
+            Collection().load(dev_gold / "development/transfer/scenario.txt"),
+        ]
+    elif mode == "train":
+        dev_gold = Path(gold)
+        gold_scenarios = [
+            Collection().load(dev_gold / "training/scenario.txt"),
+            Collection().load(dev_gold / "training/scenario.txt"),
+            Collection().load(dev_gold / "training/scenario.txt"),
+        ]
     else:
         raise ValueError("Unexpected mode: {0}".format(mode))
 
@@ -139,9 +148,7 @@ def main(
             )
         ensure_number_of_runs(runs)
         for subfolder in runs.iterdir():
-            users[submits.name].append(
-                evaluate_one(subfolder, scn1_gold, scn2_gold, scn3_gold, scn4_gold,)
-            )
+            users[submits.name].append(evaluate_one(subfolder, *gold_scenarios))
     else:
         for userfolder in submits.iterdir():
             if not userfolder.is_dir():
@@ -155,9 +162,7 @@ def main(
                 )
             ensure_number_of_runs(runs)
             for subfolder in runs.iterdir():
-                users[userfolder.name].append(
-                    evaluate_one(subfolder, scn1_gold, scn2_gold, scn3_gold, scn4_gold,)
-                )
+                users[userfolder.name].append(evaluate_one(subfolder, *gold_scenarios))
 
     results = dict(users)
 
@@ -250,7 +255,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("evaltest")
     parser.add_argument(
         "--mode",
-        choices=["test", "dev"],
+        choices=["test", "dev", "train"],
         default="test",
         required=True,
         help="set the evaluation mode",
