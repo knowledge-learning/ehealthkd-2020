@@ -13,6 +13,10 @@ evaltest:
 evaldev:
 	python3 -m scripts.evaltest --plain --mode dev
 
+.PHONY: evaltrain
+evaldev:
+	python3 -m scripts.evaltest --plain --mode train
+
 .PHONY: build_corpus
 build_corpus:
 	python3 -m scripts.build_corpus
