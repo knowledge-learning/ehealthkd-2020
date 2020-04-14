@@ -126,9 +126,15 @@ def main(
     if mode == "test":
         test_gold = Path(gold)
         scn1_gold = Collection().load(test_gold / "testing/scenario1-main/scenario.txt")
-        scn2_gold = Collection().load(test_gold / "testing/scenario2-taskA/scenario.txt")
-        scn3_gold = Collection().load(test_gold / "testing/scenario3-taskB/scenario.txt")
-        scn4_gold = Collection().load(test_gold / "testing/scenario4-transfer/scenario.txt")
+        scn2_gold = Collection().load(
+            test_gold / "testing/scenario2-taskA/scenario.txt"
+        )
+        scn3_gold = Collection().load(
+            test_gold / "testing/scenario3-taskB/scenario.txt"
+        )
+        scn4_gold = Collection().load(
+            test_gold / "testing/scenario4-transfer/scenario.txt"
+        )
     elif mode == "dev":
         dev_gold = Path(gold)
         scn1_gold = Collection().load(dev_gold / "development/main/scenario.txt")
@@ -144,7 +150,9 @@ def main(
         runs = submits / mode
         if not runs.exists():
             raise ValueError(
-                "Directory {0} not found. Check --mode and --single options."
+                "Directory {0} not found. Check --mode and --single options.".format(
+                    runs
+                )
             )
         ensure_number_of_runs(runs)
         for subfolder in runs.iterdir():
@@ -158,7 +166,9 @@ def main(
             runs = userfolder / mode
             if not runs.exists():
                 raise ValueError(
-                    "Directory {0} not found. Did you mean to use --single? Check --mode option."
+                    "Directory {0} not found. Did you mean to use --single? Check --mode option.".format(
+                        runs
+                    )
                 )
             ensure_number_of_runs(runs)
             for subfolder in runs.iterdir():
@@ -247,7 +257,7 @@ def main(
         results = results[single]
 
         for scn, metrics in results.items():
-            for m in ['f1', 'precision', 'recall']:
+            for m in ["f1", "precision", "recall"]:
                 print(f"{scn}-{m}: {metrics[m]:0.5}")
     else:
         print(json.dumps(results, sort_keys=True, indent=2 if pretty else None))
@@ -298,11 +308,13 @@ if __name__ == "__main__":
         help="if passed, results are formatted for final publication. Can only be passed with --csv and --best.",
     )
     parser.add_argument(
-        "--gold", help="if passed, overrides the path of the gold collection.",
+        "--gold",
+        help="if passed, overrides the path of the gold collection.",
         default="data",
     )
     parser.add_argument(
-        "--submit", help="if passed, overrides the path of the submit folder.",
+        "--submit",
+        help="if passed, overrides the path of the submit folder.",
         default="data/submissions",
     )
     args = parser.parse_args()
