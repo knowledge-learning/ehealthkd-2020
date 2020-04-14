@@ -48,7 +48,8 @@ class Run:
                     "data/submissions/{0}/{1}/{2}/{3}/scenario.txt".format(
                         self.user, self.mode, self.run_name, scenario
                     )
-                )
+                ),
+                skip_empty_sentences=False,
             )
 
     def _load_collection(self, scenario):
