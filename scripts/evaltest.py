@@ -32,38 +32,28 @@ def evaluate_scenario(submit_path: Path, gold: Collection, scenario: int):
     return results
 
 
-def evaluate_one(
-    submit_path: Path,
-    scenario1_gold: Collection,
-    scenario2_gold: Collection,
-    scenario3_gold: Collection,
-    scenario4_gold: Collection,
-):
-    scenario1_submit = submit_path / "scenario1-main"
-    scenario2_submit = submit_path / "scenario2-taskA"
-    scenario3_submit = submit_path / "scenario3-taskB"
-    scenario4_submit = submit_path / "scenario4-transfer"
+def evaluate_one(submit_path: Path, *scenario_golds: Collection):
+    names = [
+        "scenario1-main",
+        "scenario2-taskA",
+        "scenario3-taskB",
+        "scenario4-transfer",
+    ]
 
-    scenario1 = dict(
-        evaluate_scenario(scenario1_submit, scenario1_gold, 1), submit=submit_path.name
-    )
-    scenario2 = dict(
-        evaluate_scenario(scenario2_submit, scenario2_gold, 2), submit=submit_path.name
-    )
-    scenario3 = dict(
-        evaluate_scenario(scenario3_submit, scenario3_gold, 3), submit=submit_path.name
-    )
-    scenario4 = dict(
-        evaluate_scenario(scenario4_submit, scenario4_gold, 4), submit=submit_path.name
-    )
+    result = dict(submit=submit_path.name)
 
-    return dict(
-        submit=submit_path.name,
-        scenario1=scenario1,
-        scenario2=scenario2,
-        scenario3=scenario3,
-        scenario4=scenario4,
-    )
+    # not all scenarios have to be provided
+    for i, (scenario_gold, name) in enumerate(zip(scenario_golds, names), 1):
+        scenario_submit = submit_path / name
+
+        scenario = dict(
+            evaluate_scenario(scenario_submit, scenario_gold, i),
+            submit=submit_path.name,
+        )
+
+        result[name.split("-")[0]] = scenario
+
+    return result
 
 
 def filter_best(results):
