@@ -71,7 +71,6 @@ All the data will be made available to participants in due time. This includes t
 | 26&nbsp;Jun&nbsp;2020<br>~~12&nbsp;Jun&nbsp;2020~~ | Camera ready submissions                                            |  |
 | Sep&nbsp;2020         | IberLEF Workshop                                                                                 |  |
 
-
 ## Instructions for participation
 
 The competition is managed and run in the [Codalab Competitions platform](https://competitions.codalab.org/competitions/23454). For participation, please register on the platform and follow the instructions detailed there. The following pages provide a detailed description of the problem to be solved and the evaluation. In Codalab you will find details about how to submit a solution, as well as all relevant links.
