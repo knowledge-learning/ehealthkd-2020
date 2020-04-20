@@ -19,7 +19,11 @@ evaltrain:
 
 .PHONY: build_corpus
 build_corpus:
-	python3 -m scripts.build_corpus
+	python3 -m scripts.build_corpus --mode private
+
+.PHONY: build_public_corpus
+build_public_corpus:
+	python3 -m scripts.build_corpus --mode public
 
 .PHONY: clean
 clean:

@@ -88,7 +88,20 @@ def shuffle(*sentences, seed=13731):
     return merge
 
 
-def main(anns_path: Path, training_path, develop_path, test_path):
+def clean(collection, public, *, remove_keyphrases=True, remove_relations=True):
+    if public:
+        return collection
+    if remove_keyphrases and not remove_relations:
+        raise ValueError("`remove_keyphrases` requires `remove_relations`!")
+    for s in collection.sentences:
+        if remove_keyphrases:
+            s.keyphrases = []
+        if remove_relations or remove_keyphrases:
+            s.relations = []
+    return collection
+
+
+def main(anns_path: Path, training_path, develop_path, test_path, public):
     random.seed(42)  # default seed, but each generator should use his own
 
     # dump training and development collections ----------------------------------
@@ -113,14 +126,17 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
     #### test/scenario3
     scn3 = Collection(test_sentences[200:])
-    scn3.dump(test_path / "scenario3-taskB" / "scenario.txt")
+    clean(scn3, public, remove_keyphrases=False)
+    scn3.dump(test_path / "scenario3-taskB" / "scenario.txt", False)
 
     #### test/scenario2
     scn2 = Collection(test_sentences[100:200])
-    scn2.dump(test_path / "scenario2-taskA" / "scenario.txt")
+    clean(scn2, public)
+    scn2.dump(test_path / "scenario2-taskA" / "scenario.txt", False)
 
     #### test/scenario1
     scn1 = Collection(shuffle(extra_sentences_main[:4900], test_sentences[:100]))
+    clean(scn1, public)
     scn1.dump(test_path / "scenario1-main" / "scenario.txt", False)
 
     # dump transfer learning collections ----------------------------------------
@@ -134,6 +150,7 @@ def main(anns_path: Path, training_path, develop_path, test_path):
     scn4 = Collection(
         shuffle(extra_sentences_transfer[:1400], transfer_sentences[100:])
     )
+    clean(scn4, public)
     scn4.dump(test_path / "scenario4-transfer" / "scenario.txt", False)
 
 
@@ -163,7 +180,14 @@ if __name__ == "__main__":
         nargs="?",
         help="output test collection to this directory ('./data/testing')",
     )
+    parser.add_argument(
+        "--mode", choices=["public", "private"], required=True,
+    )
     args = parser.parse_args()
     main(
-        Path(args.corpus), Path(args.training), Path(args.development), Path(args.test),
+        Path(args.corpus),
+        Path(args.training),
+        Path(args.development),
+        Path(args.test),
+        args.mode == "public",
     )
