@@ -49,7 +49,7 @@ All the data will be made available to participants in due time. This includes t
 
 ### News 
 
-* 📢 Testing files [are ready](https://knowledge-learning.github.io/ehealthkd-2020/resources#testing-input-files). The competition is officially open !!
+* 📢 Testing files [are ready](https://knowledge-learning.github.io/ehealthkd-2020/resources#testing-input-files). The [testing phase in Codalab](https://competitions.codalab.org/competitions/23454#participate) is officially open !!
 * 👉 Due to the potential difficulties caused by COVID-19 to participants,
   we are **delaying all dates** starting with the test set release **2 weeks** into the future.
 * 👉 COVID19 related documents, i.e. news and documentation, will be played.
@@ -61,7 +61,7 @@ All the data will be made available to participants in due time. This includes t
 | 03&nbsp;Feb&nbsp;2020 | Training and development data ready                                                              | [📝 Sign Corpus License](https://forms.gle/pUJutSDq2FYLwNWQA)<br>[🏃‍ Training and dev data](https://github.com/knowledge-learning/ehealthkd-2020/data) |
 | 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                                                      | [🏃‍ Alt dev data](https://github.com/knowledge-learning/ehealthkd-2020/data/development/transfer)  |
 | 30&nbsp;Mar&nbsp;2020 | Ensemble dataset for augmenting training stage, ready                                            | [🏃‍ Ensemble](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/ensemble)  |
-| 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        | [⚗️ Test input files](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/testing) |
+| 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        | [⚗️ Test input files](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/testing)<br>[🖥 Codalab submission page](https://competitions.codalab.org/competitions/23454#participate) |
 | 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
 | 03&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
 | 08&nbsp;May&nbsp;2020<br>~~24&nbsp;Abr&nbsp;2020~~ | Results posted                                                      |  |
@@ -92,7 +92,7 @@ The manuscripts must satisfy the following rules:
 
 The minimum length of the regular paper should be 5 (mandatory minimum) and up to 10 pages plus references formatted according to the [Conference Proceedings Springer template](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines). The style that appears in the template by default must be used.
 
-* Articles can be written in English. The title, abstract and keywords must be written in English.
+* Articles must be written in English.
 * The document format must be Word or Latex, but the submission must be in PDF format.
 * Instead of describing the task and/or the corpus, you should focus on the description of your experiments and the analysis of your results, and include a citation to the Overview paper. Indications for this citation will be provided in due time.
 * Depending on the final number of participants and the time allocated for the workshop, all or a selected group of papers will be presented and discussed in the Workshop session.
