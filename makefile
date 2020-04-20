@@ -44,8 +44,9 @@ codalab:
 
 .PHONY: test-codalab
 test-codalab:
-	cp -r data/development codalab/ref/development
-	cp -r data/testing codalab/ref/testing
+	rm -r codalab/ref/development
+	rm -r codalab/ref/testing
+	unzip codalab/gold.zip -d codalab/ref
 	cp -r data/submissions/baseline/* codalab/res
-	rm codalab/program/scripts
+	rm -r codalab/program/scripts
 	ln -s `pwd`/scripts codalab/program/scripts
