@@ -79,6 +79,15 @@ def get_extra(anns_path: Path, subset: str, *collections):
     return extra_sentences
 
 
+def shuffle(*sentences, seed=13731):
+    print([len(s) for s in sentences])
+    merge = sum(sentences, start=[])
+    print(len(merge))
+    random.seed(seed)
+    random.shuffle(merge)
+    return merge
+
+
 def main(anns_path: Path, training_path, develop_path, test_path):
     random.seed(42)  # default seed, but each generator should use his own
 
@@ -95,8 +104,12 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
     # dump test collection (per scenario) ----------------------------------------
     test_sentences = get_test(anns_path)
-    extra_sentences_main = get_extra(anns_path, 'main', train_develop_sentences, test_sentences)
-    extra_sentences_transfer = get_extra(anns_path, 'transfer', train_develop_sentences, test_sentences)
+    extra_sentences_main = get_extra(
+        anns_path, "main", train_develop_sentences, test_sentences
+    )
+    extra_sentences_transfer = get_extra(
+        anns_path, "transfer", train_develop_sentences, test_sentences
+    )
 
     #### test/scenario3
     scn3 = Collection(test_sentences[200:])
@@ -107,9 +120,7 @@ def main(anns_path: Path, training_path, develop_path, test_path):
     scn2.dump(test_path / "scenario2-taskA" / "scenario.txt")
 
     #### test/scenario1
-    scn1 = Collection(
-        extra_sentences_main[:2345] + test_sentences[:100] + extra_sentences_main[2345:4900]
-    )
+    scn1 = Collection(shuffle(extra_sentences_main[:4900], test_sentences[:100]))
     scn1.dump(test_path / "scenario1-main" / "scenario.txt", False)
 
     # dump transfer learning collections ----------------------------------------
@@ -121,9 +132,9 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
     #### test/scenario4
     scn4 = Collection(
-        extra_sentences_transfer[1234:] + transfer_sentences[100:] + extra_sentences_transfer[:1234]
+        shuffle(extra_sentences_transfer[:1400], transfer_sentences[100:])
     )
-    scn4.dump(test_path / "scenario4-transfer" / "scenario.txt")
+    scn4.dump(test_path / "scenario4-transfer" / "scenario.txt", False)
 
 
 if __name__ == "__main__":
