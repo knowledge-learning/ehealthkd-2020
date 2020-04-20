@@ -108,7 +108,7 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
     #### test/scenario1
     scn1 = Collection(
-        extra_sentences_main[:4567] + test_sentences[:100] + extra_sentences_main[4567:]
+        extra_sentences_main[:2345] + test_sentences[:100] + extra_sentences_main[2345:4900]
     )
     scn1.dump(test_path / "scenario1-main" / "scenario.txt", False)
 
