@@ -41,6 +41,29 @@ These additional sentences are expected to be used for evaluating machine learni
 
 An additional 100 sentences extracted from the Spanish version of Wikinews are available for cross-validation purposes, to evaluate transfer learning approaches (folder `data/development/transfer`). Your system is **not supposed** to be trained on these sentences, but rather, trained **only** on the 800 training sentences from Medline. You should use these sentences only for evaluation and cross-validation (i.e., hyperparameter tunning). Hence, your system should be able to learn from one domain (Medline) and generalize to new unseen domains (Wikinews) without further training. This is to encourage participants to design systems that can be broadly applied to new domains.
 
+### Testing input files
+
+The testing files are provided in the folder `data/testing`. As explained in the [subtasks page](https://knowledge-learning.github.io/ehealthkd-2020/tasks#challenge-scenarios), they are divided into 4 scenarios. In each scenario's folder, you will find plain text files, and specifically for scenario 3, the gold annotations for task A.
+
+Please refer to the [submission instructions](https://knowledge-learning.github.io/ehealthkd-2020/submission) for additional details.
+
+The following files are provided:
+
+* `scenario1-main`: 
+    * `scenario.txt`: 5000 sentences from medline. You should perform **tasks A and B** and generate the corresponding file in `submissions/<your-team>/test/<run>/scenario1-main/scenario.ann`.
+    * `scenario.ann`: This annotations file is empty.
+* `scenario2-taskA`:
+    * `scenario.txt`: 100 sentences from medline. You should perform **task A** and generate the corresponding `submissions/<your-team>/test/<run>/scenario2-taskA/scenario.ann`.
+    * `scenario.ann`: This annotations file is empty.
+* `scenario3-taskB`:
+    * `scenario.txt`: 100 sentences from medline. You should perform **task B** and generate the corresponding `submissions/<your-team>/test/<run>/scenario3-taskB/scenario.ann`.
+    * `scenario.ann`: This annotations file contains the **gold output from task A** for this scenario.
+* `scenario4-transfer`:
+    * `scenario.txt`: 1500 sentences from wikipedia and wikinews. You should perform **task A and B** and generate the corresponding `submissions/<your-team>/test/<run>/scenario4-transfer/scenario.ann`.
+    * `scenario.ann`: This annotations file is empty.
+
+⚠️ **NOTE**: In scenarios 1 and 4, respectively, 5000 and 1500 plain text sentences are provided, but only 100 of these are actually evaluated. However, the exact sentences that will be evaluated are not disclosed to discourage manual annotation by participants and fine-tunning on the test set. Hence, your submission **must annotate all sentences** in each scenario.
+
 ### Automatic corpora
 
 Using the submissions from the past edition, we built an ensemble of all participant systems and automatically annotated 3000 additional sentences (folder `data/ensemble`). These sentences **have not** been manually revised, so they should not be considered gold standard. We invite you to evaluate if using these sentences for training improves your validation score. 
