@@ -60,11 +60,11 @@ def get_transfer(anns_path: Path) -> List[Sentence]:
     return sentences
 
 
-def get_extra(anns_path: Path, *collections):
+def get_extra(anns_path: Path, subset: str, *collections):
     extra_sentences = []
     all_sentences = {s.text for collection in collections for s in collection}
 
-    for file in sorted((anns_path / "plain").iterdir()):
+    for file in sorted((anns_path / "plain" / subset).iterdir()):
         if file.suffix == ".txt":
             with file.open() as fp:
                 file_sentences = [s.strip() for s in fp.read().split("\n") if s.strip()]
@@ -95,7 +95,8 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
     # dump test collection (per scenario) ----------------------------------------
     test_sentences = get_test(anns_path)
-    extra_sentences = get_extra(anns_path, train_develop_sentences, test_sentences)
+    extra_sentences_main = get_extra(anns_path, 'main', train_develop_sentences, test_sentences)
+    extra_sentences_transfer = get_extra(anns_path, 'transfer', train_develop_sentences, test_sentences)
 
     #### test/scenario3
     scn3 = Collection(test_sentences[200:])
@@ -107,7 +108,7 @@ def main(anns_path: Path, training_path, develop_path, test_path):
 
     #### test/scenario1
     scn1 = Collection(
-        extra_sentences[:4567] + test_sentences[:100] + extra_sentences[4567:]
+        extra_sentences_main[:4567] + test_sentences[:100] + extra_sentences_main[4567:]
     )
     scn1.dump(test_path / "scenario1-main" / "scenario.txt", False)
 
@@ -119,7 +120,9 @@ def main(anns_path: Path, training_path, develop_path, test_path):
     develop_transfer.dump(develop_path / "transfer" / "scenario.txt")
 
     #### test/scenario4
-    scn4 = Collection(transfer_sentences[100:])
+    scn4 = Collection(
+        extra_sentences_transfer[1234:] + transfer_sentences[100:] + extra_sentences_transfer[:1234]
+    )
     scn4.dump(test_path / "scenario4-transfer" / "scenario.txt")
 
 
