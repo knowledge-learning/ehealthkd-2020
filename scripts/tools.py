@@ -17,7 +17,7 @@ class EntityAnnotation:
 
     @staticmethod
     def parse(line):
-        id, mid, text = line.strip().split("\t")
+        id, mid, text = line.split("\t")
         typ, spans = mid.split(" ", 1)
         spans = [tuple(s.split()) for s in spans.split(";")]
         return EntityAnnotation(id, typ, spans, text)
