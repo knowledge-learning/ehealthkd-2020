@@ -40,6 +40,10 @@ class Run:
                 collection,
                 taskA=(not scenario.endswith("-taskB")),
                 taskB=(not scenario.endswith("-taskA")),
+                scenario=scenario,
+                mode=self.mode,
+                run_name=self.run_name,
+                user=self.user,
                 *args,
                 **kargs
             )
@@ -101,12 +105,12 @@ class Run:
         )
 
     @staticmethod
-    def submit(usr: str, configurations, *algorithms):
+    def submit(usr: str, configurations, *algorithms, **kargs):
         if not configurations:
             warnings.warn("The run will have no effect since no tasks were given.")
         else:
             for config in configurations:
-                Run.exec(Run.on(usr, *algorithms, config=config))
+                Run.exec(Run.on(usr, *algorithms, config=config), **kargs)
             Run.zip(usr)
 
     @staticmethod
