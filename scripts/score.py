@@ -4,8 +4,9 @@ import argparse
 import warnings
 from collections import OrderedDict
 from pathlib import Path
+from typing import List
 
-from scripts.utils import Collection, DisjointSet
+from scripts.utils import Collection, DisjointSet, Sentence
 
 CORRECT_A = "correct_A"
 INCORRECT_A = "incorrect_A"
@@ -48,7 +49,7 @@ def match_keyphrases(gold, submit, skip_incorrect=False):
     spurious = []
     missing = []
 
-    for gold_sent, submit_sent in zip(gold.sentences, submit.sentences):
+    for gold_sent, submit_sent in align(gold.sentences, submit.sentences):
         if gold_sent.text != submit_sent.text:
             warnings.warn(
                 "Wrong sentence: gold='%s' vs submit='%s'"
@@ -131,12 +132,46 @@ def subtaskB(gold, submit, data, verbose=False):
     return match_relations(gold, submit, data)
 
 
+def align(gold_sentences: List[Sentence], submit_sentences: List[Sentence]):
+    gold_sentences: List[Sentence] = list(gold_sentences)
+    submit_sentences: List[Sentence] = list(submit_sentences)
+
+    while gold_sentences and submit_sentences:
+        gold = gold_sentences[0]
+        submit = submit_sentences[0]
+
+        # si las oraciones coinciden, devolver ambas normalmente
+        if gold.text == submit.text:
+            gold_sentences.pop(0)
+            submit_sentences.pop(0)
+            yield (gold, submit)
+            continue
+
+        # las oraciones no coinciden, asumiremos que en submit falta esta oración
+        # generamos una oración sin anotar con el mismo text del gold
+        submit = Sentence(gold.text)
+        gold_sentences.pop(0)
+    
+        warnings.warn("Match not found for gold sentence: %r" % gold.text)
+        yield (gold, submit)
+
+    while gold_sentences:
+        # todas estas oraciones faltan por anotar
+        gold = gold_sentences.pop(0)
+        warnings.warn("Match not found for gold sentence (submission ended): %r" % gold.text)
+        yield (gold, Sentence(gold.text))
+
+    while submit_sentences:
+        submit = submit_sentences.pop(0)
+        warnings.warn("Spurious submission sentence not considered (gold ended): %r" % submit.text)
+
+
 def match_relations(gold, submit, data, skip_same_as=False, propagate_error=True):
     correct = {}
     spurious = []
     missing = []
 
-    for gold_sent, submit_sent in zip(gold.sentences, submit.sentences):
+    for gold_sent, submit_sent in align(gold.sentences, submit.sentences):
         if gold_sent.text != submit_sent.text:
             warnings.warn(
                 "Wrong sentence: gold='%s' vs submit='%s'"
