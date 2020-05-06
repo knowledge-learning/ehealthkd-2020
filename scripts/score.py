@@ -50,12 +50,12 @@ def match_keyphrases(gold, submit, skip_incorrect=False):
     missing = []
 
     for gold_sent, submit_sent in align(gold.sentences, submit.sentences):
-        if gold_sent.text != submit_sent.text:
-            warnings.warn(
-                "Wrong sentence: gold='%s' vs submit='%s'"
-                % (gold_sent.text, submit_sent.text)
-            )
-            continue
+        # if gold_sent.text != submit_sent.text:
+        #     warnings.warn(
+        #         "Wrong sentence: gold='%s' vs submit='%s'"
+        #         % (gold_sent.text, submit_sent.text)
+        #     )
+        #     continue
 
         if not gold_sent.keyphrases and not gold_sent.relations:
             continue
@@ -132,6 +132,14 @@ def subtaskB(gold, submit, data, verbose=False):
     return match_relations(gold, submit, data)
 
 
+def normalize(s: str):
+    return "".join(c.lower() for c in s if c.isalnum())
+
+
+def compare_text(s1: str, s2: str):
+    return normalize(s1) == normalize(s2)
+
+
 def align(gold_sentences: List[Sentence], submit_sentences: List[Sentence]):
     gold_sentences: List[Sentence] = list(gold_sentences)
     submit_sentences: List[Sentence] = list(submit_sentences)
@@ -141,7 +149,7 @@ def align(gold_sentences: List[Sentence], submit_sentences: List[Sentence]):
         submit = submit_sentences[0]
 
         # si las oraciones coinciden, devolver ambas normalmente
-        if gold.text == submit.text:
+        if compare_text(gold.text, submit.text):
             gold_sentences.pop(0)
             submit_sentences.pop(0)
             yield (gold, submit)
@@ -172,12 +180,12 @@ def match_relations(gold, submit, data, skip_same_as=False, propagate_error=True
     missing = []
 
     for gold_sent, submit_sent in align(gold.sentences, submit.sentences):
-        if gold_sent.text != submit_sent.text:
-            warnings.warn(
-                "Wrong sentence: gold='%s' vs submit='%s'"
-                % (gold_sent.text, submit_sent.text)
-            )
-            continue
+        # if gold_sent.text != submit_sent.text:
+        #     warnings.warn(
+        #         "Wrong sentence: gold='%s' vs submit='%s'"
+        #         % (gold_sent.text, submit_sent.text)
+        #     )
+        #     continue
 
         if not gold_sent.keyphrases and not gold_sent.relations:
             continue
