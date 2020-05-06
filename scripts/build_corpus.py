@@ -81,7 +81,7 @@ def get_extra(anns_path: Path, subset: str, *collections):
 
 def shuffle(*sentences, seed=13731):
     print([len(s) for s in sentences])
-    merge = sum(sentences, start=[])
+    merge = sum(sentences, [])
     print(len(merge))
     random.seed(seed)
     random.shuffle(merge)
