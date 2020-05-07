@@ -89,8 +89,6 @@ Send your paper to our Program Committee at [chairs_eHealth-KD@googlegroups.com]
 
 The Organization Committee of eHealth-KD encourages participants to submit a description paper of their systems. Submitted papers will be reviewed by a scientific committee, and only accepted papers will be published at CEUR. The proceedings of eHealth-KD will be jointly published with the proceedings of all tasks of IberLEF 2020. The submitted papers will be peer-reviewed by a Program Committee which is composed by all the participants and the Organization Committee.
 
-The manuscripts must satisfy the following rules:
-
 The minimum length of the regular paper should be 5 (mandatory minimum) and up to 10 pages plus references formatted according to the following template:
 
 * [LaTeX files](shared/eHealth-KD_2020_guidelines.zip)
