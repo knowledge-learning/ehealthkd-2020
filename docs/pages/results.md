@@ -10,7 +10,7 @@ Below are the official test scores for all participants and scenarios.
 For each scenario and participant, the best run in terms of F1, out of a maximum of three was
 selected.
 
-> ### Special congratulations ot all teams for their high-quality submissions which have surpassed previous years and our wildest expectations.
+> ### Special congratulations to all teams for their high-quality submissions which have surpassed previous years and our wildest expectations.
 
 Raw results are available in different formats.
 Feel free to use these resources to build your tables, graphics and comparisons.
