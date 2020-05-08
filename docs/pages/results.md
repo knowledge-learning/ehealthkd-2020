@@ -1,3 +1,9 @@
+---
+title: Results
+permalink: /results
+nav_order: 0
+---
+
 # Official results
 
 Below are the official test scores for all participants and scenarios.
