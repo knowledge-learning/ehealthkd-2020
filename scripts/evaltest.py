@@ -63,9 +63,9 @@ def filter_best(results):
         user_dict = {}
         for name in ["scenario1", "scenario2", "scenario3", "scenario4"]:
             try:
-                scenario = [entry[name] for entry in submits]
-                best = max(scenario, key=lambda d: d["f1"])
-                user_dict[name] = best
+                scenarios = [entry[name] for entry in submits]
+                best_scenario = max(scenarios, key=lambda d: d["f1"])
+                user_dict[name] = best_scenario
             except KeyError:
                 warnings.warn("Scenario {0} not found!".format(name))
                 user_dict[name] = collections.defaultdict(float)
@@ -189,30 +189,34 @@ def main(
             df1 = df.transpose()[
                 ["scenario1-f1", "scenario1-precision", "scenario1-recall"]
             ]
-            df1 = df1.sort_values("scenario1-f1", ascending=False).to_csv()
+            df1 = df1.sort_values("scenario1-f1", ascending=False)
 
             df2 = df.transpose()[
                 ["scenario2-f1", "scenario2-precision", "scenario2-recall"]
             ]
-            df2 = df2.sort_values("scenario2-f1", ascending=False).to_csv()
+            df2 = df2.sort_values("scenario2-f1", ascending=False)
 
             df3 = df.transpose()[
                 ["scenario3-f1", "scenario3-precision", "scenario3-recall"]
             ]
-            df3 = df3.sort_values("scenario3-f1", ascending=False).to_csv()
+            df3 = df3.sort_values("scenario3-f1", ascending=False)
 
             df4 = df.transpose()[
                 ["scenario4-f1", "scenario4-precision", "scenario4-recall"]
             ]
-            df4 = df4.sort_values("scenario4-f1", ascending=False).to_csv()
+            df4 = df4.sort_values("scenario4-f1", ascending=False)
 
-            print(df1)
-            print(df2)
-            print(df3)
-            print(df4)
+            if pretty:
+                print(df1.round(3).to_markdown() + "\n")
+                print(df2.round(3).to_markdown() + "\n")
+                print(df3.round(3).to_markdown() + "\n")
+                print(df4.round(3).to_markdown() + "\n")
 
-        elif pretty:
-            print(df.to_html())
+            else:
+                print(df1.to_csv())
+                print(df2.to_csv())
+                print(df3.to_csv())
+                print(df4.to_csv())
         else:
             print(df.to_csv())
 
@@ -271,7 +275,7 @@ if __name__ == "__main__":
         help="report only the best submission per scenario, otherwise all submissions are reported.",
     )
     parser.add_argument(
-        "--csv",
+        "--csv", 
         action="store_true",
         help="if passed then results are formatted as a table, can only be used with --best. Otherwise, results are returned in JSON format.",
     )

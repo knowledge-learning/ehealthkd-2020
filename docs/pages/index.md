@@ -8,18 +8,48 @@ nav_order: 0
 
 Natural Language Processing (NLP) methods are increasingly being used to mine knowledge from unstructured health texts. Recent advances in health text processing techniques are encouraging researchers and health domain experts to go beyond just reading the information included in published texts (e.g. academic manuscripts, clinical reports, etc.) and structured questionnaires, to discover new knowledge by mining health contents. This has allowed other perspectives to surface that were not previously available.
 
-Over the years many eHealth challenges have taken place, which have attempted to identify, classify, extract and link knowledge, such as Semevals, CLEF campaigns and others.
+Over the years, many eHealth challenges have attempted to identify, classify, extract, and link knowledge, such as Semevals, CLEF campaigns, and others.
 
-The eHealth-KD 2020 proposes --as the previous editions [eHealth-KD 2019](https://knowledge-learning.github.io/ehealthkd-2019) and [eHealth-KD 2018](http://www.sepln.org/workshops/tass/2018/task-3/)--  modeling the human language in a scenario in which Spanish electronic health documents could be machine readable from a semantic point of view. With this task, we expect to encourage the development of software technologies to automatically extract a large variety of knowledge from eHealth documents written in the Spanish Language.
+The eHealth-KD 2020 proposes --as the previous editions [eHealth-KD 2019](https://knowledge-learning.github.io/ehealthkd-2019) and [eHealth-KD 2018](http://www.sepln.org/workshops/tass/2018/task-3/)--  modeling the human language in a scenario in which Spanish electronic health documents could be machine-readable from a semantic point of view. With this task, we expect to encourage the development of software technologies to automatically extract a large variety of knowledge from eHealth documents written in the Spanish Language.
 
 Even though this challenge is oriented to the health domain, the structure of the knowledge to be extracted is general-purpose. The semantic structure proposed models four types of information units. Each one represents a specific semantic interpretation, and they make use of thirteen semantic relations among them. The following sections provide a detailed presentation of each unit and relation type. An example is provided in the following picture.
 
 ![](img/task_b.png)
 
-This challenge can be of interest for experts in the field of natural language processing, specifically for those working on automatic knowledge extraction and discovery. It is not a requirement to have expertise in health texts processing for dealing with the eHealth-KD task, due to the general purpose of the semantic schema defined. Nevertheless, eHealth researchers could find interesting this challenge to evaluate their technologies that rely on health domain knowledge.
+This challenge can be of interest to experts in the field of natural language processing, specifically for those working on automatic knowledge extraction and discovery. It is not a requirement to have expertise in health text processing for dealing with the eHealth-KD task, due to the general purpose of the semantic schema defined. Nevertheless, eHealth researchers could find interesting this challenge to evaluate their technologies that rely on health domain knowledge.
 
-**Novelties**. This edition will involve an additional scenario in which an alternative domain (not health related) will be evaluated, to experience with transfer learning techniques. In addition, [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) related documents, i.e. news and documentation, will be played.
+**Novelties**. This edition will involve an additional scenario in which an alternative domain (not health-related) will be evaluated, to experience with transfer learning techniques. Besides, [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) related documents, i.e. news and documentation, will be available.
+
 ![](img/COVID-19.png)
+
+## Official results
+
+> ### 🏆 Special congratulations to **Team Vicomtech** for reaching the top results in this edition of the eHealth-KD challenge.
+
+The [official results](results) for the eHealth-KD 2020 are ready 🎉!!
+
+As [explained](tasks#challenge_scenarios), Scenario 1 is the main evaluation scenario.
+The results for Scenario 1 are summarized below.
+
+### Scenario 1: Main evaluation
+
+|   | Team       | F1             |   Precision           |   Recall           |
+:--:|:-----------|---------------:|----------------------:|-------------------:|
+|🥇 | Vicomtech  |       0.665564 |              0.679364 |           0.652315 |
+|🥈 | Talp-UPC   |       0.626679 |              0.626969 |           0.626389 |
+|🥉 | UH-MAJA-KD |       0.625    |              0.634542 |           0.615741 |
+|   | IXA-NER-RE |       0.55748  |              0.58008  |           0.536574 |
+|   | uhclean    |       0.556876 |              0.716157 |           0.455556 |
+|   | SINAI      |       0.42069  |              0.651456 |           0.310648 |
+|   | HAPLAP     |       0.395153 |              0.458435 |           0.347222 |
+|   | baseline   |       0.395153 |              0.458435 |           0.347222 |
+|   | Zhalmugbel |       0.245644 |              0.312589 |           0.202315 |
+
+The organizing committee of the eHealth-KD challenge wants to sincerely congratulate all
+participants for the high-quality submission and the impressive results, which have surpassed
+previous years.
+
+See detailed results per team, scenario and run [here](results).
 
 ## Description of the Subtasks
 
@@ -49,6 +79,7 @@ All the data will be made available to participants in due time. This includes t
 
 ### News 
 
+* 📢 Official results are now public !!.
 * 📢 An official template for the working notes has been published.
 * 👉 The deadline for the TEST phase has been extended to **May 5th, 23:59 UTC**.
 * 👉 Testing files [are ready](https://knowledge-learning.github.io/ehealthkd-2020/resources#testing-input-files). The [testing phase in Codalab](https://competitions.codalab.org/competitions/23454#participate) is officially open !!
@@ -93,7 +124,7 @@ The minimum length of the regular paper should be 5 (mandatory minimum) and up t
 
 * [LaTeX files](shared/eHealth-KD_2020_guidelines.zip)
 * [PDF guidelines](shared/eHealth-KD_2020_guidelines.pdf)
-* [Overleaf template]()
+* [Overleaf template](https://www.overleaf.com/latex/templates/ehealth-kd-2020-guidelines/vtjwhbggjzyg)
 
 Articles must be written in English.
 The document format can be Word or LaTeX, but the submission must be in PDF format.
