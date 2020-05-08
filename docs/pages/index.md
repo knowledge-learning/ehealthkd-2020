@@ -42,7 +42,6 @@ The results for Scenario 1 are summarized below.
 |   | uhclean    |       0.556876 |              0.716157 |           0.455556 |
 |   | SINAI      |       0.42069  |              0.651456 |           0.310648 |
 |   | HAPLAP     |       0.395153 |              0.458435 |           0.347222 |
-|   | baseline   |       0.395153 |              0.458435 |           0.347222 |
 |   | Zhalmugbel |       0.245644 |              0.312589 |           0.202315 |
 
 The organizing committee of the eHealth-KD challenge wants to sincerely congratulate all
