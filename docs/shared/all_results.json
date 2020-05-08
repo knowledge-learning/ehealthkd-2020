@@ -959,7 +959,7 @@
       "submit": "run1"
     }
   ],
-  "uhclean": [
+  "UH-MatCom": [
     {
       "scenario1": {
         "correct_A": 404,
