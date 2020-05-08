@@ -39,7 +39,7 @@ The results for Scenario 1 are summarized below.
 |🥈 | Talp-UPC   |       0.626679 |              0.626969 |           0.626389 |
 |🥉 | UH-MAJA-KD |       0.625    |              0.634542 |           0.615741 |
 |   | IXA-NER-RE |       0.55748  |              0.58008  |           0.536574 |
-|   | UH-MatCom    |       0.556876 |              0.716157 |           0.455556 |
+|   | UH-MatCom  |       0.556876 |              0.716157 |           0.455556 |
 |   | SINAI      |       0.42069  |              0.651456 |           0.310648 |
 |   | HAPLAP     |       0.395153 |              0.458435 |           0.347222 |
 |   | Zhalmugbel |       0.245644 |              0.312589 |           0.202315 |
@@ -78,8 +78,8 @@ All the data will be made available to participants in due time. This includes t
 
 ### News 
 
-* 📢 Official results are now public !!.
-* 📢 An official template for the working notes has been published.
+* 📢 [Official results](results) are now public !!.
+* 📢 An [official template](https://www.overleaf.com/latex/templates/ehealth-kd-2020-guidelines/vtjwhbggjzyg) for the working notes has been published.
 * 👉 The deadline for the TEST phase has been extended to **May 5th, 23:59 UTC**.
 * 👉 Testing files [are ready](https://knowledge-learning.github.io/ehealthkd-2020/resources#testing-input-files). The [testing phase in Codalab](https://competitions.codalab.org/competitions/23454#participate) is officially open !!
 * 👉 Due to the potential difficulties caused by COVID-19 to participants,
@@ -93,10 +93,10 @@ All the data will be made available to participants in due time. This includes t
 | 03&nbsp;Feb&nbsp;2020 | Training and development data ready                                                              | [📝 Sign Corpus License](https://forms.gle/pUJutSDq2FYLwNWQA)<br>[🏃‍ Training and dev data](https://github.com/knowledge-learning/ehealthkd-2020/data) |
 | 30&nbsp;Mar&nbsp;2020 | Alternative scenario development data ready                                                      | [🏃‍ Alt dev data](https://github.com/knowledge-learning/ehealthkd-2020/data/development/transfer)  |
 | 30&nbsp;Mar&nbsp;2020 | Ensemble dataset for augmenting training stage, ready                                            | [🏃‍ Ensemble](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/ensemble)  |
-| 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        | [⚗️ Test input files](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/testing)<br>[🖥 Codalab submission page](https://competitions.codalab.org/competitions/23454#participate) |
+| 20&nbsp;Apr&nbsp;2020<br>~~06&nbsp;Apr&nbsp;2020~~ | **Evaluation start** <br> Test data released                        | [⚗️ Test input files](https://github.com/knowledge-learning/ehealthkd-2020/tree/master/data/testing)<br>[🖥 Codalab submission](https://competitions.codalab.org/competitions/23454#participate) |
 | 05&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Evaluation end** <br> (due by 23:59 UTC)                          |  |
 | 05&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
-| 08&nbsp;May&nbsp;2020<br>~~24&nbsp;Abr&nbsp;2020~~ | Results posted                                                      |  |
+| 08&nbsp;May&nbsp;2020<br>~~24&nbsp;Abr&nbsp;2020~~ | Results posted                                                      | [🏆 Official results](results) |
 | 22&nbsp;May&nbsp;2020<br>~~08&nbsp;May&nbsp;2020~~ | System description paper submissions <br> (due by 23:59 UTC)        | [📁 LaTeX template](shared/eHealth-KD_2020_guidelines.zip)<br>[📄 PDF guidelines](shared/eHealth-KD_2020_guidelines.pdf) |
 | 05&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
 | 12&nbsp;Jun&nbsp;2020<br>~~29&nbsp;May&nbsp;2020~~ | Author notifications                                                |  |
