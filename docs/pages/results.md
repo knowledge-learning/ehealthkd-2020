@@ -31,7 +31,7 @@ Feel free to use these resources to build your tables, graphics and comparisons.
 | SINAI      |       0.42069  |              0.651456 |           0.310648 |
 | HAPLAP     |       0.395153 |              0.458435 |           0.347222 |
 | baseline   |       0.395153 |              0.458435 |           0.347222 |
-| Zhalmugbel |       0.245644 |              0.312589 |           0.202315 |
+| ExSim      |       0.245644 |              0.312589 |           0.202315 |
 
 ## Scenario 2: Task A
 
@@ -45,7 +45,7 @@ Feel free to use these resources to build your tables, graphics and comparisons.
 | IXA-NER-RE |       0.6918   |              0.726733 |           0.660072 |
 | HAPLAP     |       0.541978 |              0.503864 |           0.586331 |
 | baseline   |       0.541978 |              0.503864 |           0.586331 |
-| Zhalmugbel |       0.314214 |              0.292117 |           0.339928 |
+| ExSim      |       0.314214 |              0.292117 |           0.339928 |
 
 ## Scenario 3: Task B
 
@@ -58,7 +58,7 @@ Feel free to use these resources to build your tables, graphics and comparisons.
 | UH-MatCom  |       0.545035 |              0.682081 |           0.453846 |
 | SINAI      |       0.461725 |              0.627063 |           0.365385 |
 | HAPLAP     |       0.316418 |              0.327835 |           0.305769 |
-| Zhalmugbel |       0.131313 |              0.527027 |           0.075    |
+| ExSim      |       0.131313 |              0.527027 |           0.075    |
 | baseline   |       0.131313 |              0.527027 |           0.075    |
 
 ## Scenario 4: Alternative domain
@@ -73,4 +73,4 @@ Feel free to use these resources to build your tables, graphics and comparisons.
 | SINAI      |       0.28125  |              0.626255 |          0.181346  |
 | HAPLAP     |       0.13779  |              0.281772 |          0.0911924 |
 | baseline   |       0.13779  |              0.281772 |          0.0911924 |
-| Zhalmugbel |       0.122282 |              0.253264 |          0.0805983 |
+| ExSim      |       0.122282 |              0.253264 |          0.0805983 |
