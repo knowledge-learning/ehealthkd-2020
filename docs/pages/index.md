@@ -167,12 +167,8 @@ Piad-Morffis, A., Guitérrez, Y., Estevez-Velarde, S., & Muñoz, R. (2019, June)
 
 Piad-Morffis, A., Gutiérrez, Y., Estévez-Velarde, S., Almeida-Cruz, Y., Montoyo, A., & Munoz, R. (2019). Analysis of eHealth knowledge discovery systems in the TASS 2018 Workshop. Procesamiento del Lenguaje Natural, 62, 13-20.
 
-Díaz-Galiano, M. C., García-Cumbreras, M. Á., García-Vega, M., Gutiérrez, Y., Cámara, E. M., Piad-Morffis, A., & Villena-Román, J. (2019). TASS 2018: The strength of deep learning in language understanding tasks. Procesamiento del Lenguaje Natural, 62, 77-84.
-
 Estevez-Velarde, S., Gutiérrez, Y., Montoyo, A., & Almeida-Cruz, Y. (2019, October). Optimizing Natural Language Processing Pipelines: Opinion Mining Case Study. In Iberoamerican Congress on Pattern Recognition (pp. 163-173). Springer, Cham.
 
 Piad-Morffis, A., Gutiérrez, Y., Consuegra-Ayala, J. P., Estevez-Velarde, S., Almeida-Cruz, Y., Munoz, R., & Montoyo, A. (2019). Overview of the ehealth knowledge discovery challenge at iberlef 2019. In Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2019). CEUR Workshop Proceedings, CEUR-WS. org.
-
-Martínez Cámara, E., Almeida Cruz, Y., Díaz Galiano, M. C., Estévez-Velarde, S., García Cumbreras, M. Á., García Vega, M., ... & Piad-Morffis, A. (2018). Overview of TASS 2018: Opinions, health and emotions.
 
 
