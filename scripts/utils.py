@@ -180,11 +180,12 @@ class Sentence:
     def fix_ids(self, start=1):
         next_id = start
 
-        for k in self.keyphrases:
-            for r in self.relations:
-                if r.origin == k.id:
+        copy = self.clone()
+        for k, kc in zip(self.keyphrases, copy.keyphrases):
+            for r, rc in zip(self.relations, copy.relations):
+                if rc.origin == kc.id:
                     r.origin = next_id
-                if r.destination == k.id:
+                if rc.destination == kc.id:
                     r.destination = next_id
 
             k.id = next_id
