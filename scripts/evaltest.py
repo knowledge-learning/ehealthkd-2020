@@ -101,6 +101,7 @@ def main(
     compact=False,
     gold="data",
     submit="data/submissions",
+    ignore=False,
 ):
     users = collections.defaultdict(list)
 
@@ -141,11 +142,13 @@ def main(
         submits = submits / single
         runs = submits / mode
         if not runs.exists():
-            raise ValueError(
-                "Directory {0} not found. Check --mode and --single options.".format(
-                    runs
-                )
+            msg = "Directory {0} not found. Check --mode and --single options.".format(
+                runs
             )
+            if ignore:
+                warnings.warn(msg)
+            else:
+                raise ValueError(msg)
         ensure_number_of_runs(runs)
         for subfolder in runs.iterdir():
             users[submits.name].append(evaluate_one(subfolder, *gold_scenarios))
@@ -155,11 +158,13 @@ def main(
                 continue
             runs = userfolder / mode
             if not runs.exists():
-                raise ValueError(
-                    "Directory {0} not found. Did you mean to use --single? Check --mode option.".format(
-                        runs
-                    )
+                msg = "Directory {0} not found. Did you mean to use --single? Check --mode option.".format(
+                    runs
                 )
+                if ignore:
+                    warnings.warn(msg)
+                else:
+                    raise ValueError(msg)
             ensure_number_of_runs(runs)
             for subfolder in runs.iterdir():
                 users[userfolder.name].append(evaluate_one(subfolder, *gold_scenarios))
@@ -275,7 +280,7 @@ if __name__ == "__main__":
         help="report only the best submission per scenario, otherwise all submissions are reported.",
     )
     parser.add_argument(
-        "--csv", 
+        "--csv",
         action="store_true",
         help="if passed then results are formatted as a table, can only be used with --best. Otherwise, results are returned in JSON format.",
     )
@@ -309,6 +314,11 @@ if __name__ == "__main__":
         help="if passed, overrides the path of the submit folder.",
         default="data/submissions",
     )
+    parser.add_argument(
+        "--ignore",
+        help="if passed, shows a warning for each invalid submission and continues.",
+        action="store_true",
+    )
     args = parser.parse_args()
     main(
         args.mode,
@@ -321,4 +331,5 @@ if __name__ == "__main__":
         args.compact,
         args.gold,
         args.submit,
+        args.ignore,
     )
