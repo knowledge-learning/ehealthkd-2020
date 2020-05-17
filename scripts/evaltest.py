@@ -145,10 +145,7 @@ def main(
             msg = "Directory {0} not found. Check --mode and --single options.".format(
                 runs
             )
-            if ignore:
-                warnings.warn(msg)
-            else:
-                raise ValueError(msg)
+            raise ValueError(msg)
         ensure_number_of_runs(runs)
         for subfolder in runs.iterdir():
             users[submits.name].append(evaluate_one(subfolder, *gold_scenarios))
@@ -163,6 +160,7 @@ def main(
                 )
                 if ignore:
                     warnings.warn(msg)
+                    continue
                 else:
                     raise ValueError(msg)
             ensure_number_of_runs(runs)
