@@ -98,7 +98,7 @@ All the data will be made available to participants in due time. This includes t
 | 05&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
 | 08&nbsp;May&nbsp;2020<br>~~24&nbsp;Abr&nbsp;2020~~ | Results posted                                                      | [🏆 Official results](results) |
 | 22&nbsp;May&nbsp;2020<br>~~08&nbsp;May&nbsp;2020~~ | System description paper submissions <br> (due by 23:59 UTC)        | [📁 LaTeX template](shared/eHealth-KD_2020_guidelines.zip)<br>[📄 PDF guidelines](shared/eHealth-KD_2020_guidelines.pdf) |
-| 05&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
+| 07&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
 | 12&nbsp;Jun&nbsp;2020<br>~~29&nbsp;May&nbsp;2020~~ | Author notifications                                                |  |
 | 26&nbsp;Jun&nbsp;2020<br>~~12&nbsp;Jun&nbsp;2020~~ | Camera ready submissions                                            |  |
 | Sep&nbsp;2020         | IberLEF Workshop                                                                                 |  |
