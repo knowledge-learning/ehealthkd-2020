@@ -25,7 +25,7 @@ permalink: /schedule
 | 05&nbsp;May&nbsp;2020<br>~~19&nbsp;Apr&nbsp;2020~~ | **Registration deadline** <br> (due by 23:59 UTC)                   |  |
 | 08&nbsp;May&nbsp;2020<br>~~24&nbsp;Abr&nbsp;2020~~ | Results posted                                                      |  |
 | 22&nbsp;May&nbsp;2020<br>~~08&nbsp;May&nbsp;2020~~ | System description paper submissions <br> (due by 23:59 UTC)        |  |
-| 05&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
+| 07&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
 | 12&nbsp;Jun&nbsp;2020<br>~~29&nbsp;May&nbsp;2020~~ | Author notifications                                                |  |
 | 26&nbsp;Jun&nbsp;2020<br>~~12&nbsp;Jun&nbsp;2020~~ | Camera ready submissions                                            |  |
 | Sep&nbsp;2020         | IberLEF Workshop                                                                                 |  |
