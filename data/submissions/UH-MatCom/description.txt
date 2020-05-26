@@ -1,0 +1,7 @@
+method_name: BERT-RNN-CNET
+method_description: Deep learning-based system for keyphrase and relation extraction. Task A and Task B are processed independently, but some layers are shared across models. Four sequence tagging models were trained to solve Task A, one for each keyphrase type. All four models share the same architecture: stacked RNN layers with BERT, char embedding, and POS-tag for input representation. To solve Task B, two different models were tested. Both were trained to predict the most probable relation (if any) between any pair of entities occurring in the same sentence. The first one encodes the path (in the dependency) between the pair entities using RNN layers. The other one ignores the path between entities but instead uses external knowledge from ConceptNet. An ensemble method was applied over several strategies to produce a third run.
+project_url: 
+publication_url: 
+bibtex: 
+team_name: uhclean
+organization_or_affiliation: 

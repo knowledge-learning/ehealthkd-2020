@@ -1,0 +1,150 @@
+==================================================
+::::::::::::::::::::: SINAI ::::::::::::::::::::::
+==================================================
+---------------------[ run3 ]---------------------
+> scenario1 
+     correct_A       = 250
+     incorrect_A     = 18
+     partial_A       = 19
+     spurious_A      = 44
+     missing_A       = 287
+     correct_B       = 66
+     spurious_B      = 108
+     missing_B       = 440
+     recall          ~ 0.3014
+     precision       ~ 0.6446
+     f1              ~ 0.4107
+> scenario2 
+     correct_A       = 432
+     incorrect_A     = 24
+     partial_A       = 33
+     spurious_A      = 42
+     missing_A       = 67
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8067
+     precision       ~ 0.8446
+     f1              ~ 0.8252
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 188
+     spurious_B      = 119
+     missing_B       = 332
+     recall          ~ 0.3615
+     precision       ~ 0.6124
+     f1              ~ 0.4547
+> scenario4 
+     correct_A       = 345
+     incorrect_A     = 27
+     partial_A       = 26
+     spurious_A      = 50
+     missing_A       = 812
+     correct_B       = 74
+     spurious_B      = 185
+     missing_B       = 1123
+     recall          ~ 0.1795
+     precision       ~ 0.611
+     f1              ~ 0.2775
+---------------------[ run2 ]---------------------
+> scenario1 
+     correct_A       = 250
+     incorrect_A     = 18
+     partial_A       = 19
+     spurious_A      = 44
+     missing_A       = 287
+     correct_B       = 65
+     spurious_B      = 107
+     missing_B       = 441
+     recall          ~ 0.3005
+     precision       ~ 0.6451
+     f1              ~ 0.41
+> scenario2 
+     correct_A       = 424
+     incorrect_A     = 27
+     partial_A       = 34
+     spurious_A      = 38
+     missing_A       = 71
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.7932
+     precision       ~ 0.8432
+     f1              ~ 0.8174
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 190
+     spurious_B      = 113
+     missing_B       = 330
+     recall          ~ 0.3654
+     precision       ~ 0.6271
+     f1              ~ 0.4617
+> scenario4 
+     correct_A       = 350
+     incorrect_A     = 20
+     partial_A       = 25
+     spurious_A      = 46
+     missing_A       = 815
+     correct_B       = 74
+     spurious_B      = 182
+     missing_B       = 1123
+     recall          ~ 0.1813
+     precision       ~ 0.6263
+     f1              ~ 0.2812
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 250
+     incorrect_A     = 15
+     partial_A       = 21
+     spurious_A      = 46
+     missing_A       = 288
+     correct_B       = 75
+     spurious_B      = 108
+     missing_B       = 431
+     recall          ~ 0.3106
+     precision       ~ 0.6515
+     f1              ~ 0.4207
+> scenario2 
+     correct_A       = 436
+     incorrect_A     = 30
+     partial_A       = 28
+     spurious_A      = 48
+     missing_A       = 62
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8094
+     precision       ~ 0.8303
+     f1              ~ 0.8197
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 169
+     spurious_B      = 106
+     missing_B       = 351
+     recall          ~ 0.325
+     precision       ~ 0.6145
+     f1              ~ 0.4252
+> scenario4 
+     correct_A       = 348
+     incorrect_A     = 33
+     partial_A       = 21
+     spurious_A      = 48
+     missing_A       = 808
+     correct_B       = 47
+     spurious_B      = 140
+     missing_B       = 1150
+     recall          ~ 0.1685
+     precision       ~ 0.6366
+     f1              ~ 0.2664

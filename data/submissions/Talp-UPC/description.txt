@@ -1,0 +1,7 @@
+method_name: Bert+ConvRNN
+method_description: Bert Embeddings + Convolutional + Recurrent Neural Network
+project_url: 
+publication_url: 
+bibtex: 
+team_name: Talp UPC
+organization_or_affiliation: 

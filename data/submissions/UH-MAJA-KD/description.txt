@@ -1,0 +1,7 @@
+method_name: BiLSTMCRF-Dependency
+method_description: Both tasks were solved separately. Task A, using a BiLSTM-CRF architecture with BERT-based contextual embeddings as input features, as well as other syntactic ones. Task B, using a RNN-based architecture lying on dependency tree structures, with a variety of input features, including BERT-based embeddings. Tags: SDEN
+project_url: 
+publication_url: 
+bibtex: 
+team_name: UH-MAJA-KD
+organization_or_affiliation: University of Havana

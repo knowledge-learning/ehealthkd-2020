@@ -1,0 +1,52 @@
+==================================================
+:::::::::::::::::::: BASELINE ::::::::::::::::::::
+==================================================
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 316
+     incorrect_A     = 34
+     partial_A       = 28
+     spurious_A      = 280
+     missing_A       = 196
+     correct_B       = 45
+     spurious_B      = 115
+     missing_B       = 461
+     recall          ~ 0.3472
+     precision       ~ 0.4584
+     f1              ~ 0.3952
+> scenario2 
+     correct_A       = 315
+     incorrect_A     = 37
+     partial_A       = 22
+     spurious_A      = 273
+     missing_A       = 182
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.5863
+     precision       ~ 0.5039
+     f1              ~ 0.542
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 39
+     spurious_B      = 35
+     missing_B       = 481
+     recall          ~ 0.075
+     precision       ~ 0.527
+     f1              ~ 0.1313
+> scenario4 
+     correct_A       = 196
+     incorrect_A     = 38
+     partial_A       = 41
+     spurious_A      = 453
+     missing_A       = 935
+     correct_B       = 3
+     spurious_B      = 48
+     missing_B       = 1194
+     recall          ~ 0.09119
+     precision       ~ 0.2818
+     f1              ~ 0.1378

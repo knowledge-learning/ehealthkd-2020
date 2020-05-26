@@ -1,0 +1,9 @@
+method_name: Joint AB-LSTM
+method_description: Joint AB-LSTM neural network. The system has been evaluated in two ways, in the first the NN outputs if there is a relation between two entities and if there is what type (run1) and in the second the NN first says if there is relation or not, and with the ones that have relation between them the NN is reevaluated and the instances are annotated with the relation type (run2). The NN has been trained with the eHealthKD 2020 train and eHealthKD 2019 train+dev corpora. The embeddings used were trained by doctor Sara Santiso for her PhD
+
+Tags: D+E
+project_url: https://github.com/Porobu/HAPLAP-MAL
+publication_url: 
+bibtex: 
+team_name: HAPLAP
+organization_or_affiliation: 

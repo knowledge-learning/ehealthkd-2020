@@ -1,0 +1,523 @@
+T1	Concept 10 18	personas
+T2	Concept 22 26;27 32	seis meses
+T3	Concept 36 40	edad
+T4	Concept 43 50	mayores
+T5	Concept 92 97	gripe
+T6	Concept 103 113	talasemias
+T7	Concept 122 132	frecuentes
+T8	Concept 143 151	personas
+T9	Concept 155 166;167 175	ascendencia italiana
+T10	Concept 177 183	griega
+T11	Concept 208 211;212 214;215 219	sur de Asia
+T12	Concept 222 230	africana
+T13	Concept 244 251	líquido
+T14	Concept 271 282	analgésicos
+T15	Concept 287 295	aspirina
+T16	Concept 313 321	insulina
+T17	Concept 329 336	hormona
+T18	Concept 352 359	glucosa
+T19	Concept 375 382	células
+T20	Concept 395 402	energía
+T21	Concept 407 412	útero
+T22	Concept 415 421	matriz
+T23	Concept 428 433	lugar
+T24	Concept 457 461	bebé
+T25	Concept 473 478	mujer
+T26	Concept 484 494	embarazada
+T27	Concept 499 507;508 510;511 516;517 525;526 534	síndrome de dolor regional complejo
+T28	Concept 541 550;551 553;554 559;560 567	trastorno de dolor crónico
+T29	Concept 572 580;581 588	implante coclear
+T30	Concept 595 606;607 618	dispositivo electrónico
+T31	Concept 619 626	pequeño
+T32	Concept 629 637	complejo
+T33	Concept 690 698	audición
+T34	Concept 704 711	piernas
+T35	Concept 731 737	huesos
+T36	Concept 739 744;745 755	vasos sanguíneos
+T37	Concept 757 765	músculos
+T38	Concept 774 781;782 792	tejidos conectivos
+T39	Concept 826 834	personas
+T40	Concept 841 844	EDS
+T41	Concept 854 862	personas
+T42	Concept 888 895	vértigo
+T43	Concept 934 941	ataques
+T44	Concept 946 960	frecuentemente
+T45	Concept 977 981	días
+T46	Concept 990 998	gérmenes
+T47	Concept 1016 1021	nariz
+T48	Concept 1030 1038	garganta
+T49	Concept 1043 1047	niño
+T50	Concept 1081 1087	tejido
+T51	Concept 1104 1112	pulmones
+T52	Concept 1117 1125	estómago
+T53	Concept 1130 1137	corazón
+T54	Concept 1146 1153	órganos
+T55	Concept 1163 1172	mesotelio
+T56	Concept 1177 1186;1187 1189;1190 1196	trastorno de pánico
+T57	Concept 1211 1220;1221 1223;1224 1232	trastorno de ansiedad
+T58	Concept 1237 1242	virus
+T59	Concept 1246 1256	contagioso
+T60	Concept 1280 1287	persona
+T61	Concept 1290 1297	persona
+T62	Concept 1328 1336;1337 1339;1340 1345;1346 1349;1350 1356	síndrome de shock por dengue
+T63	Concept 1376 1382	masivo
+T64	Concept 1385 1390	shock
+T65	Concept 1396 1408	tratamientos
+T66	Concept 1418 1424	cremas
+T67	Concept 1426 1435	medicinas
+T68	Concept 1438 1449	fototerapia
+T69	Concept 1490 1497	alcohol
+T70	Concept 1538 1546	tobillos
+T71	Concept 1548 1555	talones
+T72	Concept 1557 1565	rodillas
+T73	Concept 1567 1574	muñecas
+T74	Concept 1576 1581	dedos
+T75	Concept 1584 1589	codos
+T76	Concept 1599 1609	embarazada
+T77	Concept 1614 1621	sífilis
+T78	Concept 1635 1643;1644 1654	defectos congénitos
+T79	Concept 1657 1664	abortos
+T80	Concept 1683 1691	gérmenes
+T81	Concept 1704 1712	pulmones
+T82	Concept 1718 1726;1727 1736	torrente sanguíneo
+T83	Concept 1751 1754	Hib
+T84	Concept 1778 1784	graves
+T85	Concept 1793 1803	meningitis
+T86	Concept 1809 1817	neumonía
+T87	Concept 1819 1824	LASIK
+T88	Concept 1827 1842;1843 1845;1846 1850	queratomileusis in situ
+T89	Concept 1864 1869;1870 1875	rayos láser
+T90	Concept 1896 1903	comunes
+T91	Concept 1913 1918	tipos
+T92	Concept 1920 1925;1926 1927	grupo A
+T93	Concept 1930 1935;1936 1938	grupo B.
+T94	Concept 1956 1962	cuerpo
+T95	Concept 1984 1993;1994 2005	respuesta inmunitaria
+T96	Concept 2012 2021;2022 2032	infección bacteriana
+T97	Concept 2043 2051	personas
+T98	Concept 2056 2066	avergüenza
+T99	Concept 2084 2093;2095 2103	problemas rectales
+T100	Concept 2109 2120	hemorroides
+T101	Concept 2125 2130	venas
+T102	Concept 2131 2140	hinchadas
+T103	Concept 2167 2170	ano
+T104	Concept 2182 2190	inferior
+T105	Concept 2195 2200	recto
+T106	Concept 2205 2210	virus
+T107	Concept 2230 2235;2236 2243	seres humanos
+T108	Concept 2260 2270	parvovirus
+T109	Concept 2292 2298	perros
+T110	Concept 2305 2310	gatos
+T111	Concept 2346 2358;2359 2362;2363 2370	enfermedades del corazón
+T112	Concept 2375 2383;2384 2386;2387 2393;2394 2400;2401 2409	síndrome de muerte súbita infantil
+T113	Concept 2424 2433	repentina
+T114	Concept 2436 2448	inexplicable
+T115	Concept 2455 2459	niño
+T116	Concept 2472 2475	año
+T117	Concept 2479 2483	edad
+T118	Concept 2499 2505	tabaco
+T119	Concept 2511 2518	alcohol
+T120	Concept 2530 2536	riesgo
+T121	Concept 2541 2548	cafeína
+T122	Concept 2553 2559	tabaco
+T123	Concept 2565 2572	alcohol
+T124	Concept 2593 2601	síntomas
+T125	Concept 2632 2637	niños
+T126	Concept 2645 2653	síntomas
+T127	Concept 2657 2661	ERGE
+T128	Concept 2682 2689	aparato
+T129	Concept 2696 2700;2701 2708	oído externo
+T130	Concept 2721 2725	aire
+T131	Concept 2729 2733;2734 2739	oído medio
+T132	Concept 2757 2767;2768 2776	esclerosis tuberosa
+T133	Concept 2786 2790	cura
+T134	Concept 2801 2813	tratamientos
+T135	Concept 2844 2852	síntomas
+T136	Concept 2857 2863	médico
+T137	Concept 2879 2886	pruebas
+T138	Concept 2913 2921	arritmia
+T139	Concept 2946 2954	palabras
+T140	Concept 2965 2975	incorrecta
+T141	Concept 2997 3002	total
+T142	Concept 3029 3034	habla
+T143	Concept 3050 3057	cirugía
+T144	Concept 3059 3071	radioterapia
+T145	Concept 3073 3086	quimioterapia
+T146	Concept 3089 3096;3097 3106	terapia biológica
+T147	Concept 3111 3116	menor
+T148	Concept 3120 3124	edad
+T149	Concept 3132 3137	virus
+T150	Concept 3154 3160	fiebre
+T151	Concept 3174 3179	nasal
+T152	Concept 3181 3184	tos
+T153	Concept 3230 3236	recién
+T154	Concept 3270 3279	prematuro
+T155	Concept 3310 3319;3320 3323;3324 3332;3333 3340	trastorno del espectro autista
+T156	Concept 3346 3354	resfríos
+T157	Concept 3372 3378	fiebre
+T158	Concept 3392 3398	cabeza
+T159	Concept 3415 3421	lesión
+T160	Concept 3427 3437	enfermedad
+T161	Concept 3444 3451	cirugía
+T162	Concept 3452 3457	seria
+T163	Concept 3485 3490	lenta
+T164	Concept 3503 3513	endoscopía
+T165	Concept 3529 3538;3539 3545	intestino grueso
+T166	Concept 3555 3567	colonoscopía
+T167	Concept 3573 3580	caderas
+T168	Concept 3589 3597	estables
+T169	Concept 3624 3628	bien
+T170	Concept 3643 3650	cámaras
+T171	Concept 3653 3661	válvulas
+T172	Concept 3668 3675	corazón
+T173	Concept 3705 3710	dieta
+T174	Concept 3711 3719	especial
+T175	Concept 3748 3755	potasio
+T176	Concept 3772 3779	malaria
+T177	Concept 3787 3797	enfermedad
+T178	Concept 3798 3803	grave
+T179	Concept 3819 3827	parásito
+T180	Concept 3844 3847	CMV
+T181	Concept 3862 3868	cuerpo
+T182	Concept 3875 3882	persona
+T183	Concept 3894 3897	ahí
+T184	Concept 3903 3910	siempre
+T185	Concept 3916 3923	tumores
+T186	Concept 3943 3950	células
+T187	Concept 3951 3957	extras
+T188	Concept 3985 3992;3993 4002	nódulos tiroideos
+T189	Concept 4007 4017	tiroiditis
+T190	Concept 4030 4038	excesivo
+T191	Concept 4042 4046	yodo
+T192	Concept 4065 4072;4073 4081	hormona tiroidea
+T193	Concept 4082 4091	sintética
+T194	Concept 4104 4114	importante
+T195	Concept 4152 4155	VIH
+T196	Concept 4164 4172	personas
+T197	Concept 4206 4213	tejidos
+T198	Concept 4248 4257	radiación
+T199	Concept 4262 4272;4273 4275;4276 4293	enfermedad de Creutzfeldt-Jakob
+T200	Concept 4295 4298	CJD
+T201	Concept 4332 4341;4342 4350;4351 4363	trastorno cerebral degenerativo
+T202	Concept 4369 4374	común
+T203	Concept 4381 4392	inflamación
+T204	Concept 4406 4409	uno
+T205	Concept 4419 4422	dos
+T206	Concept 4435 4439	cara
+T207	Concept 4458 4463	genes
+T208	Concept 4470 4482	experiencias
+T209	Concept 4489 4494	niñez
+T210	Concept 4517 4522	papel
+T211	Concept 4523 4533	importante
+T212	Concept 4563 4569;4570 4572;4573 4579	examen de sangre
+T213	Concept 4592 4599;4600 4602;4603 4610;4611 4619	pruebas de función hepática
+T214	Concept 4622 4630;4631 4633;4634 4640	análisis de sangre
+T215	Concept 4645 4655;4656 4663	disfunción eréctil
+T216	Concept 4676 4686;4687 4693;4694 4703	disfunción sexual masculina
+T217	Concept 4704 4709	común
+T218	Concept 4728 4735	células
+T219	Concept 4743 4750	islotes
+T220	Concept 4751 4764	trasplantadas
+T221	Concept 4800 4807	células
+T222	Concept 4808 4818	destruidas
+T223	Concept 4834 4845	lumpectomía
+T224	Concept 4852 4863	mastectomía
+T225	Concept 4879 4886	cirugía
+T226	Concept 4903 4908	labio
+T227	Concept 4914 4921	paladar
+T228	Concept 4927 4934;4935 4937;4938 4945;4946 4951	muestra de materia fecal
+T229	Concept 4978 4987	estatinas
+T230	Concept 4992 4998	drogas
+T231	Concept 5020 5030	colesterol
+T232	Concept 5039 5047	insulina
+T233	Concept 5066 5073	glucosa
+T234	Concept 5094 5100	sangre
+T235	Concept 5109 5117	personas
+T236	Concept 5122 5130;5131 5143	sistemas inmunitarios
+T237	Concept 5144 5155	debilitados
+T238	Concept 5160 5163	EAG
+T239	Concept 5180 5189	problemas
+T240	Concept 5194 5200	serios
+T241	Concept 5205 5214	urticaria
+T242	Concept 5222 5227	común
+T243	Concept 5232 5240;5241 5243;5244 5250	análisis de sangre
+T244	Concept 5280 5285	virus
+T245	Concept 5306 5310	años
+T246	Concept 5324 5331	células
+T247	Concept 5332 5340	normales
+T248	Concept 5345 5351;5352 5359	cuello uterino
+T249	Concept 5377 5384;5385 5395	células cancerosas
+T250	Concept 5400 5414	hipotiroidismo
+T251	Concept 5422 5427	común
+T252	Concept 5435 5442	mujeres
+T253	Concept 5451 5459	personas
+T254	Concept 5486 5494	tiroides
+T255	Concept 5504 5512	personas
+T256	Concept 5524 5526;5527 5531	60 años
+T257	Concept 5535 5539	edad
+T258	Concept 5545 5553	personas
+T259	Concept 5558 5562	alto
+T260	Concept 5588 5596;5597 5598	vitamina D
+T261	Concept 5616 5619	más
+T262	Concept 5624 5636	pancreatitis
+T263	Concept 5660 5668	páncreas
+T264	Concept 5684 5691	corazón
+T265	Concept 5712 5718	sangre
+T266	Concept 5757 5765;5766 5768;5769 5775	animales de granja
+T267	Concept 5794 5806	enfermedades
+T268	Concept 5921 5928;5929 5937	ensayos clínicos
+T269	Concept 5944 5948	daño
+T270	Concept 5961 5971;5972 5981	neuropatía diabética
+T271	Concept 5987 5993;5994 5996;5997 6011;6012 6014;6015 6022;6023 6025;6026 6031	planes de administración de seguros de salud
+T272	Concept 6047 6053;6054 6056;6057 6062	seguro de salud
+T273	Concept 6068 6079	mamografías
+T274	Concept 6113 6119	cáncer
+T275	Concept 6126 6131	signo
+T276	Concept 6138 6144;6145 6154	ataque isquémico
+T277	Concept 6155 6166	transitorio
+T278	Concept 6209 6217	personas
+T279	Concept 6227 6235	síndrome
+T280	Concept 6246 6259;6260 6268	anormalidades faciales
+T281	Concept 6282 6286	ojos
+T282	Concept 6291 6300	separados
+T283	Concept 6303 6312	estrechos
+T284	Concept 6327 6338	crecimiento
+T285	Concept 6355 6362;6363 6371	sistema nervioso
+T286	Concept 6385 6391	sangre
+T287	Concept 6395 6402	cerebro
+T288	Concept 6410 6416	cabeza
+T289	Concept 6422 6430	hormonas
+T290	Concept 6435 6445;6446 6454	mensajeros químicos
+T291	Concept 6460 6467	hábitos
+T292	Concept 6468 6478	saludables
+T293	Concept 6495 6507	alimentación
+T294	Concept 6508 6517	nutritiva
+T295	Concept 6523 6532;6533 6539	actividad física
+T296	Concept 6568 6572	bien
+T297	Concept 6580 6584	bien
+T298	Concept 6606 6613	escuela
+T299	Concept 6618 6625	trabajo
+T300	Concept 6632 6640	deportes
+T301	Concept 6662 6676;6677 6684	procedimientos médicos
+T302	Concept 6687 6694	cirugía
+T303	Concept 6724 6729	niños
+T304	Concept 6736 6744;6745 6755	arterias coronarias
+T305	Concept 6800 6808;6809 6814	glóbulos rojos
+T306	Concept 6843 6849	cuerpo
+T307	Concept 6871 6876	grasa
+T308	Concept 6891 6900	nutriente
+T309	Concept 6905 6911	cáncer
+T310	Concept 6916 6921	común
+T311	Concept 6929 6934	niños
+T312	Concept 6941 6949	leucemia
+T313	Concept 6955 6962	lunares
+T314	Concept 6971 6978	comunes
+T315	Concept 6983 6997;6998 7009	oxigenoterapia hiperbárica
+T316	Concept 7026 7033;7034 7037;7038 7045	terapia con oxígeno
+T317	Concept 7050 7059;7060 7067	intestino delgado
+T318	Concept 7084 7091;7092 7101	sistema digestivo
+T319	Concept 7107 7113	piojos
+T320	Concept 7128 7140	enfermedades
+T321	Concept 7145 7158	tricomoniasis
+T322	Concept 7180 7189	vaginitis
+T323	Concept 7209 7216;7217 7220;7221 7243	glucosa -6- fosfato-deshidrogenasa
+T324	Concept 7291 7301;7302 7313	enfermedad hereditaria
+T325	Concept 7344 7351	varones
+T326	Concept 7356 7363	cirugía
+T327	Concept 7389 7396;7397 7399;7400 7407	trompas de Falopio
+T328	Concept 7447 7451	bien
+T329	Concept 7463 7467	días
+T330	Concept 7470 7477	semanas
+T331	Concept 7492 7498	lesión
+T332	Concept 7506 7514;7515 7519;7520 7521	diabetes tipo 1
+T333	Concept 7526 7534	páncreas
+T334	Concept 7546 7554	insulina
+T335	Concept 7571 7581	colesterol
+T336	Concept 7608 7612	edad
+T337	Concept 7618 7626	animales
+T338	Concept 7627 7635	salvajes
+T339	Concept 7655 7663	personas
+T340	Concept 7669 7683	inmunizaciones
+T341	Concept 7703 7708	fácil
+T342	Concept 7717 7725	riesgosa
+T343	Concept 7737 7743	inmune
+T344	Concept 7752 7762	resultados
+T345	Concept 7767 7776	anormales
+T346	Concept 7781 7787	doctor
+T347	Concept 7811 7818	pruebas
+T348	Concept 7828 7835	biopsia
+T349	Concept 7847 7853	brusca
+T350	Concept 7860 7867;7868 7876	presión arterial
+T351	Concept 7885 7897	deshidratado
+T352	Concept 7924 7931	mareado
+T353	Concept 7937 7945;7946 7948;7949 7955	análisis de sangre
+T354	Concept 7973 7979	médico
+T355	Concept 7998 8008	enfermedad
+T356	Concept 8013 8023;8024 8027;8028 8032	tendinitis del codo
+T357	Concept 8040 8046;8047 8056	lesión deportiva
+T358	Concept 8083 8088	tenis
+T359	Action 57 66	vacunarse
+T360	Action 82 88	contra
+T361	Action 232 237	Beber
+T362	Action 253 262	descansar
+T363	Action 265 270	tomar
+T364	Action 302 308	ayudar
+T365	Action 341 346	ayuda
+T366	Action 362 368	entrar
+T367	Action 388 394	darles
+T368	Action 443 453	desarrolla
+T369	Action 648 654	ayudar
+T370	Action 657 669	proporcionar
+T371	Action 835 840	tiene
+T372	Action 878 884	ataque
+T373	Action 999 1009	permanecen
+T374	Action 1069 1076	enferme
+T375	Action 1092 1099	recubre
+T376	Action 1265 1276	diseminarse
+T377	Action 1367 1375	sangrado
+T378	Action 1451 1456	Dejar
+T379	Action 1460 1465	fumar
+T380	Action 1468 1474	evitar
+T381	Action 1478 1485	consumo
+T382	Action 1504 1510	ayudar
+T383	Action 1526 1533	afectar
+T384	Action 1692 1697	pasan
+T385	Action 1768 1777	problemas
+T386	Action 1851 1859	asistida
+T387	Action 2067 2073	hablar
+T388	Action 2142 2152	inflamadas
+T389	Action 2216 2223	infecta
+T390	Action 2282 2287	tener
+T391	Action 2317 2323	reduce
+T392	Action 2337 2345	contraer
+T393	Action 2417 2423	muerte
+T394	Action 2488 2495	consumo
+T395	Action 2519 2526	aumenta
+T396	Action 2580 2588	empeorar
+T397	Action 2666 2675	inserción
+T398	Action 2713 2720	impulsa
+T399	Action 2746 2752	ayudar
+T400	Action 2780 2785	tiene
+T401	Action 2821 2827	ayudar
+T402	Action 2830 2839	disminuir
+T403	Action 2870 2878	realizar
+T404	Action 2891 2899	detecten
+T405	Action 2903 2909	padece
+T406	Action 2923 2929	Varían
+T407	Action 2936 2941	decir
+T408	Action 2985 2996	incapacidad
+T409	Action 3008 3014	hablar
+T410	Action 3017 3025	entender
+T411	Action 3162 3173	obstrucción
+T412	Action 3187 3199	dificultades
+T413	Action 3205 3213	respirar
+T414	Action 3237 3244	nacidos
+T415	Action 3287 3294	conocen
+T416	Action 3299 3305	causas
+T417	Action 3381 3388	dolores
+T418	Action 3462 3474	recuperación
+T419	Action 3518 3525	analiza
+T420	Action 3607 3615	muestran
+T421	Action 3629 3638	funcionan
+T422	Action 3692 3700	necesite
+T423	Action 3725 3732	reducir
+T424	Action 3760 3767	consume
+T425	Action 3848 3855	penetra
+T426	Action 3884 3893	permanece
+T427	Action 3930 3938	formados
+T428	Action 4022 4029	consumo
+T429	Action 4049 4054	tomar
+T430	Action 4115 4122	reducir
+T431	Action 4136 4147	propagación
+T432	Action 4214 4222	absorben
+T433	Action 4502 4513	representar
+T434	Action 4554 4559	hagan
+T435	Action 4772 4781	continuar
+T436	Action 4785 4792	trabajo
+T437	Action 4893 4899	cerrar
+T438	Action 4958 4972	diagnosticarla
+T439	Action 4999 5005	usadas
+T440	Action 5011 5016	bajar
+T441	Action 5078 5087	permanece
+T442	Action 5257 5267	determinar
+T443	Action 5271 5276	tiene
+T444	Action 5293 5298	tomar
+T445	Action 5363 5373	conviertan
+T446	Action 5470 5479	problemas
+T447	Action 5573 5584	deficiencia
+T448	Action 5606 5615	necesitar
+T449	Action 5644 5655	inflamación
+T450	Action 5701 5708	bombear
+T451	Action 5744 5751	hacerlo
+T452	Action 5783 5793	transmitir
+T453	Action 5879 5885	revisa
+T454	Action 5887 5896	supervisa
+T455	Action 5899 5906	aprueba
+T456	Action 6087 6096	encontrar
+T457	Action 6236 6242	sufren
+T458	Action 6314 6323	problemas
+T459	Action 6341 6350	anomalías
+T460	Action 6373 6384	Suministran
+T461	Action 6548 6556	ayudarte
+T462	Action 6559 6567	sentirte
+T463	Action 6574 6579	verte
+T464	Action 6589 6599	esforzarte
+T465	Action 6714 6720	usados
+T466	Action 6762 6775	comprometidas
+T467	Action 6819 6829	destruidos
+T468	Action 6856 6866	reponerlos
+T469	Action 7117 7127	transmiten
+T470	Action 7194 7205	deficiencia
+T471	Action 7261 7272	deficiencia
+T472	Action 7364 7369	corta
+T473	Action 7371 7376	anuda
+T474	Action 7379 7384	sella
+T475	Action 7424 7432	aturdido
+T476	Action 7438 7446	sentirse
+T477	Action 7538 7545	produce
+T478	Action 7582 7589	tienden
+T479	Action 7592 7600	aumentar
+T480	Action 7643 7647	huir
+T481	Action 7729 7736	hacerse
+T482	Action 7794 7804	recomendar
+T483	Action 7841 7846	caída
+T484	Action 7917 7923	sienta
+T485	Action 7963 7969	ayudar
+T486	Action 7982 7994	diagnosticar
+T487	Predicate 67 71;72 81	cada temporada
+T488	Predicate 676 683	sentido
+T489	Predicate 810 811;812 814;815 819;820 825	1 de cada 5.000
+T490	Predicate 846 853	Algunas
+T491	Predicate 942 945	más
+T492	Predicate 1892 1895	más
+T493	Predicate 2153 2162	alrededor
+T494	Predicate 2176 2181	parte
+T495	Predicate 2254 2259	mismo
+T496	Predicate 2327 2333	riesgo
+T497	Predicate 2460 2465	menor
+T498	Predicate 2611 2613	25
+T499	Predicate 2618 2624	ciento
+T500	Predicate 3215 3218;3219 3221;3222 3226;3227 3229	Uno de cada 10
+T501	Predicate 3400 3407	Después
+T502	Predicate 3495 3499	tipo
+T503	Predicate 3736 3744	cantidad
+T504	Predicate 4126 4132	riesgo
+T505	Predicate 4195 4205	diferentes
+T506	Predicate 4234 4244	cantidades
+T507	Predicate 4423 4428	lados
+T508	Predicate 5056 5062	exceso
+T509	Predicate 5299 5305	varios
+T510	Predicate 5513 5520	mayores
+T511	Predicate 5563 5569	riesgo
+T512	Predicate 5907 5913	muchos
+T513	Predicate 6039 6043	tipo
+T514	Predicate 6649 6654	pocos
+T515	Predicate 6830 6835	antes
+T516	Predicate 6883 6887	tipo
+T517	Predicate 6912 6915	más
+T518	Predicate 7478 7485	después
+T519	Reference 2312 2316	Esto
+T520	Reference 4174 4178	Esto
+T521	Reference 4376 4380	Esta
+T522	Reference 5939 5943	Este
+T523	Reference 6222 6226	este

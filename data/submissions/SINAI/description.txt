@@ -1,0 +1,7 @@
+method_name: BiLSTM+CRF
+method_description: BiLSTM+CRF with different word embeddings. Tags: S, D, E, N
+project_url: 
+publication_url: 
+bibtex: 
+team_name: SINAI
+organization_or_affiliation: Universidad de Jaén

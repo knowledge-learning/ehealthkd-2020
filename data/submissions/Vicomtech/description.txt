@@ -1,0 +1,7 @@
+method_name: DEMETER
+method_description: The system relies on a pre-trained BERT model to obtain a semantic representation of the tokens that compose each sentence. It uses the resulting token embeddings to predict the entities using a classification layer on top of each token representation. The entity predictions are then concatenated to the token embeddings and the resulting representations are combined in pairs, all vs all. These combined token-pair representations traverse several layers, until each pair is classified as having a relation or not, and of which type that relation is. Some relation types, such as “same-as” relations, are treated separately in a different classification head. Multiword entities are detected as individual tokens that are linked by a special type of relation we introduced, similar to the &quot;same-as&quot; relation. Tags: D, E, R
+project_url: 
+publication_url: 
+bibtex: 
+team_name: Vicomtech
+organization_or_affiliation: Vicomtech

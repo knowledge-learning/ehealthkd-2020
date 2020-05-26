@@ -1,0 +1,1760 @@
+T1	Concept 10 15	Uribe
+T2	Action 16 21	llegó
+T3	Concept 27 38	presidencia
+T4	Concept 42 46	2002
+T5	Action 54 59	apoyo
+T6	Concept 66 73	antiguo
+T7	Concept 102 109;110 116	Estados Unidos
+T8	Concept 124 132	Honduras
+T9	Action 146 154	promover
+T10	Concept 160 167;168 173	jugador Clint
+T11	Action 198 204	tenido
+T12	Predicate 208 214	primer
+T13	Concept 215 221	tiempo
+T14	Action 226 237	movimientos
+T15	Concept 244 252	marcador
+T16	Concept 263 273	hondureños
+T17	Action 277 285	pusieron
+T18	Action 289 296	ventaja
+T19	Concept 301 304	1-0
+T20	Predicate 305 312	después
+T21	Concept 317 320;321 323;324 329;330 335;336 338;339 344	gol de Julio César de León,
+T22	Concept 360 366	equipo
+T23	Action 385 391	perdió
+T24	Concept 395 407	tranquilidad
+T25	Action 413 416	dio
+T26	Action 420 426	vuelta
+T27	Concept 430 438	marcador
+T28	Predicate 447 455	primeros
+T29	Concept 456 461	goles
+T30	Predicate 466 471	parte
+T31	Concept 475 480;481 486	Conor Casey
+T32	Predicate 492 498	último
+T33	Concept 499 502	gol
+T34	Concept 529 533	acto
+T35	Action 534 540	frente
+T36	Concept 543 554	estudiantes
+T37	Concept 558 564	lunes,
+T38	Concept 582 587	Nuevo
+T39	Concept 596 602	McCain
+T40	Action 603 608	acusó
+T41	Concept 611 616;617 619	Obama de
+T42	Action 620 627	aceptar
+T43	Concept 628 634	dinero
+T44	Action 643 650	campaña
+T45	Concept 658 671	conflictuadas
+T46	Concept 672 681	compañías
+T47	Concept 685 694;695 707;708 714;715 718	préstamos hipotecarios Fannie Mae
+T48	Action 743 751	ignoraba
+T49	Concept 755 764	inminente
+T50	Concept 777 784;785 787;788 796;797 803	gigante de internet Google
+T51	Action 807 813	cedido
+T52	Action 820 829	presiones
+T53	Concept 834 842;843 848	gobierno chino
+T54	Action 851 858	anunció
+T55	Action 863 872	censurará
+T56	Predicate 873 880	algunos
+T57	Concept 888 897	servicios
+T58	Concept 908 916	términos
+T59	Concept 930 941	"polémicos"
+T60	Action 975 984	recuperar
+T61	Concept 988 997	seguridad
+T62	Action 1000 1013	tranquilidad,
+T63	Concept 1017 1025	gobierno
+T64	Concept 1032 1042	República,
+T65	Predicate 1049 1054	marco
+T66	Concept 1062 1074	atribuciones
+T67	Action 1080 1087	acuerdo
+T68	Concept 1096 1107	autoridades
+T69	Action 1119 1129	implementó
+T70	Action 1134 1143	operación
+T71	Concept 1144 1154	específica
+T72	Concept 1173 1178	Siete
+T73	Concept 1179 1188;1189 1204	cantantes iberoamericanos
+T74	Action 1217 1226	presentes
+T75	Concept 1230 1237	domingo
+T76	Concept 1248 1254	60.000
+T77	Concept 1255 1267	espectadores
+T78	Concept 1274 1280;1281 1294;1295 1300	Puente Internacional Simón
+T79	Concept 1315 1325	fronterizo
+T80	Concept 1332 1340	Colombia
+T81	Concept 1343 1353	Venezuela,
+T82	Action 1359 1369	participar
+T83	Concept 1376 1385;1386 1389;1390 1393;1394 1404	concierto Paz Sin Fronteras,
+T84	Action 1405 1414	convocado
+T85	Concept 1422 1429;1430 1440	artista colombiano
+T86	Predicate 1455 1462	segundo
+T87	Concept 1463 1469	tiempo
+T88	Concept 1472 1478	Brasil
+T89	Action 1479 1486	reforzó
+T90	Concept 1490 1497	ataque,
+T91	Concept 1506 1508;1509 1516	49 minutos
+T92	Action 1520 1532	contraataque
+T93	Concept 1540 1549	izquierda
+T94	Action 1554 1565	aprovechado
+T95	Concept 1570 1574	Fred
+T96	Action 1580 1589	convertir
+T97	Concept 1593 1596	gol
+T98	Concept 1602 1609	tercero
+T99	Predicate 1640 1647	primera
+T100	Concept 1648 1652;1653 1661	bebé probeta,
+T101	Action 1665 1675	congratuló
+T102	Concept 1683 1689	premio
+T103	Concept 1693 1703	científico
+T104	Action 1706 1710	dijo
+T105	Concept 1734 1739	madre
+T106	Action 1748 1755	felices
+T107	Action 1760 1774	reconocimiento
+T108	Action 1791 1798	dijeron
+T109	Action 1802 1809	guardan
+T110	Concept 1816 1823	cariño.
+T111	Concept 1827 1831	agua
+T112	Action 1832 1839	alcanza
+T113	Concept 1845 1853	cuarenta
+T114	Predicate 1854 1865	centímetros
+T115	Concept 1869 1880	profundidad
+T116	Concept 1891 1902	localidades
+T117	Concept 1903 1916	guatemaltecas
+T118	Action 1931 1937	estima
+T119	Action 1942 1950	aumenten
+T120	Concept 1955 1964	derrumbes
+T121	Concept 1967 1980	hundimientos.
+T122	Predicate 1984 1993	temporada
+T123	Concept 1994 1998	2016
+T124	Concept 2003 2009;2010 2021	fútbol ecuatoriano
+T125	Action 2022 2028	inició
+T126	Concept 2049 2056	partido
+T127	Concept 2066 2070;2071 2080;2081 2086;2087 2094	Club Deportivo River Ecuador
+T128	Concept 2105 2111;2112 2116;2117 2125;2126 2130	Mushuc Runa Sporting Club
+T129	Concept 2137 2144;2145 2154;2155 2162;2163 2173	estadio Christian Benítez Betancourt
+T130	Concept 2180 2186;2187 2189;2190 2199	ciudad de Guayaquil
+T131	Concept 2206 2211	19:00
+T132	Concept 2229 2236	próximo
+T133	Predicate 2237 2243	sábado
+T134	Concept 2244 2246;2247 2249;2250 2256	17 de julio,
+T135	Concept 2263 2270;2271 2278;2279 2281;2282 2293	Westpac Stadium de Wellington,
+T136	Concept 2302 2311;2312 2315;2316 2324;2325 2330	arbitraje del irlandés Alain
+T137	Action 2343 2349	Marcha
+T138	Concept 2354 2357;2358 2371;2372 2374;2375 2378;2379 2391	Día Internacional de los Trabajadores
+T139	Action 2392 2401	convocada
+T140	Concept 2410 2419;2420 2430;2431 2442	centrales sindicales colombianas
+T141	Concept 2448 2455;2456 2464;2465 2469;2470 2481;2482 2493	partido político Polo Democrático Alternativo
+T142	Action 2500 2507	terminó
+T143	Action 2511 2521	disturbios
+T144	Concept 2531 2538;2539 2547	Policia Nacional
+T145	Concept 2562 2571;2572 2577;2578 2592	Escuadrón Móvil Antidisturbios
+T146	Predicate 2607 2612	grupo
+T147	Concept 2616 2627	anarquistas
+T148	Action 2632 2639	estaban
+T149	Concept 2650 2663	manifestantes
+T150	Concept 2673 2680	objetos
+T151	Predicate 2695 2702	Cientos
+T152	Concept 2706 2714;2715 2717;2718 2730;2731 2739	clínicas de reproducción asistida
+T153	Action 2743 2751	abrieron
+T154	Concept 2758 2764	mundo,
+T155	Predicate 2773 2778	éxito
+T156	Concept 2785 2796	fecundación
+T157	Action 2797 2802	hecha
+T158	Concept 2807 2814	Edwards
+T159	Action 2832 2840	falleció
+T160	Concept 2841 2845	ocho
+T161	Concept 2846 2850	años
+T162	Concept 2863 2868;2869 2871;2872 2878	rueda de prensa
+T163	Action 2879 2886	aseguró
+T164	Concept 2895 2902	fuerzas
+T165	Concept 2907 2912	orden
+T166	Action 2917 2925	llevaban
+T167	Action 2929 2935	usaron
+T168	Concept 2936 2941;2942 2944;2945 2952	armas de fuego",
+T169	Action 2953 2967	contradiciendo
+T170	Predicate 2972 2981	versiones
+T171	Predicate 3002 3007	Otras
+T172	Concept 3008 3010	95
+T173	Concept 3011 3019	personas
+T174	Action 3042 3049	heridas
+T175	Concept 3058 3068	incidente,
+T176	Action 3076 3083	informó
+T177	Concept 3087 3093	prensa
+T178	Concept 3104 3109	sismo
+T179	Concept 3116 3124;3125 3134	informes oficiales
+T180	Action 3138 3146	prolongó
+T181	Concept 3155 3160	15-30
+T182	Concept 3174 3182	cantante
+T183	Action 3187 3197	acompañado
+T184	Concept 3205 3215;3216 3222	colombiano Carlos
+T185	Concept 3234 3243;3244 3250;3251 3255	españoles Miguel Bosé
+T186	Concept 3277 3287;3288 3295	venezolano Ricardo
+T187	Concept 3309 3319;3320 3324;3325 3329;3330 3336	dominicano Juan Luis Guerra
+T188	Action 3385 3394	acudieron
+T189	Concept 3400 3410	invitación
+T190	Action 3422 3428	vibrar
+T191	Concept 3435 3447	espectadores
+T192	Concept 3456 3465	canciones
+T193	Predicate 3466 3473	durante
+T194	Concept 3474 3480	cuatro
+T195	Concept 3492 3501	Wallabies
+T196	Concept 3506 3515;3516 3518;3519 3524;3525 3527;3528 3538	selección de rugby de Australia)
+T197	Action 3539 3547	entrarán
+T198	Concept 3551 3557	acción
+T199	Concept 3571 3578;3579 3587	tercera jornada,
+T200	Action 3595 3604	enfrenten
+T201	Concept 3610 3617	locales
+T202	Concept 3624 3635	Springboks,
+T203	Concept 3639 3641;3642 3644;3645 3650	24 de julio
+T204	Concept 3657 3664;3665 3672;3673 3675	Suncorp Stadium de
+T205	Concept 3690 3703	negociaciones
+T206	Concept 3711 3718	arduas,
+T207	Concept 3732 3740	Schröder
+T208	Action 3747 3756	expresado
+T209	Predicate 3760 3769	intención
+T210	Concept 3776 3783;3784 3786	partido de
+T211	Concept 3803 3812	Canciller
+T212	Concept 3819 3829	coalición,
+T213	Concept 3848 3855	partido
+T214	Action 3862 3869	llegado
+T215	Concept 3870 3877	segundo
+T216	Concept 3882 3886;3887 3888	34,2 %
+T217	Predicate 3889 3895	detrás
+T218	Concept 3902 3911;3912 3919	coalición CDU/CSU
+T219	Action 3924 3930	obtuvo
+T220	Concept 3931 3935	35,2
+T221	Concept 3942 3950	portavoz
+T222	Concept 3955 3963;3964 3967;3968 3977;3978 3983	ministro del interior, Najib
+T223	Action 3992 3999	explicó
+T224	Action 4003 4012	confirmar
+T225	Concept 4017 4025	víctimas
+T226	Concept 4033 4041	atacante
+T227	Action 4042 4047	chocó
+T228	Concept 4051 4059	vehículo
+T229	Action 4060 4065	lleno
+T230	Concept 4069 4079	explosivos
+T231	Concept 4090 4097	minibús
+T232	Action 4104 4112	viajaban
+T233	Concept 4113 4125	trabajadores
+T234	Concept 4126 4133	civiles
+T235	Concept 4138 4147	gobierno,
+T236	Concept 4154 4159	oeste
+T237	Concept 4177 4188	funcionaria
+T238	Action 4189 4195	esperó
+T239	Action 4202 4213	finalizasen
+T240	Concept 4218 4228	elecciones
+T241	Concept 4233 4240	domingo
+T242	Predicate 4241 4243	28
+T243	Concept 4247 4252	junio
+T244	Predicate 4253 4258	antes
+T245	Action 4262 4270	anunciar
+T246	Concept 4274 4283	decisión,
+T247	Action 4292 4299	influir
+T248	Concept 4300 4313	negativamente
+T249	Concept 4321 4329	votantes
+T250	Concept 4334 4346	oficialismo.
+T251	Concept 4350 4357	senador
+T252	Concept 4362 4370;4371 4379;4380 4386	Tarapacá Fernando Flores
+T253	Action 4392 4400	diputado
+T254	Concept 4405 4413;4414 4421;4422 4432;4433 4436;4437 4442	Rancagua Esteban Valenzuela Van Treek
+T255	Action 4443 4454	renunciaron
+T256	Concept 4458 4459;4460 4462	9 de
+T257	Predicate 4463 4468	enero
+T258	Concept 4472 4479;4480 4483;4484 4486;4487 4497	Partido por la Democracia
+T259	Predicate 4517 4520	más
+T260	Concept 4521 4529	reciente
+T261	Action 4530 4538	recuento
+T262	Concept 4546 4554;4555 4561	Naciones Unidas
+T263	Action 4562 4570	expedido
+T264	Concept 4574 4576;4577 4579;4580 4586	12 de agosto
+T265	Action 4587 4594	asegura
+T266	Predicate 4595 4598	más
+T267	Concept 4602 4609	175.000
+T268	Concept 4610 4615	casos
+T269	Action 4616 4627	confirmados
+T270	Predicate 4631 4635	todo
+T271	Concept 4639 4645	mundo.
+T272	Action 4675 4682	indicar
+T273	Concept 4687 4693	Brasil
+T274	Action 4700 4707	someter
+T275	Concept 4714 4724	africanos,
+T276	Concept 4734 4740	lejana
+T277	Concept 4764 4775	declaración
+T278	Concept 4790 4796	Israel
+T279	Action 4804 4809	dejar
+T280	Action 4813 4820	proveer
+T281	Concept 4821 4833	combustible,
+T282	Concept 4834 4846	electricidad
+T283	Concept 4855 4866	comodidades
+T284	Concept 4888 4894;4895 4903;4904 4906;4907 4914	Primer Ministro de Israel,
+T285	Action 4915 4921	arribó
+T286	Concept 4924 4931;4932 4938	Estados Unidos
+T287	Reference 4939 4943	este
+T288	Concept 4944 4947;4948 4950;4951 4957	fin de semana
+T289	Action 4967 4975	discutir
+T290	Concept 4979 4988;4989 4991;4992 4996	situación de Gaza
+T291	Concept 5004 5014;5015 5021;5022 5026	Presidente George Bush
+T292	Concept 5041 5046	noche
+T293	Concept 5051 5058	domingo
+T294	Concept 5067 5074	coronel
+T295	Action 5075 5083	retirado
+T296	Concept 5092 5101;5102 5109	Rodríguez Buratti
+T297	Action 5113 5120	suicidó
+T298	Action 5121 5133	disparándose
+T299	Concept 5139 5145	cabeza
+T300	Concept 5152 5158	garage
+T301	Concept 5163 5171	edificio
+T302	Action 5179 5184	vivía
+T303	Concept 5191 5198	capital
+T304	Concept 5212 5215;5216 5217;5218 5220;5221 5229	día 8 de febrero,
+T305	Action 5233 5240	realizó
+T306	Action 5245 5251	marcha
+T307	Concept 5258 5262	zona
+T308	Action 5269 5273	cayó
+T309	Concept 5274 5279	Pino,
+T310	Predicate 5283 5288	manos
+T311	Concept 5292 5298	amigos
+T312	Concept 5301 5312	familiares,
+T313	Action 5329 5341	intensifique
+T314	Action 5345 5353	búsqueda
+T315	Concept 5388 5399	fundadores,
+T316	Concept 5410 5415;5416 5423;5424 5431;5432 5441	Jorge Lanata, Horacio Verbitsky
+T317	Concept 5455 5461	diario
+T318	Predicate 5473 5476	Dos
+T319	Concept 5477 5486;5487 5496	centrales nucleares
+T320	Action 5500 5508	apagaron
+T321	Concept 5509 5523	inmediatamente
+T322	Concept 5532 5538	sismo,
+T323	Concept 5550 5554	CNN,
+T324	Concept 5559 5569	residentes
+T325	Concept 5576 5581;5582 5586	costa Este
+T326	Action 5601 5611	preparados
+T327	Concept 5617 5627	eventuales
+T328	Predicate 5638 5642	Diez
+T329	Concept 5643 5650	hombres
+T330	Concept 5663 5670	armados
+T331	Action 5671 5681	ingresaron
+T332	Concept 5685 5695	Parlamento
+T333	Concept 5702 5711;5712 5714;5715 5723	localidad de Tikrit],
+T334	Concept 5731 5734;5735 5737	200 km
+T335	Concept 5741 5746	norte
+T336	Concept 5758 5764	García
+T337	Concept 5773 5782;5783 5785;5786 5795	militante de izquierda
+T338	Concept 5800 5813	recientemente
+T339	Action 5817 5824	cobrado
+T340	Concept 5825 5835	celebridad
+T341	Concept 5844 5852	reclamos
+T342	Action 5866 5875	aparición
+T343	Concept 5883 5889	restos
+T344	Action 5893 5902	efectuado
+T345	Concept 5906 5911;5912 5921;5922 5926	poeta argentino Juan
+T346	Concept 5961 5967	cuatro
+T347	Concept 5975 5986	arrestados,
+T348	Concept 5990 5995	cifra
+T349	Action 5996 6003	aumenta
+T350	Concept 6013 6020	anuncio
+T351	Predicate 6027 6034	después
+T352	Concept 6045 6055;6056 6065;6066 6073;6074 6079	presidente palestino Mahmoud Abbas
+T353	Action 6080 6089	designara
+T354	Concept 6093 6098	nuevo
+T355	Concept 6099 6107;6108 6110;6111 6121	gobierno de emergencia
+T356	Action 6140 6144	toma
+T357	Concept 6151 6157;6158 6160;6161 6165	Franja de Gaza
+T358	Predicate 6170 6175	parte
+T359	Concept 6190 6201	autoridades
+T360	Action 6202 6213	prohibieron
+T361	Action 6217 6224	ingreso
+T362	Concept 6228 6239	extranjeros
+T363	Concept 6242 6253	periodistas
+T364	Concept 6259 6264	zona,
+T365	Concept 6272 6280	testigos
+T366	Action 6281 6288	afirman
+T367	Concept 6296 6305	situación
+T368	Action 6309 6315	tensa,
+T369	Action 6324 6334	compromete
+T370	Action 6338 6347	seguridad
+T371	Concept 6351 6355	cara
+T372	Action 6361 6373	inauguración
+T373	Concept 6381 6387;6388 6397;6398 6400;6401 6407	Juegos Olímpicos de Pekín,
+T374	Action 6422 6433	contemplado
+T375	Action 6437 6441	paso
+T376	Concept 6448 6453;6454 6462	llama olímpica
+T377	Predicate 6482 6486	ocho
+T378	Concept 6487 6494	minutos
+T379	Action 6506 6513	terminó
+T380	Action 6528 6535	alegría
+T381	Concept 6543 6555	cameruneses,
+T382	Concept 6565 6571	Neymar
+T383	Action 6582 6590	disparar
+T384	Action 6593 6598	poner
+T385	Concept 6602 6607	balón
+T386	Predicate 6608 6614	dentro
+T387	Concept 6619 6624	arco,
+T388	Concept 6638 6644	golazo
+T389	Concept 6660 6670	brasileños
+T390	Concept 6686 6695;6696 6698;6699 6709;6710 6715	canciller de Venezuela, Delcy
+T391	Action 6727 6735	denunció
+T392	Concept 6746 6750	sede
+T393	Concept 6757 6769;6770 6772;6773 6780;6781 6791	Organización de Estados Americanos
+T394	Concept 6802 6809	"graves
+T395	Concept 6810 6818;6819 6833	acciones injerencistas"
+T396	Concept 6838 6848;6849 6856	secretario general
+T397	Reference 6860 6863	ese
+T398	Concept 6864 6874;6875 6879;6880 6888	organismo, Luis Almagro,
+T399	Action 6896 6903	facción
+T400	Concept 6904 6915	minoritaria
+T401	Concept 6919 6925	países
+T402	Concept 6932 6939	región"
+T403	Predicate 6943 6949	contra
+T404	Concept 6954 6962	Gobierno
+T405	Concept 6979 6987	personas
+T406	Action 6992 7002	resultaron
+T407	Concept 7003 7013	lesionadas
+T408	Action 7021 7032	trasladadas
+T409	Concept 7038 7046	hospital
+T410	Concept 7047 7054	cercano
+T411	Action 7077 7086	fallecido
+T412	Concept 7090 7098	atacante
+T413	Concept 7113 7114;7115 7124	3 personas,
+T414	Concept 7129 7134	tarde
+T415	Action 7146 7154	confirmó
+T416	Action 7158 7171	fallecimiento
+T417	Concept 7179 7185	quinta
+T418	Concept 7186 7193	persona
+T419	Action 7203 7212	ingresaba
+T420	Concept 7216 7225	hospital.
+T421	Concept 7229 7236;7237 7242	versión china
+T422	Concept 7247 7256	buscador,
+T423	Concept 7262 7271	dirección
+T424	Action 7288 7297	realizará
+T425	Concept 7298 7307	consultas
+T426	Concept 7311 7318	páginas
+T427	Concept 7324 7333	imágenes,
+T428	Concept 7334 7342	noticias
+T429	Concept 7345 7351	video,
+T430	Action 7357 7364	omitirá
+T431	Concept 7365 7373	términos
+T432	Concept 7379 7384	Falun
+T433	Action 7391 7404	independencia
+T434	Concept 7408 7414	Taiwán
+T435	Concept 7427 7435	conjunto
+T436	Action 7442 7450	remontar
+T437	Concept 7451 7461	marcadores
+T438	Concept 7462 7470	adversos
+T439	Concept 7476 7480	16-9
+T440	Concept 7483 7488	22-17
+T441	Predicate 7494 7499	largo
+T442	Action 7533 7540	informó
+T443	Concept 7547 7557	reporteros
+T444	Concept 7562 7569	"Israel
+T445	Concept 7578 7587	auténtico
+T446	Action 7588 7594	aliado
+T447	Concept 7605 7613	gobierno
+T448	Concept 7630 7640;7641 7643;7644 7654	protocolos de emergencia
+T449	Action 7658 7667	activaron
+T450	Concept 7674 7683	hospital,
+T451	Predicate 7686 7690	tras
+T452	Concept 7693 7698;7699 7708	horas atención,
+T453	Concept 7712 7720;7721 7723;7724 7730;7731 7736;7737 7743	ministra de salud, Helia Molina
+T454	Action 7744 7751	declaró
+T455	Concept 7757 7763	prensa
+T456	Concept 7780 7784	baja
+T457	Action 7785 7796	posibilidad
+T458	Concept 7804 7811	persona
+T459	Concept 7815 7823	positivo
+T460	Concept 7827 7833	ébola,
+T461	Predicate 7863 7874	posibilidad
+T462	Action 7882 7887	trate
+T463	Concept 7891 7899	malaria,
+T464	Concept 7905 7915	enfermedad
+T465	Concept 7916 7925	frecuente
+T466	Concept 7937 7942	Uribe
+T467	Action 7946 7953	apoyado
+T468	Concept 7976 7982	sector
+T469	Concept 7983 7992	disidente
+T470	Concept 7997 8008	liberalismo
+T471	Concept 8014 8020;8021 8028	sector oficial
+T472	Concept 8033 8047	conservatismo,
+T473	Action 8064 8073	oposición
+T474	Action 8077 8083	ejerce
+T475	Concept 8087 8093;8094 8101	sector oficial
+T476	Concept 8106 8118	liberalismo,
+T477	Concept 8122 8131;8132 8152	tendencia centro-izquierdista,
+T478	Concept 8158 8162;8163 8174;8175 8189;8190 8192;8193 8203;8204 8211	Polo Democrático Independiente, de izquierda, partido
+T479	Action 8216 8221	posee
+T480	Predicate 8228 8238	actualidad
+T481	Concept 8242 8250;8251 8253;8254 8261	alcaldía de Bogotá,
+T482	Action 8266 8272	ejerce
+T483	Concept 8278 8285	Eduardo
+T484	Concept 8297 8302	amigo
+T485	Action 8303 8310	declaró
+T486	Concept 8319 8328	rapiñeros
+T487	Action 8332 8341	exigieron
+T488	Action 8346 8358	pertenencias
+T489	Reference 8361 8366	ambos
+T490	Concept 8369 8374	Pino,
+T491	Action 8378 8386	resistió
+T492	Action 8395 8403	forcejeo
+T493	Reference 8415 8420	ellos
+T494	Action 8421 8428	resbaló
+T495	Action 8431 8435	cayó
+T496	Concept 8442 8447	aguas
+T497	Concept 8452 8455;8456 8458;8459 8461;8462 8468	Río de la Plata.
+T498	Concept 8469 8475	McCain
+T499	Predicate 8492 8497	grupo
+T500	Concept 8501 8513	legisladores
+T501	Action 8518 8527	intervino
+T502	Concept 8532 8543	reguladores
+T503	Predicate 8546 8551	favor
+T504	Action 8572 8580	director
+T505	Concept 8588 8599;8600 8602;8603 8610	institución de ahorros
+T506	Concept 8613 8621	préstamo
+T507	Action 8626 8633	colapsó
+T508	Predicate 8636 8641	fines
+T509	Concept 8649 8653	años
+T510	Concept 8670 8679;8680 8682;8683 8697	documento de identificación
+T511	Action 8703 8710	sellado
+T512	Concept 8724 8733	electores
+T513	Concept 8739 8749	escrutinio
+T514	Action 8788 8798	diferencia
+T515	Concept 8799 8804	final
+T516	Action 8808 8817	consiguió
+T517	Concept 8818 8829	Fernandinho
+T518	Action 8837 8846	aprovechó
+T519	Action 8853 8858	error
+T520	Action 8865 8871	salida
+T521	Concept 8879 8888	africanos
+T522	Action 8891 8896	anotó
+T523	Concept 8900 8906	cuarto
+T524	Concept 8915 8920	hecho
+T525	Action 8925 8934	condenado
+T526	Concept 8939 8945;8946 8961;8962 8964;8965 8978	medios internacionales de comunicación.
+T527	Concept 8982 8989	senador
+T528	Action 8990 9000	oficializó
+T529	Action 9004 9012	renuncia
+T530	Concept 9016 9020	PPD,
+T531	Action 9024 9032	entregar
+T532	Action 9037 9042	carta
+T533	Concept 9046 9050;9051 9053;9054 9061;9062 9064;9065 9068	jefe de bancada de PPD
+T534	Concept 9075 9082;9083 9090;9091 9096;9097 9102	senado, Roberto Muñoz Barra
+T535	Concept 9109 9118	congreso.
+T536	Concept 9124 9131;9132 9139	central nuclear
+T537	Action 9140 9147	reportó
+T538	Action 9161 9170	problemas
+T539	Concept 9187 9192	sismo
+T540	Action 9193 9200	sacudió
+T541	Concept 9215 9224	talibanes
+T542	Action 9252 9267	responsabilidad
+T543	Concept 9275 9285	explosión,
+T544	Concept 9303 9311	atacante
+T545	Concept 9323 9331	objetivo
+T546	Predicate 9332 9335	dos
+T547	Concept 9336 9345	minibuses
+T548	Action 9350 9363	transportaban
+T549	Concept 9364 9372	personal
+T550	Concept 9379 9386;9387 9393;9394 9396;9397 9409	agencia afgana de inteligencia
+T551	Predicate 9416 9418	38
+T552	Concept 9457 9464;9465 9471	Estados Unidos
+T553	Concept 9477 9483	Israel
+T554	Action 9488 9496	afirmado
+T555	Action 9501 9511	levantarán
+T556	Concept 9516 9525;9526 9536	sanciones económicas
+T557	Reference 9558 9562	este
+T558	Concept 9575 9583	uribismo
+T559	Action 9597 9605	disperso
+T560	Concept 9616 9628	movimientos,
+T561	Concept 9634 9640;9641 9649;9650 9658;9659 9671;9672 9680;9681 9685	Cambio Radical, Colombia Democrática, Colombia Viva
+T562	Concept 9688 9693;9694 9702	Nuevo Partido,
+T563	Concept 9726 9729	dos
+T564	Concept 9730 9735	goles
+T565	Concept 9736 9746	cardenales
+T566	Concept 9757 9762;9763 9769	Jairo Suárez
+T567	Reference 9788 9792	este
+T568	Concept 9793 9799	último
+T569	Concept 9807 9810	vía
+T570	Concept 9825 9835;9836 9838;9839 9844;9845 9850;9851 9856;9857 9867;9868 9875	Presidenta de Costa Rica, Laura Chinchilla Miranda
+T571	Action 9880 9890	denunciada
+T572	Concept 9899 9909;9910 9917;9918 9931	Ministerio Público costarricense
+T573	Action 9940 9947	delitos
+T574	Concept 9951 9961;9962 9970	asociación ilícita,
+T575	Action 9971 9978	tráfico
+T576	Concept 9982 9994	influencias,
+T577	Action 10003 10017	incumplimiento
+T578	Concept 10021 10028	deberes
+T579	Action 10031 10039	peculado
+T580	Concept 10059 10067;10068 10070;10071 10085;10086 10093;10094 10102	ministro de planificación, Roberto Gallardo
+T581	Concept 10111 10123	funcionarios
+T582	Concept 10128 10137	gobierno.
+T583	Concept 10143 10149	Messam
+T584	Concept 10152 10158;10159 10167	Robbie Robinson
+T585	Action 10168 10176	lograron
+T586	Concept 10180 10183	try
+T587	Concept 10189 10192	uno
+T588	Predicate 10199 10206	segundo
+T589	Concept 10207 10214	tiempo,
+T590	Concept 10228 10233;10234 10240	Aaron Cruden
+T591	Action 10241 10246	marcó
+T592	Concept 10252 10259	penales
+T593	Action 10266 10277	conversión.
+T594	Predicate 10284 10293	madrugada
+T595	Concept 10298 10299;10300 10302;10303 10310;10311 10313;10314 10319	6 de febrero de 2012,
+T596	Predicate 10326 10330	zona
+T597	Concept 10337 10343	Rambla
+T598	Predicate 10356 10361	sobre
+T599	Concept 10365 10371	rambla
+T600	Concept 10376 10382;10383 10387	Barrio Sur,
+T601	Concept 10410 10414;10415 10420	Pino Clara
+T602	Concept 10424 10426;10427 10431;10432 10434;10435 10440	28 años de edad,
+T603	Action 10441 10447	nacido
+T604	Concept 10461 10471;10472 10474;10475 10481	estudiante de teatro
+T605	Action 10484 10494	trabajador
+T606	Concept 10499 10503;10504 10512	ente autónomo
+T607	Action 10520 10524	cayó
+T608	Concept 10531 10536	aguas
+T609	Concept 10541 10544;10545 10547;10548 10550;10551 10556	Río de la Plata
+T610	Predicate 10565 10572	intento
+T611	Concept 10576 10582	rapiña
+T612	Action 10583 10592	provocado
+T613	Predicate 10597 10603	cuatro
+T614	Concept 10604 10611;10612 10614	menores de
+T615	Action 10631 10638	propuso
+T616	Action 10643 10653	suspensión
+T617	Concept 10654 10662	perpetua
+T618	Concept 10665 10671	Flavio
+T619	Action 10695 10699	jefe
+T620	Concept 10706 10715	escudería
+T621	Concept 10722 10726;10727 10733;10734 10736;10737 10745	Gran Premio de Singapur
+T622	Action 10748 10754	ordenó
+T623	Action 10755 10765	accidentar
+T624	Concept 10769 10775	piloto
+T625	Concept 10794 10801	directa
+T626	Action 10802 10815	participación
+T627	Concept 10822 10829	montaje
+T628	Concept 10839 10845	Alonso
+T629	Action 10846 10855	obtuviera
+T630	Predicate 10859 10865	primer
+T631	Predicate 10866 10871	lugar
+T632	Concept 10878 10886	carrera.
+T633	Concept 10893 10904	científicos
+T634	Action 10912 10924	cuestionados
+T635	Concept 10925 10937	severamente,
+T636	Concept 10957 10965	sectores
+T637	Predicate 10981 10990	Alrededor
+T638	Concept 10994 10995	8
+T639	Predicate 10996 11004	millones
+T640	Concept 11008 11016	personas
+T641	Action 11023 11034	convocadas;
+T642	Concept 11039 11045	mismas
+T643	Concept 11056 11063	mayores
+T644	Concept 11067 11069;11070 11074	16 años
+T645	Action 11084 11091	escoger
+T646	Concept 11099 11104	urnas
+T647	Predicate 11105 11110	entre
+T648	Concept 11115 11121	15.236
+T649	Concept 11122 11133	concejales,
+T650	Concept 11140 11147	sistema
+T651	Concept 11148 11158	escalonado
+T652	Concept 11161 11168	vigente
+T653	Concept 11175 11179	1976
+T654	Action 11187 11196	concluirá
+T655	Predicate 11203 11209	primer
+T656	Concept 11210 11219;11220 11222;11223 11227	trimestre de 2008
+T657	Concept 11236 11238	31
+T658	Concept 11239 11247	miembros
+T659	Concept 11252 11259;11260 11262;11263 11270	Consejo de Estado,
+T660	Action 11271 11280	presidido
+T661	Concept 11281 11288	siempre
+T662	Action 11312 11319	destacó
+T663	Concept 11325 11335	guionista,
+T664	Concept 11340 11342	10
+T665	Concept 11356 11364	ponencia
+T666	Concept 11376 11382	sesión
+T667	Concept 11401 11404;11405 11407;11408 11413	día de ayer,
+T668	Action 11414 11420	afirmó
+T669	Concept 11428 11432	sexo
+T670	Concept 11439 11446;11447 11459	parejas homosexuales
+T671	Concept 11479 11484	fines
+T672	Concept 11485 11496	recreativos
+T673	Action 11506 11514	opondría
+T674	Action 11520 11530	aprobación
+T675	Concept 11537 11541	ley,
+T676	Reference 11547 11551	esta
+T677	Predicate 11562 11568	contra
+T678	Concept 11573 11578;11579 11586	orden natural
+T679	Concept 11601 11614	Manifestantes
+T680	Action 11615 11625	contrarios
+T681	Concept 11629 11637	gobierno
+T682	Action 11638 11646	entraron
+T683	Concept 11654 11660	fuerza
+T684	Concept 11664 11672	edificio
+T685	Concept 11679 11689;11690 11697	televisión estatal
+T686	Reference 11701 11704	ese
+T687	Concept 11705 11709	país
+T688	Concept 11733 11737	duro
+T689	Action 11738 11743	golpe
+T690	Concept 11752 11760	política
+T691	Reference 11764 11767	ese
+T692	Concept 11768 11772	país
+T693	Concept 11787 11795	Ejército
+T694	Action 11802 11811	recuperar
+T695	Action 11815 11822	control
+T696	Concept 11830 11843	instalaciones
+T697	Action 11869 11875	votado
+T698	Concept 11879 11887	plenaria
+T699	Concept 11892 11898;11899 11901;11902 11904;11905 11914	Senado de la República
+T700	Concept 11918 11926;11927 11929;11930 11933	proyecto de ley
+T701	Action 11938 11945	buscaba
+T702	Action 11946 11955	legalizar
+T703	Concept 11959 11969;11970 11982	matrimonio igualitario,
+T704	Concept 11996 12004	personas
+T705	Concept 12009 12014	mismo
+T706	Concept 12024 12029;12030 12035	marea negra
+T707	Action 12039 12047	combatió
+T708	Concept 12061 12066	marea
+T709	Concept 12067 12073	blanca
+T710	Concept 12077 12083	tierra
+T711	Predicate 12092 12097	miles
+T712	Concept 12101 12112	voluntarios
+T713	Action 12113 12121	llegados
+T714	Predicate 12125 12130	todas
+T715	Concept 12131 12137	partes
+T716	Concept 12141 12147	España
+T717	Concept 12178 12185	réplica
+T718	Concept 12189 12192;12193 12199	2,8 grados
+T719	Action 12203 12210	reportó
+T720	Concept 12217 12221;12222 12225;12226 12232	2:46 EST (18:46
+T721	Concept 12242 12255;12256 12259;12260 12265	Independiente del Valle
+T722	Action 12266 12272	recibe
+T723	Concept 12276 12285	Sangolquí
+T724	Concept 12292 12297	11:00
+T725	Concept 12301 12310	Deportivo
+T726	Concept 12325 12331	11:30,
+T727	Concept 12335 12344;12345 12353;12354 12358	Barcelona Sporting Club
+T728	Action 12359 12365	visita
+T729	Concept 12369 12374	Quito
+T730	Concept 12396 12401	12:00
+T731	Action 12402 12408	inicia
+T732	Action 12412 12418	choque
+T733	Concept 12428 12434;12435 12437	Delfín SC
+T734	Concept 12443 12447;12448 12450;12451 12456	Liga de Quito
+T735	Concept 12463 12469;12470 12472;12473 12479	ciudad de Manta;
+T736	Action 12487 12497	finalizar,
+T737	Concept 12501 12507	recién
+T738	Concept 12518 12524;12525 12533;12534 12536	Fuerza Amarilla SC
+T739	Action 12537 12543	recibe
+T740	Concept 12547 12552	Aucas
+T741	Concept 12559 12565	16:00.
+T742	Action 12578 12588	suscitaban
+T743	Concept 12593 12609	enfrentamientos,
+T744	Concept 12610 12617	CONATEL
+T745	Action 12618 12624	ordenó
+T746	Predicate 12627 12632	todas
+T747	Concept 12637 12642	cable
+T748	Concept 12643 12653	operadoras
+T749	Action 12654 12659	sacar
+T750	Concept 12664 12668	aire
+T751	Concept 12672 12677;12678 12681;12682 12684	canal NTN 24
+T752	Action 12689 12698	"fomentar
+T753	Concept 12703 12714	protestas".
+T754	Action 12719 12731	interrupción
+T755	Action 12735 12740	rutas
+T756	Concept 12744 12752	comercio
+T757	Concept 12755 12763;12764 12777	mercados alimentarios"
+T758	Action 12795 12802	aumento
+T759	Concept 12809 12817	hambruna
+T760	Concept 12833 12838	zonas
+T761	Action 12848 12853	llega
+T762	Concept 12857 12867	conflicto.
+T763	Concept 12887 12897	Defensoría
+T764	Concept 12905 12915	Habitantes
+T765	Action 12925 12934	suspender
+T766	Action 12938 12942	pago
+T767	Concept 12948 12955	empresa
+T768	Concept 12964 12970	volcán
+T769	Predicate 12985 12988	más
+T770	Concept 12989 12995	activo
+T771	Concept 12999 13007	Islandia
+T772	Action 13008 13013	entró
+T773	Action 13017 13025	erupción
+T774	Predicate 13042 13047	menos
+T775	Concept 13048 13050	65
+T776	Concept 13051 13059	personas
+T777	Action 13060 13068	murieron
+T778	Concept 13075 13085;13086 13088;13089 13093	Parlamento de Iraq
+T779	Predicate 13094 13099	luego
+T780	Action 13106 13114	atentado
+T781	Predicate 13119 13124	parte
+T782	Reference 13138 13142	Esta
+T783	Concept 13143 13147	idea
+T784	Action 13156 13161	visto
+T785	Concept 13162 13167;13168 13170;13171 13176;13177 13184;13185 13190;13191 13193;13194 13196;13197 13200	bueno de Arias –Premio Nobel de la Paz
+T786	Action 13214 13223	recomendó
+T787	Concept 13232 13240	personas
+T788	Action 13244 13252	realizar
+T789	Concept 13256 13261	viaje
+T790	Concept 13288 13291	SPD
+T791	Action 13292 13299	ocupará
+T792	Predicate 13300 13304	ocho
+T793	Concept 13305 13317	ministerios,
+T794	Concept 13337 13344;13345 13356;13357 13365	Asuntos Exteriores, Finanzas
+T795	Concept 13368 13375	Trabajo
+T796	Predicate 13390 13395	todos
+T797	Action 13417 13426	encargado
+T798	Action 13433 13446	investigación
+T799	Predicate 13451 13456	parte
+T800	Concept 13460 13470	Prefectura
+T801	Action 13488 13497	abandonar
+T802	Action 13501 13509	búsqueda
+T803	Concept 13523 13533	comandante
+T804	Concept 13540 13546	Armada
+T805	Action 13550 13560	determine.
+T806	Concept 13566 13573	novedad
+T807	Concept 13580 13587	origen,
+T808	Concept 13597 13603;13604 13610	Angela Merkel
+T809	Action 13611 13619	proviene
+T810	Concept 13626 13633;13634 13642	antigua Alemania
+T811	Concept 13656 13662	tercer
+T812	Concept 13663 13675;13676 13685	manifestante fallecido
+T813	Action 13686 13695	respondía
+T814	Concept 13699 13705;13706 13708;13709 13715;13716 13723	nombre de Robert Redman,
+T815	Action 13734 13741	abatido
+T816	Concept 13748 13757;13758 13764;13765 13767	municipio Chacao de
+T817	Concept 13798 13807	situación
+T818	Predicate 13823 13832	cualquier
+T819	Concept 13838 13843	área,
+T820	Concept 13847 13850	ONU
+T821	Action 13851 13857	estima
+T822	Concept 13862 13865	3,2
+T823	Predicate 13866 13874	millones
+T824	Concept 13878 13886	personas
+T825	Action 13887 13893	sufren
+T826	Concept 13897 13904	hambre.
+T827	Concept 13926 13932	Iguala
+T828	Concept 13947 13954;13955 13964	fuerzas federales
+T829	Action 13965 13974	asumieron
+T830	Action 13978 13985	control
+T831	Concept 13989 13995;13996 14003;14004 14006;14007 14017;14018 14028;14029 14031;14032 14040;14041 14048;14049 14055;14056 14058;14059 14064;14065 14075;14076 14078;14079 14090;14091 14099;14100 14105;14106 14108;14109 14116	Ciudad Apaxtla de Castrejón, Buenavista de Cuéllar, General Canuto A. Neri, Ixcateopan de Cuauhtémoc, Pilcaya, Taxco de Alarcón
+T832	Concept 14131 14141	municipios
+T833	Concept 14148 14154;14155 14160;14161 14163	región Norte de
+T834	Concept 14174 14178;14179 14187	Eloy Martínez
+T835	Action 14188 14193	nació
+T836	Concept 14200 14209;14210 14212;14213 14221	provincia de Tucumán,
+T837	Predicate 14225 14230	norte
+T838	Concept 14235 14240	país,
+T839	Concept 14250 14262	Funcionarios
+T840	Action 14280 14290	trabajando
+T841	Action 14296 14306	garantizar
+T842	Concept 14321 14327	segura
+T843	Action 14330 14338	efectiva
+T844	Concept 14339 14345	vacuna
+T845	Concept 14356 14361;14362 14363	gripe A
+T846	Concept 14375 14384	incidente
+T847	Action 14389 14398	atribuido
+T848	Concept 14404 14409	Qaeda
+T849	Action 14417 14424	informó
+T850	Action 14428 14434	vocero
+T851	Concept 14439 14446;14447 14457	consejo provincial
+T852	Concept 14461 14467	Tikrit
+T853	Concept 14473 14479	cadena
+T854	Concept 14483 14489	Yazira
+T855	Concept 14494 14501	fuertes
+T856	Concept 14502 14509	lluvias
+T857	Concept 14535 14540	grave
+T858	Action 14541 14549	problema
+T859	Concept 14550 14554	vial
+T860	Concept 14568 14580	inundaciones
+T861	Concept 14583 14593	derrumbes,
+T862	Predicate 14605 14608	más
+T863	Concept 14609 14615	graves
+T864	Action 14623 14633	registrado
+T865	Concept 14640 14647	capital
+T866	Concept 14653 14663	importante
+T867	Concept 14664 14673	Carretera
+T868	Concept 14693 14703	presidente
+T869	Concept 14708 14715;14716 14723	Círculo Militar
+T870	Concept 14739 14746	general
+T871	Action 14747 14755	retirado
+T872	Action 14771 14780	manifestó
+T873	Concept 14790 14802	coincidente,
+T874	Concept 14843 14851;14852 14854;14855 14862;14863 14870	Ministro de Defensa israelí
+T875	Action 14871 14875	dijo
+T876	Concept 14883 14892	"objetivo
+T877	Action 14896 14905	debilitar
+T878	Concept 14920 14925	goles
+T879	Concept 14932 14943;14944 14952	Universidad Católica
+T880	Concept 14976 14982;14983 14991	Miguel Escalada
+T881	Concept 14996 15003	Emelec)
+T882	Concept 15007 15013;15014 15016	minuto 34
+T883	Concept 15028 15036	Anangonó
+T884	Concept 15040 15046	minuto
+T885	Concept 15062 15068	tiempo
+T886	Concept 15072 15081	actividad
+T887	Action 15082 15091	participó
+T888	Action 15095 15106	operaciones
+T889	Concept 15110 15122;15123 15130	inteligencia militar
+T890	Predicate 15134 15141	tiempos
+T891	Concept 15148 15157;15158 15172	Dictadura Cívico-Militar
+T892	Concept 15189 15196;15197 15199;15200 15203	clásico n° 241
+T893	Concept 15211 15218;15219 15221;15222 15228;15229 15238;15239 15252;15253 15258;15259 15261	equipos de fútbol bogotanos Independiente Santa Fe
+T894	Concept 15264 15275	Millonarios
+T895	Action 15279 15286	realizó
+T896	Concept 15289 15295	puerta
+T897	Concept 15296 15304	cerrada,
+T898	Concept 15315 15322	estadio
+T899	Concept 15326 15332;15333 15335;15336 15342	Campín de Bogotá
+T900	Action 15347 15357	clausurado
+T901	Action 15366 15374	hinchada
+T902	Concept 15384 15392	equipos,
+T903	Concept 15415 15425	disturbios
+T904	Predicate 15443 15450	últimas
+T905	Concept 15451 15457	fechas
+T906	Concept 15462 15468;15469 15481	Torneo Profesional,
+T907	Action 15486 15498	desembocaron
+T908	Concept 15516 15522	Chiefs
+T909	Action 15523 15533	derrotaron
+T910	Concept 15534 15536	27
+T911	Concept 15539 15541	22
+T912	Concept 15548 15556	Brumbies
+T913	Concept 15562 15569	locales
+T914	Concept 15576 15581	final
+T915	Concept 15586 15591;15592 15598	Super Rugby,
+T916	Predicate 15602 15611	principal
+T917	Concept 15612 15622	campeonato
+T918	Concept 15626 15632	clubes
+T919	Concept 15637 15647	Hemisferio
+T920	Concept 15669 15677;15678 15680;15681 15686	ministra de Salud
+T921	Concept 15693 15703	Argentina,
+T922	Action 15704 15712	renunció
+T923	Predicate 15723 15731	contexto
+T924	Action 15736 15748	agravamiento
+T925	Concept 15755 15761;15762 15771	crisis sanitaria
+T926	Action 15776 15784	mantiene
+T927	Action 15788 15794	alerta
+T928	Concept 15809 15814	horas
+T929	Predicate 15815 15820	antes
+T930	Predicate 15824 15829	grupo
+T931	Concept 15833 15846	manifestantes
+T932	Action 15847 15858	irrumpieron
+T933	Concept 15869 15877	edificio
+T934	Concept 15882 15890	gobierno
+T935	Action 15891 15900	rompiendo
+T936	Concept 15904 15910	puerta
+T937	Action 15913 15926	enfrentándose
+T938	Concept 15930 15939	ejército.
+T939	Action 15943 15950	acuerdo
+T940	Concept 15954 15964;15965 15972;15973 15975;15976 15978;15979 15989;15990 15995;15996 16003	procurador General de la República, Jesús Murillo
+T941	Action 16014 16021	arresto
+T942	Concept 16025 16031	cuatro
+T943	Concept 16032 16040	personas
+T944	Action 16050 16056	ubicar
+T945	Concept 16061 16066	fosas
+T946	Concept 16067 16079	clandestinas
+T947	Concept 16080 16088	cercanas
+T948	Concept 16095 16100	cinco
+T949	Action 16101 16109	halladas
+T950	Concept 16113 16119	pasado
+T951	Predicate 16120 16123	fin
+T952	Action 16143 16154	intercambio
+T953	Concept 16158 16166	disparos
+T954	Action 16178 16183	murió
+T955	Concept 16187 16196;16197 16205;16206 16210;16211 16218	dirigente político Juan Montoya
+T956	Concept 16224 16237;16238 16244	universitario Bassil
+T957	Action 16261 16266	cargó
+T958	Concept 16270 16276;16277 16279;16280 16287;16288 16295	cuerpo de Montoya minutos
+T959	Predicate 16296 16301	antes
+T960	Concept 16331 16338;16339 16342	emisión 366
+T961	Concept 16349 16357;16358 16367	programa dominical
+T962	Concept 16374 16386;16387 16393	presidente!, Chávez
+T963	Action 16394 16401	anunció
+T964	Concept 16410 16423;16424 16426;16427 16434	instalaciones de Sidetur
+T965	Action 16435 16440	pasan
+T966	Concept 16447 16456	propiedad
+T967	Concept 16463 16470	nación,
+T968	Action 16473 16479	ordenó
+T969	Action 16483 16495	movilización
+T970	Concept 16502 16509;16510 16518;16519 16530	Guardia Nacional Bolivariana
+T971	Action 16536 16542	evitar
+T972	Concept 16552 16562;16563 16573	conflictos laborales,
+T973	Action 16576 16580	dijo
+T974	Concept 16587 16599	trabajadores
+T975	Action 16607 16618	mantuvieran
+T976	Concept 16619 16630	tranquilos,
+T977	Concept 16642 16650;16651 16660	derechos laborales
+T978	Concept 16682 16685	ONU
+T979	Action 16689 16697	alertado
+T980	Action 16708 16717	conflicto
+T981	Concept 16718 16724	armado
+T982	Concept 16731 16735	país
+T983	Action 16739 16745	tenido
+T984	Predicate 16749 16755	número
+T985	Concept 16759 16767	víctimas
+T986	Concept 16772 16783	precedentes
+T987	Predicate 16796 16804	primeros
+T988	Concept 16805 16809;16810 16815;16816 16818	seis meses de
+T989	Concept 16828 16840;16841 16848;16849 16851;16852 16854;16855 16864	Procuraduría General de la República
+T990	Action 16871 16878	informó
+T991	Reference 16879 16883	este
+T992	Concept 16884 16890	jueves
+T993	Action 16894 16902	hallazgo
+T994	Predicate 16913 16919	nuevas
+T995	Concept 16920 16925	fosas
+T996	Concept 16930 16939	cadáveres
+T997	Concept 16940 16950	calcinados
+T998	Predicate 16958 16966	cercanía
+T999	Concept 16970 16976	Iguala
+T1000	Concept 16983 16997	Independencia,
+T1001	Concept 17024 17033;17034 17042	selección mexicana
+T1002	Action 17052 17060	promover
+T1003	Concept 17064 17074;17075 17085;17086 17092	futbolista Cuauhtémoc Blanco
+T1004	Action 17098 17104	lograr
+T1005	Concept 17108 17112	pase
+T1006	Action 17133 17141	voluntad
+T1007	Concept 17149 17157	alemanes
+T1008	Concept 17175 17180	urnas
+T1009	Action 17184 17192	votación
+T1010	Concept 17196 17202;17203 17205;17206 17208;17209 17219;17220 17226	pasado 18 de septiembre Angela
+T1011	Action 17235 17244	candidata
+T1012	Concept 17251 17260;17261 17268	coalición CDU/CSU
+T1013	Concept 17288 17297;17298 17300;17301 17309	Canciller de Alemania
+T1014	Action 17310 17317	apoyada
+T1015	Concept 17331 17340	coalición
+T1016	Concept 17348 17355	partido
+T1017	Concept 17356 17359	SPD
+T1018	Concept 17376 17385;17386 17394;17395 17402	Canciller saliente Gerhard
+T1019	Concept 17435 17441	acción
+T1020	Concept 17446 17455	discreta,
+T1021	Concept 17459 17466	domingo
+T1022	Action 17470 17477	informó
+T1023	Concept 17485 17492	empresa
+T1024	Action 17493 17502	encargada
+T1025	Action 17507 17515	registro
+T1026	Predicate 17519 17526	nombres
+T1027	Concept 17534 17543	proyectos
+T1028	Concept 17550 17559;17560 17570;17571 17579	Fundación Wikimedia, GoDaddy,
+T1029	Action 17584 17595	reemplazada
+T1030	Concept 17600 17612	MarkMonitor,
+T1031	Concept 17625 17633	protesta
+T1032	Action 17641 17646	apoyo
+T1033	Action 17651 17660	entregaba
+T1034	Predicate 17664 17671	primera
+T1035	Concept 17672 17679	empresa
+T1036	Concept 17708 17713	noche
+T1037	Concept 17717 17725;17726 17728;17729 17739;17740 17742;17743 17753	edificio de Venezolana de Televisión
+T1038	Action 17758 17765	atacado
+T1039	Concept 17770 17783	manifestantes
+T1040	Concept 17784 17794	opositores
+T1041	Action 17803 17811	hirieron
+T1042	Action 17815 17819	bala
+T1043	Concept 17826 17836	reportera.
+R	target Arg1:T11 Arg2:T12
+R	domain Arg1:T266 Arg2:T268
+R	subject Arg1:T166 Arg2:T164
+R	subject Arg1:T245 Arg2:T237
+R	subject Arg1:T454 Arg2:T453
+R	entails Arg1:T200 Arg2:T197
+R	subject Arg1:T571 Arg2:T570
+R	target Arg1:T109 Arg2:T110
+R	target Arg1:T758 Arg2:T759
+R	arg Arg1:T914 Arg2:T915
+R	target Arg1:T752 Arg2:T753
+R	target Arg1:T274 Arg2:T275
+R	target Arg1:T1029 Arg2:T1030
+R	arg Arg1:T998 Arg2:T999
+R	in-place Arg1:T607 Arg2:T598
+R	in-place Arg1:T425 Arg2:T427
+R	entails Arg1:T742 Arg2:T749
+R	arg Arg1:T643 Arg2:T644
+R	subject Arg1:T310 Arg2:T312
+R	target Arg1:T529 Arg2:T530
+R	subject Arg1:T990 Arg2:T989
+R	in-place Arg1:T993 Arg2:T998
+R	subject Arg1:T501 Arg2:T498
+R	entails Arg1:T805 Arg2:T801
+R	target Arg1:T415 Arg2:T416
+R	subject Arg1:T909 Arg2:T908
+R	target Arg1:T979 Arg2:T983
+R	subject Arg1:T645 Arg2:T642
+R	target Arg1:T425 Arg2:T428
+R	target Arg1:T954 Arg2:T955
+R	arg Arg1:T244 Arg2:T245
+R	in-place Arg1:T619 Arg2:T620
+R	subject Arg1:T255 Arg2:T251
+R	in-place Arg1:T300 Arg2:T301
+R	target Arg1:T926 Arg2:T927
+R	in-context Arg1:T985 Arg2:T986
+R	subject Arg1:T467 Arg2:T471
+R	target Arg1:T847 Arg2:T848
+R	target Arg1:T67 Arg2:T68
+R	target Arg1:T983 Arg2:T984
+R	target Arg1:T298 Arg2:T299
+R	arg Arg1:T266 Arg2:T267
+R	in-time Arg1:T74 Arg2:T75
+R	in-time Arg1:T285 Arg2:T287
+R	in-context Arg1:T564 Arg2:T565
+R	subject Arg1:T25 Arg2:T22
+R	subject Arg1:T163 Arg2:T162
+R	in-place Arg1:T682 Arg2:T684
+R	subject Arg1:T841 Arg2:T840
+R	target Arg1:T492 Arg2:T493
+R	target Arg1:T214 Arg2:T215
+R	in-time Arg1:T957 Arg2:T959
+R	subject Arg1:T474 Arg2:T475
+R	in-context Arg1:T471 Arg2:T472
+R	target Arg1:T622 Arg2:T623
+R	in-context Arg1:T1016 Arg2:T1017
+R	target Arg1:T176 Arg2:T177
+R	target Arg1:T766 Arg2:T767
+R	target Arg1:T791 Arg2:T792
+R	target Arg1:T180 Arg2:T178
+R	target Arg1:T1031 Arg2:T1032
+R	subject Arg1:T23 Arg2:T22
+R	target Arg1:T208 Arg2:T209
+R	in-time Arg1:T507 Arg2:T508
+R	in-context Arg1:T980 Arg2:T981
+R	domain Arg1:T72 Arg2:T73
+R	subject Arg1:T285 Arg2:T284
+R	subject Arg1:T540 Arg2:T539
+R	arg Arg1:T217 Arg2:T218
+R	subject Arg1:T772 Arg2:T768
+R	in-context Arg1:T917 Arg2:T916
+R	subject Arg1:T554 Arg2:T553
+R	arg Arg1:T987 Arg2:T988
+R	target Arg1:T525 Arg2:T524
+R	in-place Arg1:T1026 Arg2:T1027
+R	target Arg1:T305 Arg2:T306
+R	subject Arg1:T344 Arg2:T341
+R	is-a Arg1:T433 Arg2:T431
+R	subject Arg1:T545 Arg2:T544
+R	arg Arg1:T950 Arg2:T951
+R	subject Arg1:T9 Arg2:T7
+R	subject Arg1:T482 Arg2:T478
+R	subject Arg1:T331 Arg2:T328
+R	subject Arg1:T932 Arg2:T931
+R	target Arg1:T169 Arg2:T170
+R	target Arg1:T35 Arg2:T36
+R	target Arg1:T765 Arg2:T766
+R	in-context Arg1:T249 Arg2:T250
+R	target Arg1:T360 Arg2:T361
+R	in-context Arg1:T18 Arg2:T19
+R	subject Arg1:T391 Arg2:T390
+R	target Arg1:T809 Arg2:T810
+R	in-context Arg1:T660 Arg2:T661
+R	target Arg1:T932 Arg2:T933
+R	target Arg1:T265 Arg2:T266
+R	target Arg1:T425 Arg2:T426
+R	in-place Arg1:T408 Arg2:T410
+R	target Arg1:T197 Arg2:T198
+R	in-context Arg1:T912 Arg2:T913
+R	target Arg1:T96 Arg2:T97
+R	target Arg1:T5 Arg2:T6
+R	domain Arg1:T942 Arg2:T943
+R	target Arg1:T1029 Arg2:T1023
+R	domain Arg1:T994 Arg2:T995
+R	subject Arg1:T983 Arg2:T980
+R	target Arg1:T25 Arg2:T26
+R	target Arg1:T1004 Arg2:T1005
+R	in-context Arg1:T468 Arg2:T469
+R	in-place Arg1:T305 Arg2:T307
+R	target Arg1:T518 Arg2:T519
+R	in-context Arg1:T329 Arg2:T330
+R	target Arg1:T682 Arg2:T683
+R	in-time Arg1:T645 Arg2:T655
+R	target Arg1:T84 Arg2:T83
+R	subject Arg1:T791 Arg2:T790
+R	target Arg1:T433 Arg2:T434
+R	in-place Arg1:T306 Arg2:T307
+R	in-place Arg1:T728 Arg2:T729
+R	target Arg1:T555 Arg2:T556
+R	subject Arg1:T707 Arg2:T708
+R	target Arg1:T94 Arg2:T96
+R	target Arg1:T436 Arg2:T437
+R	target Arg1:T17 Arg2:T18
+R	target Arg1:T424 Arg2:T425
+R	subject Arg1:T1002 Arg2:T1001
+R	target Arg1:T449 Arg2:T448
+R	target Arg1:T501 Arg2:T502
+R	subject Arg1:T263 Arg2:T261
+R	target Arg1:T94 Arg2:T92
+R	subject Arg1:T548 Arg2:T544
+R	target Arg1:T467 Arg2:T466
+R	arg Arg1:T386 Arg2:T387
+R	target Arg1:T485 Arg2:T486
+R	subject Arg1:T528 Arg2:T527
+R	target Arg1:T571 Arg2:T572
+R	target Arg1:T379 Arg2:T380
+R	target Arg1:T289 Arg2:T290
+R	target Arg1:T849 Arg2:T848
+R	subject Arg1:T629 Arg2:T628
+R	subject Arg1:T280 Arg2:T278
+R	arg Arg1:T242 Arg2:T243
+R	subject Arg1:T430 Arg2:T421
+R	target Arg1:T142 Arg2:T143
+R	target Arg1:T966 Arg2:T967
+R	domain Arg1:T417 Arg2:T418
+R	subject Arg1:T487 Arg2:T486
+R	subject Arg1:T548 Arg2:T547
+R	domain Arg1:T318 Arg2:T319
+R	in-context Arg1:T679 Arg2:T680
+R	target Arg1:T707 Arg2:T706
+R	target Arg1:T971 Arg2:T972
+R	subject Arg1:T813 Arg2:T812
+R	target Arg1:T909 Arg2:T911
+R	in-context Arg1:T858 Arg2:T857
+R	in-place Arg1:T63 Arg2:T64
+R	target Arg1:T673 Arg2:T674
+R	in-time Arg1:T320 Arg2:T321
+R	target Arg1:T419 Arg2:T420
+R	subject Arg1:T739 Arg2:T721
+R	is-a Arg1:T686 Arg2:T687
+R	subject Arg1:T1041 Arg2:T1039
+R	in-context Arg1:T573 Arg2:T574
+R	arg Arg1:T862 Arg2:T863
+R	arg Arg1:T947 Arg2:T948
+R	target Arg1:T516 Arg2:T514
+R	subject Arg1:T494 Arg2:T486
+R	target Arg1:T554 Arg2:T555
+R	in-place Arg1:T153 Arg2:T154
+R	in-context Arg1:T784 Arg2:T785
+R	target Arg1:T965 Arg2:T966
+R	in-context Arg1:T844 Arg2:T843
+R	subject Arg1:T739 Arg2:T738
+R	arg Arg1:T65 Arg2:T66
+R	target Arg1:T48 Arg2:T49
+R	in-place Arg1:T797 Arg2:T799
+R	domain Arg1:T769 Arg2:T771
+R	in-place Arg1:T864 Arg2:T865
+R	target Arg1:T229 Arg2:T230
+R	subject Arg1:T200 Arg2:T195
+R	target Arg1:T442 Arg2:T443
+R	domain Arg1:T984 Arg2:T985
+R	target Arg1:T342 Arg2:T343
+R	arg Arg1:T12 Arg2:T13
+R	domain Arg1:T715 Arg2:T716
+R	entails Arg1:T739 Arg2:T728
+R	in-place Arg1:T850 Arg2:T852
+R	domain Arg1:T792 Arg2:T793
+R	in-place Arg1:T211 Arg2:T212
+R	subject Arg1:T494 Arg2:T492
+R	target Arg1:T969 Arg2:T970
+R	in-context Arg1:T294 Arg2:T295
+R	in-time Arg1:T200 Arg2:T203
+R	entails Arg1:T528 Arg2:T531
+R	target Arg1:T626 Arg2:T627
+R	domain Arg1:T151 Arg2:T152
+R	target Arg1:T821 Arg2:T823
+R	subject Arg1:T474 Arg2:T473
+R	in-context Arg1:T870 Arg2:T871
+R	in-place Arg1:T849 Arg2:T853
+R	target Arg1:T909 Arg2:T910
+R	in-context Arg1:T945 Arg2:T946
+R	in-time Arg1:T645 Arg2:T647
+R	subject Arg1:T745 Arg2:T744
+R	target Arg1:T436 Arg2:T439
+R	target Arg1:T702 Arg2:T703
+R	in-context Arg1:T708 Arg2:T709
+R	target Arg1:T875 Arg2:T876
+R	subject Arg1:T713 Arg2:T711
+R	is-a Arg1:T567 Arg2:T568
+R	target Arg1:T545 Arg2:T546
+R	target Arg1:T849 Arg2:T850
+R	target Arg1:T895 Arg2:T892
+R	in-context Arg1:T70 Arg2:T71
+R	in-place Arg1:T898 Arg2:T899
+R	subject Arg1:T310 Arg2:T311
+R	subject Arg1:T680 Arg2:T679
+R	in-context Arg1:T367 Arg2:T368
+R	target Arg1:T516 Arg2:T518
+R	subject Arg1:T694 Arg2:T693
+R	target Arg1:T55 Arg2:T56
+R	is-a Arg1:T561 Arg2:T560
+R	domain Arg1:T76 Arg2:T77
+R	entails Arg1:T739 Arg2:T722
+R	in-context Arg1:T247 Arg2:T248
+R	in-context Arg1:T205 Arg2:T206
+R	target Arg1:T504 Arg2:T505
+R	in-context Arg1:T888 Arg2:T889
+R	target Arg1:T749 Arg2:T751
+R	target Arg1:T188 Arg2:T189
+R	same-as Arg1:T195 Arg2:T196
+R	subject Arg1:T1004 Arg2:T1001
+R	subject Arg1:T494 Arg2:T493
+R	in-context Arg1:T58 Arg2:T59
+R	entails Arg1:T722 Arg2:T739
+R	entails Arg1:T1022 Arg2:T1029
+R	target Arg1:T689 Arg2:T690
+R	in-place Arg1:T92 Arg2:T93
+R	subject Arg1:T944 Arg2:T941
+R	in-context Arg1:T116 Arg2:T117
+R	in-context Arg1:T996 Arg2:T997
+R	in-place Arg1:T920 Arg2:T921
+R	target Arg1:T167 Arg2:T168
+R	target Arg1:T821 Arg2:T825
+R	in-time Arg1:T654 Arg2:T655
+R	in-context Arg1:T164 Arg2:T165
+R	in-place Arg1:T533 Arg2:T534
+R	causes Arg1:T21 Arg2:T23
+R	subject Arg1:T197 Arg2:T195
+R	target Arg1:T1041 Arg2:T1042
+R	subject Arg1:T167 Arg2:T164
+R	target Arg1:T261 Arg2:T262
+R	target Arg1:T761 Arg2:T762
+R	target Arg1:T786 Arg2:T788
+R	target Arg1:T224 Arg2:T225
+R	domain Arg1:T1034 Arg2:T1035
+R	target Arg1:T112 Arg2:T113
+R	causes Arg1:T754 Arg2:T758
+R	target Arg1:T280 Arg2:T282
+R	in-context Arg1:T437 Arg2:T438
+R	target Arg1:T591 Arg2:T593
+R	target Arg1:T232 Arg2:T233
+R	subject Arg1:T1038 Arg2:T1037
+R	domain Arg1:T904 Arg2:T905
+R	target Arg1:T238 Arg2:T239
+R	domain Arg1:T837 Arg2:T838
+R	in-place Arg1:T980 Arg2:T982
+R	in-context Arg1:T261 Arg2:T260
+R	target Arg1:T629 Arg2:T630
+R	target Arg1:T353 Arg2:T354
+R	in-context Arg1:T634 Arg2:T635
+R	subject Arg1:T739 Arg2:T737
+R	in-place Arg1:T298 Arg2:T300
+R	in-context Arg1:T102 Arg2:T103
+R	in-context Arg1:T704 Arg2:T705
+R	target Arg1:T406 Arg2:T407
+R	target Arg1:T852 Arg2:T853
+R	causes Arg1:T861 Arg2:T858
+R	target Arg1:T577 Arg2:T578
+R	target Arg1:T479 Arg2:T480
+R	in-place Arg1:T909 Arg2:T914
+R	subject Arg1:T495 Arg2:T484
+R	target Arg1:T495 Arg2:T496
+R	in-time Arg1:T887 Arg2:T890
+R	is-a Arg1:T397 Arg2:T398
+R	target Arg1:T522 Arg2:T523
+R	target Arg1:T479 Arg2:T481
+R	arg Arg1:T292 Arg2:T293
+R	subject Arg1:T297 Arg2:T294
+R	entails Arg1:T51 Arg2:T55
+R	in-place Arg1:T549 Arg2:T550
+R	target Arg1:T353 Arg2:T355
+R	in-time Arg1:T2 Arg2:T4
+R	arg Arg1:T637 Arg2:T638
+R	subject Arg1:T69 Arg2:T63
+R	domain Arg1:T270 Arg2:T271
+R	in-context Arg1:T616 Arg2:T617
+R	subject Arg1:T467 Arg2:T478
+R	target Arg1:T952 Arg2:T953
+R	target Arg1:T51 Arg2:T52
+R	domain Arg1:T403 Arg2:T404
+R	target Arg1:T89 Arg2:T90
+R	in-time Arg1:T586 Arg2:T588
+R	in-context Arg1:T995 Arg2:T996
+R	target Arg1:T1024 Arg2:T1025
+R	subject Arg1:T932 Arg2:T930
+R	in-context Arg1:T514 Arg2:T515
+R	in-place Arg1:T269 Arg2:T270
+R	in-time Arg1:T263 Arg2:T264
+R	in-context Arg1:T999 Arg2:T1000
+R	subject Arg1:T17 Arg2:T16
+R	subject Arg1:T482 Arg2:T483
+R	subject Arg1:T555 Arg2:T552
+R	target Arg1:T375 Arg2:T376
+R	in-time Arg1:T238 Arg2:T244
+R	subject Arg1:T668 Arg2:T665
+R	in-place Arg1:T496 Arg2:T497
+R	in-place Arg1:T933 Arg2:T934
+R	subject Arg1:T525 Arg2:T526
+R	subject Arg1:T67 Arg2:T63
+R	target Arg1:T575 Arg2:T576
+R	subject Arg1:T353 Arg2:T352
+R	in-place Arg1:T599 Arg2:T600
+R	in-context Arg1:T601 Arg2:T602
+R	subject Arg1:T474 Arg2:T468
+R	subject Arg1:T214 Arg2:T213
+R	target Arg1:T695 Arg2:T696
+R	subject Arg1:T809 Arg2:T808
+R	target Arg1:T487 Arg2:T488
+R	subject Arg1:T467 Arg2:T468
+R	domain Arg1:T711 Arg2:T712
+R	subject Arg1:T153 Arg2:T151
+R	target Arg1:T731 Arg2:T732
+R	target Arg1:T190 Arg2:T191
+R	in-place Arg1:T356 Arg2:T358
+R	target Arg1:T200 Arg2:T202
+R	subject Arg1:T383 Arg2:T382
+R	in-place Arg1:T707 Arg2:T710
+R	target Arg1:T887 Arg2:T888
+R	target Arg1:T754 Arg2:T755
+R	arg Arg1:T779 Arg2:T780
+R	target Arg1:T537 Arg2:T538
+R	in-place Arg1:T684 Arg2:T685
+R	in-place Arg1:T232 Arg2:T236
+R	arg Arg1:T769 Arg2:T770
+R	target Arg1:T383 Arg2:T385
+R	is-a Arg1:T432 Arg2:T431
+R	arg Arg1:T885 Arg2:T886
+R	target Arg1:T280 Arg2:T281
+R	in-place Arg1:T519 Arg2:T520
+R	subject Arg1:T713 Arg2:T712
+R	subject Arg1:T591 Arg2:T584
+R	target Arg1:T101 Arg2:T102
+R	target Arg1:T491 Arg2:T487
+R	subject Arg1:T887 Arg2:T885
+R	target Arg1:T548 Arg2:T549
+R	arg Arg1:T596 Arg2:T597
+R	subject Arg1:T219 Arg2:T218
+R	subject Arg1:T485 Arg2:T484
+R	is-a Arg1:T794 Arg2:T793
+R	subject Arg1:T265 Arg2:T259
+R	target Arg1:T221 Arg2:T222
+R	is-a Arg1:T782 Arg2:T783
+R	in-time Arg1:T922 Arg2:T923
+R	in-context Arg1:T763 Arg2:T764
+R	target Arg1:T488 Arg2:T489
+R	is-a Arg1:T562 Arg2:T560
+R	target Arg1:T361 Arg2:T362
+R	subject Arg1:T223 Arg2:T221
+R	in-time Arg1:T585 Arg2:T588
+R	subject Arg1:T1022 Arg2:T1021
+R	in-place Arg1:T713 Arg2:T714
+R	target Arg1:T719 Arg2:T717
+R	is-a Arg1:T463 Arg2:T464
+R	in-time Arg1:T949 Arg2:T950
+R	target Arg1:T155 Arg2:T156
+R	subject Arg1:T701 Arg2:T700
+R	arg Arg1:T630 Arg2:T631
+R	subject Arg1:T531 Arg2:T527
+R	target Arg1:T895 Arg2:T894
+R	in-context Arg1:T650 Arg2:T651
+R	is-a Arg1:T336 Arg2:T337
+R	subject Arg1:T548 Arg2:T541
+R	subject Arg1:T366 Arg2:T365
+R	in-context Arg1:T251 Arg2:T252
+R	subject Arg1:T529 Arg2:T527
+R	subject Arg1:T813 Arg2:T811
+R	arg Arg1:T923 Arg2:T924
+R	arg Arg1:T217 Arg2:T219
+R	target Arg1:T326 Arg2:T327
+R	target Arg1:T981 Arg2:T980
+R	entails Arg1:T277 Arg2:T279
+R	arg Arg1:T259 Arg2:T260
+R	in-time Arg1:T285 Arg2:T288
+R	target Arg1:T840 Arg2:T841
+R	target Arg1:T616 Arg2:T618
+R	target Arg1:T852 Arg2:T854
+R	target Arg1:T895 Arg2:T896
+R	target Arg1:T153 Arg2:T152
+R	in-place Arg1:T708 Arg2:T710
+R	subject Arg1:T169 Arg2:T164
+R	target Arg1:T374 Arg2:T375
+R	subject Arg1:T495 Arg2:T486
+R	subject Arg1:T487 Arg2:T484
+R	target Arg1:T520 Arg2:T521
+R	target Arg1:T830 Arg2:T831
+R	subject Arg1:T722 Arg2:T721
+R	in-context Arg1:T872 Arg2:T873
+R	target Arg1:T408 Arg2:T409
+R	arg Arg1:T20 Arg2:T21
+R	target Arg1:T674 Arg2:T675
+R	domain Arg1:T916 Arg2:T917
+R	in-context Arg1:T46 Arg2:T45
+R	arg Arg1:T947 Arg2:T949
+R	subject Arg1:T780 Arg2:T781
+R	in-place Arg1:T981 Arg2:T982
+R	target Arg1:T540 Arg2:T538
+R	domain Arg1:T714 Arg2:T715
+R	target Arg1:T485 Arg2:T487
+R	target Arg1:T1041 Arg2:T1043
+R	target Arg1:T864 Arg2:T862
+R	target Arg1:T591 Arg2:T592
+R	subject Arg1:T349 Arg2:T348
+R	in-context Arg1:T850 Arg2:T851
+R	in-time Arg1:T180 Arg2:T181
+R	in-place Arg1:T299 Arg2:T300
+R	target Arg1:T1002 Arg2:T1003
+R	subject Arg1:T255 Arg2:T253
+R	in-place Arg1:T605 Arg2:T606
+R	subject Arg1:T965 Arg2:T964
+R	target Arg1:T96 Arg2:T98
+R	subject Arg1:T872 Arg2:T868
+R	target Arg1:T1033 Arg2:T1034
+R	target Arg1:T722 Arg2:T725
+R	target Arg1:T331 Arg2:T332
+R	subject Arg1:T96 Arg2:T95
+R	in-place Arg1:T227 Arg2:T236
+R	subject Arg1:T518 Arg2:T517
+R	target Arg1:T990 Arg2:T991
+R	subject Arg1:T585 Arg2:T584
+R	subject Arg1:T208 Arg2:T207
+R	subject Arg1:T176 Arg2:T171
+R	target Arg1:T2 Arg2:T3
+R	target Arg1:T585 Arg2:T586
+R	in-context Arg1:T803 Arg2:T804
+R	in-place Arg1:T849 Arg2:T852
+R	in-time Arg1:T255 Arg2:T256
+R	target Arg1:T680 Arg2:T681
+R	domain Arg1:T499 Arg2:T500
+R	domain Arg1:T328 Arg2:T329
+R	subject Arg1:T238 Arg2:T237
+R	in-context Arg1:T975 Arg2:T976
+R	target Arg1:T545 Arg2:T547
+R	target Arg1:T384 Arg2:T385
+R	in-place Arg1:T305 Arg2:T310
+R	subject Arg1:T339 Arg2:T336
+R	target Arg1:T40 Arg2:T42
+R	in-context Arg1:T671 Arg2:T672
+R	target Arg1:T200 Arg2:T201
+R	subject Arg1:T94 Arg2:T95
+R	subject Arg1:T805 Arg2:T803
+R	subject Arg1:T501 Arg2:T500
+R	in-context Arg1:T446 Arg2:T445
+R	target Arg1:T408 Arg2:T405
+R	target Arg1:T424 Arg2:T428
+R	target Arg1:T424 Arg2:T427
+R	in-context Arg1:T1008 Arg2:T1009
+R	subject Arg1:T682 Arg2:T679
+R	subject Arg1:T829 Arg2:T828
+R	in-context Arg1:T856 Arg2:T855
+R	in-place Arg1:T815 Arg2:T816
+R	in-place Arg1:T200 Arg2:T204
+R	target Arg1:T356 Arg2:T357
+R	in-place Arg1:T864 Arg2:T867
+R	domain Arg1:T146 Arg2:T147
+R	in-place Arg1:T531 Arg2:T535
+R	subject Arg1:T331 Arg2:T329
+R	subject Arg1:T2 Arg2:T1
+R	in-place Arg1:T835 Arg2:T837
+R	subject Arg1:T777 Arg2:T776
+R	target Arg1:T531 Arg2:T532
+R	target Arg1:T60 Arg2:T62
+R	in-place Arg1:T396 Arg2:T397
+R	target Arg1:T754 Arg2:T757
+R	in-time Arg1:T944 Arg2:T950
+R	in-place Arg1:T331 Arg2:T333
+R	target Arg1:T139 Arg2:T137
+R	subject Arg1:T840 Arg2:T839
+R	subject Arg1:T369 Arg2:T365
+R	subject Arg1:T835 Arg2:T834
+R	subject Arg1:T1004 Arg2:T1003
+R	target Arg1:T308 Arg2:T309
+R	target Arg1:T137 Arg2:T138
+R	target Arg1:T641 Arg2:T640
+R	subject Arg1:T247 Arg2:T237
+R	has-property Arg1:T806 Arg2:T807
+R	domain Arg1:T930 Arg2:T931
+R	in-time Arg1:T436 Arg2:T441
+R	in-place Arg1:T645 Arg2:T646
+R	target Arg1:T272 Arg2:T274
+R	in-place Arg1:T581 Arg2:T582
+R	target Arg1:T516 Arg2:T517
+R	target Arg1:T54 Arg2:T55
+R	subject Arg1:T279 Arg2:T278
+R	arg Arg1:T371 Arg2:T372
+R	is-a Arg1:T281 Arg2:T283
+R	domain Arg1:T714 Arg2:T716
+R	in-place Arg1:T308 Arg2:T310
+R	in-place Arg1:T864 Arg2:T866
+R	in-place Arg1:T1027 Arg2:T1028
+R	target Arg1:T454 Arg2:T455
+R	target Arg1:T82 Arg2:T83
+R	in-time Arg1:T159 Arg2:T160
+R	target Arg1:T658 Arg2:T659
+R	target Arg1:T772 Arg2:T773
+R	subject Arg1:T369 Arg2:T359
+R	target Arg1:T416 Arg2:T417
+R	target Arg1:T701 Arg2:T702
+R	target Arg1:T157 Arg2:T156
+R	target Arg1:T227 Arg2:T228
+R	is-a Arg1:T795 Arg2:T793
+R	target Arg1:T60 Arg2:T61
+R	target Arg1:T436 Arg2:T440
+R	target Arg1:T545 Arg2:T548
+R	in-context Arg1:T697 Arg2:T698
+R	in-place Arg1:T324 Arg2:T325
+R	entails Arg1:T531 Arg2:T528
+R	target Arg1:T408 Arg2:T406
+R	target Arg1:T459 Arg2:T460
+R	domain Arg1:T746 Arg2:T747
+R	in-time Arg1:T239 Arg2:T244
+R	target Arg1:T219 Arg2:T220
+R	in-context Arg1:T867 Arg2:T866
+R	target Arg1:T430 Arg2:T433
+R	subject Arg1:T89 Arg2:T88
+R	subject Arg1:T54 Arg2:T50
+R	subject Arg1:T841 Arg2:T839
+R	subject Arg1:T52 Arg2:T53
+R	in-place Arg1:T391 Arg2:T392
+R	arg Arg1:T508 Arg2:T509
+R	subject Arg1:T65 Arg2:T63
+R	arg Arg1:T677 Arg2:T678
+R	target Arg1:T742 Arg2:T743
+R	in-context Arg1:T44 Arg2:T45
+R	target Arg1:T280 Arg2:T283
+R	is-a Arg1:T282 Arg2:T283
+R	in-place Arg1:T384 Arg2:T386
+R	subject Arg1:T436 Arg2:T435
+R	target Arg1:T694 Arg2:T695
+R	subject Arg1:T694 Arg2:T679
+R	target Arg1:T739 Arg2:T740
+R	domain Arg1:T799 Arg2:T800
+R	target Arg1:T909 Arg2:T912
+R	domain Arg1:T99 Arg2:T100
+R	in-context Arg1:T626 Arg2:T625
+R	subject Arg1:T40 Arg2:T39
+R	subject Arg1:T821 Arg2:T820
+R	subject Arg1:T591 Arg2:T590
+R	target Arg1:T247 Arg2:T249
+R	in-context Arg1:T995 Arg2:T994
+R	target Arg1:T1014 Arg2:T1013
+R	target Arg1:T255 Arg2:T258
+R	in-place Arg1:T835 Arg2:T836
+R	target Arg1:T749 Arg2:T750
+R	target Arg1:T990 Arg2:T993
+R	target Arg1:T491 Arg2:T490
+R	in-place Arg1:T449 Arg2:T450
+R	target Arg1:T108 Arg2:T109
+R	target Arg1:T935 Arg2:T936
+R	target Arg1:T825 Arg2:T826
+R	target Arg1:T118 Arg2:T119
+R	target Arg1:T868 Arg2:T869
+R	subject Arg1:T183 Arg2:T182
+R	target Arg1:T957 Arg2:T958
+R	in-context Arg1:T689 Arg2:T688
+R	target Arg1:T791 Arg2:T793
+R	target Arg1:T858 Arg2:T859
+R	in-context Arg1:T909 Arg2:T913
+R	domain Arg1:T639 Arg2:T640
+R	target Arg1:T279 Arg2:T280
+R	in-place Arg1:T722 Arg2:T723
+R	in-place Arg1:T685 Arg2:T686
+R	target Arg1:T245 Arg2:T246
+R	target Arg1:T482 Arg2:T481
+R	target Arg1:T973 Arg2:T975
+R	target Arg1:T1025 Arg2:T1026
+R	target Arg1:T411 Arg2:T412
+R	target Arg1:T829 Arg2:T830
+R	target Arg1:T501 Arg2:T503
+R	subject Arg1:T474 Arg2:T478
+R	target Arg1:T320 Arg2:T319
+R	subject Arg1:T830 Arg2:T828
+R	subject Arg1:T474 Arg2:T471
+R	target Arg1:T900 Arg2:T901
+R	subject Arg1:T537 Arg2:T536
+R	subject Arg1:T157 Arg2:T158
+R	subject Arg1:T491 Arg2:T486
+R	in-time Arg1:T777 Arg2:T779
+R	subject Arg1:T84 Arg2:T85
+R	arg Arg1:T890 Arg2:T891
+R	target Arg1:T788 Arg2:T789
+R	target Arg1:T372 Arg2:T373
+R	subject Arg1:T360 Arg2:T359
+R	target Arg1:T265 Arg2:T267
+R	target Arg1:T973 Arg2:T974
+R	target Arg1:T542 Arg2:T543
+R	subject Arg1:T957 Arg2:T956
+R	subject Arg1:T784 Arg2:T782
+R	target Arg1:T745 Arg2:T746
+R	target Arg1:T223 Arg2:T224
+R	domain Arg1:T56 Arg2:T57
+R	target Arg1:T797 Arg2:T798
+R	target Arg1:T559 Arg2:T558
+R	target Arg1:T739 Arg2:T725
+R	subject Arg1:T424 Arg2:T421
+R	target Arg1:T69 Arg2:T70
+R	target Arg1:T166 Arg2:T168
+R	in-place Arg1:T777 Arg2:T778
+R	causes Arg1:T860 Arg2:T858
+R	target Arg1:T23 Arg2:T24
+R	target Arg1:T118 Arg2:T121
+R	in-context Arg1:T233 Arg2:T234
+R	subject Arg1:T159 Arg2:T158
+R	subject Arg1:T263 Arg2:T259
+R	subject Arg1:T728 Arg2:T721
+R	target Arg1:T1029 Arg2:T1025
+R	target Arg1:T339 Arg2:T340
+R	target Arg1:T586 Arg2:T587
+R	in-time Arg1:T719 Arg2:T720
+R	target Arg1:T479 Arg2:T473
+R	target Arg1:T285 Arg2:T286
+R	subject Arg1:T545 Arg2:T541
+R	target Arg1:T847 Arg2:T846
+R	arg Arg1:T998 Arg2:T1000
+R	target Arg1:T239 Arg2:T240
+R	subject Arg1:T494 Arg2:T484
+R	subject Arg1:T491 Arg2:T484
+R	arg Arg1:T647 Arg2:T648
+R	in-context Arg1:T457 Arg2:T456
+R	target Arg1:T106 Arg2:T107
+R	subject Arg1:T731 Arg2:T721
+R	target Arg1:T369 Arg2:T370
+R	in-context Arg1:T475 Arg2:T476
+R	target Arg1:T1011 Arg2:T1012
+R	target Arg1:T320 Arg2:T318
+R	target Arg1:T645 Arg2:T648
+R	subject Arg1:T479 Arg2:T478
+R	subject Arg1:T979 Arg2:T978
+R	subject Arg1:T274 Arg2:T273
+R	in-place Arg1:T607 Arg2:T608
+R	target Arg1:T801 Arg2:T802
+R	arg Arg1:T598 Arg2:T599
+R	target Arg1:T944 Arg2:T945
+R	target Arg1:T662 Arg2:T663
+R	target Arg1:T745 Arg2:T749
+R	in-place Arg1:T265 Arg2:T270
+R	domain Arg1:T775 Arg2:T776
+R	in-context Arg1:T46 Arg2:T47
+R	subject Arg1:T326 Arg2:T324
+R	subject Arg1:T227 Arg2:T226
+R	subject Arg1:T125 Arg2:T122
+R	target Arg1:T511 Arg2:T512
+R	target Arg1:T937 Arg2:T938
+R	in-context Arg1:T1039 Arg2:T1040
+R	target Arg1:T313 Arg2:T314
+R	subject Arg1:T728 Arg2:T727
+R	target Arg1:T610 Arg2:T611
+R	in-place Arg1:T302 Arg2:T303
+R	target Arg1:T968 Arg2:T969
+R	domain Arg1:T172 Arg2:T173
+R	target Arg1:T430 Arg2:T431
+R	subject Arg1:T875 Arg2:T874
+R	in-context Arg1:T268 Arg2:T269
+R	subject Arg1:T872 Arg2:T870
+R	target Arg1:T9 Arg2:T10
+R	entails Arg1:T742 Arg2:T745
+R	target Arg1:T265 Arg2:T268
+R	target Arg1:T430 Arg2:T432
+R	target Arg1:T40 Arg2:T41
+R	target Arg1:T361 Arg2:T363
+R	subject Arg1:T344 Arg2:T345
+R	target Arg1:T119 Arg2:T120
+R	target Arg1:T42 Arg2:T43
+R	subject Arg1:T112 Arg2:T111
+R	target Arg1:T615 Arg2:T616
+R	target Arg1:T924 Arg2:T925
+R	in-place Arg1:T391 Arg2:T403
+R	domain Arg1:T648 Arg2:T649
+R	target Arg1:T528 Arg2:T529
+R	target Arg1:T813 Arg2:T814
+R	target Arg1:T482 Arg2:T473
+R	target Arg1:T467 Arg2:T473
+R	target Arg1:T511 Arg2:T510
+R	in-context Arg1:T896 Arg2:T897
+R	subject Arg1:T702 Arg2:T700
+R	domain Arg1:T171 Arg2:T172
+R	target Arg1:T344 Arg2:T342
+R	domain Arg1:T823 Arg2:T824
+R	subject Arg1:T1024 Arg2:T1023
+R	target Arg1:T407 Arg2:T405
+R	target Arg1:T717 Arg2:T718
+R	subject Arg1:T51 Arg2:T50
+R	target Arg1:T119 Arg2:T121
+R	in-context Arg1:T253 Arg2:T254
+R	in-context Arg1:T399 Arg2:T400
+R	domain Arg1:T171 Arg2:T173
+R	in-place Arg1:T878 Arg2:T879
+R	subject Arg1:T554 Arg2:T552
+R	subject Arg1:T406 Arg2:T405
+R	target Arg1:T623 Arg2:T624
+R	arg Arg1:T755 Arg2:T756
+R	in-place Arg1:T129 Arg2:T130
+R	subject Arg1:T1038 Arg2:T1039
+R	in-place Arg1:T233 Arg2:T235
+R	subject Arg1:T975 Arg2:T974
+R	subject Arg1:T926 Arg2:T925
+R	subject Arg1:T42 Arg2:T41
+R	target Arg1:T462 Arg2:T463

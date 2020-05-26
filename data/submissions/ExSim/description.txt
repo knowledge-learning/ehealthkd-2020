@@ -1,0 +1,10 @@
+method_name: word embeddings
+method_description: The results only consider task A. The provided baseline code is extended with NLP techniques and word embeddings methodology for similarity measurement, namely word2vector. First, the training set is utilized to extract the gold_keyphrases and to train word2vector model. Second, the sentences (ST) of the testing set are extracted. Third, gold_keyphrases and sentences are compared.  If there is exact match tokens (unigram and bigram) between gold_keyphrase and sentences, the following information (gold_keyphrase, similarity measurement=1,label) is stored in a list called testedTokens. Fourth, the ST are pre-processed to extract tokens, and similarity is measured between each gold_keyphrase and tokens. The label of the gold_keyphrase with the highest similarity measurement is assigned to each token. The (token, highest similarity measurement, label) are also stored into the list testedTokens. Finally. The sentences in the testing set are annotated with labels in the list testedTokens.
+o	E: Embeddings 
+o	N: Standard NLP techniques 
+
+project_url: 
+publication_url: 
+bibtex: 
+team_name: Zhalmugbel
+organization_or_affiliation: 

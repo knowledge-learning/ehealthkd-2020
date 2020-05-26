@@ -1,0 +1,958 @@
+==================================================
+::::::::::::::::::: VICOMTECH ::::::::::::::::::::
+==================================================
+---------------------[ run3 ]---------------------
+> scenario1 
+     correct_A       = 447
+     incorrect_A     = 35
+     partial_A       = 47
+     spurious_A      = 64
+     missing_A       = 45
+     correct_B       = 234
+     spurious_B      = 210
+     missing_B       = 272
+     recall          ~ 0.6523
+     precision       ~ 0.6794
+     f1              ~ 0.6656
+> scenario2 
+     correct_A       = 441
+     incorrect_A     = 39
+     partial_A       = 30
+     spurious_A      = 45
+     missing_A       = 46
+     correct_B       = 205
+     spurious_B      = 201
+     missing_B       = 282
+     recall          ~ 0.8201
+     precision       ~ 0.8216
+     f1              ~ 0.8209
+> scenario3 
+     correct_A       = 580
+     incorrect_A     = 0
+     partial_A       = 1
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 268
+     spurious_B      = 131
+     missing_B       = 252
+     recall          ~ 0.5154
+     precision       ~ 0.6717
+     f1              ~ 0.5832
+> scenario4 
+     correct_A       = 861
+     incorrect_A     = 88
+     partial_A       = 136
+     spurious_A      = 125
+     missing_A       = 125
+     correct_B       = 360
+     spurious_B      = 600
+     missing_B       = 837
+     recall          ~ 0.5355
+     precision       ~ 0.594
+     f1              ~ 0.5633
+---------------------[ run2 ]---------------------
+> scenario1 
+     correct_A       = 445
+     incorrect_A     = 34
+     partial_A       = 48
+     spurious_A      = 62
+     missing_A       = 47
+     correct_B       = 234
+     spurious_B      = 238
+     missing_B       = 272
+     recall          ~ 0.6509
+     precision       ~ 0.6626
+     f1              ~ 0.6567
+> scenario2 
+     correct_A       = 438
+     incorrect_A     = 39
+     partial_A       = 32
+     spurious_A      = 45
+     missing_A       = 47
+     correct_B       = 205
+     spurious_B      = 216
+     missing_B       = 282
+     recall          ~ 0.8165
+     precision       ~ 0.8195
+     f1              ~ 0.818
+> scenario3 
+     correct_A       = 580
+     incorrect_A     = 0
+     partial_A       = 1
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 269
+     spurious_B      = 141
+     missing_B       = 251
+     recall          ~ 0.5173
+     precision       ~ 0.6561
+     f1              ~ 0.5785
+> scenario4 
+     correct_A       = 852
+     incorrect_A     = 86
+     partial_A       = 144
+     spurious_A      = 114
+     missing_A       = 128
+     correct_B       = 353
+     spurious_B      = 655
+     missing_B       = 844
+     recall          ~ 0.5305
+     precision       ~ 0.5794
+     f1              ~ 0.5539
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 457
+     incorrect_A     = 29
+     partial_A       = 45
+     spurious_A      = 66
+     missing_A       = 43
+     correct_B       = 225
+     spurious_B      = 233
+     missing_B       = 281
+     recall          ~ 0.6523
+     precision       ~ 0.6678
+     f1              ~ 0.66
+> scenario2 
+     correct_A       = 437
+     incorrect_A     = 31
+     partial_A       = 38
+     spurious_A      = 49
+     missing_A       = 50
+     correct_B       = 203
+     spurious_B      = 194
+     missing_B       = 284
+     recall          ~ 0.8201
+     precision       ~ 0.8216
+     f1              ~ 0.8209
+> scenario3 
+     correct_A       = 580
+     incorrect_A     = 0
+     partial_A       = 1
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 264
+     spurious_B      = 143
+     missing_B       = 256
+     recall          ~ 0.5077
+     precision       ~ 0.6486
+     f1              ~ 0.5696
+> scenario4 
+     correct_A       = 843
+     incorrect_A     = 75
+     partial_A       = 140
+     spurious_A      = 121
+     missing_A       = 152
+     correct_B       = 343
+     spurious_B      = 627
+     missing_B       = 854
+     recall          ~ 0.5218
+     precision       ~ 0.5845
+     f1              ~ 0.5514
+==================================================
+:::::::::::::::::::: BASELINE ::::::::::::::::::::
+==================================================
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 316
+     incorrect_A     = 34
+     partial_A       = 28
+     spurious_A      = 280
+     missing_A       = 196
+     correct_B       = 45
+     spurious_B      = 115
+     missing_B       = 461
+     recall          ~ 0.3472
+     precision       ~ 0.4584
+     f1              ~ 0.3952
+> scenario2 
+     correct_A       = 315
+     incorrect_A     = 37
+     partial_A       = 22
+     spurious_A      = 273
+     missing_A       = 182
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.5863
+     precision       ~ 0.5039
+     f1              ~ 0.542
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 39
+     spurious_B      = 35
+     missing_B       = 481
+     recall          ~ 0.075
+     precision       ~ 0.527
+     f1              ~ 0.1313
+> scenario4 
+     correct_A       = 196
+     incorrect_A     = 38
+     partial_A       = 41
+     spurious_A      = 453
+     missing_A       = 935
+     correct_B       = 3
+     spurious_B      = 48
+     missing_B       = 1194
+     recall          ~ 0.09119
+     precision       ~ 0.2818
+     f1              ~ 0.1378
+==================================================
+::::::::::::::::::: ZHALMUGBEL :::::::::::::::::::
+==================================================
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 200
+     incorrect_A     = 150
+     partial_A       = 21
+     spurious_A      = 287
+     missing_A       = 203
+     correct_B       = 8
+     spurious_B      = 33
+     missing_B       = 498
+     recall          ~ 0.2023
+     precision       ~ 0.3126
+     f1              ~ 0.2456
+> scenario2 
+     correct_A       = 180
+     incorrect_A     = 172
+     partial_A       = 18
+     spurious_A      = 277
+     missing_A       = 186
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.3399
+     precision       ~ 0.2921
+     f1              ~ 0.3142
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 39
+     spurious_B      = 35
+     missing_B       = 481
+     recall          ~ 0.075
+     precision       ~ 0.527
+     f1              ~ 0.1313
+> scenario4 
+     correct_A       = 172
+     incorrect_A     = 62
+     partial_A       = 40
+     spurious_A      = 454
+     missing_A       = 936
+     correct_B       = 2
+     spurious_B      = 36
+     missing_B       = 1195
+     recall          ~ 0.0806
+     precision       ~ 0.2533
+     f1              ~ 0.1223
+==================================================
+:::::::::::::::::::: UHCLEAN :::::::::::::::::::::
+==================================================
+---------------------[ run3 ]---------------------
+> scenario1 
+     correct_A       = 404
+     incorrect_A     = 16
+     partial_A       = 38
+     spurious_A      = 58
+     missing_A       = 116
+     correct_B       = 69
+     spurious_B      = 102
+     missing_B       = 437
+     recall          ~ 0.4556
+     precision       ~ 0.7162
+     f1              ~ 0.5569
+> scenario2 
+     correct_A       = 411
+     incorrect_A     = 20
+     partial_A       = 31
+     spurious_A      = 55
+     missing_A       = 94
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.7671
+     precision       ~ 0.825
+     f1              ~ 0.795
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 2
+     spurious_B      = 254
+     missing_B       = 518
+     recall          ~ 0.003846
+     precision       ~ 0.007812
+     f1              ~ 0.005155
+> scenario4 
+     correct_A       = 523
+     incorrect_A     = 40
+     partial_A       = 144
+     spurious_A      = 78
+     missing_A       = 503
+     correct_B       = 9
+     spurious_B      = 37
+     missing_B       = 1188
+     recall          ~ 0.2509
+     precision       ~ 0.7268
+     f1              ~ 0.3731
+---------------------[ run2 ]---------------------
+> scenario1 
+     correct_A       = 316
+     incorrect_A     = 34
+     partial_A       = 28
+     spurious_A      = 280
+     missing_A       = 196
+     correct_B       = 45
+     spurious_B      = 115
+     missing_B       = 461
+     recall          ~ 0.3472
+     precision       ~ 0.4584
+     f1              ~ 0.3952
+> scenario2 
+     correct_A       = 409
+     incorrect_A     = 20
+     partial_A       = 31
+     spurious_A      = 52
+     missing_A       = 96
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.7635
+     precision       ~ 0.8291
+     f1              ~ 0.7949
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 236
+     spurious_B      = 110
+     missing_B       = 284
+     recall          ~ 0.4538
+     precision       ~ 0.6821
+     f1              ~ 0.545
+> scenario4 
+     correct_A       = 196
+     incorrect_A     = 38
+     partial_A       = 41
+     spurious_A      = 453
+     missing_A       = 935
+     correct_B       = 3
+     spurious_B      = 48
+     missing_B       = 1194
+     recall          ~ 0.09119
+     precision       ~ 0.2818
+     f1              ~ 0.1378
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 396
+     incorrect_A     = 16
+     partial_A       = 38
+     spurious_A      = 56
+     missing_A       = 124
+     correct_B       = 69
+     spurious_B      = 98
+     missing_B       = 437
+     recall          ~ 0.4481
+     precision       ~ 0.7192
+     f1              ~ 0.5522
+> scenario2 
+     correct_A       = 402
+     incorrect_A     = 19
+     partial_A       = 31
+     spurious_A      = 47
+     missing_A       = 104
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.7509
+     precision       ~ 0.8367
+     f1              ~ 0.7915
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 106
+     spurious_B      = 66
+     missing_B       = 414
+     recall          ~ 0.2038
+     precision       ~ 0.6163
+     f1              ~ 0.3064
+> scenario4 
+     correct_A       = 506
+     incorrect_A     = 38
+     partial_A       = 144
+     spurious_A      = 73
+     missing_A       = 522
+     correct_B       = 8
+     spurious_B      = 22
+     missing_B       = 1189
+     recall          ~ 0.2435
+     precision       ~ 0.7408
+     f1              ~ 0.3665
+==================================================
+::::::::::::::::::::: SINAI ::::::::::::::::::::::
+==================================================
+---------------------[ run3 ]---------------------
+> scenario1 
+     correct_A       = 250
+     incorrect_A     = 18
+     partial_A       = 19
+     spurious_A      = 44
+     missing_A       = 287
+     correct_B       = 66
+     spurious_B      = 108
+     missing_B       = 440
+     recall          ~ 0.3014
+     precision       ~ 0.6446
+     f1              ~ 0.4107
+> scenario2 
+     correct_A       = 432
+     incorrect_A     = 24
+     partial_A       = 33
+     spurious_A      = 42
+     missing_A       = 67
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8067
+     precision       ~ 0.8446
+     f1              ~ 0.8252
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 188
+     spurious_B      = 119
+     missing_B       = 332
+     recall          ~ 0.3615
+     precision       ~ 0.6124
+     f1              ~ 0.4547
+> scenario4 
+     correct_A       = 345
+     incorrect_A     = 27
+     partial_A       = 26
+     spurious_A      = 50
+     missing_A       = 812
+     correct_B       = 74
+     spurious_B      = 185
+     missing_B       = 1123
+     recall          ~ 0.1795
+     precision       ~ 0.611
+     f1              ~ 0.2775
+---------------------[ run2 ]---------------------
+> scenario1 
+     correct_A       = 250
+     incorrect_A     = 18
+     partial_A       = 19
+     spurious_A      = 44
+     missing_A       = 287
+     correct_B       = 65
+     spurious_B      = 107
+     missing_B       = 441
+     recall          ~ 0.3005
+     precision       ~ 0.6451
+     f1              ~ 0.41
+> scenario2 
+     correct_A       = 424
+     incorrect_A     = 27
+     partial_A       = 34
+     spurious_A      = 38
+     missing_A       = 71
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.7932
+     precision       ~ 0.8432
+     f1              ~ 0.8174
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 190
+     spurious_B      = 113
+     missing_B       = 330
+     recall          ~ 0.3654
+     precision       ~ 0.6271
+     f1              ~ 0.4617
+> scenario4 
+     correct_A       = 350
+     incorrect_A     = 20
+     partial_A       = 25
+     spurious_A      = 46
+     missing_A       = 815
+     correct_B       = 74
+     spurious_B      = 182
+     missing_B       = 1123
+     recall          ~ 0.1813
+     precision       ~ 0.6263
+     f1              ~ 0.2812
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 250
+     incorrect_A     = 15
+     partial_A       = 21
+     spurious_A      = 46
+     missing_A       = 288
+     correct_B       = 75
+     spurious_B      = 108
+     missing_B       = 431
+     recall          ~ 0.3106
+     precision       ~ 0.6515
+     f1              ~ 0.4207
+> scenario2 
+     correct_A       = 436
+     incorrect_A     = 30
+     partial_A       = 28
+     spurious_A      = 48
+     missing_A       = 62
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8094
+     precision       ~ 0.8303
+     f1              ~ 0.8197
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 169
+     spurious_B      = 106
+     missing_B       = 351
+     recall          ~ 0.325
+     precision       ~ 0.6145
+     f1              ~ 0.4252
+> scenario4 
+     correct_A       = 348
+     incorrect_A     = 33
+     partial_A       = 21
+     spurious_A      = 48
+     missing_A       = 808
+     correct_B       = 47
+     spurious_B      = 140
+     missing_B       = 1150
+     recall          ~ 0.1685
+     precision       ~ 0.6366
+     f1              ~ 0.2664
+==================================================
+::::::::::::::::::: IXA-NER-RE :::::::::::::::::::
+==================================================
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 321
+     incorrect_A     = 32
+     partial_A       = 115
+     spurious_A      = 76
+     missing_A       = 106
+     correct_B       = 201
+     spurious_B      = 254
+     missing_B       = 305
+     recall          ~ 0.5366
+     precision       ~ 0.5801
+     f1              ~ 0.5575
+> scenario2 
+     correct_A       = 312
+     incorrect_A     = 28
+     partial_A       = 110
+     spurious_A      = 55
+     missing_A       = 106
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.6601
+     precision       ~ 0.7267
+     f1              ~ 0.6918
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 322
+     spurious_B      = 175
+     missing_B       = 198
+     recall          ~ 0.6192
+     precision       ~ 0.6479
+     f1              ~ 0.6332
+> scenario4 
+     correct_A       = 592
+     incorrect_A     = 88
+     partial_A       = 231
+     spurious_A      = 112
+     missing_A       = 299
+     correct_B       = 295
+     spurious_B      = 462
+     missing_B       = 902
+     recall          ~ 0.4165
+     precision       ~ 0.5632
+     f1              ~ 0.4789
+==================================================
+::::::::::::::::::::: HAPLAP :::::::::::::::::::::
+==================================================
+---------------------[ run2 ]---------------------
+> scenario1 
+     correct_A       = 316
+     incorrect_A     = 34
+     partial_A       = 28
+     spurious_A      = 280
+     missing_A       = 196
+     correct_B       = 45
+     spurious_B      = 115
+     missing_B       = 461
+     recall          ~ 0.3472
+     precision       ~ 0.4584
+     f1              ~ 0.3952
+> scenario2 
+     correct_A       = 315
+     incorrect_A     = 37
+     partial_A       = 22
+     spurious_A      = 273
+     missing_A       = 182
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.5863
+     precision       ~ 0.5039
+     f1              ~ 0.542
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 159
+     spurious_B      = 326
+     missing_B       = 361
+     recall          ~ 0.3058
+     precision       ~ 0.3278
+     f1              ~ 0.3164
+> scenario4 
+     correct_A       = 196
+     incorrect_A     = 38
+     partial_A       = 41
+     spurious_A      = 453
+     missing_A       = 935
+     correct_B       = 3
+     spurious_B      = 48
+     missing_B       = 1194
+     recall          ~ 0.09119
+     precision       ~ 0.2818
+     f1              ~ 0.1378
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 316
+     incorrect_A     = 34
+     partial_A       = 28
+     spurious_A      = 280
+     missing_A       = 196
+     correct_B       = 45
+     spurious_B      = 115
+     missing_B       = 461
+     recall          ~ 0.3472
+     precision       ~ 0.4584
+     f1              ~ 0.3952
+> scenario2 
+     correct_A       = 315
+     incorrect_A     = 37
+     partial_A       = 22
+     spurious_A      = 273
+     missing_A       = 182
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.5863
+     precision       ~ 0.5039
+     f1              ~ 0.542
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 155
+     spurious_B      = 306
+     missing_B       = 365
+     recall          ~ 0.2981
+     precision       ~ 0.3362
+     f1              ~ 0.316
+> scenario4 
+     correct_A       = 196
+     incorrect_A     = 38
+     partial_A       = 41
+     spurious_A      = 453
+     missing_A       = 935
+     correct_B       = 3
+     spurious_B      = 48
+     missing_B       = 1194
+     recall          ~ 0.09119
+     precision       ~ 0.2818
+     f1              ~ 0.1378
+==================================================
+::::::::::::::::::: UH-MAJA-KD :::::::::::::::::::
+==================================================
+---------------------[ run2 ]---------------------
+> scenario1 
+     correct_A       = 455
+     incorrect_A     = 35
+     partial_A       = 36
+     spurious_A      = 63
+     missing_A       = 48
+     correct_B       = 192
+     spurious_B      = 267
+     missing_B       = 314
+     recall          ~ 0.6157
+     precision       ~ 0.6345
+     f1              ~ 0.625
+> scenario2 
+     correct_A       = 426
+     incorrect_A     = 36
+     partial_A       = 40
+     spurious_A      = 52
+     missing_A       = 54
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8022
+     precision       ~ 0.8051
+     f1              ~ 0.8036
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 297
+     spurious_B      = 175
+     missing_B       = 223
+     recall          ~ 0.5712
+     precision       ~ 0.6292
+     f1              ~ 0.5988
+> scenario4 
+     correct_A       = 847
+     incorrect_A     = 84
+     partial_A       = 120
+     spurious_A      = 114
+     missing_A       = 159
+     correct_B       = 292
+     spurious_B      = 514
+     missing_B       = 905
+     recall          ~ 0.4981
+     precision       ~ 0.6083
+     f1              ~ 0.5477
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 432
+     incorrect_A     = 43
+     partial_A       = 46
+     spurious_A      = 61
+     missing_A       = 53
+     correct_B       = 179
+     spurious_B      = 261
+     missing_B       = 327
+     recall          ~ 0.587
+     precision       ~ 0.6204
+     f1              ~ 0.6032
+> scenario2 
+     correct_A       = 430
+     incorrect_A     = 34
+     partial_A       = 39
+     spurious_A      = 45
+     missing_A       = 53
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8085
+     precision       ~ 0.8203
+     f1              ~ 0.8143
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 297
+     spurious_B      = 175
+     missing_B       = 223
+     recall          ~ 0.5712
+     precision       ~ 0.6292
+     f1              ~ 0.5988
+> scenario4 
+     correct_A       = 801
+     incorrect_A     = 100
+     partial_A       = 133
+     spurious_A      = 103
+     missing_A       = 176
+     correct_B       = 262
+     spurious_B      = 466
+     missing_B       = 935
+     recall          ~ 0.4693
+     precision       ~ 0.6056
+     f1              ~ 0.5288
+==================================================
+:::::::::::::::::::: TALP UPC ::::::::::::::::::::
+==================================================
+---------------------[ run3 ]---------------------
+> scenario1 
+     correct_A       = 412
+     incorrect_A     = 45
+     partial_A       = 54
+     spurious_A      = 93
+     missing_A       = 63
+     correct_B       = 139
+     spurious_B      = 205
+     missing_B       = 367
+     recall          ~ 0.5352
+     precision       ~ 0.6097
+     f1              ~ 0.57
+> scenario2 
+     correct_A       = 420
+     incorrect_A     = 36
+     partial_A       = 38
+     spurious_A      = 67
+     missing_A       = 62
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.7896
+     precision       ~ 0.7825
+     f1              ~ 0.786
+> scenario3 
+     correct_A       = 577
+     incorrect_A     = 0
+     partial_A       = 4
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 213
+     spurious_B      = 104
+     missing_B       = 307
+     recall          ~ 0.4096
+     precision       ~ 0.6719
+     f1              ~ 0.509
+> scenario4 
+     correct_A       = 775
+     incorrect_A     = 138
+     partial_A       = 145
+     spurious_A      = 253
+     missing_A       = 152
+     correct_B       = 127
+     spurious_B      = 352
+     missing_B       = 1070
+     recall          ~ 0.4049
+     precision       ~ 0.5444
+     f1              ~ 0.4644
+---------------------[ run2 ]---------------------
+> scenario1 
+     correct_A       = 450
+     incorrect_A     = 39
+     partial_A       = 38
+     spurious_A      = 77
+     missing_A       = 47
+     correct_B       = 186
+     spurious_B      = 259
+     missing_B       = 320
+     recall          ~ 0.6065
+     precision       ~ 0.6244
+     f1              ~ 0.6153
+> scenario2 
+     correct_A       = 434
+     incorrect_A     = 28
+     partial_A       = 41
+     spurious_A      = 63
+     missing_A       = 53
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8174
+     precision       ~ 0.803
+     f1              ~ 0.8102
+> scenario3 
+     correct_A       = 577
+     incorrect_A     = 0
+     partial_A       = 4
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 265
+     spurious_B      = 155
+     missing_B       = 255
+     recall          ~ 0.5096
+     precision       ~ 0.631
+     f1              ~ 0.5638
+> scenario4 
+     correct_A       = 947
+     incorrect_A     = 93
+     partial_A       = 74
+     spurious_A      = 146
+     missing_A       = 96
+     correct_B       = 373
+     spurious_B      = 611
+     missing_B       = 824
+     recall          ~ 0.5638
+     precision       ~ 0.6047
+     f1              ~ 0.5835
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 447
+     incorrect_A     = 44
+     partial_A       = 37
+     spurious_A      = 79
+     missing_A       = 46
+     correct_B       = 211
+     spurious_B      = 261
+     missing_B       = 295
+     recall          ~ 0.6264
+     precision       ~ 0.627
+     f1              ~ 0.6267
+> scenario2 
+     correct_A       = 440
+     incorrect_A     = 30
+     partial_A       = 37
+     spurious_A      = 61
+     missing_A       = 49
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.8246
+     precision       ~ 0.8072
+     f1              ~ 0.8158
+> scenario3 
+     correct_A       = 577
+     incorrect_A     = 0
+     partial_A       = 4
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 269
+     spurious_B      = 147
+     missing_B       = 251
+     recall          ~ 0.5173
+     precision       ~ 0.6466
+     f1              ~ 0.5748
+> scenario4 
+     correct_A       = 950
+     incorrect_A     = 91
+     partial_A       = 80
+     spurious_A      = 179
+     missing_A       = 89
+     correct_B       = 323
+     spurious_B      = 523
+     missing_B       = 874
+     recall          ~ 0.5455
+     precision       ~ 0.6118
+     f1              ~ 0.5768

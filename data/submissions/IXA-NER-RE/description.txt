@@ -1,0 +1,7 @@
+method_name: LSTM-CRF and XLM-EM
+method_description: Bidirectional LSTM with CRF layer on top for NER and XLM with Entity Markers fine tuned on the train data for RE.
+project_url: 
+publication_url: 
+bibtex: 
+team_name: IXA-NER-RE
+organization_or_affiliation: IXA Group

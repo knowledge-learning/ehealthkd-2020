@@ -1,0 +1,52 @@
+==================================================
+::::::::::::::::::: ZHALMUGBEL :::::::::::::::::::
+==================================================
+---------------------[ run1 ]---------------------
+> scenario1 
+     correct_A       = 200
+     incorrect_A     = 150
+     partial_A       = 21
+     spurious_A      = 287
+     missing_A       = 203
+     correct_B       = 8
+     spurious_B      = 33
+     missing_B       = 498
+     recall          ~ 0.2023
+     precision       ~ 0.3126
+     f1              ~ 0.2456
+> scenario2 
+     correct_A       = 180
+     incorrect_A     = 172
+     partial_A       = 18
+     spurious_A      = 277
+     missing_A       = 186
+     correct_B       = 0
+     spurious_B      = 0
+     missing_B       = 487
+     recall          ~ 0.3399
+     precision       ~ 0.2921
+     f1              ~ 0.3142
+> scenario3 
+     correct_A       = 581
+     incorrect_A     = 0
+     partial_A       = 0
+     spurious_A      = 0
+     missing_A       = 0
+     correct_B       = 39
+     spurious_B      = 35
+     missing_B       = 481
+     recall          ~ 0.075
+     precision       ~ 0.527
+     f1              ~ 0.1313
+> scenario4 
+     correct_A       = 172
+     incorrect_A     = 62
+     partial_A       = 40
+     spurious_A      = 454
+     missing_A       = 936
+     correct_B       = 2
+     spurious_B      = 36
+     missing_B       = 1195
+     recall          ~ 0.0806
+     precision       ~ 0.2533
+     f1              ~ 0.1223
