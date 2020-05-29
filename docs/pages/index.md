@@ -123,7 +123,9 @@ The minimum length of the regular paper should be 5 (mandatory minimum) and up t
 
 * [LaTeX files](shared/eHealth-KD_2020_guidelines.zip)
 * [PDF guidelines](shared/eHealth-KD_2020_guidelines.pdf)
+* [Preliminar bibtexts of the systems' working-notes](shared/eHealth-KD_2020_bibtexts.zip)
 * [Overleaf template](https://www.overleaf.com/latex/templates/ehealth-kd-2020-guidelines/vtjwhbggjzyg)
+
 
 Articles must be written in English.
 The document format can be Word or LaTeX, but the submission must be in PDF format.
@@ -133,6 +135,25 @@ Depending on the final number of participants and the time allocated for the wor
 
 > ⚠️ If you prefer not to use LaTeX, the template is based on the [Springer LLNCS templates](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) for which Word examples exist.
 However, make sure to download the [PDF guidelines](shared/eHealth-KD_2020_guidelines.pdf) since there are important details that your submission must comply with.
+
+### How to cite the the challenge and the systems' working-notes
+In the following link you can find the preliminar bibtexts of the systems' working-notes [Click here](shared/eHealth-KD_2020_bibtexts.zip). In addition, to cite the eHealth-Kd challenge you can use the following preliminar bibtext:
+
+```bibtex
+@inproceedings{overview_ehealthkd2020,
+  author    = {Piad{-}Morffis, Alejandro and
+               Guti{\'{e}}rrez, Yoan and
+               Estevez{-}Velarde, Suilan and 
+               Almeida{-}Cruz, Yudivi{\'{a}}n and
+               Mu{\~{n}}oz, Rafael and
+               Montoyo, Andr{\'{e}}s},
+  title     = {{Overview of the eHealth Knowledge Discovery Challenge at IberLEF 2020}},
+  booktitle = {Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2020)},
+  year      = {2020},
+}
+```
+
+
 
 ## Organization committee
 
