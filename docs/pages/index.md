@@ -136,7 +136,7 @@ Depending on the final number of participants and the time allocated for the wor
 > ⚠️ If you prefer not to use LaTeX, the template is based on the [Springer LLNCS templates](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) for which Word examples exist.
 However, make sure to download the [PDF guidelines](shared/eHealth-KD_2020_guidelines.pdf) since there are important details that your submission must comply with.
 
-### How to cite the the challenge and the systems' working-notes
+### How to cite the challenge and the systems' working-notes
 In the following link you can find the [preliminar bibtexts of the systems' working-notes](shared/eHealth-KD_2020_bibtexts.zip). In addition, to cite the eHealth-Kd challenge you can use the following preliminar bibtext:
 
 ```bibtex
