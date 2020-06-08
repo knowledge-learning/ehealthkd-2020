@@ -147,7 +147,7 @@ In the following link you can find the [preliminar bibtexts of the systems' work
                Almeida{-}Cruz, Yudivi{\'{a}}n and
                Mu{\~{n}}oz, Rafael and
                Montoyo, Andr{\'{e}}s},
-  title     = {{Overview of the eHealth Knowledge Discovery Challenge at IberLEF 2020}},
+  title     = {Overview of the eHealth Knowledge Discovery Challenge at IberLEF 2020},
   booktitle = {Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2020)},
   year      = {2020},
 }
