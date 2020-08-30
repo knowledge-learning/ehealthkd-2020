@@ -149,7 +149,9 @@ In the following link you can find the [preliminar bibtexts of the systems' work
                Mu{\~{n}}oz, Rafael and
                Montoyo, Andr{\'{e}}s},
   title     = {Overview of the eHealth Knowledge Discovery Challenge at IberLEF 2020},
-  booktitle = {Proceedings of the Iberian Languages Evaluation Forum (IberLEF 2020)},
+  booktitle = {{Proceedings of the Iberian Languages Evaluation Forum co-located with
+               36th Conference of the Spanish Society for Natural Language Processing,
+               IberLEF@SEPLN 2020}},
   year      = {2020},
 }
 ```
