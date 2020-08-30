@@ -143,7 +143,7 @@ In the following link you can find the [preliminar bibtexts of the systems' work
 @inproceedings{overview_ehealthkd2020,
   author    = {Piad{-}Morffis, Alejandro and
                Guti{\'{e}}rrez, Yoan and
-               Cañizares-Diaz, Hian and
+               Ca{\~{n}}izares-Diaz, Hian and
                Estevez{-}Velarde, Suilan and 
                Almeida{-}Cruz, Yudivi{\'{a}}n and
                Mu{\~{n}}oz, Rafael and
