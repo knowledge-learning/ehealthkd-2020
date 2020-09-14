@@ -182,10 +182,11 @@ Follow [@eHealthKD](https://twitter.com/eHealthKD) on Twitter for up-to-date new
 This research has been supported by a Carolina Foundation grant in agreement with University of Alicante and University of Havana. Moreover, it has also been partially funded by both aforementioned universities, IUII, Generalitat Valenciana, Spanish Government, Ministerio de Educación, Cultura y Deporte through the projects SIIA (PROMETEU/2018/089) and LIVINGLANG (RTI2018-094653-B-C22).
 
 <center>
-<img src="img/ua-logo.png" width="400px">
+<img src="img/ua-logo.png" width="400px" style="margin-bottom: 50px;">
+<img src="img/uh-logo.jpg" width="200px" style="">
 <br>
-<img src="img/uh-logo.jpg" width="200px">
-<img src="img/matcom-logo.jpg" width="200px">
+<img src="img/iiui-logo.jpg" width="300px" style="margin-right: 100px; margin-bottom: 30px;">
+<img src="img/matcom-logo.jpg" width="200px" style="">
 </center>
 
 ## Scientific publications
