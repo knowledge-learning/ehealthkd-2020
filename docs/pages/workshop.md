@@ -6,8 +6,6 @@ permalink: /workshop
 
 > ### 📆 We are preparing ourselves for the IberLEF Workshop coming up on **Tuesday, September 22nd, 2020**. Whether you submitted a system or just want to attend to the workshop, this page contains relevant information for you.
 
-<br>
-
 > ### 🗨️ Follow [@EHealthKD](https://twitter.com/EhealthKd) on Twitter for up-to-date information. 
 
 ---
@@ -68,10 +66,10 @@ Remember that we begin at 17:00 on September 22nd.
 
 In this section we will feature all spotlight videos as they are sent. Please send them **before Monday, September 21st** to ensure everyone can see them before the Workshop.
 
-### **Team Vicomtech** [[⬇️ download](./videos/Vicomtech.mp4)]
+### **Team Vicomtech** [[🔗](./videos/Vicomtech.mp4)]
 
 <video src="./videos/Vicomtech.mp4" width="640px" controls></video>
 
-### **Team SINAI** [[⬇️ download](./videos/SINAI.mp4)]
+### **Team SINAI** [[🔗](./videos/SINAI.mp4)]
 
 <video src="./videos/SINAI.mp4" width="640px" controls></video>
