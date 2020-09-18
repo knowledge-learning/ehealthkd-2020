@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Previous edition
-nav_order: 8
+
 permalink: /previous
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Tasks
 permalink: /tasks
-nav_order: 2
+
 ---
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>

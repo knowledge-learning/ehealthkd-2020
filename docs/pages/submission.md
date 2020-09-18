@@ -1,7 +1,7 @@
 ---
 title: Submission
 permalink: /submission
-nav_order: 4
+
 ---
 
 # Submission details

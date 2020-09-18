@@ -1,10 +1,16 @@
 ---
 title: Home
 permalink: /
-nav_order: 0
+
 ---
 
 # IberLEF eHealth-KD 2020: eHealth Knowledge Discovery
+
+> ### 📢 [Check the latest info about the upcoming Workshop on Sep 22nd](./workshop)!
+
+> ### 🗨️ Follow [@EHealthKD](https://twitter.com/EhealthKd) on Twitter for up-to-date information. 
+
+---
 
 Natural Language Processing (NLP) methods are increasingly being used to mine knowledge from unstructured health texts. Recent advances in health text processing techniques are encouraging researchers and health domain experts to go beyond just reading the information included in published texts (e.g. academic manuscripts, clinical reports, etc.) and structured questionnaires, to discover new knowledge by mining health contents. This has allowed other perspectives to surface that were not previously available.
 
@@ -78,6 +84,8 @@ All the data will be made available to participants in due time. This includes t
 
 ### News 
 
+* 📢 [Important information](./workshop) for participants in the Workshop.
+* 🔗 [Register now for IberLEF 2020](https://forms.gle/8cfE8kAKcLsy3Eec8). It's free!
 * 📢 [Official results](results) are now public !!.
 * 📢 An [official template](https://www.overleaf.com/latex/templates/ehealth-kd-2020-guidelines/vtjwhbggjzyg) for the working notes has been published.
 * 👉 The deadline for the TEST phase has been extended to **May 5th, 23:59 UTC**.
@@ -101,7 +109,7 @@ All the data will be made available to participants in due time. This includes t
 | 07&nbsp;Jun&nbsp;2020<br>~~22&nbsp;May&nbsp;2020~~ | Paper reviews                                                       |  |
 | 12&nbsp;Jun&nbsp;2020<br>~~29&nbsp;May&nbsp;2020~~ | Author notifications                                                |  |
 | 26&nbsp;Jun&nbsp;2020<br>~~12&nbsp;Jun&nbsp;2020~~ | Camera ready submissions                                            |  |
-| Sep&nbsp;2020         | IberLEF Workshop                                                                                 |  |
+| 22 Sep&nbsp;2020         | IberLEF Workshop (free registration)                                                                                 | 📆 [Important info](./workshop)<br>🔑 [Registration form](https://forms.gle/8cfE8kAKcLsy3Eec8)<br>🔗[IberLEF site](https://sites.google.com/view/iberlef2020/) |
 
 ## Instructions for participation
 

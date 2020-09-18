@@ -1,7 +1,7 @@
 ---
 title: Results
 permalink: /results
-nav_order: 0
+
 ---
 
 # Official results
