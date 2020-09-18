@@ -70,8 +70,8 @@ In this section we will feature all spotlight videos as they are sent. Please se
 
 ### **Team Vicomtech** [[⬇️ download](./videos/Vicomtech.mp4)]
 
-<video src="./videos/Vicomtech.mp4" width="640px"></video>
+<video src="./videos/Vicomtech.mp4" width="640px" controls></video>
 
 ### **Team SINAI** [[⬇️ download](./videos/SINAI.mp4)]
 
-<video src="./videos/SINAI.mp4" width="640px"></video>
+<video src="./videos/SINAI.mp4" width="640px" controls></video>
