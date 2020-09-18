@@ -12,7 +12,7 @@ permalink: /workshop
 
 ---
 
-The IberLEF 2020 Workshop will have a **fully virtual format** and will take place on September 22nd, 2020. Registration is free, both for participants and general audience, so take this opportunity and join us!
+The IberLEF 2020 Workshop will have a **fully virtual format** and will take place on September 22nd, 2020. **Registration is free**, both for participants and general audience, so take this opportunity and join us!
 
 > ### 🔑 [Registration form](https://forms.gle/8cfE8kAKcLsy3Eec8)
 
