@@ -64,25 +64,36 @@ Remember that we begin at 17:00 on September 22nd.
 
 ## 🎥 Videos
 
-In this section we will feature all spotlight videos as they are sent. Please send them **before Monday, September 21st** to ensure everyone can see them before the Workshop.
+Here are all the 1 minute spotlight videos from participating teams. 
 
 ### **Team Vicomtech** [[🔗](./videos/Vicomtech.mp4)]
 
 <video src="./videos/Vicomtech.mp4" width="640px" controls></video>
 
+### **Team TALP-UPC** [[🔗](./videos/TALP-UPC.mp4)]
+
+<video src="./videos/TALP-UPC.mp4" width="640px" controls></video>
+
 ### **Team UH-MAKA-KD** [[🔗](./videos/UH-MAJA-KD.mp4)]
 
 <video src="./videos/UH-MAJA-KD.mp4" width="640px" controls></video>
 
-### **Team SINAI** [[🔗](./videos/SINAI.mp4)]
+### **Team IXA-NER-RE** [[🔗](./videos/IXA-NER-RE.mp4)]
 
-<video src="./videos/SINAI.mp4" width="640px" controls></video>
+<video src="./videos/IXA-NER-RE.mp4" width="640px" controls></video>
 
 ### **Team UH-MatCom** [[🔗](./videos/UH-MatCom.mp4)]
 
 <video src="./videos/UH-MatCom.mp4" width="640px" controls></video>
 
+### **Team SINAI** [[🔗](./videos/SINAI.mp4)]
+
+<video src="./videos/SINAI.mp4" width="640px" controls></video>
+
+### **Team HAPLAP** [[🔗](./videos/HAPLAP.mp4)]
+
+<video src="./videos/HAPLAP.mp4" width="640px" controls></video>
+
 ### **Team ExSim** [[🔗](./videos/ExSim.mp4)]
 
 <video src="./videos/ExSim.mp4" width="640px" controls></video>
-
