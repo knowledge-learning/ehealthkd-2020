@@ -1,0 +1,81 @@
+Hello, my name is Alejandro. On behalf of the organizing committee of the eHealth Knowledge Discovery challenge I want to thank you all for your attention and tell you a bit about the results and insights from this 2020 edition.
+
+---
+
+The task of automatically discovering knowledge in natural language documents is arguably one of the most active research efforts in the AI community since its beginning, because of the massive implications that such a technology can bring.
+
+But, it is a very hard problem.
+
+And it is made even harder by the lack of annotated resources in the languages we are working on, and also because there is a large fragmentation in the research community. Fragmentation in terms of the miriad of different tasks and subproblems defined, but also in the sense that different sub-communities focus on a narrow set of approaches and we rarely see cross-domain and cross-task approaches that can take advantage of years of research in those other areas.
+
+---
+
+The eHealth-KD challenge was born from this desire of combining approaches from different areas in a task that encompasses the whole knowledge discovery pipeline, from understanding the surface text all the way up to building compact semantic networks.  
+
+Since this is, of course, an ambitious objective, we have started by focusing on the first layer of this problem: how to extract meaningfull semantic elements from each sentence that cover a broad range of semantics in factual statements.
+
+We designed an annotation model with 4 core entity types and 13 semantic relations, and we defined an evaluation with 2 different subtasks, and several scenarios that let us measure the performance of different components of an automatic system.
+
+This also involved a significant annotation effort by a team of more than 20 annotators.
+
+So far we've been focusing on the health domain, for obvious reasons that everyone living in the year 2020 can understand. But this annotation model is in principle domain-independent and this year we tried for the first time an optional scenario in a totally different domain.
+
+---
+
+Participants in this challenge were asked to submit up to 3 runs for each of the 4 scenarios, and we used a micro-averaged F1 accross all entities and relation types as the main objective evaluation.
+
+This year we had eight participants, and interestingly, each scenario was dominated by a different system, which speaks highly both about the quality of the submissions and the difficulty of the task.
+
+---
+
+In terms of approaches, as expected, most systems are based on deep learning architectures. Contextual embeddings produced by transformers are the most common features, but there is a large variation among systems with respect to their actual model architecture, and a ton of interesting additions, like knowledge-based features, different ways to encode the sentence structure, and clever tricks to deal with issues specific to some subtask.
+
+The most valuable insight from our point of view is that, once again, end-to-end systems dominate the scenarios where both subtasks are evaluated, but, in each specific subtask, there is another system that performs better. Hence, there are some interesting synergies here, in figuring out what makes those systems better in each subtask, and how can they be merged in an end-to-end system.
+
+---
+
+This the third edition of the challenge, and we have seen a gradual improvement both in the difficulty of the task and in the quality of the systems presented.
+
+In the first edition we had a much simpler annotation model and received a wide variety of approaches, some based on machine learning, some based on hand-crafted rules and classic NLP techniques. But as the task has increased in complexity, with the addition of more entities and relation types, we saw a generalized switch to deep learning models. 
+
+The most recent addition to the challenge is this cross-domain scenario, which has very few training examples so systems are forced to generalize from the ehealth data. And we have seen how transformers have become the state-of-the-art also in this task, possibly because of their generalization ability.
+
+This year we also released a semi-automated corpus from the previous challenge, which is an ensmeble of the predictions of the systems from last year.
+
+The new domain contained annotated sentences from Wikinews, but also a late addition of non-annotated sentences related to the coronavirus disease, which we also plan to ensemble and release soon.
+
+---
+
+This effort, both from the annotators and all the participants, has resulted in that we now have a thriving ecosystem of resources, tasks, and systems that can be used outside the context of the challenge itself. Different subsets of the annotated entities and relations can serve as training and/or evaluation for other NLP tasks.
+
+These resources are all available for the research community, and we are building an online continuous evaluation ecosystem so that we always have an up-to-date state of the art in these tasks. We also invite the participants, those who are able, to release their systems as open source, and send us a link to their repositories.
+
+---
+
+After 3 years of this challenge, we have been able to confirm that this annotation model is effective in representing a significant portion of natural language semantics, especially in factual statements. We have annotated public health articles, news, and research papers, and despite their linguistic differences we are able to extract meaningful information in all these domains. We also have started experimenting with building knowledge graphs from these surface annotations, especifically from COVID-19 research papers, and the results are promising.
+
+Regarding the task difficulty, we see that entity recognition is fairly close to human performance, but not so much for the relation extraction subtask. Even more, we notice that humans are particularly good at solving subtask B after they see the reference entities. This means that humans are better on subtask B alone than on the full task, which is something that current end-to-end systems are far from achieving.
+
+And on the full subtask, we have seen that annotators follow a completely different strategy than automatic systems. Humans recognize first the central keywords, like the main Action of a sentence, and then start to build the graph by adding details. Also, humans annotate both entities and relations more or less simultaneously. This is something to keep in mind especially for end-to-end system.
+
+---
+
+About the future of the challenge, there are three clear dimensions in which we want to expand. 
+
+First, we want to raise the abstraction level by introducing subtasks that target problems more closely related to knowledge representation. 
+
+Second, we will keep health as a core focus, but we want to introduce more and more alternative domains, especially to encourage generalization and cross-domain approaches.
+
+And finally, at some point in the future we would like to extend also to different languages, although this will require a significant annotation effort.
+
+---
+
+Finally, on behalf of the organizing committee of the eHealth-KD challenge, I want to thank all participants for their incredible work, to the organizers of IberLEF for hosting us, and I want to invite the whole community of NLP researchers to join us for the next edition.
+
+But, in the meantime, we are also inviting you to say connected with eHealth-KD. You can follow us on social media, where we will be posting everything that arises from these results, and we will also be organizing the annotation campaign for the next year. Everyone interested is of course invited to participate, and this is a great chance to get undergrad and master students into this research area.
+
+And also, please use our data to train your systems and let us know if its useful, if the annotation model is expresive enough, any feedback is appreciated.
+
+And last but not least, we want to invite everyone to our after-party Q&A panel, which we will be hosting tonight after the workshop finishes. You have the link in the presentation, in our website, and in Twitter. If you have questions for any participant, or just general questions, send them to us in Twitter and come chat with us tonight.
+
+Thanks again for you time, and now I give the floor to the 3 teams that achieved the top results.
