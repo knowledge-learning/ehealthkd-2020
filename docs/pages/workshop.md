@@ -27,7 +27,7 @@ The schedule of the workshop is as follow. All tasks presented in IberLEF (of wh
 
 After the workshop finishes we will host an informal panel! Come and join us to talk directly to participants, meet the community and to get involved in our future projects.
 
-> ### Join us with Google Meet: [meet.google.com/qfh-acqj-wft](https://meet.google.com/qfh-acqj-wft)
+> ### Join us at [ehealthkd.github.io/panel2020](https://ehealthkd.github.io/panel2020)
 
 All teams are kindly asked to guarantee that **at least one member** can assist to this panel. 
 We will make a round of Q&A so that everyone has a chance to learn about the other teams.
