@@ -21,19 +21,19 @@ The schedule of the workshop is as follow. All tasks presented in IberLEF (of wh
 * Team TALP
 * Team UH-MAJA-KD
 
-> 🎥 All teams are invited to submit a **one minute spotlight video** explaining your system. 
+> 🎥 All teams are invited to submit a **one minute spotlight video** explaining your system. We feature all videos [at the end of this page](#videos).
 
-You don't need to describe the task, evaluation details, or anything outside your system. Focus specifically on your key design points and results. We will feature all videos [at the end of this page](#videos).
+## 🥳 After-Party Q&A Panel
 
-> 🗨️ After the workshop finishes we will host an informal panel
+After the workshop finishes we will host an informal panel! Come and join us to talk directly to participants, meet the community and to get involved in our future projects.
 
-The Google Meet link will be posted here in due time.
+> ### Join us with Google Meet: [meet.google.com/qfh-acqj-wft](https://meet.google.com/qfh-acqj-wft)
 
 All teams are kindly asked to guarantee that **at least one member** can assist to this panel. 
 We will make a round of Q&A so that everyone has a chance to learn about the other teams.
 We will also talk about the future of the eHealthKD challenge and our next steps as a research community.
 
-We will be taking questions online. Please tag [@EHealthKD](https://twitter.com/EHealthKD) and post your questions with the **#ekdquestion** hashtag if you want to be involved in the conversation.
+🗨️ We will be taking questions online. Please tag [@EHealthKD](https://twitter.com/EHealthKD) and post your questions with the **#ekdquestion** hashtag if you want to be involved in the conversation.
 
 ## 📆 Schedule
 
