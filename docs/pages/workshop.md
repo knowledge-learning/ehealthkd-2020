@@ -60,7 +60,7 @@ Remember that we begin at 17:00 on September 22nd.
 |18:20 | 18:40 | FACT 2020: Factuality Analysis and Classification Task
 |18:40 | 19:40 | Cantemist 2020: CANcer TExt Mining Shared Task 
 |19:40 | 20:00 | Wokshop concluding remarks and IberLEF 2021 preparation.
-|**20:00** | **20:30** | ⭐ **Informal eHealthKD panel and Q&A round**
+|**20:00** | **20:30** | ⭐ **Informal eHealthKD panel and Q&A round** <br> 🔗 [ehealthkd.github.io/panel2020](https://ehealthkd.github.io/panel2020)
 
 ## 🎥 Videos
 
