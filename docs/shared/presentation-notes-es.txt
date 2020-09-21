@@ -1,0 +1,81 @@
+Hola, mi nombre es Alejandro. En nombre del comité organizador del eHealth Knowledge Discovery challenge, quiero agradecerles a todos por su atención y comentarles un poco sobre los resultados de esta edición 2020.
+
+---
+
+La tarea de descubrir conocimiento automáticamente en documentos en lenguaje natural es posiblemente una de las líneas de investigación más activas en la comunidad de Inteligencia Artificial desde sus inicios, debido a las implicaciones enormes que traería este tipo de tecnologías.
+
+Pero es un problema muy difícil.
+
+Y se hace aún más difícil por la falta de recursos anotados en los idiomas en los que estamos trabajando, y también porque hay una gran fragmentación en la comunidad de investigadores. Fragmentación en términos de la cantidad de diferentes tareas y subproblemas definidos, pero también en el sentido de que las diferentes subcomunidades se centran en un conjunto limitado de enfoques y rara vez vemos enfoques multi-dominio y multi-tareas que puedan aprovecharse de los años de investigación acumulados en esas otras áreas.
+
+---
+
+El eHealth-KD nació de este deseo de combinar enfoques de diferentes áreas en una tarea que abarca todo el proceso de descubrimiento de conocimiento, desde la comprensión del texto superficial hasta la construcción de redes semánticas compactas.
+
+Este es, por supuesto, un objetivo ambicioso, y por eso hemos comenzado centrándonos en la primera capa de este problema: cómo extraer elementos semánticos significativos de cada oración que cubran una amplia gama de semánticas en frases fácticas.
+
+Diseñamos un modelo de anotación con 4 tipos de entidades centrales y 13 relaciones semánticas, y definimos una evaluación con 2 subtareas diferentes y varios escenarios que nos permiten medir el rendimiento de diferentes componentes de un sistema automático.
+
+Esto también implicó un importante esfuerzo de anotación por parte de un equipo de más de 20 anotadores.
+
+Hasta ahora nos hemos concentrado en el dominio de la salud, por razones obvias que todos los que vivan en el año 2020 pueden comprender. Pero este modelo de anotación es, en principio, independiente del dominio y este año probamos por primera vez un escenario opcional en un dominio totalmente diferente.
+
+---
+
+Se pidió a los participantes de este challenge que enviaran hasta 3 ejecuciones para cada uno de los 4 escenarios, y utilizamos un micro-F1 promedio entre todas las anotationes de entidades y relaciones, como la métrica de evaluación principal.
+
+Este año tuvimos ocho participantes y, curiosamente, cada escenario estuvo dominado por un sistema diferente, que habla muy bien tanto de la calidad de las presentaciones como de la dificultad de la tarea.
+
+---
+
+En términos de enfoques, como se esperaba, la mayoría de los sistemas se basan en arquitecturas de aprendizaje profundo. Los embeddings contextuales producidos por arquitecturas transformer son las características más comunes, pero hay una gran variación entre los sistemas con respecto a la arquitectura como tal, y un montón de adiciones interesantes, como características basadas en conocimiento, diferentes formas de codificar la estructura de la oración y trucos para tratar problemas específicos de alguna subtarea.
+
+Lo más interesante desde nuestro punto de vista es que, una vez más, los sistemas de end-to-end dominan los escenarios donde se evalúan ambas subtareas, pero, en cada subtarea específica, hay otro sistema que funciona mejor. Por lo tanto, hay algunas sinergias interesantes aquí, en descubrir qué hace que esos sistemas sean mejores en cada subtarea y cómo se pueden fusionar en un sistema de end-to-end.
+
+---
+
+Esta es la tercera edición del challenge, y hemos visto una mejora paulatina tanto en la dificultad de la tarea como en la calidad de los sistemas presentados.
+
+En la primera edición teníamos un modelo de anotación mucho más simple y recibimos una amplia variedad de enfoques, algunos basados ​​en aprendizaje automático, otros basados ​​en reglas hechas a mano y técnicas clásicas de PLN. Pero a medida que la tarea ha aumentado en complejidad, con la adición de más  tipos de entidades y relaciones, vimos un cambio generalizado hacia modelos de aprendizaje profundo.
+
+La adición más reciente al challenge es este escenario de dominio alternativo, que tiene muy pocos ejemplos de entrenamiento, por lo que los sistemas se ven obligados a generalizar a partir de los datos del dominio de salud. Y hemos visto cómo las arquitecturas transformer se han convertido en el estado del arte también en esta tarea, posiblemente por su capacidad de generalización.
+
+Este año también publicamos un corpus semi-automático a partir del challenge anterior, que es un ensemble de las predicciones de los sistemas del año pasado.
+
+El nuevo dominio contenía oraciones anotadas de Wikinews, pero también un conjunto de oraciones no anotadas relacionadas con la enfermedad del coronavirus, que también planeamos ensamblar y publicar pronto.
+
+---
+
+Este esfuerzo, tanto de los anotadores como de todos los participantes, ha dado como resultado que ahora tengamos un ecosistema de recursos, tareas y sistemas que se pueden usar fuera del contexto del challenge en sí. Diferentes subconjuntos de entidades y relaciones anotadas pueden servir como entrenamiento y/o evaluación para otras tareas de PLN.
+
+Todos estos recursos están disponibles para la comunidad de investigadores, y estamos construyendo un ecosistema de evaluación continua en línea para que siempre tengamos un estado del arte actualizado en estas tareas. También invitamos a los participantes, aquellos que puedan, a publicar sus sistemas como código abierto y enviarnos un enlace a sus repositorios.
+
+---
+
+Después de 3 años, hemos podido confirmar que este modelo de anotación es efectivo para representar una porción significativa de la semántica del lenguaje natural, especialmente en frases fácticas. Hemos anotado artículos de salud, noticias y artículos de investigación y, a pesar de sus diferencias lingüísticas, podemos extraer información significativa en todos estos dominios. También hemos comenzado a experimentar con la construcción de grafos de conocimiento a partir de estas anotaciones, específicamente a partir de artículos sobre la COVID-19, y los resultados son prometedores.
+
+En cuanto a la dificultad de la tarea, vemos que el reconocimiento de entidades está bastante cerca del estándar humano, pero no es así en la subtarea de extracción de relaciones. Aún más, notamos que los humanos son particularmente buenos para resolver la subtarea B después de ver las entidades de referencia. Esto significa que los seres humanos son mejores solo en la subtarea B que en la tarea completa, que es algo que los sistemas actuales de un extremo a otro están lejos de lograr.
+
+Y en la tarea completa, hemos visto que los anotadores siguen una estrategia completamente diferente a la de los sistemas automáticos. Los humanos reconocen primero las palabras clave centrales, como la acción principal de una oración, y luego comienzan a construir el gráfico agregando detalles. Además, los humanos anotan entidades y relaciones más o menos simultáneamente. Esto es algo a tener en cuenta especialmente para el sistema de end-to-end.
+
+---
+
+Sobre el futuro del challenge, hay tres dimensiones claras en las que queremos expandirnos.
+
+Primero, queremos elevar el nivel de abstracción mediante la introducción de subtareas que se dirigen a problemas más estrechamente relacionados con la representación del conocimiento.
+
+En segundo lugar, mantendremos la salud como un enfoque central, pero queremos introducir cada vez más dominios alternativos, especialmente para fomentar la generalización y los enfoques multidominio.
+
+Y finalmente, en algún momento en el futuro nos gustaría extendernos también a diferentes idiomas, aunque esto requerirá un esfuerzo de anotación importante.
+
+---
+
+Finalmente, en nombre del comité organizador del eHealth-KD challenge, quiero agradecer a todos los participantes por su increíble trabajo, a los organizadores de IberLEF por acogernos, e invitar a toda la comunidad de investigadores de PLN a unirse a nosotros para la próxima edición.
+
+Pero, mientras tanto, también los invitamos a que sigan conectados con eHealth-KD. Pueden seguirnos en las redes sociales, donde estaremos publicando todo lo que surja de estos resultados, y también estaremos organizando la campaña de anotación para el próximo año. Por supuesto, todos los interesados ​​están invitados a participar, y esta es una buena oportunidad para que los estudiantes de pregrado y maestría entren en esta área de investigación.
+
+Y también, por favor usen nuestros datos para entrenar sus sistemas y háganos saber si son útiles, si el modelo de anotación es lo suficientemente expresivo, se agradece todo comentario.
+
+Y por último, pero no menos importante, queremos invitar a todos a nuestro panel de preguntas y respuestas, que organizaremos esta noche después de que finalice el taller. El enlace está en la presentación, en nuestra web y en Twitter. Si tienen preguntas para algún participante, o simplemente preguntas generales, nos la pueden enviar en Twitter y venir a conversar con nosotros esta noche.
+
+Gracias de nuevo por su tiempo, y ahora les doy la palabra a los 3 equipos que lograron los mejores resultados.

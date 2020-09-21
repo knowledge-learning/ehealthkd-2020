@@ -28,7 +28,7 @@ This year we had eight participants, and interestingly, each scenario was domina
 
 ---
 
-In terms of approaches, as expected, most systems are based on deep learning architectures. Contextual embeddings produced by transformers are the most common features, but there is a large variation among systems with respect to their actual model architecture, and a ton of interesting additions, like knowledge-based features, different ways to encode the sentence structure, and clever tricks to deal with issues specific to some subtask.
+In terms of approaches, as expected, most systems are based on deep learning architectures. Contextual embeddings produced by transformers are the most common features, but there is a large variation among systems with respect to their model architecture, and a ton of interesting additions, like knowledge-based features, different ways to encode the sentence structure, and clever tricks to deal with issues specific to some subtask.
 
 The most valuable insight from our point of view is that, once again, end-to-end systems dominate the scenarios where both subtasks are evaluated, but, in each specific subtask, there is another system that performs better. Hence, there are some interesting synergies here, in figuring out what makes those systems better in each subtask, and how can they be merged in an end-to-end system.
 
@@ -56,7 +56,7 @@ After 3 years of this challenge, we have been able to confirm that this annotati
 
 Regarding the task difficulty, we see that entity recognition is fairly close to human performance, but not so much for the relation extraction subtask. Even more, we notice that humans are particularly good at solving subtask B after they see the reference entities. This means that humans are better on subtask B alone than on the full task, which is something that current end-to-end systems are far from achieving.
 
-And on the full subtask, we have seen that annotators follow a completely different strategy than automatic systems. Humans recognize first the central keywords, like the main Action of a sentence, and then start to build the graph by adding details. Also, humans annotate both entities and relations more or less simultaneously. This is something to keep in mind especially for end-to-end system.
+And on the full task, we have seen that annotators follow a completely different strategy than automatic systems. Humans recognize first the central keywords, like the main Action of a sentence, and then start to build the graph by adding details. Also, humans annotate both entities and relations more or less simultaneously. This is something to keep in mind especially for end-to-end system.
 
 ---
 
