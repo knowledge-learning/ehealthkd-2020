@@ -44,7 +44,7 @@ Remember that we begin at 17:00 on September 22nd.
 
 | **From** | **To** | **Description** |
 |--|--|--|
-|15:30 | 13:40 | Welcome and Opening Remarks
+|15:30 | 15:40 | Welcome and Opening Remarks
 |15:40 | 16:00 | ALexS 2020: Lexicon Analysis Task @ SEPLN
 |16:00 | 16:30 | CAPITEL 2020: Named Entity Recognition and Classification, and Universal Dependency Parsing of Spanish News
 |16:30 | 16:50 | TASS 2020: Sentiment Analysis in Spanish
@@ -70,6 +70,19 @@ In this section we will feature all spotlight videos as they are sent. Please se
 
 <video src="./videos/Vicomtech.mp4" width="640px" controls></video>
 
+### **Team UH-MAKA-KD** [[🔗](./videos/UH-MAJA-KD.mp4)]
+
+<video src="./videos/UH-MAJA-KD.mp4" width="640px" controls></video>
+
 ### **Team SINAI** [[🔗](./videos/SINAI.mp4)]
 
 <video src="./videos/SINAI.mp4" width="640px" controls></video>
+
+### **Team UH-MATCOM** [[🔗](./videos/UH-MATCOM.mp4)]
+
+<video src="./videos/UH-MATCOM.mp4" width="640px" controls></video>
+
+### **Team ExSim** [[🔗](./videos/ExSim.mp4)]
+
+<video src="./videos/ExSim.mp4" width="640px" controls></video>
+
