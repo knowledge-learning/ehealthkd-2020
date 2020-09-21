@@ -78,9 +78,9 @@ In this section we will feature all spotlight videos as they are sent. Please se
 
 <video src="./videos/SINAI.mp4" width="640px" controls></video>
 
-### **Team UH-MATCOM** [[🔗](./videos/UH-MATCOM.mp4)]
+### **Team UH-MatCom** [[🔗](./videos/UH-MatCom.mp4)]
 
-<video src="./videos/UH-MATCOM.mp4" width="640px" controls></video>
+<video src="./videos/UH-MatCom.mp4" width="640px" controls></video>
 
 ### **Team ExSim** [[🔗](./videos/ExSim.mp4)]
 
