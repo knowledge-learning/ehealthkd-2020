@@ -24,7 +24,7 @@ So far we've been focusing on the health domain, for obvious reasons that everyo
 
 Participants in this challenge were asked to submit up to 3 runs for each of the 4 scenarios, and we used a micro-averaged F1 accross all entities and relation types as the main objective evaluation.
 
-This year we had eight participants, and interestingly, each scenario was dominated by a different system, which speaks highly both about the quality of the submissions and the difficulty of the task.
+This year we had eight participants, and interestingly, each scenario was dominated by a different system, which speaks highly both about the quality of the submissions and the difficulty of the task. The best 3 performing systems in the main evaluation scenario, will be presented in more detail by their creators.
 
 ---
 
