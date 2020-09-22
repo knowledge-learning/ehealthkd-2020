@@ -1,4 +1,4 @@
-Hello, my name is Alejandro. On behalf of the organizing committee of the eHealth Knowledge Discovery challenge I want to thank you all for your attention and tell you a bit about the results and insights from this 2020 edition.
+Hello, my name is Alejandro. On behalf of the organizing committee of the eHealth Knowledge Discovery challenge I want to thank you all for your attention and tell you about the results and insights from this 2020 edition.
 
 ---
 
@@ -6,15 +6,15 @@ The task of automatically discovering knowledge in natural language documents is
 
 But, it is a very hard problem.
 
-And it is made even harder by the lack of annotated resources in the languages we are working on, and also because there is a large fragmentation in the research community. Fragmentation in terms of the miriad of different tasks and subproblems defined, but also in the sense that different sub-communities focus on a narrow set of approaches and we rarely see cross-domain and cross-task approaches that can take advantage of years of research in those other areas.
+And it is made even harder by the lack of annotated resources in the languages we are working on, and also because there is a large fragmentation in the research community. Fragmentation in terms of the miriad of different tasks and subproblems defined, but also in the sense that different sub-communities focus on a narrow set of approaches and we rarely see cross-domain and multi-task approaches that take advantage of years of research in those other areas.
 
 ---
 
 The eHealth-KD challenge was born from this desire of combining approaches from different areas in a task that encompasses the whole knowledge discovery pipeline, from understanding the surface text all the way up to building compact semantic networks.  
 
-Since this is, of course, an ambitious objective, we have started by focusing on the first layer of this problem: how to extract meaningfull semantic elements from each sentence that cover a broad range of semantics in factual statements.
+Since this is, of course, an ambitious objective, we have started by focusing on the first layer of this problem: how to extract meaningfull semantic elements from sentences to cover a broad range of semantics in factual statements.
 
-We designed an annotation model with 4 core entity types and 13 semantic relations, and we defined an evaluation with 2 different subtasks, and several scenarios that let us measure the performance of different components of an automatic system.
+We designed an annotation model with 4 core entity types and 13 semantic relations, and we defined an evaluation with 2 different subtasks, and several scenarios that let us measure the performance of different components of an arbitrary automatic system.
 
 This also involved a significant annotation effort by a team of more than 20 annotators.
 
@@ -28,17 +28,17 @@ This year we had eight participants, and interestingly, each scenario was domina
 
 ---
 
-In terms of approaches, as expected, most systems are based on deep learning architectures. Contextual embeddings produced by transformers are the most common features, but there is a large variation among systems with respect to their model architecture, and a ton of interesting additions, like knowledge-based features, different ways to encode the sentence structure, and clever tricks to deal with issues specific to some subtask.
+In terms of approaches, as expected, most systems are based on deep learning architectures. Contextual embeddings produced by transformers are the most common features, but there is a large variation among systems with respect to their model architecture, and a ton of interesting additions, like knowledge-based features, different ways to encode the sentence structure, and clever tricks to deal with issues specific to each subtask, such as keyphrase overlapping.
 
 The most valuable insight from our point of view is that, once again, end-to-end systems dominate the scenarios where both subtasks are evaluated, but, in each specific subtask, there is another system that performs better. Hence, there are some interesting synergies here, in figuring out what makes those systems better in each subtask, and how can they be merged in an end-to-end system.
 
 ---
 
-This the third edition of the challenge, and we have seen a gradual improvement both in the difficulty of the task and in the quality of the systems presented.
+This the third edition of the challenge, and we have seen a gradual improvement both in the complexity of the task and in the quality of the systems presented.
 
-In the first edition we had a much simpler annotation model and received a wide variety of approaches, some based on machine learning, some based on hand-crafted rules and classic NLP techniques. But as the task has increased in complexity, with the addition of more entities and relation types, we saw a generalized switch to deep learning models. 
+In the first edition we had a much simpler annotation model and received a wide variety of approaches, some based on machine learning, some based on hand-crafted rules and some on classic NLP techniques. But as the task has increased in complexity, with the addition of more entities and relation types, we saw a generalized shift to deep learning models. 
 
-The most recent addition to the challenge is this cross-domain scenario, which has very few training examples so systems are forced to generalize from the ehealth data. And we have seen how transformers have become the state-of-the-art also in this task, possibly because of their generalization ability.
+The most recent addition to the challenge is a cross-domain scenario, which has very few training examples so systems are forced to generalize from the health data. And we have seen how transformers have become the state-of-the-art also in this task, possibly because of their generalization ability.
 
 This year we also released a semi-automated corpus from the previous challenge, which is an ensmeble of the predictions of the systems from last year.
 
