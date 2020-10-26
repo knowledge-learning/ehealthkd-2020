@@ -37,22 +37,20 @@ The [official results](results) for the eHealth-KD 2020 are ready 🎉!!
 As [explained](tasks#challenge_scenarios), Scenario 1 is the main evaluation scenario.
 The results for Scenario 1 are summarized below.
 
-> #### The [Overview paper](http://ceur-ws.org/Vol-2664/eHealth-KD_overview.pdf) summarizes the results in greater detail. 
-
-> #### Check all 📃 participants papers' links in the table.
+> #### The [Overview paper](http://ceur-ws.org/Vol-2664/eHealth-KD_overview.pdf) summarizes the results in greater detail.  Check all 📃 participants papers' links in the table, and the 🎥 1-minute spotlight videos.
 
 ### Scenario 1: Main evaluation
 
-|   | Team       | F1             |   Precision           |   Recall           | Paper |
-:--:|:-----------|---------------:|----------------------:|-------------------:|:-----:|
-|🥇 | Vicomtech  |       0.665564 |              0.679364 |           0.652315 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper3.pdf)
-|🥈 | Talp-UPC   |       0.626679 |              0.626969 |           0.626389 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper1.pdf)
-|🥉 | UH-MAJA-KD |       0.625    |              0.634542 |           0.615741 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper5.pdf)
-|   | IXA-NER-RE |       0.55748  |              0.58008  |           0.536574 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper8.pdf)
-|   | UH-MatCom  |       0.556876 |              0.716157 |           0.455556 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper4.pdf)
-|   | SINAI      |       0.42069  |              0.651456 |           0.310648 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper7.pdf)
-|   | HAPLAP     |       0.395153 |              0.458435 |           0.347222 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper6.pdf)
-|   | ExSim      |       0.245644 |              0.312589 |           0.202315 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper2.pdf)
+|   | Team       | F1             |   Precision           |   Recall           | Paper | Video |
+:--:|:-----------|---------------:|----------------------:|-------------------:|:-----:|:-----:|
+|🥇 | Vicomtech  |       0.665564 |              0.679364 |           0.652315 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper3.pdf) | [🎥](./videos/Vicomtech.mp4)
+|🥈 | Talp-UPC   |       0.626679 |              0.626969 |           0.626389 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper1.pdf) | [🎥](./videos/TALP-UPC.mp4)
+|🥉 | UH-MAJA-KD |       0.625    |              0.634542 |           0.615741 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper5.pdf) | [🎥](./videos/UH-MAJA-KD.mp4)
+|   | IXA-NER-RE |       0.55748  |              0.58008  |           0.536574 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper8.pdf) | [🎥](./videos/IXA-NER-RE.mp4)
+|   | UH-MatCom  |       0.556876 |              0.716157 |           0.455556 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper4.pdf) | [🎥](./videos/UH-MatCom.mp4)
+|   | SINAI      |       0.42069  |              0.651456 |           0.310648 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper7.pdf) | [🎥](./videos/SINAI.mp4)
+|   | HAPLAP     |       0.395153 |              0.458435 |           0.347222 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper6.pdf) | [🎥](./videos/HAPLAP.mp4)
+|   | ExSim      |       0.245644 |              0.312589 |           0.202315 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper2.pdf) | [🎥](./videos/ExSim.mp4)
 
 The organizing committee of the eHealth-KD challenge wants to sincerely congratulate all
 participants for the high-quality submission and the impressive results, which have surpassed
