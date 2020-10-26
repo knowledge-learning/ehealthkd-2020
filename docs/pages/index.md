@@ -6,7 +6,7 @@ permalink: /
 
 # IberLEF eHealth-KD 2020: eHealth Knowledge Discovery
 
-> ### 📢 [Check the latest info about the upcoming Workshop on Sep 22nd](./workshop)!
+> ### 📃 The [Overview paper](http://ceur-ws.org/Vol-2664/eHealth-KD_overview.pdf) and all [Participant papers](http://ceur-ws.org/Vol-2664/) are available.
 
 > ### 🗨️ Follow [@EHealthKD](https://twitter.com/EhealthKd) on Twitter for up-to-date information. 
 
@@ -37,18 +37,22 @@ The [official results](results) for the eHealth-KD 2020 are ready 🎉!!
 As [explained](tasks#challenge_scenarios), Scenario 1 is the main evaluation scenario.
 The results for Scenario 1 are summarized below.
 
+> #### The [Overview paper](http://ceur-ws.org/Vol-2664/eHealth-KD_overview.pdf) summarizes the results in greater detail. 
+
+> #### Check all 📃 participants papers' links in the table.
+
 ### Scenario 1: Main evaluation
 
-|   | Team       | F1             |   Precision           |   Recall           |
-:--:|:-----------|---------------:|----------------------:|-------------------:|
-|🥇 | Vicomtech  |       0.665564 |              0.679364 |           0.652315 |
-|🥈 | Talp-UPC   |       0.626679 |              0.626969 |           0.626389 |
-|🥉 | UH-MAJA-KD |       0.625    |              0.634542 |           0.615741 |
-|   | IXA-NER-RE |       0.55748  |              0.58008  |           0.536574 |
-|   | UH-MatCom  |       0.556876 |              0.716157 |           0.455556 |
-|   | SINAI      |       0.42069  |              0.651456 |           0.310648 |
-|   | HAPLAP     |       0.395153 |              0.458435 |           0.347222 |
-|   | ExSim      |       0.245644 |              0.312589 |           0.202315 |
+|   | Team       | F1             |   Precision           |   Recall           | Paper |
+:--:|:-----------|---------------:|----------------------:|-------------------:|:-----:|
+|🥇 | Vicomtech  |       0.665564 |              0.679364 |           0.652315 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper3.pdf)
+|🥈 | Talp-UPC   |       0.626679 |              0.626969 |           0.626389 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper1.pdf)
+|🥉 | UH-MAJA-KD |       0.625    |              0.634542 |           0.615741 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper5.pdf)
+|   | IXA-NER-RE |       0.55748  |              0.58008  |           0.536574 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper8.pdf)
+|   | UH-MatCom  |       0.556876 |              0.716157 |           0.455556 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper4.pdf)
+|   | SINAI      |       0.42069  |              0.651456 |           0.310648 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper7.pdf)
+|   | HAPLAP     |       0.395153 |              0.458435 |           0.347222 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper6.pdf)
+|   | ExSim      |       0.245644 |              0.312589 |           0.202315 | [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper2.pdf)
 
 The organizing committee of the eHealth-KD challenge wants to sincerely congratulate all
 participants for the high-quality submission and the impressive results, which have surpassed
@@ -84,6 +88,7 @@ All the data will be made available to participants in due time. This includes t
 
 ### News 
 
+* 📃 The [Overview paper](http://ceur-ws.org/Vol-2664/eHealth-KD_overview.pdf) and all [Participant papers](http://ceur-ws.org/Vol-2664/) are available.
 * 📢 [Important information](./workshop) for participants in the Workshop.
 * 🔗 [Register now for IberLEF 2020](https://forms.gle/8cfE8kAKcLsy3Eec8). It's free!
 * 📢 [Official results](results) are now public !!.

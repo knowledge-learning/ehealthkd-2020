@@ -4,9 +4,7 @@ permalink: /workshop
 
 ---
 
-> ### 📆 We are preparing ourselves for the IberLEF Workshop coming up on **Tuesday, September 22nd, 2020**. Whether you submitted a system or just want to attend to the workshop, this page contains relevant information for you.
-
-> ### 🗨️ Follow [@EHealthKD](https://twitter.com/EhealthKd) on Twitter for up-to-date information. 
+> ### 📆 The IberLEF 2020 Workshop was organized in **Tuesday, September 22nd, 2020**. This page summarizes the most relevant information.
 
 ---
 
@@ -64,36 +62,36 @@ Remember that we begin at 17:00 on September 22nd.
 
 ## 🎥 Videos
 
-Here are all the 1 minute spotlight videos from participating teams. 
+Here are all the 1-minute spotlight videos from participating teams and the corresponding papers. 
 
-### **Team Vicomtech** [[🔗](./videos/Vicomtech.mp4)]
+### **Team Vicomtech** [🔗](./videos/Vicomtech.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper3.pdf)
 
 <video src="./videos/Vicomtech.mp4" width="640px" controls></video>
 
-### **Team TALP-UPC** [[🔗](./videos/TALP-UPC.mp4)]
+### **Team TALP-UPC** [🔗](./videos/TALP-UPC.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper1.pdf)
 
 <video src="./videos/TALP-UPC.mp4" width="640px" controls></video>
 
-### **Team UH-MAKA-KD** [[🔗](./videos/UH-MAJA-KD.mp4)]
+### **Team UH-MAKA-KD** [🔗](./videos/UH-MAJA-KD.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper5.pdf)
 
 <video src="./videos/UH-MAJA-KD.mp4" width="640px" controls></video>
 
-### **Team IXA-NER-RE** [[🔗](./videos/IXA-NER-RE.mp4)]
+### **Team IXA-NER-RE** [🔗](./videos/IXA-NER-RE.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper8.pdf)
 
 <video src="./videos/IXA-NER-RE.mp4" width="640px" controls></video>
 
-### **Team UH-MatCom** [[🔗](./videos/UH-MatCom.mp4)]
+### **Team UH-MatCom** [🔗](./videos/UH-MatCom.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper4.pdf)
 
 <video src="./videos/UH-MatCom.mp4" width="640px" controls></video>
 
-### **Team SINAI** [[🔗](./videos/SINAI.mp4)]
+### **Team SINAI** [🔗](./videos/SINAI.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper7.pdf)
 
 <video src="./videos/SINAI.mp4" width="640px" controls></video>
 
-### **Team HAPLAP** [[🔗](./videos/HAPLAP.mp4)]
+### **Team HAPLAP** [🔗](./videos/HAPLAP.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper6.pdf)
 
 <video src="./videos/HAPLAP.mp4" width="640px" controls></video>
 
-### **Team ExSim** [[🔗](./videos/ExSim.mp4)]
+### **Team ExSim** [🔗](./videos/ExSim.mp4) [📃](http://ceur-ws.org/Vol-2664/eHealth-KD_paper2.pdf)
 
 <video src="./videos/ExSim.mp4" width="640px" controls></video>
